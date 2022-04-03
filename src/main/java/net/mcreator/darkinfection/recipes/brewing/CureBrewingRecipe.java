@@ -1,9 +1,23 @@
 
 package net.mcreator.darkinfection.recipes.brewing;
 
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.common.brewing.IBrewingRecipe;
+import net.minecraftforge.common.brewing.BrewingRecipeRegistry;
+
+import net.minecraft.world.item.alchemy.Potions;
+import net.minecraft.world.item.alchemy.PotionUtils;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+
+import net.mcreator.darkinfection.init.DarkInfectionModPotions;
+import net.mcreator.darkinfection.init.DarkInfectionModItems;
+
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class CureBrewingRecipe implements IBrewingRecipe {
-
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> BrewingRecipeRegistry.addRecipe(new CureBrewingRecipe()));
@@ -18,7 +32,7 @@ public class CureBrewingRecipe implements IBrewingRecipe {
 
 	@Override
 	public boolean isIngredient(ItemStack ingredient) {
-		return ingredient.getItem() == DarkInfectionModItems.DELETED_MOD_ELEMENT;
+		return ingredient.getItem() == DarkInfectionModItems.PUREAFYINGAPP;
 	}
 
 	@Override
@@ -28,5 +42,4 @@ public class CureBrewingRecipe implements IBrewingRecipe {
 		}
 		return ItemStack.EMPTY;
 	}
-
 }

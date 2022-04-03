@@ -1,8 +1,15 @@
 
 package net.mcreator.darkinfection.potion;
 
-public class GivevoidcureMobEffect extends MobEffect {
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.ai.attributes.AttributeMap;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.effect.MobEffectCategory;
+import net.minecraft.world.effect.MobEffect;
 
+import net.mcreator.darkinfection.procedures.GivevoidcureEffectExpiresProcedure;
+
+public class GivevoidcureMobEffect extends MobEffect {
 	public GivevoidcureMobEffect() {
 		super(MobEffectCategory.NEUTRAL, -1);
 		setRegistryName("givevoidcure");
@@ -28,5 +35,4 @@ public class GivevoidcureMobEffect extends MobEffect {
 	public boolean isDurationEffectTick(int duration, int amplifier) {
 		return true;
 	}
-
 }

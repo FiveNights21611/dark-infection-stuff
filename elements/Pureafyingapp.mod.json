@@ -8,7 +8,7 @@
     "name": "Pureafyingapp",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:Darkinfected"
     },
     "stackSize": 64,
     "enchantability": 0,

@@ -1,10 +1,22 @@
 
 package net.mcreator.darkinfection.item;
 
-import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.context.UseOnContext;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
+
+import net.mcreator.darkinfection.procedures.BallofdarknessRightClickedOnBlockProcedure;
+import net.mcreator.darkinfection.init.DarkInfectionModTabs;
+
+import java.util.List;
 
 public class PoppedOrbOfDarknessItem extends Item {
-
 	public PoppedOrbOfDarknessItem() {
 		super(new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED).stacksTo(64).rarity(Rarity.UNCOMMON));
 		setRegistryName("popped_orb_of_darkness");
@@ -28,5 +40,4 @@ public class PoppedOrbOfDarknessItem extends Item {
 				context.getClickedPos().getZ(), context.getItemInHand());
 		return retval;
 	}
-
 }

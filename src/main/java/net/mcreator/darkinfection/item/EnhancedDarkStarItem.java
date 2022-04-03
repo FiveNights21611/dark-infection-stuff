@@ -1,10 +1,22 @@
 
 package net.mcreator.darkinfection.item;
 
-import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.context.UseOnContext;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
+
+import net.mcreator.darkinfection.procedures.BallofdarknessRightClickedOnBlockProcedure;
+import net.mcreator.darkinfection.init.DarkInfectionModTabs;
+
+import java.util.List;
 
 public class EnhancedDarkStarItem extends Item {
-
 	public EnhancedDarkStarItem() {
 		super(new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED).durability(240).fireResistant().rarity(Rarity.RARE));
 		setRegistryName("enhanced_dark_star");
@@ -33,5 +45,4 @@ public class EnhancedDarkStarItem extends Item {
 				context.getClickedPos().getZ(), context.getItemInHand());
 		return retval;
 	}
-
 }

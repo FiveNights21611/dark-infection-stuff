@@ -13,34 +13,34 @@
         "value": "Items.NETHERITE_INGOT"
       },
       {
-        "value": "Items.COAL"
+        "value": "Items.QUARTZ"
       },
       {
-        "value": "Items.DYE#16"
+        "value": "Items.QUARTZ"
       },
       {
-        "value": "Items.COAL"
+        "value": "Items.QUARTZ"
       },
       {
-        "value": "Items.HEART_OF_THE_SEA"
+        "value": "Items.QUARTZ"
       },
       {
-        "value": "Items.COAL"
+        "value": ""
       },
       {
-        "value": "CUSTOM:Darkdirt"
+        "value": ""
       },
       {
-        "value": "Items.COAL"
+        "value": ""
       },
       {
-        "value": "Items.NETHERITE_INGOT"
+        "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Itemorbofdarkness"
+      "value": "CUSTOM:QuartzEnrichedNetherite"
     },
-    "name": "orb_of_darkness",
+    "name": "quartz_enriched_netherite_recipe",
     "namespace": "mod"
   }
 }

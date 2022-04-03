@@ -337,6 +337,62 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "darkinfected"
+    },
+    {
+      "name": "QuartzEnrichedNetherite",
+      "type": "item",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quartz_enriched_netherite"
+    },
+    {
+      "name": "QuartzEnrichedNetheriteRecipe",
+      "type": "recipe",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quartz_enriched_netherite_recipe"
+    },
+    {
+      "name": "QENHRecipe",
+      "type": "recipe",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qenh_recipe"
+    },
+    {
+      "name": "QencRecipe",
+      "type": "recipe",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qenc_recipe"
+    },
+    {
+      "name": "QenlRecipe",
+      "type": "recipe",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qenl_recipe"
+    },
+    {
+      "name": "QenbRecipe",
+      "type": "recipe",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qenb_recipe"
+    },
+    {
+      "name": "DarkBiome",
+      "type": "biome",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_biome"
     }
   ],
   "variable_elements": [],
@@ -349,8 +405,10 @@
       "item.dark_infection.quartz_enriched_netherite_armor_chestplate": "Quartz Enriched Netherite Chestplate",
       "block.dark_infection.darkdirt": "Darkdirt",
       "advancements.the_absolute_dark.descr": "What devotion is this?",
+      "biome.dark_infection.dark_biome": "Dark Biome",
       "block.dark_infection.gravityvoid": "Gravityvoid",
       "item.dark_infection.quartz_enriched_netherite_armor_helmet": "Quartz Enriched Netherite Helmet",
+      "item.dark_infection.quartz_enriched_netherite": "Quartz Enriched Netherite Ingot",
       "advancements.cover_me_in_quartz.title": "Cover Me In Quartz",
       "item.dark_infection.itemorbofdarkness": "Orb Of Darkness",
       "block.dark_infection.infectedsoil": "Infected soil",

@@ -20,6 +20,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.darkinfection.procedures.InfectedsoilUpdateTickProcedure;
+import net.mcreator.darkinfection.init.DarkInfectionModBlocks;
 
 import java.util.Random;
 import java.util.List;
@@ -57,7 +58,7 @@ public class InfectedsoilBlock extends Block {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(this, 1));
+		return Collections.singletonList(new ItemStack(DarkInfectionModBlocks.DARKDIRT));
 	}
 
 	@Override

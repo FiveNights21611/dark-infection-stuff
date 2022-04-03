@@ -1,0 +1,23 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "qena",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "Items.NETHERITE_LEGGINGS"
+    },
+    "smithingInputAdditionStack": {
+      "value": "CUSTOM:QuartzEnrichedNetherite"
+    },
+    "smithingReturnStack": {
+      "value": "CUSTOM:QuartzEnrichedNetheriteArmor.legs"
+    },
+    "name": "qenl_recipe",
+    "namespace": "mod"
+  }
+}

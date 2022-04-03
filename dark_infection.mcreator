@@ -291,6 +291,20 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "darkinfected"
+    },
+    {
+      "name": "QuartzEnrichedNetheriteArmor",
+      "type": "armor",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quartz_enriched_netherite_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
     }
   ],
   "variable_elements": [],
@@ -298,14 +312,13 @@
   "language_map": {
     "en_us": {
       "effect.dark_infection.darkcorupt": "dont die",
+      "block.dark_infection.voidstone": "Voidstone",
+      "block.dark_infection.darkdirt": "Darkdirt",
+      "block.dark_infection.gravityvoid": "Gravityvoid",
       "item.dark_infection.itemorbofdarkness": "Ballofdarkness",
       "block.dark_infection.infectedsoil": "Infected soil",
-      "block.dark_infection.voidstone": "Voidstone",
-      "itemGroup.tabdarkinfected": "Darkinfected",
       "block.dark_infection.void_cobble": "Void Cobble",
-      "block.dark_infection.darkdirt": "Darkdirt",
-      "effect.dark_infection.darkness": "darkness",
-      "block.dark_infection.gravityvoid": "Gravityvoid"
+      "effect.dark_infection.darkness": "darkness"
     }
   },
   "foldersRoot": {

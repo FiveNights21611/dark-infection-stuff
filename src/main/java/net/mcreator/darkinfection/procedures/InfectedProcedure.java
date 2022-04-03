@@ -8,13 +8,11 @@ import net.minecraftforge.event.entity.living.LivingEvent;
 import net.minecraft.world.scores.Scoreboard;
 import net.minecraft.world.scores.Score;
 import net.minecraft.world.scores.Objective;
-import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.core.particles.ParticleTypes;
 
 import javax.annotation.Nullable;
 
@@ -23,14 +21,14 @@ public class InfectedProcedure {
 	@SubscribeEvent
 	public static void onEntityTick(LivingEvent.LivingUpdateEvent event) {
 		Entity entity = event.getEntityLiving();
-		execute(event, entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
+		execute(event, entity);
 	}
 
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
-		execute(null, world, x, y, z, entity);
+	public static void execute(Entity entity) {
+		execute(null, entity);
 	}
 
-	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
+	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
 		if (new Object() {
@@ -48,7 +46,6 @@ public class InfectedProcedure {
 		}.getScore("infected", entity) == 1) {
 			if (entity instanceof LivingEntity _entity)
 				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 60, 1, (false), (false)));
-			world.addParticle(ParticleTypes.SOUL, x, y, z, 0, 1, 0);
 			if (entity instanceof LivingEntity _entity)
 				_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 60, 0, (false), (false)));
 			if (entity instanceof LivingEntity _entity)
@@ -69,7 +66,6 @@ public class InfectedProcedure {
 		}.getScore("infected", entity) == 2) {
 			if (entity instanceof LivingEntity _entity)
 				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 60, 1, (false), (false)));
-			world.addParticle(ParticleTypes.SOUL, x, y, z, 0, 1, 0);
 			if (entity instanceof LivingEntity _entity)
 				_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 60, 1, (false), (false)));
 			if (entity instanceof LivingEntity _entity)
@@ -92,7 +88,6 @@ public class InfectedProcedure {
 				return 0;
 			}
 		}.getScore("infected", entity) == 3) {
-			world.addParticle(ParticleTypes.SOUL, x, y, z, 0, 1, 0);
 			if (entity instanceof LivingEntity _entity)
 				_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 60, 2, (false), (false)));
 			if (entity instanceof LivingEntity _entity)

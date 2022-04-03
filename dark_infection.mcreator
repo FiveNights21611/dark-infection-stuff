@@ -311,12 +311,17 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.dark_infection.quartz_enriched_netherite_armor_boots": "Quartz Enriched Netherite Boots",
       "effect.dark_infection.darkcorupt": "dont die",
       "block.dark_infection.voidstone": "Voidstone",
+      "item.dark_infection.quartz_enriched_netherite_armor_chestplate": "Quartz Enriched Netherite Chestplate",
       "block.dark_infection.darkdirt": "Darkdirt",
       "block.dark_infection.gravityvoid": "Gravityvoid",
+      "item.dark_infection.quartz_enriched_netherite_armor_helmet": "Quartz Enriched Netherite Helmet",
       "item.dark_infection.itemorbofdarkness": "Ballofdarkness",
       "block.dark_infection.infectedsoil": "Infected soil",
+      "item.dark_infection.quartz_enriched_netherite_armor_leggings": "Quartz Enriched Netherite Leggings",
+      "itemGroup.tabdarkinfected": "Darkinfected",
       "block.dark_infection.void_cobble": "Void Cobble",
       "effect.dark_infection.darkness": "darkness"
     }

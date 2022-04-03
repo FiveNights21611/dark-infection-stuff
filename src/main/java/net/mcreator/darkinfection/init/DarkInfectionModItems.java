@@ -13,6 +13,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.darkinfection.item.QuartzEnrichedNetheriteItem;
 import net.mcreator.darkinfection.item.QuartzEnrichedNetheriteArmorItem;
 import net.mcreator.darkinfection.item.ItemorbofdarknessItem;
 
@@ -23,15 +24,16 @@ import java.util.ArrayList;
 public class DarkInfectionModItems {
 	private static final List<Item> REGISTRY = new ArrayList<>();
 	public static final Item ITEMORBOFDARKNESS = register(new ItemorbofdarknessItem());
-	public static final Item INFECTEDSOIL = register(DarkInfectionModBlocks.INFECTEDSOIL, DarkInfectionModTabs.TAB_DARKINFECTED);
-	public static final Item VOIDSTONE = register(DarkInfectionModBlocks.VOIDSTONE, DarkInfectionModTabs.TAB_DARKINFECTED);
-	public static final Item DARKDIRT = register(DarkInfectionModBlocks.DARKDIRT, DarkInfectionModTabs.TAB_DARKINFECTED);
-	public static final Item VOID_COBBLE = register(DarkInfectionModBlocks.VOID_COBBLE, DarkInfectionModTabs.TAB_DARKINFECTED);
-	public static final Item GRAVITYVOID = register(DarkInfectionModBlocks.GRAVITYVOID, DarkInfectionModTabs.TAB_DARKINFECTED);
+	public static final Item INFECTEDSOIL = register(DarkInfectionModBlocks.INFECTEDSOIL, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final Item VOIDSTONE = register(DarkInfectionModBlocks.VOIDSTONE, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final Item DARKDIRT = register(DarkInfectionModBlocks.DARKDIRT, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final Item VOID_COBBLE = register(DarkInfectionModBlocks.VOID_COBBLE, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final Item GRAVITYVOID = register(DarkInfectionModBlocks.GRAVITYVOID, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final Item QUARTZ_ENRICHED_NETHERITE_ARMOR_HELMET = register(new QuartzEnrichedNetheriteArmorItem.Helmet());
 	public static final Item QUARTZ_ENRICHED_NETHERITE_ARMOR_CHESTPLATE = register(new QuartzEnrichedNetheriteArmorItem.Chestplate());
 	public static final Item QUARTZ_ENRICHED_NETHERITE_ARMOR_LEGGINGS = register(new QuartzEnrichedNetheriteArmorItem.Leggings());
 	public static final Item QUARTZ_ENRICHED_NETHERITE_ARMOR_BOOTS = register(new QuartzEnrichedNetheriteArmorItem.Boots());
+	public static final Item QUARTZ_ENRICHED_NETHERITE = register(new QuartzEnrichedNetheriteItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

@@ -6,7 +6,7 @@
     "texture": "netherite_ingot",
     "customModelName": "Normal",
     "name": "Quartz Enriched Netherite Ingot",
-    "rarity": "EPIC",
+    "rarity": "UNCOMMON",
     "creativeTab": {
       "value": "CUSTOM:Darkinfected"
     },

@@ -15,7 +15,7 @@ import java.util.List;
 
 public class QuartzEnrichedNetheriteItem extends Item {
 	public QuartzEnrichedNetheriteItem() {
-		super(new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED).stacksTo(64).fireResistant().rarity(Rarity.EPIC));
+		super(new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED).stacksTo(64).fireResistant().rarity(Rarity.UNCOMMON));
 		setRegistryName("quartz_enriched_netherite");
 	}
 

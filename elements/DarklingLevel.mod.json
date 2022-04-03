@@ -3,7 +3,7 @@
   "_type": "command",
   "definition": {
     "commandName": "darklinglevel",
-    "permissionLevel": "No requirement",
+    "permissionLevel": "1",
     "onCommandExecuted": {
       "name": "DarklingLevelSay"
     }

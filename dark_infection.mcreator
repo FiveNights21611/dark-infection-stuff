@@ -639,6 +639,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "darkling_level"
+    },
+    {
+      "name": "DarkCarrotRecipe",
+      "type": "recipe",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_carrot_recipe"
     }
   ],
   "variable_elements": [],

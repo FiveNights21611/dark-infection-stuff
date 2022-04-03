@@ -23,10 +23,10 @@ import com.mojang.brigadier.arguments.StringArgumentType;
 public class DarklingLevelCommand {
 	@SubscribeEvent
 	public static void registerCommands(RegisterCommandsEvent event) {
-		event.getDispatcher().register(Commands.literal("darklinglevel")
-
-				.then(Commands.argument("arguments", StringArgumentType.greedyString()).executes(DarklingLevelCommand::execute))
-				.executes(DarklingLevelCommand::execute));
+		event.getDispatcher()
+				.register(Commands.literal("darklinglevel").requires(s -> s.hasPermission(1))
+						.then(Commands.argument("arguments", StringArgumentType.greedyString()).executes(DarklingLevelCommand::execute))
+						.executes(DarklingLevelCommand::execute));
 	}
 
 	private static int execute(CommandContext<CommandSourceStack> ctx) {

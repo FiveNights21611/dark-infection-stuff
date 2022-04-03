@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:golden_carrot"
+  },
+  "addition": {
+    "item": "dark_infection:itemorbofdarkness"
+  },
+  "result": {
+    "item": "dark_infection:dark_carrot"
+  }
+}

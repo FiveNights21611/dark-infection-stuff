@@ -3,6 +3,7 @@
   "item.dark_infection.itemorbofdarkness": "Ballofdarkness",
   "block.dark_infection.infectedsoil": "Infected soil",
   "block.dark_infection.voidstone": "Voidstone",
+  "itemGroup.tabdarkinfected": "Darkinfected",
   "block.dark_infection.void_cobble": "Void Cobble",
   "block.dark_infection.darkdirt": "Darkdirt",
   "effect.dark_infection.darkness": "darkness",

@@ -10,6 +10,9 @@
     "textureLeggings": "dark_aror_leggings",
     "enableBoots": true,
     "textureBoots": "dark_aror_boots",
+    "onBodyTick": {
+      "name": "DarkarmorBodyTickEvent"
+    },
     "creativeTab": {
       "value": "CUSTOM:Darkinfected"
     },

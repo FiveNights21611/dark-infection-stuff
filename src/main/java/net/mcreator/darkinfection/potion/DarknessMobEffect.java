@@ -11,7 +11,7 @@ import net.mcreator.darkinfection.procedures.DarknessEffectExpiresProcedure;
 
 public class DarknessMobEffect extends MobEffect {
 	public DarknessMobEffect() {
-		super(MobEffectCategory.HARMFUL, -13421773);
+		super(MobEffectCategory.HARMFUL, -16777216);
 		setRegistryName("darkness");
 	}
 

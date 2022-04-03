@@ -2,10 +2,10 @@
   "_fv": 24,
   "_type": "potioneffect",
   "definition": {
-    "effectName": "darkness",
+    "effectName": "Darkness",
     "icon": "darkdirt.png",
     "color": {
-      "value": -13421773,
+      "value": -16777216,
       "falpha": 0.0
     },
     "isInstant": false,

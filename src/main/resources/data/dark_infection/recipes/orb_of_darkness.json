@@ -10,32 +10,32 @@
       "item": "minecraft:netherite_ingot"
     },
     "1": {
-      "item": "minecraft:charcoal"
+      "tag": "minecraft:coals"
     },
     "2": {
-      "item": "minecraft:netherite_ingot"
+      "item": "minecraft:black_dye"
     },
     "3": {
-      "item": "minecraft:charcoal"
+      "tag": "minecraft:coals"
     },
     "4": {
       "item": "minecraft:heart_of_the_sea"
     },
     "5": {
-      "item": "minecraft:charcoal"
+      "tag": "minecraft:coals"
     },
     "6": {
-      "item": "minecraft:netherite_ingot"
+      "item": "dark_infection:darkdirt"
     },
     "7": {
-      "item": "minecraft:charcoal"
+      "tag": "minecraft:coals"
     },
     "8": {
       "item": "minecraft:netherite_ingot"
     }
   },
   "result": {
-    "item": "dark_infection:deleted_mod_element",
+    "item": "dark_infection:itemorbofdarkness",
     "count": 1
   }
 }

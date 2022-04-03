@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:netherite_chestplate"
+  },
+  "addition": {
+    "item": "dark_infection:quartz_enriched_netherite"
+  },
+  "result": {
+    "item": "dark_infection:quartz_enriched_netherite_armor_chestplate"
+  }
+}

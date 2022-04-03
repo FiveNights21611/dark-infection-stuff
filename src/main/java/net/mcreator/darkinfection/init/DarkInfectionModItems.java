@@ -45,8 +45,8 @@ public class DarkInfectionModItems {
 	public static final Item DARKARMOR_LEGGINGS = register(new DarkarmorItem.Leggings());
 	public static final Item DARKARMOR_BOOTS = register(new DarkarmorItem.Boots());
 	public static final Item DARK_CARROT = register(new DarkCarrotItem());
-	public static final Item POPPED_ORB_OF_DARKNESS = register(new PoppedOrbOfDarknessItem());
 	public static final Item PUREAFYINGAPP = register(new PureafyingappItem());
+	public static final Item POPPED_ORB_OF_DARKNESS = register(new PoppedOrbOfDarknessItem());
 	public static final Item DARK_STAR = register(new DarkStarItem());
 	public static final Item ENHANCED_DARK_STAR = register(new EnhancedDarkStarItem());
 

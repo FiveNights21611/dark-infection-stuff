@@ -409,6 +409,86 @@
       }
     },
     {
+      "name": "VoidCureEffectExpires",
+      "type": "procedure",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_cure_effect_expires",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VoidCure",
+      "type": "potioneffect",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_cure"
+    },
+    {
+      "name": "GivevoidcureEffectExpires",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "givevoidcure_effect_expires",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Givevoidcure",
+      "type": "potioneffect",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "givevoidcure"
+    },
+    {
+      "name": "Voidcurepotion",
+      "type": "potion",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "voidcurepotion"
+    },
+    {
+      "name": "Pureafyingapp",
+      "type": "item",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pureafyingapp"
+    },
+    {
+      "name": "Pa",
+      "type": "recipe",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pa"
+    },
+    {
+      "name": "Cure",
+      "type": "recipe",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cure"
+    },
+    {
       "name": "DarkStarRecipe",
       "type": "recipe",
       "sortid": 37,
@@ -527,86 +607,6 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "enhanced_dark_star"
-    },
-    {
-      "name": "Pa",
-      "type": "recipe",
-      "sortid": 34,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pa"
-    },
-    {
-      "name": "Voidcurepotion",
-      "type": "potion",
-      "sortid": 32,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "voidcurepotion"
-    },
-    {
-      "name": "Cure",
-      "type": "recipe",
-      "sortid": 35,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cure"
-    },
-    {
-      "name": "VoidCureEffectExpires",
-      "type": "procedure",
-      "sortid": 31,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "void_cure_effect_expires",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Pureafyingapp",
-      "type": "item",
-      "sortid": 33,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pureafyingapp"
-    },
-    {
-      "name": "GivevoidcureEffectExpires",
-      "type": "procedure",
-      "sortid": 32,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "givevoidcure_effect_expires",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Givevoidcure",
-      "type": "potioneffect",
-      "sortid": 32,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "givevoidcure"
-    },
-    {
-      "name": "VoidCure",
-      "type": "potioneffect",
-      "sortid": 31,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "void_cure"
     }
   ],
   "variable_elements": [],

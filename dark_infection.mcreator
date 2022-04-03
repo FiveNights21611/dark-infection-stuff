@@ -339,12 +339,20 @@
       "registry_name": "darkinfected"
     },
     {
-      "name": "QuartzEnrichedNetherite",
-      "type": "item",
-      "sortid": 23,
+      "name": "QencRecipe",
+      "type": "recipe",
+      "sortid": 26,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "quartz_enriched_netherite"
+      "registry_name": "qenc_recipe"
+    },
+    {
+      "name": "DarkBiome",
+      "type": "biome",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_biome"
     },
     {
       "name": "QuartzEnrichedNetheriteRecipe",
@@ -355,20 +363,20 @@
       "registry_name": "quartz_enriched_netherite_recipe"
     },
     {
+      "name": "QuartzEnrichedNetherite",
+      "type": "item",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quartz_enriched_netherite"
+    },
+    {
       "name": "QENHRecipe",
       "type": "recipe",
       "sortid": 25,
       "compiles": true,
       "locked_code": false,
       "registry_name": "qenh_recipe"
-    },
-    {
-      "name": "QencRecipe",
-      "type": "recipe",
-      "sortid": 26,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "qenc_recipe"
     },
     {
       "name": "QenlRecipe",
@@ -385,14 +393,6 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "qenb_recipe"
-    },
-    {
-      "name": "DarkBiome",
-      "type": "biome",
-      "sortid": 29,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dark_biome"
     }
   ],
   "variable_elements": [],

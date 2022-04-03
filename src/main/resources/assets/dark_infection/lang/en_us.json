@@ -4,12 +4,16 @@
   "block.dark_infection.voidstone": "Voidstone",
   "item.dark_infection.quartz_enriched_netherite_armor_chestplate": "Quartz Enriched Netherite Chestplate",
   "block.dark_infection.darkdirt": "Darkdirt",
+  "advancements.the_absolute_dark.descr": "What devotion is this?",
   "block.dark_infection.gravityvoid": "Gravityvoid",
   "item.dark_infection.quartz_enriched_netherite_armor_helmet": "Quartz Enriched Netherite Helmet",
-  "item.dark_infection.itemorbofdarkness": "Ballofdarkness",
+  "advancements.cover_me_in_quartz.title": "Cover Me In Quartz",
+  "item.dark_infection.itemorbofdarkness": "Orb Of Darkness",
   "block.dark_infection.infectedsoil": "Infected soil",
+  "advancements.cover_me_in_quartz.descr": "Woah! How immune is this...?",
   "item.dark_infection.quartz_enriched_netherite_armor_leggings": "Quartz Enriched Netherite Leggings",
-  "itemGroup.tabdarkinfected": "Darkinfected",
+  "itemGroup.tabdarkinfected": "Dark Infection",
   "block.dark_infection.void_cobble": "Void Cobble",
+  "advancements.the_absolute_dark.title": "The Absolute Dark...",
   "effect.dark_infection.darkness": "darkness"
 }

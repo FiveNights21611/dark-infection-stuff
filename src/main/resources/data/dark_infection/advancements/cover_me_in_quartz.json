@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "dark_infection:quartz_enriched_netherite_armor_helmet"
+    },
+    "title": {
+      "translate": "advancements.cover_me_in_quartz.title"
+    },
+    "description": {
+      "translate": "advancements.cover_me_in_quartz.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "cover_me_in_quartz": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 120
+  },
+  "parent": "minecraft:nether/netherite_armor"
+}

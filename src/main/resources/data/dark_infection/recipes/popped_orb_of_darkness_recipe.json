@@ -1,0 +1,12 @@
+{
+  "group": "ofd_to_poud",
+  "type": "minecraft:blasting",
+  "experience": 0,
+  "cookingtime": 800,
+  "ingredient": {
+    "item": "dark_infection:itemorbofdarkness"
+  },
+  "result": {
+    "item": "dark_infection:popped_orb_of_darkness"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "ofd_to_poud",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "CUSTOM:PoppedOrbOfDarkness"
+    },
+    "smithingInputAdditionStack": {
+      "value": "Items.NETHER_STAR"
+    },
+    "smithingReturnStack": {
+      "value": "CUSTOM:DarkStar"
+    },
+    "name": "dark_star_recipe",
+    "namespace": "mod"
+  }
+}

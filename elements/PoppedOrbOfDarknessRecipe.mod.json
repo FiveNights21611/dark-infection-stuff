@@ -1,0 +1,20 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Blasting",
+    "xpReward": 0.0,
+    "cookingTime": 800,
+    "recipeRetstackSize": 1,
+    "group": "ofd_to_poud",
+    "recipeShapeless": false,
+    "blastingInputStack": {
+      "value": "CUSTOM:Itemorbofdarkness"
+    },
+    "blastingReturnStack": {
+      "value": "CUSTOM:PoppedOrbOfDarkness"
+    },
+    "name": "popped_orb_of_darkness_recipe",
+    "namespace": "mod"
+  }
+}

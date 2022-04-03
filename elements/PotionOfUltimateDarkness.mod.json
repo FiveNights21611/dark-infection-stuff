@@ -1,0 +1,21 @@
+{
+  "_fv": 24,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Potion Of Ultimate Darkness",
+    "splashName": "Splash PotionOf Ultimate Darkness",
+    "lingeringName": "Lingering Potion Of Ultimate Darkness",
+    "arrowName": "Arrow of Ultimate Darkness",
+    "effects": [
+      {
+        "effect": {
+          "value": "CUSTOM:UltimateDarkness"
+        },
+        "duration": 3600,
+        "amplifier": 0,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}

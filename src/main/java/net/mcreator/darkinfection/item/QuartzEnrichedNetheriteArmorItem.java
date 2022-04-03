@@ -68,7 +68,7 @@ public abstract class QuartzEnrichedNetheriteArmorItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "dark_infection:textures/models/armor/netherite__layer_1.png";
+			return "dark_infection:textures/models/armor/qen__layer_1.png";
 		}
 	}
 
@@ -80,7 +80,7 @@ public abstract class QuartzEnrichedNetheriteArmorItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "dark_infection:textures/models/armor/netherite__layer_1.png";
+			return "dark_infection:textures/models/armor/qen__layer_1.png";
 		}
 	}
 
@@ -92,7 +92,7 @@ public abstract class QuartzEnrichedNetheriteArmorItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "dark_infection:textures/models/armor/netherite__layer_2.png";
+			return "dark_infection:textures/models/armor/qen__layer_2.png";
 		}
 	}
 
@@ -104,7 +104,7 @@ public abstract class QuartzEnrichedNetheriteArmorItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "dark_infection:textures/models/armor/netherite__layer_1.png";
+			return "dark_infection:textures/models/armor/qen__layer_1.png";
 		}
 	}
 }

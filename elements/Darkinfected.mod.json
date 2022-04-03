@@ -2,10 +2,10 @@
   "_fv": 24,
   "_type": "tab",
   "definition": {
-    "name": "Darkinfected",
+    "name": "Dark Infection",
     "icon": {
       "value": "CUSTOM:Darkdirt"
     },
-    "showSearch": false
+    "showSearch": true
   }
 }

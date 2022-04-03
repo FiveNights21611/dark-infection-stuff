@@ -8,7 +8,7 @@
     "name": "Orb Of Darkness",
     "rarity": "UNCOMMON",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:Darkinfected"
     },
     "stackSize": 1,
     "enchantability": 0,

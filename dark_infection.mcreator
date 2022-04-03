@@ -400,7 +400,7 @@
   "language_map": {
     "en_us": {
       "item.dark_infection.quartz_enriched_netherite_armor_boots": "Quartz Enriched Netherite Boots",
-      "effect.dark_infection.darkcorupt": "dont die",
+      "effect.dark_infection.darkcorupt": "Don\u0027t Die...",
       "block.dark_infection.voidstone": "Voidstone",
       "item.dark_infection.quartz_enriched_netherite_armor_chestplate": "Quartz Enriched Netherite Chestplate",
       "block.dark_infection.darkdirt": "Darkdirt",
@@ -417,7 +417,7 @@
       "itemGroup.tabdarkinfected": "Dark Infection",
       "block.dark_infection.void_cobble": "Void Cobble",
       "advancements.the_absolute_dark.title": "The Absolute Dark...",
-      "effect.dark_infection.darkness": "darkness"
+      "effect.dark_infection.darkness": "Darkness"
     }
   },
   "foldersRoot": {

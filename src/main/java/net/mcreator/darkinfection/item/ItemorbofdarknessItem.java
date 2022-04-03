@@ -7,18 +7,18 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.darkinfection.procedures.BallofdarknessRightClickedOnBlockProcedure;
+import net.mcreator.darkinfection.init.DarkInfectionModTabs;
 
 import java.util.List;
 
 public class ItemorbofdarknessItem extends Item {
 	public ItemorbofdarknessItem() {
-		super(new Item.Properties().tab(CreativeModeTab.TAB_MISC).durability(10).fireResistant().rarity(Rarity.UNCOMMON));
+		super(new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED).durability(10).fireResistant().rarity(Rarity.UNCOMMON));
 		setRegistryName("itemorbofdarkness");
 	}
 

@@ -4,7 +4,7 @@
     "item": "minecraft:netherite_chestplate"
   },
   "addition": {
-    "item": "dark_infection:deleted_mod_element"
+    "item": "dark_infection:quartz_enriched_netherite"
   },
   "result": {
     "item": "dark_infection:quartz_enriched_netherite_armor_chestplate"

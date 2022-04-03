@@ -2,7 +2,7 @@
   "_fv": 24,
   "_type": "potioneffect",
   "definition": {
-    "effectName": "dont die",
+    "effectName": "Don't Die...",
     "icon": "darkdirt.png",
     "color": {
       "value": -16777216,

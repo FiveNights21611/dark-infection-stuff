@@ -6,19 +6,19 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.darkinfection.procedures.DarkCarrotEatProcedure;
+import net.mcreator.darkinfection.init.DarkInfectionModTabs;
 
 import java.util.List;
 
 public class DarkCarrotItem extends Item {
 	public DarkCarrotItem() {
-		super(new Item.Properties().tab(CreativeModeTab.TAB_FOOD).stacksTo(64).rarity(Rarity.RARE)
+		super(new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED).stacksTo(64).rarity(Rarity.RARE)
 				.food((new FoodProperties.Builder()).nutrition(4).saturationMod(8f).alwaysEat()
 
 						.build()));

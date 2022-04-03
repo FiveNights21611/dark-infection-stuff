@@ -1,6 +1,14 @@
 package net.mcreator.darkinfection.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraft.world.scores.Scoreboard;
+import net.minecraft.world.scores.Score;
+import net.minecraft.world.scores.Objective;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffectInstance;
+
+import net.mcreator.darkinfection.init.DarkInfectionModMobEffects;
 
 public class GivevoidcureEffectExpiresProcedure {
 	public static void execute(Entity entity) {

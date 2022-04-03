@@ -1,4 +1,5 @@
 {
+  "group": "purif",
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "012",
@@ -7,13 +8,13 @@
   ],
   "key": {
     "0": {
-      "item": "minecraft:enchanted_golden_apple"
+      "item": "minecraft:golden_apple"
     },
     "1": {
       "item": "minecraft:quartz"
     },
     "2": {
-      "item": "minecraft:enchanted_golden_apple"
+      "item": "minecraft:golden_apple"
     },
     "3": {
       "item": "minecraft:quartz"
@@ -25,17 +26,17 @@
       "item": "minecraft:quartz"
     },
     "6": {
-      "item": "minecraft:enchanted_golden_apple"
+      "item": "minecraft:golden_apple"
     },
     "7": {
       "item": "minecraft:quartz"
     },
     "8": {
-      "item": "minecraft:enchanted_golden_apple"
+      "item": "minecraft:golden_apple"
     }
   },
   "result": {
-    "item": "dark_infection:deleted_mod_element",
+    "item": "dark_infection:pureafyingapp",
     "count": 1
   }
 }

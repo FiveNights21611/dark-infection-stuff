@@ -5,10 +5,10 @@
     "renderType": 0,
     "texture": "pa",
     "customModelName": "Normal",
-    "name": "Pureafyingapp",
-    "rarity": "COMMON",
+    "name": "Purifying Apple",
+    "rarity": "RARE",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:Darkinfected"
     },
     "stackSize": 64,
     "enchantability": 0,

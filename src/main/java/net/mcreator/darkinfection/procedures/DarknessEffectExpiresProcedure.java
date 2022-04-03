@@ -5,8 +5,11 @@ import net.minecraft.world.scores.Scoreboard;
 import net.minecraft.world.scores.Score;
 import net.minecraft.world.scores.Objective;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.TextComponent;
+
+import net.mcreator.darkinfection.init.DarkInfectionModMobEffects;
 
 public class DarknessEffectExpiresProcedure {
 	public static void execute(Entity entity) {
@@ -44,6 +47,17 @@ public class DarknessEffectExpiresProcedure {
 					_so = _sc.addObjective("infected", ObjectiveCriteria.DUMMY, new TextComponent("infected"), ObjectiveCriteria.RenderType.INTEGER);
 				Score _scr = _sc.getOrCreatePlayerScore(_player.getScoreboardName(), _so);
 				_scr.setScore(1);
+			}
+		} else if ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(DarkInfectionModMobEffects.DARKNESS)
+				? _livEnt.getEffect(DarkInfectionModMobEffects.DARKNESS).getAmplifier()
+				: 0) == 3) {
+			if (entity instanceof Player _player) {
+				Scoreboard _sc = _player.getScoreboard();
+				Objective _so = _sc.getObjective("infected");
+				if (_so == null)
+					_so = _sc.addObjective("infected", ObjectiveCriteria.DUMMY, new TextComponent("infected"), ObjectiveCriteria.RenderType.INTEGER);
+				Score _scr = _sc.getOrCreatePlayerScore(_player.getScoreboardName(), _so);
+				_scr.setScore(3);
 			}
 		} else {
 			if (entity instanceof Player _player) {

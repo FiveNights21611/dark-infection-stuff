@@ -11,7 +11,7 @@
       "The Darkness seems to grow..."
     ],
     "creativeTab": {
-      "value": "FOOD"
+      "value": "CUSTOM:Darkinfected"
     },
     "stackSize": 64,
     "nutritionalValue": 4,

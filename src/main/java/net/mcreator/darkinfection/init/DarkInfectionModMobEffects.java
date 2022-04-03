@@ -10,7 +10,9 @@ import net.minecraftforge.event.RegistryEvent;
 
 import net.minecraft.world.effect.MobEffect;
 
+import net.mcreator.darkinfection.potion.VoidCureMobEffect;
 import net.mcreator.darkinfection.potion.UltimateDarknessMobEffect;
+import net.mcreator.darkinfection.potion.GivevoidcureMobEffect;
 import net.mcreator.darkinfection.potion.DarknessMobEffect;
 import net.mcreator.darkinfection.potion.DarkcoruptMobEffect;
 
@@ -22,6 +24,8 @@ public class DarkInfectionModMobEffects {
 	private static final List<MobEffect> REGISTRY = new ArrayList<>();
 	public static final MobEffect DARKNESS = register(new DarknessMobEffect());
 	public static final MobEffect DARKCORUPT = register(new DarkcoruptMobEffect());
+	public static final MobEffect VOID_CURE = register(new VoidCureMobEffect());
+	public static final MobEffect GIVEVOIDCURE = register(new GivevoidcureMobEffect());
 	public static final MobEffect ULTIMATE_DARKNESS = register(new UltimateDarknessMobEffect());
 
 	private static MobEffect register(MobEffect effect) {

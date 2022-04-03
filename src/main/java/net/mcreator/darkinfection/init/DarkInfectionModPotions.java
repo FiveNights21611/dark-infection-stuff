@@ -17,6 +17,8 @@ import java.util.ArrayList;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class DarkInfectionModPotions {
 	private static final List<Potion> REGISTRY = new ArrayList<>();
+	public static final Potion VOIDCUREPOTION = register(
+			new Potion(new MobEffectInstance(DarkInfectionModMobEffects.GIVEVOIDCURE, 10, 0, false, true)).setRegistryName("voidcurepotion"));
 	public static final Potion POTION_OF_ULTIMATE_DARKNESS = register(
 			new Potion(new MobEffectInstance(DarkInfectionModMobEffects.ULTIMATE_DARKNESS, 3600, 0, false, true))
 					.setRegistryName("potion_of_ultimate_darkness"));

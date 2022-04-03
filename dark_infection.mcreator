@@ -409,20 +409,20 @@
       }
     },
     {
-      "name": "DarkCarrot",
-      "type": "food",
-      "sortid": 31,
+      "name": "DarkStarRecipe",
+      "type": "recipe",
+      "sortid": 37,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "dark_carrot"
+      "registry_name": "dark_star_recipe"
     },
     {
-      "name": "DarkCarrotEat",
+      "name": "WhenUDApplied",
       "type": "procedure",
-      "sortid": 32,
+      "sortid": 40,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "dark_carrot_eat",
+      "registry_name": "when_ud_applied",
       "metadata": {
         "dependencies": [
           {
@@ -441,36 +441,12 @@
       "registry_name": "popped_orb_of_darkness"
     },
     {
-      "name": "PoppedOrbOfDarknessRecipe",
-      "type": "recipe",
-      "sortid": 34,
+      "name": "UltimateDarkness",
+      "type": "potioneffect",
+      "sortid": 39,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "popped_orb_of_darkness_recipe"
-    },
-    {
-      "name": "DarkStar",
-      "type": "item",
-      "sortid": 35,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dark_star"
-    },
-    {
-      "name": "EnhancedDarkStar",
-      "type": "item",
-      "sortid": 36,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "enhanced_dark_star"
-    },
-    {
-      "name": "DarkStarRecipe",
-      "type": "recipe",
-      "sortid": 37,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dark_star_recipe"
+      "registry_name": "ultimate_darkness"
     },
     {
       "name": "EnhancedDarkStarRecipe",
@@ -497,12 +473,44 @@
       }
     },
     {
-      "name": "WhenUDApplied",
-      "type": "procedure",
-      "sortid": 40,
+      "name": "DarkStar",
+      "type": "item",
+      "sortid": 35,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "when_ud_applied",
+      "registry_name": "dark_star"
+    },
+    {
+      "name": "PoppedOrbOfDarknessRecipe",
+      "type": "recipe",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "popped_orb_of_darkness_recipe"
+    },
+    {
+      "name": "DarkCarrot",
+      "type": "food",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_carrot"
+    },
+    {
+      "name": "PotionOfUltimateDarkness",
+      "type": "potion",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "potion_of_ultimate_darkness"
+    },
+    {
+      "name": "DarkCarrotEat",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_carrot_eat",
       "metadata": {
         "dependencies": [
           {
@@ -513,20 +521,92 @@
       }
     },
     {
-      "name": "UltimateDarkness",
-      "type": "potioneffect",
-      "sortid": 39,
+      "name": "EnhancedDarkStar",
+      "type": "item",
+      "sortid": 36,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "ultimate_darkness"
+      "registry_name": "enhanced_dark_star"
     },
     {
-      "name": "PotionOfUltimateDarkness",
-      "type": "potion",
-      "sortid": 39,
+      "name": "Pa",
+      "type": "recipe",
+      "sortid": 34,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "potion_of_ultimate_darkness"
+      "registry_name": "pa"
+    },
+    {
+      "name": "Voidcurepotion",
+      "type": "potion",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "voidcurepotion"
+    },
+    {
+      "name": "Cure",
+      "type": "recipe",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cure"
+    },
+    {
+      "name": "VoidCureEffectExpires",
+      "type": "procedure",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_cure_effect_expires",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Pureafyingapp",
+      "type": "item",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pureafyingapp"
+    },
+    {
+      "name": "GivevoidcureEffectExpires",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "givevoidcure_effect_expires",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Givevoidcure",
+      "type": "potioneffect",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "givevoidcure"
+    },
+    {
+      "name": "VoidCure",
+      "type": "potioneffect",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_cure"
     }
   ],
   "variable_elements": [],
@@ -535,24 +615,18 @@
     "en_us": {
       "item.dark_infection.darkarmor_boots": "Dark Boots",
       "block.dark_infection.voidstone": "Voidstone",
-      "item.dark_infection.popped_orb_of_darkness": "Popped Orb Of Darkness",
       "effect.dark_infection.ultimate_darkness": "Ultimate Darkness...",
       "item.dark_infection.quartz_enriched_netherite_armor_chestplate": "Quartz Enriched Netherite Chestplate",
-      "item.dark_infection.dark_star": "Dark Star",
-      "item.minecraft.potion.effect.potion_of_ultimate_darkness": "Potion Of Ultimate Darkness",
       "block.dark_infection.darkdirt": "Darkdirt",
       "advancements.the_absolute_dark.descr": "What devotion is this?",
       "biome.dark_infection.dark_biome": "Dark Biome",
       "block.dark_infection.gravityvoid": "Gravityvoid",
       "advancements.cover_me_in_quartz.title": "Cover Me In Quartz",
-      "item.dark_infection.enhanced_dark_star": "Enhanced Dark Star",
-      "item.minecraft.tipped_arrow.effect.potion_of_ultimate_darkness": "Arrow of Ultimate Darkness",
       "item.dark_infection.itemorbofdarkness": "Orb Of Darkness",
       "itemGroup.tabdarkinfected": "Dark Infection",
       "effect.dark_infection.darkness": "Darkness",
       "item.dark_infection.dark_carrot": "Dark Carrot",
       "item.dark_infection.quartz_enriched_netherite_armor_boots": "Quartz Enriched Netherite Boots",
-      "item.minecraft.lingering_potion.effect.potion_of_ultimate_darkness": "Lingering Potion Of Ultimate Darkness",
       "effect.dark_infection.darkcorupt": "Don\u0027t Die...",
       "item.dark_infection.quartz_enriched_netherite_armor_helmet": "Quartz Enriched Netherite Helmet",
       "item.dark_infection.darkarmor_leggings": "Dark Leggings",
@@ -563,8 +637,7 @@
       "item.dark_infection.quartz_enriched_netherite_armor_leggings": "Quartz Enriched Netherite Leggings",
       "block.dark_infection.void_cobble": "Void Cobble",
       "item.dark_infection.darkarmor_helmet": "Dark Helmet",
-      "advancements.the_absolute_dark.title": "The Absolute Dark...",
-      "item.minecraft.splash_potion.effect.potion_of_ultimate_darkness": "Splash PotionOf Ultimate Darkness"
+      "advancements.the_absolute_dark.title": "The Absolute Dark..."
     }
   },
   "foldersRoot": {

@@ -15,6 +15,7 @@ import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.darkinfection.item.QuartzEnrichedNetheriteItem;
 import net.mcreator.darkinfection.item.QuartzEnrichedNetheriteArmorItem;
+import net.mcreator.darkinfection.item.PureafyingappItem;
 import net.mcreator.darkinfection.item.PoppedOrbOfDarknessItem;
 import net.mcreator.darkinfection.item.ItemorbofdarknessItem;
 import net.mcreator.darkinfection.item.EnhancedDarkStarItem;
@@ -45,6 +46,7 @@ public class DarkInfectionModItems {
 	public static final Item DARKARMOR_BOOTS = register(new DarkarmorItem.Boots());
 	public static final Item DARK_CARROT = register(new DarkCarrotItem());
 	public static final Item POPPED_ORB_OF_DARKNESS = register(new PoppedOrbOfDarknessItem());
+	public static final Item PUREAFYINGAPP = register(new PureafyingappItem());
 	public static final Item DARK_STAR = register(new DarkStarItem());
 	public static final Item ENHANCED_DARK_STAR = register(new EnhancedDarkStarItem());
 

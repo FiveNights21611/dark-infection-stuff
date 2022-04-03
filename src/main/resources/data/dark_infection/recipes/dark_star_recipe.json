@@ -1,12 +1,12 @@
 {
   "type": "minecraft:smithing",
   "base": {
-    "item": "dark_infection:popped_orb_of_darkness"
+    "item": "dark_infection:deleted_mod_element"
   },
   "addition": {
     "item": "minecraft:nether_star"
   },
   "result": {
-    "item": "dark_infection:dark_star"
+    "item": "dark_infection:deleted_mod_element"
   }
 }

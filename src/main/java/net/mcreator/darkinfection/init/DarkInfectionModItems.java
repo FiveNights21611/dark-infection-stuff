@@ -13,6 +13,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.darkinfection.item.QuartzEnrichedNetheriteArmorItem;
 import net.mcreator.darkinfection.item.ItemorbofdarknessItem;
 
 import java.util.List;
@@ -27,6 +28,10 @@ public class DarkInfectionModItems {
 	public static final Item DARKDIRT = register(DarkInfectionModBlocks.DARKDIRT, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final Item VOID_COBBLE = register(DarkInfectionModBlocks.VOID_COBBLE, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final Item GRAVITYVOID = register(DarkInfectionModBlocks.GRAVITYVOID, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final Item QUARTZ_ENRICHED_NETHERITE_ARMOR_HELMET = register(new QuartzEnrichedNetheriteArmorItem.Helmet());
+	public static final Item QUARTZ_ENRICHED_NETHERITE_ARMOR_CHESTPLATE = register(new QuartzEnrichedNetheriteArmorItem.Chestplate());
+	public static final Item QUARTZ_ENRICHED_NETHERITE_ARMOR_LEGGINGS = register(new QuartzEnrichedNetheriteArmorItem.Leggings());
+	public static final Item QUARTZ_ENRICHED_NETHERITE_ARMOR_BOOTS = register(new QuartzEnrichedNetheriteArmorItem.Boots());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

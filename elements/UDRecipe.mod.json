@@ -1,0 +1,23 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Brewing",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "ofd_to_poud",
+    "recipeShapeless": false,
+    "brewingInputStack": {
+      "value": "POTION:NIGHT_VISION"
+    },
+    "brewingIngredientStack": {
+      "value": "CUSTOM:EnhancedDarkStar"
+    },
+    "brewingReturnStack": {
+      "value": "POTION:CUSTOM:PotionOfUltimateDarkness"
+    },
+    "name": "ud_recipe",
+    "namespace": "mod"
+  }
+}

@@ -607,6 +607,38 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "enhanced_dark_star"
+    },
+    {
+      "name": "UDRecipe",
+      "type": "recipe",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ud_recipe"
+    },
+    {
+      "name": "DarklingLevelSay",
+      "type": "procedure",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "darkling_level_say",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DarklingLevel",
+      "type": "command",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "darkling_level"
     }
   ],
   "variable_elements": [],
@@ -625,7 +657,7 @@
       "advancements.the_absolute_dark.descr": "What devotion is this?",
       "biome.dark_infection.dark_biome": "Dark Biome",
       "block.dark_infection.gravityvoid": "Gravityvoid",
-      "item.minecraft.lingering_potion.effect.voidcurepotion": "Lingering Potion of Voidcure",
+      "item.minecraft.lingering_potion.effect.voidcurepotion": "Lingering Potion of VoidCure",
       "advancements.cover_me_in_quartz.title": "Cover Me In Quartz",
       "item.dark_infection.enhanced_dark_star": "Enhanced Dark Star",
       "item.minecraft.tipped_arrow.effect.potion_of_ultimate_darkness": "Arrow of Ultimate Darkness",
@@ -633,7 +665,7 @@
       "itemGroup.tabdarkinfected": "Dark Infection",
       "effect.dark_infection.darkness": "Darkness",
       "item.dark_infection.dark_carrot": "Dark Carrot",
-      "item.minecraft.potion.effect.voidcurepotion": "Potion of Voidcure",
+      "item.minecraft.potion.effect.voidcurepotion": "Potion of VoidCure",
       "item.dark_infection.quartz_enriched_netherite_armor_boots": "Quartz Enriched Netherite Boots",
       "item.minecraft.lingering_potion.effect.potion_of_ultimate_darkness": "Lingering Potion Of Ultimate Darkness",
       "effect.dark_infection.darkcorupt": "Don\u0027t Die...",
@@ -643,14 +675,14 @@
       "item.dark_infection.quartz_enriched_netherite": "Quartz Enriched Netherite Ingot",
       "item.dark_infection.darkarmor_chestplate": "Dark chestplate",
       "effect.dark_infection.givevoidcure": "one sec",
-      "item.minecraft.tipped_arrow.effect.voidcurepotion": "Arrow of Voidcure",
+      "item.minecraft.tipped_arrow.effect.voidcurepotion": "Arrow of VoidCure",
       "block.dark_infection.infectedsoil": "Infected soil",
       "advancements.cover_me_in_quartz.descr": "Woah! How immune is this...?",
       "item.dark_infection.quartz_enriched_netherite_armor_leggings": "Quartz Enriched Netherite Leggings",
       "block.dark_infection.void_cobble": "Void Cobble",
       "item.dark_infection.darkarmor_helmet": "Dark Helmet",
       "advancements.the_absolute_dark.title": "The Absolute Dark...",
-      "item.minecraft.splash_potion.effect.voidcurepotion": "Splash Potion of Voidcure",
+      "item.minecraft.splash_potion.effect.voidcurepotion": "Splash Potion of VoidCure",
       "item.minecraft.splash_potion.effect.potion_of_ultimate_darkness": "Splash PotionOf Ultimate Darkness"
     }
   },

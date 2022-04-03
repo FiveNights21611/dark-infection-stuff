@@ -13,7 +13,7 @@
     "creativeTab": {
       "value": "CUSTOM:Darkinfected"
     },
-    "armorTextureFile": "dark_aror",
+    "armorTextureFile": "dark_",
     "helmetName": "Dark Helmet",
     "bodyName": "Dark chestplate",
     "leggingsName": "Dark Leggings",

@@ -1,0 +1,62 @@
+{
+  "_fv": 24,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "dark_aror_head",
+    "enableBody": true,
+    "textureBody": "dark_aror_body",
+    "enableLeggings": true,
+    "textureLeggings": "dark_aror_leggings",
+    "enableBoots": true,
+    "textureBoots": "dark_aror_boots",
+    "creativeTab": {
+      "value": "CUSTOM:Darkinfected"
+    },
+    "armorTextureFile": "dark_aror",
+    "helmetName": "Dark Helmet",
+    "bodyName": "Dark chestplate",
+    "leggingsName": "Dark Leggings",
+    "bootsName": "Dark Boots",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 15,
+    "damageValueHelmet": 13,
+    "damageValueBody": 16,
+    "damageValueLeggings": 16,
+    "damageValueBoots": 11,
+    "enchantability": 25,
+    "toughness": 0.5,
+    "knockbackResistance": 5.0,
+    "equipSound": {
+      "value": "ambient.cave"
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:Itemorbofdarkness"
+      }
+    ]
+  }
+}

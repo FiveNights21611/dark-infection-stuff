@@ -3,16 +3,19 @@ package net.mcreator.darkinfection.item;
 
 import net.minecraftforge.registries.ForgeRegistries;
 
+import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ArmorItem;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 
+import net.mcreator.darkinfection.procedures.DarkarmorBodyTickEventProcedure;
 import net.mcreator.darkinfection.init.DarkInfectionModTabs;
 import net.mcreator.darkinfection.init.DarkInfectionModItems;
 
@@ -69,7 +72,7 @@ public abstract class DarkarmorItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "dark_infection:textures/models/armor/dark_aror_layer_1.png";
+			return "dark_infection:textures/models/armor/dark__layer_1.png";
 		}
 	}
 
@@ -81,7 +84,12 @@ public abstract class DarkarmorItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "dark_infection:textures/models/armor/dark_aror_layer_1.png";
+			return "dark_infection:textures/models/armor/dark__layer_1.png";
+		}
+
+		@Override
+		public void onArmorTick(ItemStack itemstack, Level world, Player entity) {
+			DarkarmorBodyTickEventProcedure.execute(entity);
 		}
 	}
 
@@ -93,7 +101,7 @@ public abstract class DarkarmorItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "dark_infection:textures/models/armor/dark_aror_layer_2.png";
+			return "dark_infection:textures/models/armor/dark__layer_2.png";
 		}
 	}
 
@@ -105,7 +113,7 @@ public abstract class DarkarmorItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "dark_infection:textures/models/armor/dark_aror_layer_1.png";
+			return "dark_infection:textures/models/armor/dark__layer_1.png";
 		}
 	}
 }

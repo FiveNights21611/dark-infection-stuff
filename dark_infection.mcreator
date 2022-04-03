@@ -607,6 +607,54 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "enhanced_dark_star"
+    },
+    {
+      "name": "DarkarmorBodyTickEvent",
+      "type": "procedure",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "darkarmor_body_tick_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Darkarmorch",
+      "type": "recipe",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "darkarmorch"
+    },
+    {
+      "name": "Darkarmorle",
+      "type": "recipe",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "darkarmorle"
+    },
+    {
+      "name": "Darkarmorbo",
+      "type": "recipe",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "darkarmorbo"
+    },
+    {
+      "name": "Darkarmorhe",
+      "type": "recipe",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "darkarmorhe"
     }
   ],
   "variable_elements": [],

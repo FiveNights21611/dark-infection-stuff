@@ -15,6 +15,7 @@ import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.darkinfection.item.QuartzEnrichedNetheriteItem;
 import net.mcreator.darkinfection.item.QuartzEnrichedNetheriteArmorItem;
+import net.mcreator.darkinfection.item.PureafyingappItem;
 import net.mcreator.darkinfection.item.ItemorbofdarknessItem;
 import net.mcreator.darkinfection.item.DarkarmorItem;
 
@@ -39,6 +40,7 @@ public class DarkInfectionModItems {
 	public static final Item DARKARMOR_CHESTPLATE = register(new DarkarmorItem.Chestplate());
 	public static final Item DARKARMOR_LEGGINGS = register(new DarkarmorItem.Leggings());
 	public static final Item DARKARMOR_BOOTS = register(new DarkarmorItem.Boots());
+	public static final Item PUREAFYINGAPP = register(new PureafyingappItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

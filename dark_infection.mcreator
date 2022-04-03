@@ -407,35 +407,122 @@
         "eb": true,
         "ec": true
       }
+    },
+    {
+      "name": "VoidCureEffectExpires",
+      "type": "procedure",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_cure_effect_expires",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VoidCure",
+      "type": "potioneffect",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_cure"
+    },
+    {
+      "name": "GivevoidcureEffectExpires",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "givevoidcure_effect_expires",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Givevoidcure",
+      "type": "potioneffect",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "givevoidcure"
+    },
+    {
+      "name": "Voidcurepotion",
+      "type": "potion",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "voidcurepotion"
+    },
+    {
+      "name": "Pureafyingapp",
+      "type": "item",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pureafyingapp"
+    },
+    {
+      "name": "Pa",
+      "type": "recipe",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pa"
+    },
+    {
+      "name": "Cure",
+      "type": "recipe",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cure"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.dark_infection.quartz_enriched_netherite_armor_boots": "Quartz Enriched Netherite Boots",
-      "effect.dark_infection.darkcorupt": "Don\u0027t Die...",
       "item.dark_infection.darkarmor_boots": "Dark Boots",
+      "item.dark_infection.pureafyingapp": "Pureafyingapp",
       "block.dark_infection.voidstone": "Voidstone",
       "item.dark_infection.quartz_enriched_netherite_armor_chestplate": "Quartz Enriched Netherite Chestplate",
       "block.dark_infection.darkdirt": "Darkdirt",
       "advancements.the_absolute_dark.descr": "What devotion is this?",
       "biome.dark_infection.dark_biome": "Dark Biome",
       "block.dark_infection.gravityvoid": "Gravityvoid",
+      "item.minecraft.lingering_potion.effect.voidcurepotion": "Lingering Potion of Voidcure",
+      "advancements.cover_me_in_quartz.title": "Cover Me In Quartz",
+      "item.dark_infection.itemorbofdarkness": "Orb Of Darkness",
+      "itemGroup.tabdarkinfected": "Dark Infection",
+      "effect.dark_infection.darkness": "Darkness",
+      "item.minecraft.potion.effect.voidcurepotion": "Potion of Voidcure",
+      "item.dark_infection.quartz_enriched_netherite_armor_boots": "Quartz Enriched Netherite Boots",
+      "effect.dark_infection.darkcorupt": "Don\u0027t Die...",
+      "effect.dark_infection.void_cure": "void cure",
       "item.dark_infection.quartz_enriched_netherite_armor_helmet": "Quartz Enriched Netherite Helmet",
       "item.dark_infection.darkarmor_leggings": "Dark Leggings",
       "item.dark_infection.quartz_enriched_netherite": "Quartz Enriched Netherite Ingot",
-      "advancements.cover_me_in_quartz.title": "Cover Me In Quartz",
       "item.dark_infection.darkarmor_chestplate": "Dark chestplate",
-      "item.dark_infection.itemorbofdarkness": "Orb Of Darkness",
+      "effect.dark_infection.givevoidcure": "one sec",
+      "item.minecraft.tipped_arrow.effect.voidcurepotion": "Arrow of Voidcure",
       "block.dark_infection.infectedsoil": "Infected soil",
       "advancements.cover_me_in_quartz.descr": "Woah! How immune is this...?",
       "item.dark_infection.quartz_enriched_netherite_armor_leggings": "Quartz Enriched Netherite Leggings",
-      "itemGroup.tabdarkinfected": "Dark Infection",
       "block.dark_infection.void_cobble": "Void Cobble",
       "item.dark_infection.darkarmor_helmet": "Dark Helmet",
       "advancements.the_absolute_dark.title": "The Absolute Dark...",
-      "effect.dark_infection.darkness": "Darkness"
+      "item.minecraft.splash_potion.effect.voidcurepotion": "Splash Potion of Voidcure"
     }
   },
   "foldersRoot": {

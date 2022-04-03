@@ -50,7 +50,8 @@ public class ItemorbofdarknessItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("dark as the void infects every thing it touches"));
+		list.add(new TextComponent("As dark as the Void"));
+		list.add(new TextComponent("infects everything it touches..."));
 	}
 
 	@Override

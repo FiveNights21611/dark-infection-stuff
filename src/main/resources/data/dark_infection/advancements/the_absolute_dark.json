@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "dark_infection:itemorbofdarkness"
+    },
+    "title": {
+      "translate": "advancements.the_absolute_dark.title"
+    },
+    "description": {
+      "translate": "advancements.the_absolute_dark.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "the_absolute_dark": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dark_infection:itemorbofdarkness"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "minecraft:nether/use_lodestone"
+}

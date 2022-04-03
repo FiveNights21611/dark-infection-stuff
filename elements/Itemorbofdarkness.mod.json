@@ -5,7 +5,7 @@
     "renderType": 0,
     "texture": "ball_of_darkness",
     "customModelName": "Normal",
-    "name": "Ballofdarkness",
+    "name": "Orb Of Darkness",
     "rarity": "UNCOMMON",
     "creativeTab": {
       "value": "MISC"
@@ -25,7 +25,8 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
-      "dark as the void infects every thing it touches"
+      "As dark as the Void",
+      "infects everything it touches..."
     ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",

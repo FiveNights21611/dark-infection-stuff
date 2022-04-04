@@ -29,7 +29,7 @@ public abstract class DarkarmorItem extends ArmorItem {
 
 			@Override
 			public int getDefenseForSlot(EquipmentSlot slot) {
-				return new int[]{11, 16, 16, 13}[slot.getIndex()];
+				return new int[]{3, 7, 8, 3}[slot.getIndex()];
 			}
 
 			@Override
@@ -59,7 +59,7 @@ public abstract class DarkarmorItem extends ArmorItem {
 
 			@Override
 			public float getKnockbackResistance() {
-				return 5f;
+				return 0.1f;
 			}
 		}, slot, properties);
 	}

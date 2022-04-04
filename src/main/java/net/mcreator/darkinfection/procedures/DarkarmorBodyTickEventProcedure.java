@@ -90,9 +90,9 @@ public class DarkarmorBodyTickEventProcedure {
 				if (entity instanceof LivingEntity _entity)
 					_entity.addEffect(new MobEffectInstance(MobEffects.JUMP, 60, 1, (false), (false)));
 				if (entity instanceof LivingEntity _entity)
-					_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 60, 1, (false), (false)));
+					_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 60, 0, (false), (false)));
 				if (entity instanceof LivingEntity _entity)
-					_entity.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, 60, 1, (false), (false)));
+					_entity.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, 60, 0, (false), (false)));
 			} else if (new Object() {
 				public int getScore(String score, Entity _ent) {
 					if (_ent instanceof Player _player) {
@@ -107,17 +107,17 @@ public class DarkarmorBodyTickEventProcedure {
 				}
 			}.getScore("infected", entity) == 3) {
 				if (entity instanceof LivingEntity _entity)
-					_entity.addEffect(new MobEffectInstance(MobEffects.JUMP, 60, 2, (false), (false)));
+					_entity.addEffect(new MobEffectInstance(MobEffects.JUMP, 60, 1, (false), (false)));
 				if (entity instanceof LivingEntity _entity)
-					_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 60, 2, (false), (false)));
+					_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 60, 1, (false), (false)));
 				if (entity instanceof LivingEntity _entity)
-					_entity.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, 60, 2, (false), (false)));
+					_entity.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, 60, 0, (false), (false)));
 				if (entity instanceof LivingEntity _entity)
-					_entity.addEffect(new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 60, 2, (false), (false)));
+					_entity.addEffect(new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 60, 0, (false), (false)));
 				if (entity instanceof LivingEntity _entity)
-					_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 60, 2, (false), (false)));
+					_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 60, 1, (false), (false)));
 				if (entity instanceof LivingEntity _entity)
-					_entity.addEffect(new MobEffectInstance(MobEffects.WATER_BREATHING, 60, 2, (false), (false)));
+					_entity.addEffect(new MobEffectInstance(MobEffects.WATER_BREATHING, 60, 0, (false), (false)));
 			}
 		}
 	}

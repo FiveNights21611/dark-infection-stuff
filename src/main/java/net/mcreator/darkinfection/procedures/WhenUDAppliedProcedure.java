@@ -46,13 +46,13 @@ public class WhenUDAppliedProcedure {
 		}.getScore("infected", entity) == 2) {
 			if ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(DarkInfectionModMobEffects.DARKNESS)
 					? _livEnt.getEffect(DarkInfectionModMobEffects.DARKNESS).getAmplifier()
-					: 0) == 1 && (entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(DarkInfectionModMobEffects.ULTIMATE_DARKNESS) : false)) {
+					: 0) == 2 && (entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(DarkInfectionModMobEffects.ULTIMATE_DARKNESS) : false)) {
 				if (entity instanceof LivingEntity _entity)
 					_entity.removeAllEffects();
 				if (entity instanceof Player _player && !_player.level.isClientSide())
 					_player.displayClientMessage(new TextComponent("You feel the darkness begin to consume your mind..."), (false));
 				if (entity instanceof LivingEntity _entity)
-					_entity.addEffect(new MobEffectInstance(DarkInfectionModMobEffects.DARKNESS, 24000, 2));
+					_entity.addEffect(new MobEffectInstance(DarkInfectionModMobEffects.DARKNESS, 24000, 3));
 			}
 		} else if (new Object() {
 			public int getScore(String score, Entity _ent) {
@@ -93,7 +93,7 @@ public class WhenUDAppliedProcedure {
 			if (entity instanceof LivingEntity _entity)
 				_entity.removeAllEffects();
 			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(DarkInfectionModMobEffects.DARKNESS, 300, 0));
+				_entity.addEffect(new MobEffectInstance(DarkInfectionModMobEffects.DARKNESS, 300, 1));
 		}
 	}
 }

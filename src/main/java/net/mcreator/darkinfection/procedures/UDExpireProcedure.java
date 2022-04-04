@@ -37,9 +37,9 @@ public class UDExpireProcedure {
 				_scr.setScore(3);
 			}
 			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(MobEffects.DIG_SPEED, 3600, 2, (false), (true)));
+				_entity.addEffect(new MobEffectInstance(MobEffects.DIG_SPEED, 3600, 3, (false), (true)));
 			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 3600, 2, (false), (true)));
+				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 3600, 3, (false), (true)));
 		} else if (new Object() {
 			public int getScore(String score, Entity _ent) {
 				if (_ent instanceof Player _player) {
@@ -54,9 +54,9 @@ public class UDExpireProcedure {
 			}
 		}.getScore("infected", entity) == 1) {
 			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(MobEffects.DIG_SPEED, 1200, 0, (false), (true)));
+				_entity.addEffect(new MobEffectInstance(MobEffects.DIG_SPEED, 1200, 2, (false), (true)));
 			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 600, 0, (false), (true)));
+				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 600, 2, (false), (true)));
 		}
 	}
 }

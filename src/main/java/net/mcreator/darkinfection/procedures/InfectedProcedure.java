@@ -1,6 +1,20 @@
 package net.mcreator.darkinfection.procedures;
 
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
+import net.minecraftforge.event.entity.living.LivingEvent;
+
+import net.minecraft.world.scores.Scoreboard;
+import net.minecraft.world.scores.Score;
+import net.minecraft.world.scores.Objective;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.effect.MobEffectInstance;
+
+import javax.annotation.Nullable;
 
 @Mod.EventBusSubscriber
 public class InfectedProcedure {

@@ -160,7 +160,7 @@
       "name": "Infected",
       "type": "procedure",
       "sortid": 12,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "infected",
       "metadata": {
@@ -168,22 +168,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       }
@@ -398,7 +382,7 @@
       "name": "Darkarmor",
       "type": "armor",
       "sortid": 30,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "darkarmor",
       "metadata": {
@@ -468,7 +452,7 @@
       "name": "Pureafyingapp",
       "type": "item",
       "sortid": 33,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "pureafyingapp"
     },

@@ -15,13 +15,13 @@
       "item": "minecraft:diamond"
     },
     "3": {
-      "item": "minecraft:netherite_ingot"
+      "item": "minecraft:netherite_scrap"
     },
     "4": {
       "item": "dark_infection:itemorbofdarkness"
     },
     "5": {
-      "item": "minecraft:netherite_ingot"
+      "item": "minecraft:netherite_scrap"
     }
   },
   "result": {

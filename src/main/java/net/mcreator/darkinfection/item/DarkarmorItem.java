@@ -1,25 +1,10 @@
 
 package net.mcreator.darkinfection.item;
 
-import net.minecraftforge.registries.ForgeRegistries;
-
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ArmorMaterial;
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundEvent;
-import net.minecraft.resources.ResourceLocation;
-
-import net.mcreator.darkinfection.procedures.DarkarmorBodyTickEventProcedure;
-import net.mcreator.darkinfection.init.DarkInfectionModTabs;
-import net.mcreator.darkinfection.init.DarkInfectionModItems;
 
 public abstract class DarkarmorItem extends ArmorItem {
+
 	public DarkarmorItem(EquipmentSlot slot, Item.Properties properties) {
 		super(new ArmorMaterial() {
 			@Override
@@ -65,8 +50,10 @@ public abstract class DarkarmorItem extends ArmorItem {
 	}
 
 	public static class Helmet extends DarkarmorItem {
+
 		public Helmet() {
 			super(EquipmentSlot.HEAD, new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED));
+
 			setRegistryName("darkarmor_helmet");
 		}
 
@@ -74,11 +61,14 @@ public abstract class DarkarmorItem extends ArmorItem {
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "dark_infection:textures/models/armor/dark__layer_1.png";
 		}
+
 	}
 
 	public static class Chestplate extends DarkarmorItem {
+
 		public Chestplate() {
 			super(EquipmentSlot.CHEST, new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED));
+
 			setRegistryName("darkarmor_chestplate");
 		}
 
@@ -94,8 +84,10 @@ public abstract class DarkarmorItem extends ArmorItem {
 	}
 
 	public static class Leggings extends DarkarmorItem {
+
 		public Leggings() {
 			super(EquipmentSlot.LEGS, new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED));
+
 			setRegistryName("darkarmor_leggings");
 		}
 
@@ -103,11 +95,14 @@ public abstract class DarkarmorItem extends ArmorItem {
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "dark_infection:textures/models/armor/dark__layer_2.png";
 		}
+
 	}
 
 	public static class Boots extends DarkarmorItem {
+
 		public Boots() {
 			super(EquipmentSlot.FEET, new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED));
+
 			setRegistryName("darkarmor_boots");
 		}
 
@@ -115,5 +110,7 @@ public abstract class DarkarmorItem extends ArmorItem {
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "dark_infection:textures/models/armor/dark__layer_1.png";
 		}
+
 	}
+
 }

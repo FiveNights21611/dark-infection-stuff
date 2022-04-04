@@ -160,7 +160,7 @@
       "name": "Infected",
       "type": "procedure",
       "sortid": 12,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "infected",
       "metadata": {
@@ -168,6 +168,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -382,7 +398,7 @@
       "name": "Darkarmor",
       "type": "armor",
       "sortid": 30,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "darkarmor",
       "metadata": {
@@ -452,7 +468,7 @@
       "name": "Pureafyingapp",
       "type": "item",
       "sortid": 33,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "pureafyingapp"
     },
@@ -593,12 +609,36 @@
       "registry_name": "enhanced_dark_star"
     },
     {
-      "name": "DarkarmorBodyTickEvent",
-      "type": "procedure",
+      "name": "DarklingLevel",
+      "type": "command",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "darkling_level"
+    },
+    {
+      "name": "DarkCarrotRecipe",
+      "type": "recipe",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_carrot_recipe"
+    },
+    {
+      "name": "UDRecipe",
+      "type": "recipe",
       "sortid": 41,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "darkarmor_body_tick_event",
+      "registry_name": "ud_recipe"
+    },
+    {
+      "name": "DarklingLevelSay",
+      "type": "procedure",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "darkling_level_say",
       "metadata": {
         "dependencies": [
           {
@@ -607,14 +647,6 @@
           }
         ]
       }
-    },
-    {
-      "name": "Darkarmorch",
-      "type": "recipe",
-      "sortid": 42,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "darkarmorch"
     },
     {
       "name": "Darkarmorle",
@@ -639,6 +671,30 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "darkarmorhe"
+    },
+    {
+      "name": "DarkarmorBodyTickEvent",
+      "type": "procedure",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "darkarmor_body_tick_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Darkarmorch",
+      "type": "recipe",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "darkarmorch"
     }
   ],
   "variable_elements": [],

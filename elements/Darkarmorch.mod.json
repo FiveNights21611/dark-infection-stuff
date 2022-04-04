@@ -10,22 +10,13 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Items.NETHERITE_INGOT"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.NETHERITE_INGOT"
-      },
-      {
-        "value": "Items.DIAMOND"
+        "value": "Items.NETHERITE_SCRAP"
       },
       {
         "value": "Items.NETHERITE_CHESTPLATE"
       },
       {
-        "value": "Items.DIAMOND"
+        "value": "Items.NETHERITE_SCRAP"
       },
       {
         "value": "Items.DIAMOND"
@@ -35,6 +26,15 @@
       },
       {
         "value": "Items.DIAMOND"
+      },
+      {
+        "value": "Items.NETHERITE_SCRAP"
+      },
+      {
+        "value": "Items.DIAMOND"
+      },
+      {
+        "value": "Items.NETHERITE_SCRAP"
       }
     ],
     "recipeReturnStack": {

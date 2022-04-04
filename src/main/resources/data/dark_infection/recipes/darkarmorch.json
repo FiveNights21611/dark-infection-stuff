@@ -1,34 +1,37 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "0 2",
+    "012",
     "345",
     "678"
   ],
   "key": {
     "0": {
-      "item": "minecraft:netherite_ingot"
+      "item": "minecraft:netherite_scrap"
+    },
+    "1": {
+      "item": "minecraft:netherite_chestplate"
     },
     "2": {
-      "item": "minecraft:netherite_ingot"
+      "item": "minecraft:netherite_scrap"
     },
     "3": {
       "item": "minecraft:diamond"
     },
     "4": {
-      "item": "minecraft:netherite_chestplate"
+      "item": "dark_infection:itemorbofdarkness"
     },
     "5": {
       "item": "minecraft:diamond"
     },
     "6": {
-      "item": "minecraft:diamond"
+      "item": "minecraft:netherite_scrap"
     },
     "7": {
-      "item": "dark_infection:itemorbofdarkness"
+      "item": "minecraft:diamond"
     },
     "8": {
-      "item": "minecraft:diamond"
+      "item": "minecraft:netherite_scrap"
     }
   },
   "result": {

@@ -10,6 +10,15 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
+        "value": "Items.NETHERITE_SCRAP"
+      },
+      {
+        "value": "Items.DIAMOND"
+      },
+      {
+        "value": "Items.NETHERITE_SCRAP"
+      },
+      {
         "value": "Items.DIAMOND"
       },
       {
@@ -19,22 +28,13 @@
         "value": "Items.DIAMOND"
       },
       {
-        "value": "Items.NETHERITE_INGOT"
+        "value": "Items.NETHERITE_SCRAP"
       },
       {
         "value": "CUSTOM:Itemorbofdarkness"
       },
       {
-        "value": "Items.NETHERITE_INGOT"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
+        "value": "Items.NETHERITE_SCRAP"
       }
     ],
     "recipeReturnStack": {

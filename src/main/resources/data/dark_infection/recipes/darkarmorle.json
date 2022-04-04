@@ -3,32 +3,35 @@
   "pattern": [
     "012",
     "345",
-    "6 8"
+    "678"
   ],
   "key": {
     "0": {
-      "item": "minecraft:diamond"
+      "item": "minecraft:netherite_scrap"
     },
     "1": {
-      "item": "minecraft:netherite_leggings"
+      "item": "minecraft:diamond"
     },
     "2": {
-      "item": "minecraft:diamond"
+      "item": "minecraft:netherite_scrap"
     },
     "3": {
       "item": "minecraft:diamond"
     },
     "4": {
-      "item": "dark_infection:itemorbofdarkness"
+      "item": "minecraft:netherite_leggings"
     },
     "5": {
       "item": "minecraft:diamond"
     },
     "6": {
-      "item": "minecraft:netherite_ingot"
+      "item": "minecraft:netherite_scrap"
+    },
+    "7": {
+      "item": "dark_infection:itemorbofdarkness"
     },
     "8": {
-      "item": "minecraft:netherite_ingot"
+      "item": "minecraft:netherite_scrap"
     }
   },
   "result": {

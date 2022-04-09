@@ -54,8 +54,8 @@
     "material": {
       "value": "SAND"
     },
-    "tickRate": 0,
-    "tickRandomly": true,
+    "tickRate": 1,
+    "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
     "emittedRedstonePower": {

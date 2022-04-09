@@ -28,7 +28,7 @@ public class DarknessMobEffect extends MobEffect {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		DarknessEffectExpiresProcedure.execute(entity);
+		DarknessEffectExpiresProcedure.execute(world, x, y, z, entity);
 	}
 
 	@Override

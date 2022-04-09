@@ -60,7 +60,7 @@ public class CheckProcedure {
 					|| (world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == DarkInfectionModBlocks.VOIDSTONE
 					|| (world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == DarkInfectionModBlocks.DARKDIRT)
 					&& (entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(DarkInfectionModMobEffects.DARKNESS) : false) == false
-					&& (new Object() {
+					&& new Object() {
 						public int getScore(String score, Entity _ent) {
 							if (_ent instanceof Player _player) {
 								Scoreboard _sc = _player.getScoreboard();
@@ -72,14 +72,14 @@ public class CheckProcedure {
 							}
 							return 0;
 						}
-					}.getScore("infected", entity) == 1) == false) {
+					}.getScore("infected", entity) == 0) {
 				if (entity instanceof LivingEntity _entity)
 					_entity.addEffect(new MobEffectInstance(DarkInfectionModMobEffects.DARKNESS, 10000, 1, (false), (false)));
 			} else if (((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.GRASS_BLOCK
 					|| (world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.STONE
 					|| (world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.DIRT)
 					&& (entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(DarkInfectionModMobEffects.DARKNESS) : false) == true
-					&& (new Object() {
+					&& new Object() {
 						public int getScore(String score, Entity _ent) {
 							if (_ent instanceof Player _player) {
 								Scoreboard _sc = _player.getScoreboard();
@@ -91,7 +91,7 @@ public class CheckProcedure {
 							}
 							return 0;
 						}
-					}.getScore("infected", entity) == 1) == false) {
+					}.getScore("infected", entity) == 0) {
 				if (entity instanceof LivingEntity _entity)
 					_entity.removeEffect(DarkInfectionModMobEffects.DARKNESS);
 				new Object() {

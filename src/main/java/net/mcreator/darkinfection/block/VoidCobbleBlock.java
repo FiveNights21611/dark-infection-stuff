@@ -8,7 +8,6 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.server.level.ServerLevel;
@@ -22,7 +21,7 @@ import java.util.Collections;
 
 public class VoidCobbleBlock extends Block {
 	public VoidCobbleBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1f, 10f));
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1f, 10f).randomTicks());
 		setRegistryName("void_cobble");
 	}
 
@@ -40,12 +39,6 @@ public class VoidCobbleBlock extends Block {
 	}
 
 	@Override
-	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
-		super.onPlace(blockstate, world, pos, oldState, moving);
-		world.getBlockTicks().scheduleTick(pos, this, 10);
-	}
-
-	@Override
 	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, Random random) {
 		super.tick(blockstate, world, pos, random);
 		int x = pos.getX();
@@ -53,6 +46,5 @@ public class VoidCobbleBlock extends Block {
 		int z = pos.getZ();
 
 		InfectedsoilUpdateTickProcedure.execute(world, x, y, z);
-		world.getBlockTicks().scheduleTick(pos, this, 10);
 	}
 }

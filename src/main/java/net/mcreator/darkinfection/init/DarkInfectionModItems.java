@@ -13,6 +13,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.darkinfection.item.VoidkingItem;
 import net.mcreator.darkinfection.item.QuartzEnrichedNetheriteItem;
 import net.mcreator.darkinfection.item.QuartzEnrichedNetheriteArmorItem;
 import net.mcreator.darkinfection.item.PureafyingappItem;
@@ -49,6 +50,10 @@ public class DarkInfectionModItems {
 	public static final Item POPPED_ORB_OF_DARKNESS = register(new PoppedOrbOfDarknessItem());
 	public static final Item DARK_STAR = register(new DarkStarItem());
 	public static final Item ENHANCED_DARK_STAR = register(new EnhancedDarkStarItem());
+	public static final Item VOIDKING_HELMET = register(new VoidkingItem.Helmet());
+	public static final Item VOIDKING_CHESTPLATE = register(new VoidkingItem.Chestplate());
+	public static final Item VOIDKING_LEGGINGS = register(new VoidkingItem.Leggings());
+	public static final Item VOIDKING_BOOTS = register(new VoidkingItem.Boots());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

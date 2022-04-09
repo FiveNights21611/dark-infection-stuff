@@ -54,8 +54,8 @@
     "material": {
       "value": "ROCK"
     },
-    "tickRate": 10,
-    "tickRandomly": false,
+    "tickRate": 0,
+    "tickRandomly": true,
     "isReplaceable": false,
     "canProvidePower": false,
     "emittedRedstonePower": {

@@ -152,6 +152,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -168,6 +184,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -679,6 +699,20 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "darkarmorch"
+    },
+    {
+      "name": "Voidking",
+      "type": "armor",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "voidking",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
     }
   ],
   "variable_elements": [],
@@ -702,7 +736,9 @@
       "item.dark_infection.enhanced_dark_star": "Enhanced Dark Star",
       "item.minecraft.tipped_arrow.effect.potion_of_ultimate_darkness": "Arrow of Ultimate Darkness",
       "item.dark_infection.itemorbofdarkness": "Orb Of Darkness",
+      "item.dark_infection.voidking_leggings": "Voidking Leggings",
       "itemGroup.tabdarkinfected": "Dark Infection",
+      "item.dark_infection.voidking_helmet": "Voidking Helmet",
       "effect.dark_infection.darkness": "Darkness",
       "item.dark_infection.dark_carrot": "Dark Carrot",
       "item.minecraft.potion.effect.voidcurepotion": "Potion of VoidCure",
@@ -719,10 +755,12 @@
       "block.dark_infection.infectedsoil": "Infected soil",
       "advancements.cover_me_in_quartz.descr": "Woah! How immune is this...?",
       "item.dark_infection.quartz_enriched_netherite_armor_leggings": "Quartz Enriched Netherite Leggings",
+      "item.dark_infection.voidking_chestplate": "Voidking Body",
       "block.dark_infection.void_cobble": "Void Cobble",
       "item.dark_infection.darkarmor_helmet": "Dark Helmet",
       "advancements.the_absolute_dark.title": "The Absolute Dark...",
       "item.minecraft.splash_potion.effect.voidcurepotion": "Splash Potion of VoidCure",
+      "item.dark_infection.voidking_boots": "Voidking Boots",
       "item.minecraft.splash_potion.effect.potion_of_ultimate_darkness": "Splash PotionOf Ultimate Darkness"
     }
   },

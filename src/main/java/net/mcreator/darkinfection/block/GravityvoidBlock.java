@@ -7,6 +7,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.FallingBlock;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.server.level.ServerLevel;
@@ -20,7 +21,7 @@ import java.util.Collections;
 
 public class GravityvoidBlock extends FallingBlock {
 	public GravityvoidBlock() {
-		super(BlockBehaviour.Properties.of(Material.SAND).sound(SoundType.SAND).strength(1f, 10f).randomTicks());
+		super(BlockBehaviour.Properties.of(Material.SAND).sound(SoundType.SAND).strength(1f, 10f));
 		setRegistryName("gravityvoid");
 	}
 
@@ -38,6 +39,12 @@ public class GravityvoidBlock extends FallingBlock {
 	}
 
 	@Override
+	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
+		super.onPlace(blockstate, world, pos, oldState, moving);
+		world.getBlockTicks().scheduleTick(pos, this, 1);
+	}
+
+	@Override
 	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, Random random) {
 		super.tick(blockstate, world, pos, random);
 		int x = pos.getX();
@@ -45,5 +52,6 @@ public class GravityvoidBlock extends FallingBlock {
 		int z = pos.getZ();
 
 		InfectedsoilUpdateTickProcedure.execute(world, x, y, z);
+		world.getBlockTicks().scheduleTick(pos, this, 1);
 	}
 }

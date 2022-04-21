@@ -713,55 +713,165 @@
         "eb": true,
         "ec": true
       }
+    },
+    {
+      "name": "Voidvile",
+      "type": "item",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "voidvile"
+    },
+    {
+      "name": "Curev",
+      "type": "item",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "curev"
+    },
+    {
+      "name": "Strangev",
+      "type": "item",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strangev"
+    },
+    {
+      "name": "Voidarmor",
+      "type": "recipe",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "voidarmor"
+    },
+    {
+      "name": "VoidkingBodyTickEvent",
+      "type": "procedure",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "voidking_body_tick_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Emptyvile",
+      "type": "item",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emptyvile"
+    },
+    {
+      "name": "Ev",
+      "type": "recipe",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ev"
+    },
+    {
+      "name": "Cv",
+      "type": "recipe",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cv"
+    },
+    {
+      "name": "Vv",
+      "type": "recipe",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vv"
+    },
+    {
+      "name": "VoidkingbossItIsStruckByLightning",
+      "type": "procedure",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "voidkingboss_it_is_struck_by_lightning",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Voidkingboss",
+      "type": "livingentity",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "voidkingboss"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "entity.dark_infection.voidkingboss": "Voidkingboss",
       "item.dark_infection.darkarmor_boots": "Dark Boots",
       "item.dark_infection.pureafyingapp": "Purifying Apple",
       "block.dark_infection.voidstone": "Voidstone",
       "item.dark_infection.popped_orb_of_darkness": "Popped Orb Of Darkness",
       "effect.dark_infection.ultimate_darkness": "Ultimate Darkness...",
       "item.dark_infection.quartz_enriched_netherite_armor_chestplate": "Quartz Enriched Netherite Chestplate",
-      "item.dark_infection.dark_star": "Dark Star",
-      "item.minecraft.potion.effect.potion_of_ultimate_darkness": "Potion Of Ultimate Darkness",
       "block.dark_infection.darkdirt": "Darkdirt",
-      "advancements.the_absolute_dark.descr": "What devotion is this?",
       "biome.dark_infection.dark_biome": "Dark Biome",
       "block.dark_infection.gravityvoid": "Gravityvoid",
       "item.minecraft.lingering_potion.effect.voidcurepotion": "Lingering Potion of VoidCure",
       "advancements.cover_me_in_quartz.title": "Cover Me In Quartz",
-      "item.dark_infection.enhanced_dark_star": "Enhanced Dark Star",
       "item.minecraft.tipped_arrow.effect.potion_of_ultimate_darkness": "Arrow of Ultimate Darkness",
       "item.dark_infection.itemorbofdarkness": "Orb Of Darkness",
       "item.dark_infection.voidking_leggings": "Voidking Leggings",
       "itemGroup.tabdarkinfected": "Dark Infection",
-      "item.dark_infection.voidking_helmet": "Voidking Helmet",
-      "effect.dark_infection.darkness": "Darkness",
       "item.dark_infection.dark_carrot": "Dark Carrot",
       "item.minecraft.potion.effect.voidcurepotion": "Potion of VoidCure",
-      "item.dark_infection.quartz_enriched_netherite_armor_boots": "Quartz Enriched Netherite Boots",
       "item.minecraft.lingering_potion.effect.potion_of_ultimate_darkness": "Lingering Potion Of Ultimate Darkness",
-      "effect.dark_infection.darkcorupt": "Don\u0027t Die...",
-      "effect.dark_infection.void_cure": "void cure",
-      "item.dark_infection.quartz_enriched_netherite_armor_helmet": "Quartz Enriched Netherite Helmet",
       "item.dark_infection.darkarmor_leggings": "Dark Leggings",
-      "item.dark_infection.quartz_enriched_netherite": "Quartz Enriched Netherite Ingot",
-      "item.dark_infection.darkarmor_chestplate": "Dark Chestplate",
       "effect.dark_infection.givevoidcure": "one sec",
+      "item.dark_infection.curev": "Voidvile",
       "item.minecraft.tipped_arrow.effect.voidcurepotion": "Arrow of VoidCure",
       "block.dark_infection.infectedsoil": "Infected soil",
       "advancements.cover_me_in_quartz.descr": "Woah! How immune is this...?",
+      "advancements.the_absolute_dark.title": "The Absolute Dark...",
+      "item.minecraft.splash_potion.effect.potion_of_ultimate_darkness": "Splash PotionOf Ultimate Darkness",
+      "item.dark_infection.dark_star": "Dark Star",
+      "item.minecraft.potion.effect.potion_of_ultimate_darkness": "Potion Of Ultimate Darkness",
+      "advancements.the_absolute_dark.descr": "What devotion is this?",
+      "item.dark_infection.enhanced_dark_star": "Enhanced Dark Star",
+      "item.dark_infection.voidkingboss_spawn_egg": "Voidkingboss Spawn Egg",
+      "item.dark_infection.voidking_helmet": "Voidking Helmet",
+      "effect.dark_infection.darkness": "Darkness",
+      "item.dark_infection.quartz_enriched_netherite_armor_boots": "Quartz Enriched Netherite Boots",
+      "effect.dark_infection.darkcorupt": "Don\u0027t Die...",
+      "effect.dark_infection.void_cure": "void cure",
+      "item.dark_infection.voidvile": "Voidvile",
+      "item.dark_infection.strangev": "Voidvile",
+      "item.dark_infection.quartz_enriched_netherite_armor_helmet": "Quartz Enriched Netherite Helmet",
+      "item.dark_infection.quartz_enriched_netherite": "Quartz Enriched Netherite Ingot",
+      "item.dark_infection.darkarmor_chestplate": "Dark Chestplate",
       "item.dark_infection.quartz_enriched_netherite_armor_leggings": "Quartz Enriched Netherite Leggings",
       "item.dark_infection.voidking_chestplate": "Voidking Body",
       "block.dark_infection.void_cobble": "Void Cobble",
       "item.dark_infection.darkarmor_helmet": "Dark Helmet",
-      "advancements.the_absolute_dark.title": "The Absolute Dark...",
       "item.minecraft.splash_potion.effect.voidcurepotion": "Splash Potion of VoidCure",
       "item.dark_infection.voidking_boots": "Voidking Boots",
-      "item.minecraft.splash_potion.effect.potion_of_ultimate_darkness": "Splash PotionOf Ultimate Darkness"
+      "item.dark_infection.emptyvile": "Emptyvile"
     }
   },
   "foldersRoot": {

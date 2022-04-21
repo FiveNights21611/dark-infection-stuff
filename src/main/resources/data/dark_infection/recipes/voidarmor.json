@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "dark_infection:voidvile"
+    },
+    "1": {
+      "item": "dark_infection:strangev"
+    },
+    "2": {
+      "item": "dark_infection:curev"
+    },
+    "3": {
+      "item": "dark_infection:quartz_enriched_netherite"
+    },
+    "4": {
+      "item": "dark_infection:darkarmor_chestplate"
+    },
+    "5": {
+      "item": "dark_infection:quartz_enriched_netherite"
+    },
+    "7": {
+      "item": "dark_infection:quartz_enriched_netherite"
+    }
+  },
+  "result": {
+    "item": "dark_infection:voidking_chestplate",
+    "count": 1
+  }
+}

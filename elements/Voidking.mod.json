@@ -10,6 +10,18 @@
     "textureLeggings": "vkpanth",
     "enableBoots": true,
     "textureBoots": "vkboot",
+    "onHelmetTick": {
+      "name": "VoidkingBodyTickEvent"
+    },
+    "onBodyTick": {
+      "name": "VoidkingBodyTickEvent"
+    },
+    "onLeggingsTick": {
+      "name": "VoidkingBodyTickEvent"
+    },
+    "onBootsTick": {
+      "name": "VoidkingBodyTickEvent"
+    },
     "creativeTab": {
       "value": "CUSTOM:Darkinfected"
     },

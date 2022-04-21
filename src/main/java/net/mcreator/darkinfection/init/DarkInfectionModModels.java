@@ -10,11 +10,13 @@ import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.mcreator.darkinfection.client.model.Modelvoidking_armor;
+import net.mcreator.darkinfection.client.model.Modelvoidking;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class DarkInfectionModModels {
 	@SubscribeEvent
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
+		event.registerLayerDefinition(Modelvoidking.LAYER_LOCATION, Modelvoidking::createBodyLayer);
 		event.registerLayerDefinition(Modelvoidking_armor.LAYER_LOCATION, Modelvoidking_armor::createBodyLayer);
 	}
 }

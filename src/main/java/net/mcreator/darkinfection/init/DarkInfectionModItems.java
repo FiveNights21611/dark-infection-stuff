@@ -9,20 +9,25 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.RegistryEvent;
 
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.item.SpawnEggItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.darkinfection.item.VoidvileItem;
 import net.mcreator.darkinfection.item.VoidkingItem;
+import net.mcreator.darkinfection.item.StrangevItem;
 import net.mcreator.darkinfection.item.QuartzEnrichedNetheriteItem;
 import net.mcreator.darkinfection.item.QuartzEnrichedNetheriteArmorItem;
 import net.mcreator.darkinfection.item.PureafyingappItem;
 import net.mcreator.darkinfection.item.PoppedOrbOfDarknessItem;
 import net.mcreator.darkinfection.item.ItemorbofdarknessItem;
 import net.mcreator.darkinfection.item.EnhancedDarkStarItem;
+import net.mcreator.darkinfection.item.EmptyvileItem;
 import net.mcreator.darkinfection.item.DarkarmorItem;
 import net.mcreator.darkinfection.item.DarkStarItem;
 import net.mcreator.darkinfection.item.DarkCarrotItem;
+import net.mcreator.darkinfection.item.CurevItem;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -54,6 +59,13 @@ public class DarkInfectionModItems {
 	public static final Item VOIDKING_CHESTPLATE = register(new VoidkingItem.Chestplate());
 	public static final Item VOIDKING_LEGGINGS = register(new VoidkingItem.Leggings());
 	public static final Item VOIDKING_BOOTS = register(new VoidkingItem.Boots());
+	public static final Item VOIDVILE = register(new VoidvileItem());
+	public static final Item CUREV = register(new CurevItem());
+	public static final Item STRANGEV = register(new StrangevItem());
+	public static final Item EMPTYVILE = register(new EmptyvileItem());
+	public static final Item VOIDKINGBOSS = register(
+			new SpawnEggItem(DarkInfectionModEntities.VOIDKINGBOSS, -3342337, -52, new Item.Properties().tab(CreativeModeTab.TAB_MISC))
+					.setRegistryName("voidkingboss_spawn_egg"));
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

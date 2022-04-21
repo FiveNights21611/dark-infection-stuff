@@ -119,6 +119,40 @@ public class InfectedProcedure {
 							_entity.addEffect(new MobEffectInstance(MobEffects.HEALTH_BOOST, 100000, 2, (false), (false)));
 					}
 				}
+				if (new Object() {
+					public int getScore(String score, Entity _ent) {
+						if (_ent instanceof Player _player) {
+							Scoreboard _sc = _player.getScoreboard();
+							Objective _so = _sc.getObjective(score);
+							if (_so != null) {
+								Score _scr = _sc.getOrCreatePlayerScore(_player.getScoreboardName(), _so);
+								return _scr.getScore();
+							}
+						}
+						return 0;
+					}
+				}.getScore("infected", entity) == 3) {
+					if (entity instanceof LivingEntity _entity)
+						_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 60, 3, (false), (false)));
+					if (entity instanceof LivingEntity _entity)
+						_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 60, 3, (false), (false)));
+					if ((entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(MobEffects.HEALTH_BOOST) : false) == false) {
+						if (entity instanceof LivingEntity _entity)
+							_entity.addEffect(new MobEffectInstance(MobEffects.HEALTH_BOOST, 100000, 2, (false), (false)));
+					}
+					if (entity instanceof LivingEntity _entity)
+						_entity.addEffect(new MobEffectInstance(MobEffects.JUMP, 60, 1, (false), (false)));
+					if (entity instanceof LivingEntity _entity)
+						_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 60, 1, (false), (false)));
+					if (entity instanceof LivingEntity _entity)
+						_entity.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, 60, 1, (false), (false)));
+					if (entity instanceof LivingEntity _entity)
+						_entity.addEffect(new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 60, 1, (false), (false)));
+					if (entity instanceof LivingEntity _entity)
+						_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 60, 1, (false), (false)));
+					if (entity instanceof LivingEntity _entity)
+						_entity.addEffect(new MobEffectInstance(MobEffects.WATER_BREATHING, 60, 1, (false), (false)));
+				}
 				MinecraftForge.EVENT_BUS.unregister(this);
 			}
 		}.start(world, 60);

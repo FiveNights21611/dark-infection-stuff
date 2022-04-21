@@ -64,7 +64,7 @@ public class DarkInfectionModItems {
 	public static final Item STRANGEV = register(new StrangevItem());
 	public static final Item EMPTYVILE = register(new EmptyvileItem());
 	public static final Item VOIDKINGBOSS = register(
-			new SpawnEggItem(DarkInfectionModEntities.VOIDKINGBOSS, -3342337, -52, new Item.Properties().tab(CreativeModeTab.TAB_MISC))
+			new SpawnEggItem(DarkInfectionModEntities.VOIDKINGBOSS, -103, -3342337, new Item.Properties().tab(CreativeModeTab.TAB_MISC))
 					.setRegistryName("voidkingboss_spawn_egg"));
 
 	private static Item register(Item item) {

@@ -13,11 +13,11 @@
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -3342337,
+      "value": -103,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -52,
+      "value": -3342337,
       "falpha": 0.0
     },
     "creativeTab": {
@@ -93,11 +93,11 @@
     },
     "spawnParticles": true,
     "particleToSpawn": {
-      "value": "EXPLOSION_EMITTER"
+      "value": "POOF"
     },
-    "particleSpawningShape": "Spread",
-    "particleSpawningRadious": 1.300000001490116,
-    "particleAmount": 8,
+    "particleSpawningShape": "Tube",
+    "particleSpawningRadious": 0.7999999985098839,
+    "particleAmount": 5,
     "onStruckByLightning": {
       "name": "VoidkingbossItIsStruckByLightning"
     },

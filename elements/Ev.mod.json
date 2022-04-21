@@ -10,22 +10,22 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Blocks.GLASS"
+        "value": ""
+      },
+      {
+        "value": "Blocks.POINTED_DRIPSTONE"
       },
       {
         "value": ""
       },
       {
-        "value": "Blocks.GLASS"
-      },
-      {
-        "value": "Blocks.GLASS"
-      },
-      {
         "value": ""
       },
       {
-        "value": "Blocks.GLASS"
+        "value": "Items.GLASS_BOTTLE"
+      },
+      {
+        "value": ""
       },
       {
         "value": ""

@@ -107,7 +107,7 @@ public abstract class VoidkingItem extends ArmorItem {
 
 		@Override
 		public void onArmorTick(ItemStack itemstack, Level world, Player entity) {
-			VoidkingBodyTickEventProcedure.execute(entity);
+			VoidkingBodyTickEventProcedure.execute(world, entity);
 		}
 	}
 
@@ -147,7 +147,7 @@ public abstract class VoidkingItem extends ArmorItem {
 
 		@Override
 		public void onArmorTick(ItemStack itemstack, Level world, Player entity) {
-			VoidkingBodyTickEventProcedure.execute(entity);
+			VoidkingBodyTickEventProcedure.execute(world, entity);
 		}
 	}
 
@@ -186,7 +186,7 @@ public abstract class VoidkingItem extends ArmorItem {
 
 		@Override
 		public void onArmorTick(ItemStack itemstack, Level world, Player entity) {
-			VoidkingBodyTickEventProcedure.execute(entity);
+			VoidkingBodyTickEventProcedure.execute(world, entity);
 		}
 	}
 
@@ -225,7 +225,7 @@ public abstract class VoidkingItem extends ArmorItem {
 
 		@Override
 		public void onArmorTick(ItemStack itemstack, Level world, Player entity) {
-			VoidkingBodyTickEventProcedure.execute(entity);
+			VoidkingBodyTickEventProcedure.execute(world, entity);
 		}
 	}
 }

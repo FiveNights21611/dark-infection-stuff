@@ -20,7 +20,7 @@
   "item.minecraft.lingering_potion.effect.potion_of_ultimate_darkness": "Lingering Potion Of Ultimate Darkness",
   "item.dark_infection.darkarmor_leggings": "Dark Leggings",
   "effect.dark_infection.givevoidcure": "one sec",
-  "item.dark_infection.curev": "Voidvile",
+  "item.dark_infection.curev": "Cure Vial",
   "item.minecraft.tipped_arrow.effect.voidcurepotion": "Arrow of VoidCure",
   "block.dark_infection.infectedsoil": "Infected soil",
   "advancements.cover_me_in_quartz.descr": "Woah! How immune is this...?",
@@ -36,8 +36,8 @@
   "item.dark_infection.quartz_enriched_netherite_armor_boots": "Quartz Enriched Netherite Boots",
   "effect.dark_infection.darkcorupt": "Don\u0027t Die...",
   "effect.dark_infection.void_cure": "void cure",
-  "item.dark_infection.voidvile": "Voidvile",
-  "item.dark_infection.strangev": "Voidvile",
+  "item.dark_infection.voidvile": "Void Vial",
+  "item.dark_infection.strangev": "Strange Vial",
   "item.dark_infection.quartz_enriched_netherite_armor_helmet": "Quartz Enriched Netherite Helmet",
   "item.dark_infection.quartz_enriched_netherite": "Quartz Enriched Netherite Ingot",
   "item.dark_infection.darkarmor_chestplate": "Dark Chestplate",
@@ -47,5 +47,5 @@
   "item.dark_infection.darkarmor_helmet": "Dark Helmet",
   "item.minecraft.splash_potion.effect.voidcurepotion": "Splash Potion of VoidCure",
   "item.dark_infection.voidking_boots": "Voidking Boots",
-  "item.dark_infection.emptyvile": "Emptyvile"
+  "item.dark_infection.emptyvile": "Empty Vial"
 }

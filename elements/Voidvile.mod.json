@@ -5,10 +5,10 @@
     "renderType": 0,
     "texture": "voidv",
     "customModelName": "Normal",
-    "name": "Voidvile",
-    "rarity": "COMMON",
+    "name": "Void Vial",
+    "rarity": "RARE",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:Darkinfected"
     },
     "stackSize": 64,
     "enchantability": 0,
@@ -24,7 +24,9 @@
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "specialInfo": [],
+    "specialInfo": [
+      "Could infect anybody..."
+    ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,

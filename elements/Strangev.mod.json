@@ -5,10 +5,10 @@
     "renderType": 0,
     "texture": "strangevile",
     "customModelName": "Normal",
-    "name": "Voidvile",
-    "rarity": "COMMON",
+    "name": "Strange Vial",
+    "rarity": "EPIC",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:Darkinfected"
     },
     "stackSize": 64,
     "enchantability": 0,
@@ -24,7 +24,9 @@
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "specialInfo": [],
+    "specialInfo": [
+      "You feel a crackling energy eminating from within..."
+    ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,

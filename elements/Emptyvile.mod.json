@@ -5,10 +5,10 @@
     "renderType": 0,
     "texture": "ev",
     "customModelName": "Normal",
-    "name": "Emptyvile",
+    "name": "Empty Vial",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:Darkinfected"
     },
     "stackSize": 64,
     "enchantability": 0,
@@ -24,7 +24,9 @@
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "specialInfo": [],
+    "specialInfo": [
+      "Just empty"
+    ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,

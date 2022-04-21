@@ -1,24 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "0 2",
-    "3 5",
-    " 7 "
+    "0",
+    "1",
+    "2"
   ],
   "key": {
     "0": {
-      "item": "minecraft:glass"
+      "item": "minecraft:pointed_dripstone"
+    },
+    "1": {
+      "item": "minecraft:glass_bottle"
     },
     "2": {
-      "item": "minecraft:glass"
-    },
-    "3": {
-      "item": "minecraft:glass"
-    },
-    "5": {
-      "item": "minecraft:glass"
-    },
-    "7": {
       "item": "minecraft:hopper"
     }
   },

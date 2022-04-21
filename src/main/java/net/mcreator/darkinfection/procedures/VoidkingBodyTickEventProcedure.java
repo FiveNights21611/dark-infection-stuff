@@ -1,14 +1,22 @@
 package net.mcreator.darkinfection.procedures;
 
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.TickEvent;
+import net.minecraftforge.common.MinecraftForge;
+
 import net.minecraft.world.scores.criteria.ObjectiveCriteria;
 import net.minecraft.world.scores.Scoreboard;
 import net.minecraft.world.scores.Score;
 import net.minecraft.world.scores.Objective;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.chat.TextComponent;
@@ -16,7 +24,7 @@ import net.minecraft.network.chat.TextComponent;
 import net.mcreator.darkinfection.init.DarkInfectionModItems;
 
 public class VoidkingBodyTickEventProcedure {
-	public static void execute(Entity entity) {
+	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
 		if (new Object() {
@@ -44,10 +52,11 @@ public class VoidkingBodyTickEventProcedure {
 					_player.getAbilities().mayfly = (true);
 					_player.onUpdateAbilities();
 				}
+				entity.fallDistance = 0;
 				if (((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY))
 						.getDamageValue() == 400) {
 					if (entity instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(new TextComponent("you feel your self fade as you and the voice as one are exstingwished"),
+						_player.displayClientMessage(new TextComponent("You feel yourself fade as you and the voice, as one, are extinguished..."),
 								(false));
 					if (entity instanceof Player _player)
 						_player.getInventory().clearContent();
@@ -61,7 +70,7 @@ public class VoidkingBodyTickEventProcedure {
 						_scr.setScore(0);
 					}
 					if (entity instanceof LivingEntity _entity)
-						_entity.hurt(new DamageSource("gone").bypassArmor(), 10000000);
+						_entity.hurt(new DamageSource("gone").bypassArmor(), 30);
 				}
 			} else {
 				if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY)
@@ -73,13 +82,82 @@ public class VoidkingBodyTickEventProcedure {
 						&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY)
 								.getItem() == (ItemStack.EMPTY).getItem()) {
 					if (entity instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(new TextComponent("you feel your will slip away as a voice speaks in your head my voice =/"),
+						_player.displayClientMessage(new TextComponent("You feel your Will slip away as a voice speaks in your mind... my voice =)"),
 								(false));
 				} else {
+					if (entity instanceof LivingEntity _entity)
+						_entity.addEffect(new MobEffectInstance(MobEffects.POISON, 999999999, 0, (false), (false)));
+					if (entity instanceof LivingEntity _entity)
+						_entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 999999999, 0, (false), (false)));
 					if (entity instanceof Player _player && !_player.level.isClientSide())
 						_player.displayClientMessage(new TextComponent(
-								"you struggle to get the armor that is controlling you but it dose not work as that voice is still in your head evenchualy you fell you and that vois start to become one and you feal like you are were you want to be"),
+								"You struggle to get the armor that is controlling you off, but it does not work, and that voice tries to tell you to give up... eventually, you fall, and that voice starts to become your own... You struggle to get the armor that is controlling you off, but it does not work, and that voice tries to tell you to give up..."),
 								(false));
+					new Object() {
+						private int ticks = 0;
+						private float waitTicks;
+						private LevelAccessor world;
+
+						public void start(LevelAccessor world, int waitTicks) {
+							this.waitTicks = waitTicks;
+							MinecraftForge.EVENT_BUS.register(this);
+							this.world = world;
+						}
+
+						@SubscribeEvent
+						public void tick(TickEvent.ServerTickEvent event) {
+							if (event.phase == TickEvent.Phase.END) {
+								this.ticks += 1;
+								if (this.ticks >= this.waitTicks)
+									run();
+							}
+						}
+
+						private void run() {
+							if (entity instanceof Player _player && !_player.level.isClientSide())
+								_player.displayClientMessage(
+										new TextComponent("Eventually, you fall to your knees, and that voice starts to become your own..."),
+										(false));
+							new Object() {
+								private int ticks = 0;
+								private float waitTicks;
+								private LevelAccessor world;
+
+								public void start(LevelAccessor world, int waitTicks) {
+									this.waitTicks = waitTicks;
+									MinecraftForge.EVENT_BUS.register(this);
+									this.world = world;
+								}
+
+								@SubscribeEvent
+								public void tick(TickEvent.ServerTickEvent event) {
+									if (event.phase == TickEvent.Phase.END) {
+										this.ticks += 1;
+										if (this.ticks >= this.waitTicks)
+											run();
+									}
+								}
+
+								private void run() {
+									if (entity instanceof Player _player && !_player.level.isClientSide())
+										_player.displayClientMessage(
+												new TextComponent("You suddenly feel... like you are right where you want to be."), (false));
+									MinecraftForge.EVENT_BUS.unregister(this);
+								}
+							}.start(world, 180);
+							MinecraftForge.EVENT_BUS.unregister(this);
+						}
+					}.start(world, 240);
+					if (entity instanceof LivingEntity _entity)
+						_entity.removeEffect(MobEffects.POISON);
+					if (entity instanceof LivingEntity _entity)
+						_entity.removeEffect(MobEffects.CONFUSION);
+					if (entity instanceof LivingEntity _entity)
+						_entity.setHealth(20);
+					(new ItemStack(DarkInfectionModItems.VOIDKING_BOOTS)).enchant(Enchantments.BINDING_CURSE, 1);
+					(new ItemStack(DarkInfectionModItems.VOIDKING_LEGGINGS)).enchant(Enchantments.BINDING_CURSE, 1);
+					(new ItemStack(DarkInfectionModItems.VOIDKING_CHESTPLATE)).enchant(Enchantments.BINDING_CURSE, 1);
+					(new ItemStack(DarkInfectionModItems.VOIDKING_HELMET)).enchant(Enchantments.BINDING_CURSE, 1);
 				}
 				if (entity instanceof Player _player) {
 					ItemStack _stktoremove = new ItemStack(DarkInfectionModItems.VOIDKING_HELMET);

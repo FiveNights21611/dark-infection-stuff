@@ -5,17 +5,21 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.fmllegacy.network.NetworkHooks;
 import net.minecraftforge.fmllegacy.network.FMLPlayMessages;
 
+import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.ThrownPotion;
 import net.minecraft.world.entity.monster.Monster;
+import net.minecraft.world.entity.ai.navigation.PathNavigation;
+import net.minecraft.world.entity.ai.navigation.FlyingPathNavigation;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.world.entity.ai.goal.FloatGoal;
+import net.minecraft.world.entity.ai.control.FlyingMoveControl;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.MobType;
@@ -39,6 +43,8 @@ import net.mcreator.darkinfection.procedures.VoidkingbossItIsStruckByLightningPr
 import net.mcreator.darkinfection.init.DarkInfectionModItems;
 import net.mcreator.darkinfection.init.DarkInfectionModEntities;
 
+import java.util.Random;
+
 public class VoidkingbossEntity extends Monster {
 	private final ServerBossEvent bossInfo = new ServerBossEvent(this.getDisplayName(), ServerBossEvent.BossBarColor.YELLOW,
 			ServerBossEvent.BossBarOverlay.NOTCHED_6);
@@ -51,11 +57,15 @@ public class VoidkingbossEntity extends Monster {
 		super(type, world);
 		xpReward = 10000;
 		setNoAi(false);
-		setCustomName(new TextComponent("void king"));
+		setCustomName(new TextComponent("Void King"));
 		setCustomNameVisible(true);
 		setPersistenceRequired();
 		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Items.NETHERITE_SWORD));
-		this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(Items.NETHERITE_SWORD));
+		this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(DarkInfectionModItems.VOIDKING_HELMET));
+		this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(DarkInfectionModItems.VOIDKING_CHESTPLATE));
+		this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(DarkInfectionModItems.VOIDKING_LEGGINGS));
+		this.setItemSlot(EquipmentSlot.FEET, new ItemStack(DarkInfectionModItems.VOIDKING_BOOTS));
+		this.moveControl = new FlyingMoveControl(this, 10, true);
 	}
 
 	@Override
@@ -64,18 +74,33 @@ public class VoidkingbossEntity extends Monster {
 	}
 
 	@Override
+	protected PathNavigation createNavigation(Level world) {
+		return new FlyingPathNavigation(this, world);
+	}
+
+	@Override
 	protected void registerGoals() {
 		super.registerGoals();
 		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, true));
 		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 1));
-		this.targetSelector.addGoal(3, new HurtByTargetGoal(this));
-		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
-		this.goalSelector.addGoal(5, new FloatGoal(this));
+		this.goalSelector.addGoal(3, new RandomStrollGoal(this, 0.8, 20) {
+			@Override
+			protected Vec3 getPosition() {
+				Random random = VoidkingbossEntity.this.getRandom();
+				double dir_x = VoidkingbossEntity.this.getX() + ((random.nextFloat() * 2 - 1) * 16);
+				double dir_y = VoidkingbossEntity.this.getY() + ((random.nextFloat() * 2 - 1) * 16);
+				double dir_z = VoidkingbossEntity.this.getZ() + ((random.nextFloat() * 2 - 1) * 16);
+				return new Vec3(dir_x, dir_y, dir_z);
+			}
+		});
+		this.targetSelector.addGoal(4, new HurtByTargetGoal(this));
+		this.goalSelector.addGoal(5, new RandomLookAroundGoal(this));
+		this.goalSelector.addGoal(6, new FloatGoal(this));
 	}
 
 	@Override
 	public MobType getMobType() {
-		return MobType.UNDEFINED;
+		return MobType.UNDEAD;
 	}
 
 	@Override
@@ -121,6 +146,11 @@ public class VoidkingbossEntity extends Monster {
 	}
 
 	@Override
+	public boolean causeFallDamage(float l, float d, DamageSource source) {
+		return false;
+	}
+
+	@Override
 	public boolean hurt(DamageSource source, float amount) {
 		if (source.getDirectEntity() instanceof ThrownPotion)
 			return false;
@@ -129,8 +159,6 @@ public class VoidkingbossEntity extends Monster {
 		if (source == DamageSource.CACTUS)
 			return false;
 		if (source == DamageSource.DROWN)
-			return false;
-		if (source == DamageSource.LIGHTNING_BOLT)
 			return false;
 		if (source.isExplosion())
 			return false;
@@ -168,18 +196,31 @@ public class VoidkingbossEntity extends Monster {
 		this.bossInfo.setProgress(this.getHealth() / this.getMaxHealth());
 	}
 
+	@Override
+	protected void checkFallDamage(double y, boolean onGroundIn, BlockState state, BlockPos pos) {
+	}
+
+	@Override
+	public void setNoGravity(boolean ignored) {
+		super.setNoGravity(true);
+	}
+
 	public void aiStep() {
 		super.aiStep();
+		this.setNoGravity(true);
 		double x = this.getX();
 		double y = this.getY();
 		double z = this.getZ();
 		Entity entity = this;
 		Level world = this.level;
-		for (int l = 0; l < 5; ++l) {
-			double x0 = x + 0.5 + (random.nextFloat() - 0.5) * 0.7999999985098839D;
-			double y0 = y + 1.2 + (random.nextFloat() - 0.5) * 0.7999999985098839D * 100;
-			double z0 = z + 0.5 + (random.nextFloat() - 0.5) * 0.7999999985098839D;
-			world.addParticle(ParticleTypes.POOF, x0, y0, z0, 0, 0, 0);
+		for (int l = 0; l < 8; ++l) {
+			double x0 = x + random.nextFloat();
+			double y0 = y + random.nextFloat();
+			double z0 = z + random.nextFloat();
+			double dx = (random.nextFloat() - 0.5D) * 1.300000001490116D;
+			double dy = (random.nextFloat() - 0.5D) * 1.300000001490116D;
+			double dz = (random.nextFloat() - 0.5D) * 1.300000001490116D;
+			world.addParticle(ParticleTypes.END_ROD, x0, y0, z0, dx, dy, dz);
 		}
 	}
 
@@ -192,6 +233,7 @@ public class VoidkingbossEntity extends Monster {
 		builder = builder.add(Attributes.MAX_HEALTH, 50);
 		builder = builder.add(Attributes.ARMOR, 4);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 7);
+		builder = builder.add(Attributes.FLYING_SPEED, 0.7000000000000001);
 		return builder;
 	}
 }

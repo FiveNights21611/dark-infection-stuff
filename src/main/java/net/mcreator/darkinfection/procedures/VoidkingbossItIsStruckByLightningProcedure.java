@@ -14,6 +14,6 @@ public class VoidkingbossItIsStruckByLightningProcedure {
 		if (entity instanceof LivingEntity _entity)
 			_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 100, 2, (false), (false)));
 		if (entity instanceof LivingEntity _entity)
-			_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 100, 2, (false), (false)));
+			_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 100, 1, (false), (false)));
 	}
 }

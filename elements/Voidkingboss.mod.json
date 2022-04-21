@@ -2,8 +2,8 @@
   "_fv": 24,
   "_type": "livingentity",
   "definition": {
-    "mobName": "Voidkingboss",
-    "mobLabel": "void king",
+    "mobName": "Void King Boss",
+    "mobLabel": "Void King",
     "mobModelName": "Modelvoidking",
     "mobModelTexture": "voidking_armor.png",
     "mobModelGlowTexture": "",
@@ -13,15 +13,15 @@
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -103,
-      "falpha": 0.0
-    },
-    "spawnEggDotColor": {
       "value": -3342337,
       "falpha": 0.0
     },
+    "spawnEggDotColor": {
+      "value": -52,
+      "falpha": 0.0
+    },
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:Darkinfected"
     },
     "isBoss": true,
     "bossBarColor": "YELLOW",
@@ -30,22 +30,22 @@
       "value": "Items.NETHERITE_SWORD"
     },
     "equipmentOffHand": {
-      "value": "Items.NETHERITE_SWORD"
+      "value": ""
     },
     "equipmentHelmet": {
-      "value": ""
+      "value": "CUSTOM:Voidking.helmet"
     },
     "equipmentBody": {
-      "value": ""
+      "value": "CUSTOM:Voidking.body"
     },
     "equipmentLeggings": {
-      "value": ""
+      "value": "CUSTOM:Voidking.legs"
     },
     "equipmentBoots": {
-      "value": ""
+      "value": "CUSTOM:Voidking.boots"
     },
     "mobBehaviourType": "Mob",
-    "mobCreatureType": "UNDEFINED",
+    "mobCreatureType": "UNDEAD",
     "attackStrength": 7,
     "attackKnockback": 0.0,
     "knockbackResistance": 0.0,
@@ -55,7 +55,7 @@
     "health": 50,
     "xpAmount": 10000,
     "waterMob": false,
-    "flyingMob": false,
+    "flyingMob": true,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
@@ -68,7 +68,7 @@
     "immuneToFallDamage": true,
     "immuneToCactus": true,
     "immuneToDrowning": true,
-    "immuneToLightning": true,
+    "immuneToLightning": false,
     "immuneToPotions": true,
     "immuneToPlayer": false,
     "immuneToExplosion": true,
@@ -93,17 +93,17 @@
     },
     "spawnParticles": true,
     "particleToSpawn": {
-      "value": "POOF"
+      "value": "END_ROD"
     },
-    "particleSpawningShape": "Tube",
-    "particleSpawningRadious": 0.7999999985098839,
-    "particleAmount": 5,
+    "particleSpawningShape": "Spread",
+    "particleSpawningRadious": 1.300000001490116,
+    "particleAmount": 8,
     "onStruckByLightning": {
       "name": "VoidkingbossItIsStruckByLightning"
     },
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"fly\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
     "breedable": false,
     "tameable": false,
     "breedTriggerItems": [],
@@ -116,8 +116,8 @@
     "doesDespawnWhenIdle": false,
     "spawningProbability": 20,
     "mobSpawningType": "monster",
-    "minNumberOfMobsPerGroup": 4,
-    "maxNumberOfMobsPerGroup": 4,
+    "minNumberOfMobsPerGroup": 1,
+    "maxNumberOfMobsPerGroup": 1,
     "restrictionBiomes": [],
     "spawnInDungeons": false
   }

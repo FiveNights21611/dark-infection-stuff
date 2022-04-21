@@ -175,14 +175,11 @@ public class VoidkingbossEntity extends Monster {
 		double z = this.getZ();
 		Entity entity = this;
 		Level world = this.level;
-		for (int l = 0; l < 8; ++l) {
-			double x0 = x + random.nextFloat();
-			double y0 = y + random.nextFloat();
-			double z0 = z + random.nextFloat();
-			double dx = (random.nextFloat() - 0.5D) * 1.300000001490116D;
-			double dy = (random.nextFloat() - 0.5D) * 1.300000001490116D;
-			double dz = (random.nextFloat() - 0.5D) * 1.300000001490116D;
-			world.addParticle(ParticleTypes.EXPLOSION_EMITTER, x0, y0, z0, dx, dy, dz);
+		for (int l = 0; l < 5; ++l) {
+			double x0 = x + 0.5 + (random.nextFloat() - 0.5) * 0.7999999985098839D;
+			double y0 = y + 1.2 + (random.nextFloat() - 0.5) * 0.7999999985098839D * 100;
+			double z0 = z + 0.5 + (random.nextFloat() - 0.5) * 0.7999999985098839D;
+			world.addParticle(ParticleTypes.POOF, x0, y0, z0, 0, 0, 0);
 		}
 	}
 

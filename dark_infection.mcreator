@@ -821,6 +821,30 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "voidkingboss"
+    },
+    {
+      "name": "DarklingLevel1",
+      "type": "achievement",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "darkling_level_1"
+    },
+    {
+      "name": "DarklingLevel1DoIt",
+      "type": "procedure",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "darkling_level_1_do_it",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -846,6 +870,7 @@
       "item.dark_infection.dark_carrot": "Dark Carrot",
       "item.minecraft.potion.effect.voidcurepotion": "Potion of VoidCure",
       "item.minecraft.lingering_potion.effect.potion_of_ultimate_darkness": "Lingering Potion Of Ultimate Darkness",
+      "advancements.darkling_level_1.descr": "Become a Darkling",
       "item.dark_infection.darkarmor_leggings": "Dark Leggings",
       "effect.dark_infection.givevoidcure": "one sec",
       "item.dark_infection.curev": "Cure Vial",
@@ -869,6 +894,7 @@
       "item.dark_infection.quartz_enriched_netherite_armor_helmet": "Quartz Enriched Netherite Helmet",
       "item.dark_infection.quartz_enriched_netherite": "Quartz Enriched Netherite Ingot",
       "item.dark_infection.darkarmor_chestplate": "Dark Chestplate",
+      "advancements.darkling_level_1.title": "Darkling Level 1",
       "item.dark_infection.quartz_enriched_netherite_armor_leggings": "Quartz Enriched Netherite Leggings",
       "item.dark_infection.voidking_chestplate": "Voidking Body",
       "block.dark_infection.void_cobble": "Void Cobble",

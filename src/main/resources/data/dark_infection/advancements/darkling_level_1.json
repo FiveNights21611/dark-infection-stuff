@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "dark_infection:darkdirt"
+    },
+    "title": {
+      "translate": "advancements.darkling_level_1.title"
+    },
+    "description": {
+      "translate": "advancements.darkling_level_1.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "darkling_level_1": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "minecraft:nether/summon_wither"
+}

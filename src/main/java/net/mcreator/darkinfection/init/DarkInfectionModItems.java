@@ -15,6 +15,7 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.darkinfection.item.VoidvileItem;
+import net.mcreator.darkinfection.item.VoidkingswordItem;
 import net.mcreator.darkinfection.item.VoidkingItem;
 import net.mcreator.darkinfection.item.StrangevItem;
 import net.mcreator.darkinfection.item.QuartzEnrichedNetheriteItem;
@@ -66,6 +67,7 @@ public class DarkInfectionModItems {
 	public static final Item VOIDKINGBOSS = register(
 			new SpawnEggItem(DarkInfectionModEntities.VOIDKINGBOSS, -3342337, -52, new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED))
 					.setRegistryName("voidkingboss_spawn_egg"));
+	public static final Item VOIDKINGSWORD = register(new VoidkingswordItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

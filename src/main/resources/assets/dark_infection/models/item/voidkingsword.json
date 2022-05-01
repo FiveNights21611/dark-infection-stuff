@@ -1,0 +1,7 @@
+{
+  "parent": "dark_infection:custom/vk_sword",
+  "textures": {
+    "1": "dark_infection:blocks/vks",
+    "particle": "dark_infection:items/vks"
+  }
+}

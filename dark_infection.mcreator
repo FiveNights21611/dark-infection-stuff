@@ -845,6 +845,14 @@
           }
         ]
       }
+    },
+    {
+      "name": "Voidkingsword",
+      "type": "tool",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "voidkingsword"
     }
   ],
   "variable_elements": [],
@@ -874,6 +882,7 @@
       "item.dark_infection.darkarmor_leggings": "Dark Leggings",
       "effect.dark_infection.givevoidcure": "one sec",
       "item.dark_infection.curev": "Cure Vial",
+      "item.dark_infection.voidkingsword": "Voidkingsword",
       "item.minecraft.tipped_arrow.effect.voidcurepotion": "Arrow of VoidCure",
       "block.dark_infection.infectedsoil": "Infected soil",
       "advancements.cover_me_in_quartz.descr": "Woah! How immune is this...?",

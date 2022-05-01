@@ -27,7 +27,7 @@
     "bossBarColor": "YELLOW",
     "bossBarType": "NOTCHED_6",
     "equipmentMainHand": {
-      "value": "Items.NETHERITE_SWORD"
+      "value": "CUSTOM:Voidkingsword"
     },
     "equipmentOffHand": {
       "value": ""
@@ -68,7 +68,7 @@
     "immuneToFallDamage": true,
     "immuneToCactus": true,
     "immuneToDrowning": true,
-    "immuneToLightning": false,
+    "immuneToLightning": true,
     "immuneToPotions": true,
     "immuneToPlayer": false,
     "immuneToExplosion": true,
@@ -91,7 +91,7 @@
     "stepSound": {
       "value": "entity.lightning.impact"
     },
-    "spawnParticles": true,
+    "spawnParticles": false,
     "particleToSpawn": {
       "value": "END_ROD"
     },

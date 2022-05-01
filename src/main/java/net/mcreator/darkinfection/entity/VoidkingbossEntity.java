@@ -8,7 +8,6 @@ import net.minecraftforge.fmllegacy.network.FMLPlayMessages;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.ThrownPotion;
 import net.minecraft.world.entity.monster.Monster;
@@ -36,7 +35,6 @@ import net.minecraft.server.level.ServerBossEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.chat.TextComponent;
-import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.darkinfection.procedures.VoidkingbossItIsStruckByLightningProcedure;
@@ -60,7 +58,7 @@ public class VoidkingbossEntity extends Monster {
 		setCustomName(new TextComponent("Void King"));
 		setCustomNameVisible(true);
 		setPersistenceRequired();
-		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Items.NETHERITE_SWORD));
+		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(DarkInfectionModItems.VOIDKINGSWORD));
 		this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(DarkInfectionModItems.VOIDKING_HELMET));
 		this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(DarkInfectionModItems.VOIDKING_CHESTPLATE));
 		this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(DarkInfectionModItems.VOIDKING_LEGGINGS));
@@ -160,6 +158,8 @@ public class VoidkingbossEntity extends Monster {
 			return false;
 		if (source == DamageSource.DROWN)
 			return false;
+		if (source == DamageSource.LIGHTNING_BOLT)
+			return false;
 		if (source.isExplosion())
 			return false;
 		if (source == DamageSource.ANVIL)
@@ -208,20 +208,6 @@ public class VoidkingbossEntity extends Monster {
 	public void aiStep() {
 		super.aiStep();
 		this.setNoGravity(true);
-		double x = this.getX();
-		double y = this.getY();
-		double z = this.getZ();
-		Entity entity = this;
-		Level world = this.level;
-		for (int l = 0; l < 8; ++l) {
-			double x0 = x + random.nextFloat();
-			double y0 = y + random.nextFloat();
-			double z0 = z + random.nextFloat();
-			double dx = (random.nextFloat() - 0.5D) * 1.300000001490116D;
-			double dy = (random.nextFloat() - 0.5D) * 1.300000001490116D;
-			double dz = (random.nextFloat() - 0.5D) * 1.300000001490116D;
-			world.addParticle(ParticleTypes.END_ROD, x0, y0, z0, dx, dy, dz);
-		}
 	}
 
 	public static void init() {

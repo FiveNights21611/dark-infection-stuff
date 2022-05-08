@@ -18,7 +18,6 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.chat.TextComponent;
 
 import net.mcreator.darkinfection.init.DarkInfectionModItems;
@@ -41,13 +40,13 @@ public class VoidkingBodyTickEventProcedure {
 			}
 		}.getScore("infected", entity) == 5) {
 			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY)
-					.getItem() == DarkInfectionModItems.VOIDKING_BOOTS
+					.getItem() == DarkInfectionModItems.VOIDKING_BOOTS.get()
 					&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY)
-							.getItem() == DarkInfectionModItems.VOIDKING_LEGGINGS
+							.getItem() == DarkInfectionModItems.VOIDKING_LEGGINGS.get()
 					&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY)
-							.getItem() == DarkInfectionModItems.VOIDKING_CHESTPLATE
+							.getItem() == DarkInfectionModItems.VOIDKING_CHESTPLATE.get()
 					&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY)
-							.getItem() == DarkInfectionModItems.VOIDKING_HELMET) {
+							.getItem() == DarkInfectionModItems.VOIDKING_HELMET.get()) {
 				if (entity instanceof Player _player) {
 					_player.getAbilities().mayfly = (true);
 					_player.onUpdateAbilities();
@@ -78,7 +77,7 @@ public class VoidkingBodyTickEventProcedure {
 						&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY)
 								.getItem() == (ItemStack.EMPTY).getItem()
 						&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY)
-								.getItem() == DarkInfectionModItems.VOIDKING_CHESTPLATE
+								.getItem() == DarkInfectionModItems.VOIDKING_CHESTPLATE.get()
 						&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY)
 								.getItem() == (ItemStack.EMPTY).getItem()) {
 					if (entity instanceof Player _player && !_player.level.isClientSide())
@@ -154,62 +153,66 @@ public class VoidkingBodyTickEventProcedure {
 						_entity.removeEffect(MobEffects.CONFUSION);
 					if (entity instanceof LivingEntity _entity)
 						_entity.setHealth(20);
-					(new ItemStack(DarkInfectionModItems.VOIDKING_BOOTS)).enchant(Enchantments.BINDING_CURSE, 1);
-					(new ItemStack(DarkInfectionModItems.VOIDKING_LEGGINGS)).enchant(Enchantments.BINDING_CURSE, 1);
-					(new ItemStack(DarkInfectionModItems.VOIDKING_CHESTPLATE)).enchant(Enchantments.BINDING_CURSE, 1);
-					(new ItemStack(DarkInfectionModItems.VOIDKING_HELMET)).enchant(Enchantments.BINDING_CURSE, 1);
+					(new ItemStack(DarkInfectionModItems.VOIDKING_BOOTS.get())).enchant(Enchantments.BINDING_CURSE, 1);
+					(new ItemStack(DarkInfectionModItems.VOIDKING_LEGGINGS.get())).enchant(Enchantments.BINDING_CURSE, 1);
+					(new ItemStack(DarkInfectionModItems.VOIDKING_CHESTPLATE.get())).enchant(Enchantments.BINDING_CURSE, 1);
+					(new ItemStack(DarkInfectionModItems.VOIDKING_HELMET.get())).enchant(Enchantments.BINDING_CURSE, 1);
 				}
 				if (entity instanceof Player _player) {
-					ItemStack _stktoremove = new ItemStack(DarkInfectionModItems.VOIDKING_HELMET);
+					ItemStack _stktoremove = new ItemStack(DarkInfectionModItems.VOIDKING_HELMET.get());
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 							_player.inventoryMenu.getCraftSlots());
 				}
 				if (entity instanceof Player _player) {
-					ItemStack _stktoremove = new ItemStack(DarkInfectionModItems.VOIDKING_CHESTPLATE);
+					ItemStack _stktoremove = new ItemStack(DarkInfectionModItems.VOIDKING_CHESTPLATE.get());
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 							_player.inventoryMenu.getCraftSlots());
 				}
 				if (entity instanceof Player _player) {
-					ItemStack _stktoremove = new ItemStack(DarkInfectionModItems.VOIDKING_BOOTS);
+					ItemStack _stktoremove = new ItemStack(DarkInfectionModItems.VOIDKING_BOOTS.get());
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 							_player.inventoryMenu.getCraftSlots());
 				}
 				if (entity instanceof Player _player) {
-					ItemStack _stktoremove = new ItemStack(DarkInfectionModItems.VOIDKING_LEGGINGS);
+					ItemStack _stktoremove = new ItemStack(DarkInfectionModItems.VOIDKING_LEGGINGS.get());
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 							_player.inventoryMenu.getCraftSlots());
 				}
-				if (entity instanceof LivingEntity _entity) {
-					if (_entity instanceof Player _player)
-						_player.getInventory().armor.set(0, new ItemStack(DarkInfectionModItems.VOIDKING_BOOTS));
-					else
-						_entity.setItemSlot(EquipmentSlot.FEET, new ItemStack(DarkInfectionModItems.VOIDKING_BOOTS));
-					if (_entity instanceof ServerPlayer _serverPlayer)
-						_serverPlayer.getInventory().setChanged();
+				{
+					Entity _entity = entity;
+					if (_entity instanceof Player _player) {
+						_player.getInventory().armor.set(0, new ItemStack(DarkInfectionModItems.VOIDKING_BOOTS.get()));
+						_player.getInventory().setChanged();
+					} else if (_entity instanceof LivingEntity _living) {
+						_living.setItemSlot(EquipmentSlot.FEET, new ItemStack(DarkInfectionModItems.VOIDKING_BOOTS.get()));
+					}
 				}
-				if (entity instanceof LivingEntity _entity) {
-					if (_entity instanceof Player _player)
-						_player.getInventory().armor.set(1, new ItemStack(DarkInfectionModItems.VOIDKING_LEGGINGS));
-					else
-						_entity.setItemSlot(EquipmentSlot.LEGS, new ItemStack(DarkInfectionModItems.VOIDKING_LEGGINGS));
-					if (_entity instanceof ServerPlayer _serverPlayer)
-						_serverPlayer.getInventory().setChanged();
+				{
+					Entity _entity = entity;
+					if (_entity instanceof Player _player) {
+						_player.getInventory().armor.set(1, new ItemStack(DarkInfectionModItems.VOIDKING_LEGGINGS.get()));
+						_player.getInventory().setChanged();
+					} else if (_entity instanceof LivingEntity _living) {
+						_living.setItemSlot(EquipmentSlot.LEGS, new ItemStack(DarkInfectionModItems.VOIDKING_LEGGINGS.get()));
+					}
 				}
-				if (entity instanceof LivingEntity _entity) {
-					if (_entity instanceof Player _player)
-						_player.getInventory().armor.set(2, new ItemStack(DarkInfectionModItems.VOIDKING_CHESTPLATE));
-					else
-						_entity.setItemSlot(EquipmentSlot.CHEST, new ItemStack(DarkInfectionModItems.VOIDKING_CHESTPLATE));
-					if (_entity instanceof ServerPlayer _serverPlayer)
-						_serverPlayer.getInventory().setChanged();
+				{
+					Entity _entity = entity;
+					if (_entity instanceof Player _player) {
+						_player.getInventory().armor.set(2, new ItemStack(DarkInfectionModItems.VOIDKING_CHESTPLATE.get()));
+						_player.getInventory().setChanged();
+					} else if (_entity instanceof LivingEntity _living) {
+						_living.setItemSlot(EquipmentSlot.CHEST, new ItemStack(DarkInfectionModItems.VOIDKING_CHESTPLATE.get()));
+					}
 				}
-				if (entity instanceof LivingEntity _entity) {
-					if (_entity instanceof Player _player)
-						_player.getInventory().armor.set(3, new ItemStack(DarkInfectionModItems.VOIDKING_HELMET));
-					else
-						_entity.setItemSlot(EquipmentSlot.HEAD, new ItemStack(DarkInfectionModItems.VOIDKING_HELMET));
-					if (_entity instanceof ServerPlayer _serverPlayer)
-						_serverPlayer.getInventory().setChanged();
+				{
+					Entity _entity = entity;
+					if (_entity instanceof Player _player) {
+						_player.getInventory().armor.set(3, new ItemStack(DarkInfectionModItems.VOIDKING_HELMET.get()));
+						_player.getInventory().setChanged();
+					} else if (_entity instanceof LivingEntity _living) {
+						_living.setItemSlot(EquipmentSlot.HEAD, new ItemStack(DarkInfectionModItems.VOIDKING_HELMET.get()));
+					}
 				}
 			}
 		} else if (new Object() {

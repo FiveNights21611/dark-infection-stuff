@@ -14,10 +14,10 @@ import java.util.Map;
 
 public class BallofdarknessRightClickedOnBlockProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, ItemStack itemstack) {
-		if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.GRASS_BLOCK) {
+		if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == Blocks.GRASS_BLOCK) {
 			{
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-				BlockState _bs = DarkInfectionModBlocks.INFECTEDSOIL.defaultBlockState();
+				BlockPos _bp = new BlockPos(x, y, z);
+				BlockState _bs = DarkInfectionModBlocks.INFECTEDSOIL.get().defaultBlockState();
 				BlockState _bso = world.getBlockState(_bp);
 				for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 					Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
@@ -37,10 +37,10 @@ public class BallofdarknessRightClickedOnBlockProcedure {
 				}
 			}
 		}
-		if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.STONE) {
+		if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == Blocks.STONE) {
 			{
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-				BlockState _bs = DarkInfectionModBlocks.VOIDSTONE.defaultBlockState();
+				BlockPos _bp = new BlockPos(x, y, z);
+				BlockState _bs = DarkInfectionModBlocks.VOIDSTONE.get().defaultBlockState();
 				BlockState _bso = world.getBlockState(_bp);
 				for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 					Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
@@ -60,10 +60,10 @@ public class BallofdarknessRightClickedOnBlockProcedure {
 				}
 			}
 		}
-		if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.DIRT) {
+		if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == Blocks.DIRT) {
 			{
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-				BlockState _bs = DarkInfectionModBlocks.DARKDIRT.defaultBlockState();
+				BlockPos _bp = new BlockPos(x, y, z);
+				BlockState _bs = DarkInfectionModBlocks.DARKDIRT.get().defaultBlockState();
 				BlockState _bso = world.getBlockState(_bp);
 				for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 					Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());

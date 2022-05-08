@@ -22,7 +22,6 @@ import java.util.Collections;
 public class VoidCobbleBlock extends Block {
 	public VoidCobbleBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1f, 10f).randomTicks());
-		setRegistryName("void_cobble");
 	}
 
 	@Override

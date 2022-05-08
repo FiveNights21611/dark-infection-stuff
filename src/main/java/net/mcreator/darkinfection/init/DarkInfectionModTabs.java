@@ -17,7 +17,7 @@ public class DarkInfectionModTabs {
 		TAB_DARKINFECTED = new CreativeModeTab("tabdarkinfected") {
 			@Override
 			public ItemStack makeIcon() {
-				return new ItemStack(DarkInfectionModItems.ITEMORBOFDARKNESS);
+				return new ItemStack(DarkInfectionModItems.ITEMORBOFDARKNESS.get());
 			}
 
 			@OnlyIn(Dist.CLIENT)

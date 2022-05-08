@@ -3,6 +3,7 @@ package net.mcreator.darkinfection.item;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.context.UseOnContext;
+import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
@@ -19,7 +20,11 @@ import java.util.List;
 public class ItemorbofdarknessItem extends Item {
 	public ItemorbofdarknessItem() {
 		super(new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED).durability(10).fireResistant().rarity(Rarity.UNCOMMON));
-		setRegistryName("itemorbofdarkness");
+	}
+
+	@Override
+	public UseAnim getUseAnimation(ItemStack itemstack) {
+		return UseAnim.EAT;
 	}
 
 	@Override

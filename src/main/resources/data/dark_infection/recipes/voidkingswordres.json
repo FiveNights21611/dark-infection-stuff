@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  2",
+    "34 ",
+    "67 "
+  ],
+  "key": {
+    "2": {
+      "item": "minecraft:iron_nugget"
+    },
+    "3": {
+      "item": "dark_infection:curev"
+    },
+    "4": {
+      "item": "minecraft:lapis_lazuli"
+    },
+    "6": {
+      "item": "minecraft:iron_nugget"
+    },
+    "7": {
+      "item": "dark_infection:voidvile"
+    }
+  },
+  "result": {
+    "item": "dark_infection:voidkingsword",
+    "count": 1
+  }
+}

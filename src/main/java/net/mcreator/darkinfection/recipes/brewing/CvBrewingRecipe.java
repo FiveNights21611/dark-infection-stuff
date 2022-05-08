@@ -20,18 +20,18 @@ public class CvBrewingRecipe implements IBrewingRecipe {
 
 	@Override
 	public boolean isInput(ItemStack input) {
-		return input.getItem() == DarkInfectionModItems.EMPTYVILE;
+		return input.getItem() == DarkInfectionModItems.EMPTYVILE.get();
 	}
 
 	@Override
 	public boolean isIngredient(ItemStack ingredient) {
-		return ingredient.getItem() == DarkInfectionModItems.PUREAFYINGAPP;
+		return ingredient.getItem() == DarkInfectionModItems.PUREAFYINGAPP.get();
 	}
 
 	@Override
 	public ItemStack getOutput(ItemStack input, ItemStack ingredient) {
 		if (isInput(input) && isIngredient(ingredient)) {
-			return new ItemStack(DarkInfectionModItems.CUREV);
+			return new ItemStack(DarkInfectionModItems.CUREV.get());
 		}
 		return ItemStack.EMPTY;
 	}

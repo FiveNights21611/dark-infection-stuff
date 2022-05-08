@@ -84,7 +84,7 @@ public class DarkCarrotEatProcedure {
 			}
 		}.getScore("infected", entity) == 0) {
 			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(DarkInfectionModMobEffects.DARKNESS, 1200, 1, (false), (true)));
+				_entity.addEffect(new MobEffectInstance(DarkInfectionModMobEffects.DARKNESS.get(), 1200, 1, (false), (true)));
 		}
 	}
 }

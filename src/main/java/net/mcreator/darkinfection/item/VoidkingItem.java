@@ -77,7 +77,6 @@ public abstract class VoidkingItem extends ArmorItem {
 	public static class Helmet extends VoidkingItem {
 		public Helmet() {
 			super(EquipmentSlot.HEAD, new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED).fireResistant());
-			setRegistryName("voidking_helmet");
 		}
 
 		public void initializeClient(java.util.function.Consumer<net.minecraftforge.client.IItemRenderProperties> consumer) {
@@ -114,7 +113,6 @@ public abstract class VoidkingItem extends ArmorItem {
 	public static class Chestplate extends VoidkingItem {
 		public Chestplate() {
 			super(EquipmentSlot.CHEST, new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED).fireResistant());
-			setRegistryName("voidking_chestplate");
 		}
 
 		public void initializeClient(java.util.function.Consumer<net.minecraftforge.client.IItemRenderProperties> consumer) {
@@ -154,7 +152,6 @@ public abstract class VoidkingItem extends ArmorItem {
 	public static class Leggings extends VoidkingItem {
 		public Leggings() {
 			super(EquipmentSlot.LEGS, new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED).fireResistant());
-			setRegistryName("voidking_leggings");
 		}
 
 		public void initializeClient(java.util.function.Consumer<net.minecraftforge.client.IItemRenderProperties> consumer) {
@@ -193,7 +190,6 @@ public abstract class VoidkingItem extends ArmorItem {
 	public static class Boots extends VoidkingItem {
 		public Boots() {
 			super(EquipmentSlot.FEET, new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED));
-			setRegistryName("voidking_boots");
 		}
 
 		public void initializeClient(java.util.function.Consumer<net.minecraftforge.client.IItemRenderProperties> consumer) {

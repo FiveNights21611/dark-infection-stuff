@@ -17,16 +17,17 @@ public class CoverMeInQuartzLogicProcedure {
 		if (entity == null)
 			return;
 		if ((entity instanceof Player _playerHasItem
-				? _playerHasItem.getInventory().contains(new ItemStack(DarkInfectionModItems.QUARTZ_ENRICHED_NETHERITE_ARMOR_HELMET))
+				? _playerHasItem.getInventory().contains(new ItemStack(DarkInfectionModItems.QUARTZ_ENRICHED_NETHERITE_ARMOR_HELMET.get()))
 				: false)
 				&& (entity instanceof Player _playerHasItem
-						? _playerHasItem.getInventory().contains(new ItemStack(DarkInfectionModItems.QUARTZ_ENRICHED_NETHERITE_ARMOR_CHESTPLATE))
+						? _playerHasItem.getInventory()
+								.contains(new ItemStack(DarkInfectionModItems.QUARTZ_ENRICHED_NETHERITE_ARMOR_CHESTPLATE.get()))
 						: false)
 				&& (entity instanceof Player _playerHasItem
-						? _playerHasItem.getInventory().contains(new ItemStack(DarkInfectionModItems.QUARTZ_ENRICHED_NETHERITE_ARMOR_LEGGINGS))
+						? _playerHasItem.getInventory().contains(new ItemStack(DarkInfectionModItems.QUARTZ_ENRICHED_NETHERITE_ARMOR_LEGGINGS.get()))
 						: false)
 				&& (entity instanceof Player _playerHasItem
-						? _playerHasItem.getInventory().contains(new ItemStack(DarkInfectionModItems.QUARTZ_ENRICHED_NETHERITE_ARMOR_BOOTS))
+						? _playerHasItem.getInventory().contains(new ItemStack(DarkInfectionModItems.QUARTZ_ENRICHED_NETHERITE_ARMOR_BOOTS.get()))
 						: false)) {
 			if (entity instanceof ServerPlayer _player) {
 				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("dark_infection:cover_me_in_quartz"));

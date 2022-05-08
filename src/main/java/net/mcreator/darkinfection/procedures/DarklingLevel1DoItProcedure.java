@@ -23,8 +23,7 @@ import java.util.Iterator;
 public class DarklingLevel1DoItProcedure {
 	@SubscribeEvent
 	public static void onEntityTick(LivingEvent.LivingUpdateEvent event) {
-		Entity entity = event.getEntityLiving();
-		execute(event, entity);
+		execute(event, event.getEntityLiving());
 	}
 
 	public static void execute(Entity entity) {

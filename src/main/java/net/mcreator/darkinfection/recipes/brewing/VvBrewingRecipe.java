@@ -20,18 +20,18 @@ public class VvBrewingRecipe implements IBrewingRecipe {
 
 	@Override
 	public boolean isInput(ItemStack input) {
-		return input.getItem() == DarkInfectionModItems.EMPTYVILE;
+		return input.getItem() == DarkInfectionModItems.EMPTYVILE.get();
 	}
 
 	@Override
 	public boolean isIngredient(ItemStack ingredient) {
-		return ingredient.getItem() == DarkInfectionModItems.ENHANCED_DARK_STAR;
+		return ingredient.getItem() == DarkInfectionModItems.ENHANCED_DARK_STAR.get();
 	}
 
 	@Override
 	public ItemStack getOutput(ItemStack input, ItemStack ingredient) {
 		if (isInput(input) && isIngredient(ingredient)) {
-			return new ItemStack(DarkInfectionModItems.VOIDVILE);
+			return new ItemStack(DarkInfectionModItems.VOIDVILE.get());
 		}
 		return ItemStack.EMPTY;
 	}

@@ -44,7 +44,7 @@ public abstract class DarkarmorItem extends ArmorItem {
 
 			@Override
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(DarkInfectionModItems.ITEMORBOFDARKNESS));
+				return Ingredient.of(new ItemStack(DarkInfectionModItems.ITEMORBOFDARKNESS.get()));
 			}
 
 			@Override
@@ -67,7 +67,6 @@ public abstract class DarkarmorItem extends ArmorItem {
 	public static class Helmet extends DarkarmorItem {
 		public Helmet() {
 			super(EquipmentSlot.HEAD, new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED));
-			setRegistryName("darkarmor_helmet");
 		}
 
 		@Override
@@ -79,7 +78,6 @@ public abstract class DarkarmorItem extends ArmorItem {
 	public static class Chestplate extends DarkarmorItem {
 		public Chestplate() {
 			super(EquipmentSlot.CHEST, new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED));
-			setRegistryName("darkarmor_chestplate");
 		}
 
 		@Override
@@ -96,7 +94,6 @@ public abstract class DarkarmorItem extends ArmorItem {
 	public static class Leggings extends DarkarmorItem {
 		public Leggings() {
 			super(EquipmentSlot.LEGS, new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED));
-			setRegistryName("darkarmor_leggings");
 		}
 
 		@Override
@@ -108,7 +105,6 @@ public abstract class DarkarmorItem extends ArmorItem {
 	public static class Boots extends DarkarmorItem {
 		public Boots() {
 			super(EquipmentSlot.FEET, new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED));
-			setRegistryName("darkarmor_boots");
 		}
 
 		@Override

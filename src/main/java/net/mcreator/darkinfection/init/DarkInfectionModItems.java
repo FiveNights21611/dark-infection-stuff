@@ -4,12 +4,12 @@
  */
 package net.mcreator.darkinfection.init;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.registries.RegistryObject;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.item.SpawnEggItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
@@ -29,57 +29,51 @@ import net.mcreator.darkinfection.item.DarkarmorItem;
 import net.mcreator.darkinfection.item.DarkStarItem;
 import net.mcreator.darkinfection.item.DarkCarrotItem;
 import net.mcreator.darkinfection.item.CurevItem;
+import net.mcreator.darkinfection.DarkInfectionMod;
 
-import java.util.List;
-import java.util.ArrayList;
-
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class DarkInfectionModItems {
-	private static final List<Item> REGISTRY = new ArrayList<>();
-	public static final Item ITEMORBOFDARKNESS = register(new ItemorbofdarknessItem());
-	public static final Item INFECTEDSOIL = register(DarkInfectionModBlocks.INFECTEDSOIL, DarkInfectionModTabs.TAB_DARKINFECTED);
-	public static final Item VOIDSTONE = register(DarkInfectionModBlocks.VOIDSTONE, DarkInfectionModTabs.TAB_DARKINFECTED);
-	public static final Item DARKDIRT = register(DarkInfectionModBlocks.DARKDIRT, DarkInfectionModTabs.TAB_DARKINFECTED);
-	public static final Item VOID_COBBLE = register(DarkInfectionModBlocks.VOID_COBBLE, DarkInfectionModTabs.TAB_DARKINFECTED);
-	public static final Item GRAVITYVOID = register(DarkInfectionModBlocks.GRAVITYVOID, DarkInfectionModTabs.TAB_DARKINFECTED);
-	public static final Item QUARTZ_ENRICHED_NETHERITE_ARMOR_HELMET = register(new QuartzEnrichedNetheriteArmorItem.Helmet());
-	public static final Item QUARTZ_ENRICHED_NETHERITE_ARMOR_CHESTPLATE = register(new QuartzEnrichedNetheriteArmorItem.Chestplate());
-	public static final Item QUARTZ_ENRICHED_NETHERITE_ARMOR_LEGGINGS = register(new QuartzEnrichedNetheriteArmorItem.Leggings());
-	public static final Item QUARTZ_ENRICHED_NETHERITE_ARMOR_BOOTS = register(new QuartzEnrichedNetheriteArmorItem.Boots());
-	public static final Item QUARTZ_ENRICHED_NETHERITE = register(new QuartzEnrichedNetheriteItem());
-	public static final Item DARKARMOR_HELMET = register(new DarkarmorItem.Helmet());
-	public static final Item DARKARMOR_CHESTPLATE = register(new DarkarmorItem.Chestplate());
-	public static final Item DARKARMOR_LEGGINGS = register(new DarkarmorItem.Leggings());
-	public static final Item DARKARMOR_BOOTS = register(new DarkarmorItem.Boots());
-	public static final Item DARK_CARROT = register(new DarkCarrotItem());
-	public static final Item PUREAFYINGAPP = register(new PureafyingappItem());
-	public static final Item POPPED_ORB_OF_DARKNESS = register(new PoppedOrbOfDarknessItem());
-	public static final Item DARK_STAR = register(new DarkStarItem());
-	public static final Item ENHANCED_DARK_STAR = register(new EnhancedDarkStarItem());
-	public static final Item VOIDKING_HELMET = register(new VoidkingItem.Helmet());
-	public static final Item VOIDKING_CHESTPLATE = register(new VoidkingItem.Chestplate());
-	public static final Item VOIDKING_LEGGINGS = register(new VoidkingItem.Leggings());
-	public static final Item VOIDKING_BOOTS = register(new VoidkingItem.Boots());
-	public static final Item VOIDVILE = register(new VoidvileItem());
-	public static final Item CUREV = register(new CurevItem());
-	public static final Item STRANGEV = register(new StrangevItem());
-	public static final Item EMPTYVILE = register(new EmptyvileItem());
-	public static final Item VOIDKINGBOSS = register(
-			new SpawnEggItem(DarkInfectionModEntities.VOIDKINGBOSS, -3342337, -52, new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED))
-					.setRegistryName("voidkingboss_spawn_egg"));
-	public static final Item VOIDKINGSWORD = register(new VoidkingswordItem());
+	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, DarkInfectionMod.MODID);
+	public static final RegistryObject<Item> ITEMORBOFDARKNESS = REGISTRY.register("itemorbofdarkness", () -> new ItemorbofdarknessItem());
+	public static final RegistryObject<Item> INFECTEDSOIL = block(DarkInfectionModBlocks.INFECTEDSOIL, DarkInfectionModTabs.TAB_DARKINFECTED);
+	public static final RegistryObject<Item> VOIDSTONE = block(DarkInfectionModBlocks.VOIDSTONE, DarkInfectionModTabs.TAB_DARKINFECTED);
+	public static final RegistryObject<Item> DARKDIRT = block(DarkInfectionModBlocks.DARKDIRT, DarkInfectionModTabs.TAB_DARKINFECTED);
+	public static final RegistryObject<Item> VOID_COBBLE = block(DarkInfectionModBlocks.VOID_COBBLE, DarkInfectionModTabs.TAB_DARKINFECTED);
+	public static final RegistryObject<Item> GRAVITYVOID = block(DarkInfectionModBlocks.GRAVITYVOID, DarkInfectionModTabs.TAB_DARKINFECTED);
+	public static final RegistryObject<Item> QUARTZ_ENRICHED_NETHERITE_ARMOR_HELMET = REGISTRY.register("quartz_enriched_netherite_armor_helmet",
+			() -> new QuartzEnrichedNetheriteArmorItem.Helmet());
+	public static final RegistryObject<Item> QUARTZ_ENRICHED_NETHERITE_ARMOR_CHESTPLATE = REGISTRY
+			.register("quartz_enriched_netherite_armor_chestplate", () -> new QuartzEnrichedNetheriteArmorItem.Chestplate());
+	public static final RegistryObject<Item> QUARTZ_ENRICHED_NETHERITE_ARMOR_LEGGINGS = REGISTRY.register("quartz_enriched_netherite_armor_leggings",
+			() -> new QuartzEnrichedNetheriteArmorItem.Leggings());
+	public static final RegistryObject<Item> QUARTZ_ENRICHED_NETHERITE_ARMOR_BOOTS = REGISTRY.register("quartz_enriched_netherite_armor_boots",
+			() -> new QuartzEnrichedNetheriteArmorItem.Boots());
+	public static final RegistryObject<Item> QUARTZ_ENRICHED_NETHERITE = REGISTRY.register("quartz_enriched_netherite",
+			() -> new QuartzEnrichedNetheriteItem());
+	public static final RegistryObject<Item> DARKARMOR_HELMET = REGISTRY.register("darkarmor_helmet", () -> new DarkarmorItem.Helmet());
+	public static final RegistryObject<Item> DARKARMOR_CHESTPLATE = REGISTRY.register("darkarmor_chestplate", () -> new DarkarmorItem.Chestplate());
+	public static final RegistryObject<Item> DARKARMOR_LEGGINGS = REGISTRY.register("darkarmor_leggings", () -> new DarkarmorItem.Leggings());
+	public static final RegistryObject<Item> DARKARMOR_BOOTS = REGISTRY.register("darkarmor_boots", () -> new DarkarmorItem.Boots());
+	public static final RegistryObject<Item> PUREAFYINGAPP = REGISTRY.register("pureafyingapp", () -> new PureafyingappItem());
+	public static final RegistryObject<Item> POPPED_ORB_OF_DARKNESS = REGISTRY.register("popped_orb_of_darkness",
+			() -> new PoppedOrbOfDarknessItem());
+	public static final RegistryObject<Item> DARK_STAR = REGISTRY.register("dark_star", () -> new DarkStarItem());
+	public static final RegistryObject<Item> ENHANCED_DARK_STAR = REGISTRY.register("enhanced_dark_star", () -> new EnhancedDarkStarItem());
+	public static final RegistryObject<Item> VOIDKING_HELMET = REGISTRY.register("voidking_helmet", () -> new VoidkingItem.Helmet());
+	public static final RegistryObject<Item> VOIDKING_CHESTPLATE = REGISTRY.register("voidking_chestplate", () -> new VoidkingItem.Chestplate());
+	public static final RegistryObject<Item> VOIDKING_LEGGINGS = REGISTRY.register("voidking_leggings", () -> new VoidkingItem.Leggings());
+	public static final RegistryObject<Item> VOIDKING_BOOTS = REGISTRY.register("voidking_boots", () -> new VoidkingItem.Boots());
+	public static final RegistryObject<Item> VOIDVILE = REGISTRY.register("voidvile", () -> new VoidvileItem());
+	public static final RegistryObject<Item> CUREV = REGISTRY.register("curev", () -> new CurevItem());
+	public static final RegistryObject<Item> STRANGEV = REGISTRY.register("strangev", () -> new StrangevItem());
+	public static final RegistryObject<Item> EMPTYVILE = REGISTRY.register("emptyvile", () -> new EmptyvileItem());
+	public static final RegistryObject<Item> VOIDKINGBOSS = REGISTRY.register("voidkingboss_spawn_egg",
+			() -> new ForgeSpawnEggItem(DarkInfectionModEntities.VOIDKINGBOSS, -3342337, -52,
+					new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED)));
+	public static final RegistryObject<Item> VOIDKINGSWORD = REGISTRY.register("voidkingsword", () -> new VoidkingswordItem());
+	public static final RegistryObject<Item> VOIDSTONEBRICKS = block(DarkInfectionModBlocks.VOIDSTONEBRICKS, DarkInfectionModTabs.TAB_DARKINFECTED);
+	public static final RegistryObject<Item> DARK_CARROT = REGISTRY.register("dark_carrot", () -> new DarkCarrotItem());
 
-	private static Item register(Item item) {
-		REGISTRY.add(item);
-		return item;
-	}
-
-	private static Item register(Block block, CreativeModeTab tab) {
-		return register(new BlockItem(block, new Item.Properties().tab(tab)).setRegistryName(block.getRegistryName()));
-	}
-
-	@SubscribeEvent
-	public static void registerItems(RegistryEvent.Register<Item> event) {
-		event.getRegistry().registerAll(REGISTRY.toArray(new Item[0]));
+	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
+		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
 	}
 }

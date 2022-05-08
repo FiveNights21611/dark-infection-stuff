@@ -32,8 +32,8 @@ import javax.annotation.Nullable;
 public class CheckProcedure {
 	@SubscribeEvent
 	public static void onEntityTick(LivingEvent.LivingUpdateEvent event) {
-		Entity entity = event.getEntityLiving();
-		execute(event, entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
+		execute(event, event.getEntityLiving().level, event.getEntityLiving().getX(), event.getEntityLiving().getY(), event.getEntityLiving().getZ(),
+				event.getEntityLiving());
 	}
 
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -44,22 +44,22 @@ public class CheckProcedure {
 		if (entity == null)
 			return;
 		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY)
-				.getItem() == DarkInfectionModItems.QUARTZ_ENRICHED_NETHERITE_ARMOR_BOOTS
+				.getItem() == DarkInfectionModItems.QUARTZ_ENRICHED_NETHERITE_ARMOR_BOOTS.get()
 				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY)
-						.getItem() == DarkInfectionModItems.QUARTZ_ENRICHED_NETHERITE_ARMOR_LEGGINGS
+						.getItem() == DarkInfectionModItems.QUARTZ_ENRICHED_NETHERITE_ARMOR_LEGGINGS.get()
 				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY)
-						.getItem() == DarkInfectionModItems.QUARTZ_ENRICHED_NETHERITE_ARMOR_CHESTPLATE
+						.getItem() == DarkInfectionModItems.QUARTZ_ENRICHED_NETHERITE_ARMOR_CHESTPLATE.get()
 				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY)
-						.getItem() == DarkInfectionModItems.QUARTZ_ENRICHED_NETHERITE_ARMOR_HELMET) {
+						.getItem() == DarkInfectionModItems.QUARTZ_ENRICHED_NETHERITE_ARMOR_HELMET.get()) {
 			if (entity instanceof Player _player) {
 				_player.getAbilities().mayBuild = (true);
 				_player.onUpdateAbilities();
 			}
 		} else {
-			if (((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == DarkInfectionModBlocks.INFECTEDSOIL
-					|| (world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == DarkInfectionModBlocks.VOIDSTONE
-					|| (world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == DarkInfectionModBlocks.DARKDIRT)
-					&& (entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(DarkInfectionModMobEffects.DARKNESS) : false) == false
+			if (((world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == DarkInfectionModBlocks.INFECTEDSOIL.get()
+					|| (world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == DarkInfectionModBlocks.VOIDSTONE.get()
+					|| (world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == DarkInfectionModBlocks.DARKDIRT.get())
+					&& (entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(DarkInfectionModMobEffects.DARKNESS.get()) : false) == false
 					&& new Object() {
 						public int getScore(String score, Entity _ent) {
 							if (_ent instanceof Player _player) {
@@ -74,11 +74,11 @@ public class CheckProcedure {
 						}
 					}.getScore("infected", entity) == 0) {
 				if (entity instanceof LivingEntity _entity)
-					_entity.addEffect(new MobEffectInstance(DarkInfectionModMobEffects.DARKNESS, 10000, 1, (false), (false)));
-			} else if (((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.GRASS_BLOCK
-					|| (world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.STONE
-					|| (world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.DIRT)
-					&& (entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(DarkInfectionModMobEffects.DARKNESS) : false) == true
+					_entity.addEffect(new MobEffectInstance(DarkInfectionModMobEffects.DARKNESS.get(), 10000, 1, (false), (false)));
+			} else if (((world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == Blocks.GRASS_BLOCK
+					|| (world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == Blocks.STONE
+					|| (world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == Blocks.DIRT)
+					&& (entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(DarkInfectionModMobEffects.DARKNESS.get()) : false) == true
 					&& new Object() {
 						public int getScore(String score, Entity _ent) {
 							if (_ent instanceof Player _player) {
@@ -93,7 +93,7 @@ public class CheckProcedure {
 						}
 					}.getScore("infected", entity) == 0) {
 				if (entity instanceof LivingEntity _entity)
-					_entity.removeEffect(DarkInfectionModMobEffects.DARKNESS);
+					_entity.removeEffect(DarkInfectionModMobEffects.DARKNESS.get());
 				new Object() {
 					private int ticks = 0;
 					private float waitTicks;

@@ -28,8 +28,7 @@ import java.util.Collections;
 
 public class InfectedsoilBlock extends Block {
 	public InfectedsoilBlock() {
-		super(BlockBehaviour.Properties.of(Material.GRASS).sound(SoundType.DEEPSLATE).strength(1f, 10f).randomTicks());
-		setRegistryName("infectedsoil");
+		super(BlockBehaviour.Properties.of(Material.GRASS, MaterialColor.STONE).sound(SoundType.DEEPSLATE).strength(1f, 10f).randomTicks());
 	}
 
 	@Override
@@ -44,11 +43,6 @@ public class InfectedsoilBlock extends Block {
 	}
 
 	@Override
-	public MaterialColor defaultMaterialColor() {
-		return MaterialColor.STONE;
-	}
-
-	@Override
 	public boolean canSustainPlant(BlockState state, BlockGetter world, BlockPos pos, Direction direction, IPlantable plantable) {
 		return true;
 	}
@@ -58,7 +52,7 @@ public class InfectedsoilBlock extends Block {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(DarkInfectionModBlocks.DARKDIRT));
+		return Collections.singletonList(new ItemStack(DarkInfectionModBlocks.DARKDIRT.get()));
 	}
 
 	@Override

@@ -20,13 +20,13 @@ public class DarkarmorBodyTickEventProcedure {
 		if (entity == null)
 			return;
 		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY)
-				.getItem() == DarkInfectionModItems.DARKARMOR_BOOTS
+				.getItem() == DarkInfectionModItems.DARKARMOR_BOOTS.get()
 				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY)
-						.getItem() == DarkInfectionModItems.DARKARMOR_LEGGINGS
+						.getItem() == DarkInfectionModItems.DARKARMOR_LEGGINGS.get()
 				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY)
-						.getItem() == DarkInfectionModItems.DARKARMOR_CHESTPLATE
+						.getItem() == DarkInfectionModItems.DARKARMOR_CHESTPLATE.get()
 				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY)
-						.getItem() == DarkInfectionModItems.DARKARMOR_HELMET) {
+						.getItem() == DarkInfectionModItems.DARKARMOR_HELMET.get()) {
 			if (new Object() {
 				public int getScore(String score, Entity _ent) {
 					if (_ent instanceof Player _player) {

@@ -22,7 +22,6 @@ import java.util.Collections;
 public class GravityvoidBlock extends FallingBlock {
 	public GravityvoidBlock() {
 		super(BlockBehaviour.Properties.of(Material.SAND).sound(SoundType.SAND).strength(1f, 10f));
-		setRegistryName("gravityvoid");
 	}
 
 	@Override
@@ -41,7 +40,7 @@ public class GravityvoidBlock extends FallingBlock {
 	@Override
 	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
 		super.onPlace(blockstate, world, pos, oldState, moving);
-		world.getBlockTicks().scheduleTick(pos, this, 1);
+		world.scheduleTick(pos, this, 1);
 	}
 
 	@Override
@@ -52,6 +51,6 @@ public class GravityvoidBlock extends FallingBlock {
 		int z = pos.getZ();
 
 		InfectedsoilUpdateTickProcedure.execute(world, x, y, z);
-		world.getBlockTicks().scheduleTick(pos, this, 1);
+		world.scheduleTick(pos, this, 1);
 	}
 }

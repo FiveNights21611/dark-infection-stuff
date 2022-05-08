@@ -22,7 +22,6 @@ import java.util.Collections;
 public class VoidstoneBlock extends Block {
 	public VoidstoneBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(2f, 10f).randomTicks());
-		setRegistryName("voidstone");
 	}
 
 	@Override

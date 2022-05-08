@@ -32,13 +32,13 @@ public class UDRecipeBrewingRecipe implements IBrewingRecipe {
 
 	@Override
 	public boolean isIngredient(ItemStack ingredient) {
-		return ingredient.getItem() == DarkInfectionModItems.ENHANCED_DARK_STAR;
+		return ingredient.getItem() == DarkInfectionModItems.ENHANCED_DARK_STAR.get();
 	}
 
 	@Override
 	public ItemStack getOutput(ItemStack input, ItemStack ingredient) {
 		if (isInput(input) && isIngredient(ingredient)) {
-			return PotionUtils.setPotion(new ItemStack(input.getItem()), DarkInfectionModPotions.POTION_OF_ULTIMATE_DARKNESS);
+			return PotionUtils.setPotion(new ItemStack(input.getItem()), DarkInfectionModPotions.POTION_OF_ULTIMATE_DARKNESS.get());
 		}
 		return ItemStack.EMPTY;
 	}

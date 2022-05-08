@@ -51,8 +51,8 @@ public class DarknessEffectExpiresProcedure {
 				Score _scr = _sc.getOrCreatePlayerScore(_player.getScoreboardName(), _so);
 				_scr.setScore(1);
 			}
-		} else if ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(DarkInfectionModMobEffects.DARKNESS)
-				? _livEnt.getEffect(DarkInfectionModMobEffects.DARKNESS).getAmplifier()
+		} else if ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(DarkInfectionModMobEffects.DARKNESS.get())
+				? _livEnt.getEffect(DarkInfectionModMobEffects.DARKNESS.get()).getAmplifier()
 				: 0) == 3) {
 			if (entity instanceof Player _player) {
 				Scoreboard _sc = _player.getScoreboard();
@@ -63,9 +63,9 @@ public class DarknessEffectExpiresProcedure {
 				_scr.setScore(3);
 			}
 		} else {
-			if ((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == DarkInfectionModBlocks.INFECTEDSOIL
-					|| (world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == DarkInfectionModBlocks.VOIDSTONE
-					|| (world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == DarkInfectionModBlocks.DARKDIRT) {
+			if ((world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == DarkInfectionModBlocks.INFECTEDSOIL.get()
+					|| (world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == DarkInfectionModBlocks.VOIDSTONE.get()
+					|| (world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == DarkInfectionModBlocks.DARKDIRT.get()) {
 				if (entity instanceof Player _player) {
 					Scoreboard _sc = _player.getScoreboard();
 					Objective _so = _sc.getObjective("imune");

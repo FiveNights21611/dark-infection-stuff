@@ -15,6 +15,6 @@ import net.mcreator.darkinfection.client.renderer.VoidkingbossRenderer;
 public class DarkInfectionModEntityRenderers {
 	@SubscribeEvent
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
-		event.registerEntityRenderer(DarkInfectionModEntities.VOIDKINGBOSS, VoidkingbossRenderer::new);
+		event.registerEntityRenderer(DarkInfectionModEntities.VOIDKINGBOSS.get(), VoidkingbossRenderer::new);
 	}
 }

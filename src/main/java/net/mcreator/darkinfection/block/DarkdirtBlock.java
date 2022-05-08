@@ -24,7 +24,6 @@ import java.util.Collections;
 public class DarkdirtBlock extends Block {
 	public DarkdirtBlock() {
 		super(BlockBehaviour.Properties.of(Material.DIRT).sound(SoundType.GRAVEL).strength(1f, 10f).randomTicks());
-		setRegistryName("darkdirt");
 	}
 
 	@Override

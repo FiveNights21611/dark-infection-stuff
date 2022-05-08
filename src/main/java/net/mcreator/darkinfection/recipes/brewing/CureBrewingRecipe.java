@@ -32,13 +32,13 @@ public class CureBrewingRecipe implements IBrewingRecipe {
 
 	@Override
 	public boolean isIngredient(ItemStack ingredient) {
-		return ingredient.getItem() == DarkInfectionModItems.PUREAFYINGAPP;
+		return ingredient.getItem() == DarkInfectionModItems.PUREAFYINGAPP.get();
 	}
 
 	@Override
 	public ItemStack getOutput(ItemStack input, ItemStack ingredient) {
 		if (isInput(input) && isIngredient(ingredient)) {
-			return PotionUtils.setPotion(new ItemStack(input.getItem()), DarkInfectionModPotions.VOIDCUREPOTION);
+			return PotionUtils.setPotion(new ItemStack(input.getItem()), DarkInfectionModPotions.VOIDCUREPOTION.get());
 		}
 		return ItemStack.EMPTY;
 	}

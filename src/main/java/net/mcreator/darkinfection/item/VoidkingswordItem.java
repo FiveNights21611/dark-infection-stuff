@@ -37,6 +37,5 @@ public class VoidkingswordItem extends SwordItem {
 				return Ingredient.of(new ItemStack(Items.LAPIS_LAZULI));
 			}
 		}, 3, -3f, new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED).fireResistant());
-		setRegistryName("voidkingsword");
 	}
 }

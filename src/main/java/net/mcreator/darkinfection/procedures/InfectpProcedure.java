@@ -22,8 +22,7 @@ public class InfectpProcedure {
 	@SubscribeEvent
 	public static void onEntityAttacked(LivingAttackEvent event) {
 		if (event != null && event.getEntity() != null) {
-			Entity entity = event.getEntity();
-			execute(event, entity, event.getSource().getEntity());
+			execute(event, event.getEntity(), event.getSource().getEntity());
 		}
 	}
 
@@ -60,7 +59,7 @@ public class InfectpProcedure {
 			}
 		}.getScore("infected", entity) == 0) {
 			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(DarkInfectionModMobEffects.DARKCORUPT, 1000, 1, (false), (false)));
+				_entity.addEffect(new MobEffectInstance(DarkInfectionModMobEffects.DARKCORUPT.get(), 1000, 1, (false), (false)));
 		}
 	}
 }

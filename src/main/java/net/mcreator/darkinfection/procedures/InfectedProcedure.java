@@ -23,8 +23,7 @@ import javax.annotation.Nullable;
 public class InfectedProcedure {
 	@SubscribeEvent
 	public static void onEntityTick(LivingEvent.LivingUpdateEvent event) {
-		Entity entity = event.getEntityLiving();
-		execute(event, entity.level, entity);
+		execute(event, event.getEntityLiving().level, event.getEntityLiving());
 	}
 
 	public static void execute(LevelAccessor world, Entity entity) {

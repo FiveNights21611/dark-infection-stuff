@@ -40,7 +40,7 @@ public class GivevoidcureEffectExpiresProcedure {
 			}
 		}.getScore("imune", entity) == 0) {
 			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(DarkInfectionModMobEffects.VOID_CURE, 3600, 1, (false), (false)));
+				_entity.addEffect(new MobEffectInstance(DarkInfectionModMobEffects.VOID_CURE.get(), 3600, 1, (false), (false)));
 		} else if (new Object() {
 			public int getScore(String score, Entity _ent) {
 				if (_ent instanceof Player _player) {
@@ -55,7 +55,7 @@ public class GivevoidcureEffectExpiresProcedure {
 			}
 		}.getScore("infected", entity) == 1) {
 			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(DarkInfectionModMobEffects.VOID_CURE, 3, 1, (false), (false)));
+				_entity.addEffect(new MobEffectInstance(DarkInfectionModMobEffects.VOID_CURE.get(), 3, 1, (false), (false)));
 		} else if (new Object() {
 			public int getScore(String score, Entity _ent) {
 				if (_ent instanceof Player _player) {
@@ -70,7 +70,7 @@ public class GivevoidcureEffectExpiresProcedure {
 			}
 		}.getScore("infected", entity) == 2) {
 			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(DarkInfectionModMobEffects.VOID_CURE, 3600, 1, (false), (false)));
+				_entity.addEffect(new MobEffectInstance(DarkInfectionModMobEffects.VOID_CURE.get(), 3600, 1, (false), (false)));
 		} else if (new Object() {
 			public int getScore(String score, Entity _ent) {
 				if (_ent instanceof Player _player) {
@@ -85,7 +85,7 @@ public class GivevoidcureEffectExpiresProcedure {
 			}
 		}.getScore("infected", entity) == 3) {
 			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(DarkInfectionModMobEffects.VOID_CURE, 918000, 1, (false), (false)));
+				_entity.addEffect(new MobEffectInstance(DarkInfectionModMobEffects.VOID_CURE.get(), 918000, 1, (false), (false)));
 		}
 	}
 }

@@ -30,6 +30,7 @@ import net.mcreator.darkinfection.init.DarkInfectionModTabs;
 import net.mcreator.darkinfection.init.DarkInfectionModPotions;
 import net.mcreator.darkinfection.init.DarkInfectionModMobEffects;
 import net.mcreator.darkinfection.init.DarkInfectionModItems;
+import net.mcreator.darkinfection.init.DarkInfectionModFeatures;
 import net.mcreator.darkinfection.init.DarkInfectionModEntities;
 import net.mcreator.darkinfection.init.DarkInfectionModBlocks;
 import net.mcreator.darkinfection.init.DarkInfectionModBiomes;
@@ -53,6 +54,8 @@ public class DarkInfectionMod {
 		DarkInfectionModBlocks.REGISTRY.register(bus);
 		DarkInfectionModItems.REGISTRY.register(bus);
 		DarkInfectionModEntities.REGISTRY.register(bus);
+
+		DarkInfectionModFeatures.REGISTRY.register(bus);
 
 		DarkInfectionModMobEffects.REGISTRY.register(bus);
 		DarkInfectionModPotions.REGISTRY.register(bus);

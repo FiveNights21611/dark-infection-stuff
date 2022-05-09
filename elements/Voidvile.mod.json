@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "voidv",
+    "texture": "vialtexture2",
     "customModelName": "Normal",
     "name": "Void Vial",
     "rarity": "RARE",
@@ -35,6 +35,9 @@
     "isFood": false,
     "nutritionalValue": 0,
     "saturation": 0.30000001192092896,
+    "eatResultItem": {
+      "value": ""
+    },
     "isMeat": false,
     "isAlwaysEdible": false,
     "animation": "eat"

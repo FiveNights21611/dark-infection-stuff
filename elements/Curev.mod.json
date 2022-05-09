@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "curev",
+    "texture": "vialtexture1",
     "customModelName": "Normal",
     "name": "Cure Vial",
     "rarity": "UNCOMMON",
@@ -35,6 +35,9 @@
     "isFood": false,
     "nutritionalValue": 0,
     "saturation": 0.30000001192092896,
+    "eatResultItem": {
+      "value": ""
+    },
     "isMeat": false,
     "isAlwaysEdible": false,
     "animation": "eat"

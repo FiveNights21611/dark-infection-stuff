@@ -834,10 +834,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       }
@@ -923,88 +919,20 @@
       "registry_name": "vk"
     },
     {
-      "name": "IronRod",
-      "type": "item",
-      "sortid": 69,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "iron_rod"
-    },
-    {
-      "name": "DarklingLevel2",
-      "type": "achievement",
-      "sortid": 75,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "darkling_level_2"
-    },
-    {
-      "name": "IronRodRecipe",
-      "type": "recipe",
-      "sortid": 70,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "iron_rod_recipe"
-    },
-    {
-      "name": "BluePole",
-      "type": "item",
-      "sortid": 73,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "blue_pole"
-    },
-    {
-      "name": "DarklingLevel2DoIt",
-      "type": "procedure",
-      "sortid": 76,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "darkling_level_2_do_it",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "IronPole",
-      "type": "item",
-      "sortid": 71,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "iron_pole"
-    },
-    {
-      "name": "BluePoleRecipe",
-      "type": "recipe",
-      "sortid": 74,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "blue_pole_recipe"
-    },
-    {
-      "name": "IronPoleRecipe",
-      "type": "recipe",
-      "sortid": 72,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "iron_pole_recipe"
-    },
-    {
       "name": "Voidtemple",
       "type": "structure",
       "sortid": 69,
       "compiles": true,
       "locked_code": false,
       "registry_name": "voidtemple"
+    },
+    {
+      "name": "D",
+      "type": "tag",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "d"
     }
   ],
   "variable_elements": [],
@@ -1022,8 +950,8 @@
       "biome.dark_infection.dark_biome": "Dark Biome",
       "block.dark_infection.gravityvoid": "GravityVoid",
       "item.minecraft.lingering_potion.effect.voidcurepotion": "Lingering Potion of Voidcure",
-      "advancements.darkling_level_2.descr": "Delve further into the Darkness...",
       "advancements.cover_me_in_quartz.title": "Cover Me In Quartz",
+      "advancements.darkling_level_2.descr": "Delve further into the Darkness...",
       "item.minecraft.tipped_arrow.effect.potion_of_ultimate_darkness": "Arrow of Ultimate Darkness",
       "item.dark_infection.itemorbofdarkness": "Orb Of Darkness",
       "advancements.darkling_level_2.title": "Darkling Level 2",

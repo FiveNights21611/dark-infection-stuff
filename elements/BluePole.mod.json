@@ -3,29 +3,29 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "strangevile",
+    "texture": "bluepole",
     "customModelName": "Normal",
-    "name": "Strange Vial",
-    "rarity": "EPIC",
+    "name": "Blue Pole",
+    "rarity": "UNCOMMON",
     "creativeTab": {
       "value": "CUSTOM:Darkinfected"
     },
-    "stackSize": 64,
-    "enchantability": 0,
+    "stackSize": 1,
+    "enchantability": 15,
     "useDuration": 0,
-    "toolType": 1.0,
+    "toolType": 0.8,
     "damageCount": 0,
     "recipeRemainder": {
       "value": ""
     },
     "destroyAnyBlock": false,
-    "immuneToFire": false,
+    "immuneToFire": true,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
-    "damageVsEntity": 0.0,
+    "damageVsEntity": 9.0,
     "specialInfo": [
-      "You feel a crackling energy eminating from within..."
+      "Dangerous..."
     ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
@@ -33,8 +33,8 @@
     "inventoryStackSize": 64,
     "hasDispenseBehavior": false,
     "isFood": false,
-    "nutritionalValue": 0,
-    "saturation": 0.30000001192092896,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
     "eatResultItem": {
       "value": ""
     },

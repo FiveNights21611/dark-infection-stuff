@@ -10,37 +10,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
+        "value": "CUSTOM:IronRod"
+      },
+      {
+        "value": "CUSTOM:IronRod"
+      },
+      {
+        "value": "CUSTOM:IronRod"
+      },
+      {
+        "value": "CUSTOM:IronRod"
       },
       {
         "value": ""
       },
       {
-        "value": "Items.IRON_NUGGET"
+        "value": "CUSTOM:IronRod"
       },
       {
-        "value": "CUSTOM:Curev"
+        "value": "CUSTOM:IronRod"
       },
       {
-        "value": "CUSTOM:BluePole"
+        "value": "CUSTOM:IronRod"
       },
       {
-        "value": ""
-      },
-      {
-        "value": "Items.IRON_NUGGET"
-      },
-      {
-        "value": "CUSTOM:Voidvile"
-      },
-      {
-        "value": ""
+        "value": "CUSTOM:IronRod"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Voidkingsword"
+      "value": "CUSTOM:IronPole"
     },
-    "name": "voidkingswordres",
+    "name": "iron_pole_recipe",
     "namespace": "mod"
   }
 }

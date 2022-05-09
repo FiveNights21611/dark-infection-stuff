@@ -40,7 +40,7 @@ public class VoidkingswordItem extends SwordItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(DarkInfectionModItems.DELETED_MOD_ELEMENT.get()));
+				return Ingredient.of(new ItemStack(DarkInfectionModItems.BLUE_POLE.get()));
 			}
 		}, 3, -3.4f, new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED).fireResistant());
 	}

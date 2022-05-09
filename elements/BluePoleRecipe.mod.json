@@ -10,37 +10,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
+        "value": "Items.NETHERITE_SCRAP"
       },
       {
-        "value": ""
+        "value": "CUSTOM:IronRod"
       },
       {
-        "value": "Items.IRON_NUGGET"
+        "value": "Items.NETHERITE_SCRAP"
       },
       {
-        "value": "CUSTOM:Curev"
+        "value": "Items.DIAMOND"
       },
       {
-        "value": "CUSTOM:BluePole"
+        "value": "CUSTOM:IronPole"
       },
       {
-        "value": ""
+        "value": "Items.DIAMOND"
       },
       {
-        "value": "Items.IRON_NUGGET"
+        "value": "Items.NETHERITE_SCRAP"
       },
       {
-        "value": "CUSTOM:Voidvile"
+        "value": "Blocks.LAPIS_BLOCK"
       },
       {
-        "value": ""
+        "value": "Items.NETHERITE_SCRAP"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Voidkingsword"
+      "value": "CUSTOM:BluePole"
     },
-    "name": "voidkingswordres",
+    "name": "blue_pole_recipe",
     "namespace": "mod"
   }
 }

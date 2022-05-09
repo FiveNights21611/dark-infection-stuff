@@ -9,13 +9,13 @@ import net.minecraft.world.level.biome.Biome;
 import net.minecraft.data.worldgen.BiomeDefaultFeatures;
 
 public class DarkBiomeBiome {
-	public static final Climate.ParameterPoint PARAMETER_POINT = new Climate.ParameterPoint(
-			Climate.Parameter.span(-0.271428571429f, -0.128571428571f), Climate.Parameter.span(-1.071428571429f, -0.928571428571f),
-			Climate.Parameter.span(0.438571428571f, 0.581428571429f), Climate.Parameter.span(0.728571428571f, 0.871428571429f),
-			Climate.Parameter.point(0), Climate.Parameter.span(-0.549090547942f, -0.406233405084f), 0);
+	public static final Climate.ParameterPoint PARAMETER_POINT = new Climate.ParameterPoint(Climate.Parameter.span(-0.914285714286f, 0.514285714286f),
+			Climate.Parameter.span(-1.714285714286f, -0.285714285714f), Climate.Parameter.span(-0.204285714286f, 1.224285714286f),
+			Climate.Parameter.span(0.085714285714f, 1.514285714286f), Climate.Parameter.point(0),
+			Climate.Parameter.span(-1.191947690799f, 0.236623737773f), 0);
 	public static final Climate.ParameterPoint PARAMETER_POINT_UNDERGROUND = new Climate.ParameterPoint(Climate.Parameter.span(-1, 1),
-			Climate.Parameter.span(-1, 1), Climate.Parameter.span(0.01f, 1.01f), Climate.Parameter.span(0.3f, 1.3f),
-			Climate.Parameter.span(0.2f, 0.9f), Climate.Parameter.span(-0.977661976513f, 0.022338023487f), 0);
+			Climate.Parameter.span(-1, 1), Climate.Parameter.span(-4.49f, 5.51f), Climate.Parameter.span(-4.2f, 5.8f),
+			Climate.Parameter.span(0.2f, 0.9f), Climate.Parameter.span(-5.477661976513f, 4.522338023487f), 0);
 
 	public static Biome createBiome() {
 		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(-13882324).waterColor(-13487566).waterFogColor(-16053493)

@@ -3,17 +3,17 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "strangevile",
+    "texture": "ironpole",
     "customModelName": "Normal",
-    "name": "Strange Vial",
-    "rarity": "EPIC",
+    "name": "Iron Pole",
+    "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:Darkinfected"
     },
     "stackSize": 64,
     "enchantability": 0,
     "useDuration": 0,
-    "toolType": 1.0,
+    "toolType": 1.6,
     "damageCount": 0,
     "recipeRemainder": {
       "value": ""
@@ -23,9 +23,10 @@
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
-    "damageVsEntity": 0.0,
+    "damageVsEntity": 8.0,
     "specialInfo": [
-      "You feel a crackling energy eminating from within..."
+      "Light",
+      "but deadly!"
     ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
@@ -33,8 +34,8 @@
     "inventoryStackSize": 64,
     "hasDispenseBehavior": false,
     "isFood": false,
-    "nutritionalValue": 0,
-    "saturation": 0.30000001192092896,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
     "eatResultItem": {
       "value": ""
     },

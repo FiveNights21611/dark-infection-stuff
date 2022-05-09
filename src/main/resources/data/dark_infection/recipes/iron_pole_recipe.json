@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "dark_infection:iron_rod"
+    },
+    "1": {
+      "item": "dark_infection:iron_rod"
+    },
+    "2": {
+      "item": "dark_infection:iron_rod"
+    },
+    "3": {
+      "item": "dark_infection:iron_rod"
+    },
+    "5": {
+      "item": "dark_infection:iron_rod"
+    },
+    "6": {
+      "item": "dark_infection:iron_rod"
+    },
+    "7": {
+      "item": "dark_infection:iron_rod"
+    },
+    "8": {
+      "item": "dark_infection:iron_rod"
+    }
+  },
+  "result": {
+    "item": "dark_infection:iron_pole",
+    "count": 1
+  }
+}

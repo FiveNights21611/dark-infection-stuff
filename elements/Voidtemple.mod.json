@@ -16,7 +16,11 @@
       "Surface"
     ],
     "restrictionBlocks": [],
-    "restrictionBiomes": [],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:DarkBiome"
+      }
+    ],
     "ignoreBlocks": "STRUCTURE_BLOCK"
   }
 }

@@ -16,10 +16,10 @@ import net.minecraft.core.Registry;
 import net.mcreator.darkinfection.init.DarkInfectionModBiomes;
 
 public class DarkBiomeBiome {
-	public static final Climate.ParameterPoint PARAMETER_POINT = new Climate.ParameterPoint(Climate.Parameter.span(-1.628571428571f, 1.228571428571f),
-			Climate.Parameter.span(-2.428571428571f, 0.428571428571f), Climate.Parameter.span(-0.918571428571f, 1.938571428571f),
-			Climate.Parameter.span(-0.628571428571f, 2.228571428571f), Climate.Parameter.point(0),
-			Climate.Parameter.span(-1.906233405084f, 0.950909452058f), 0);
+	public static final Climate.ParameterPoint PARAMETER_POINT = new Climate.ParameterPoint(Climate.Parameter.span(-0.485714285714f, 0.085714285714f),
+			Climate.Parameter.span(-1.285714285714f, -0.714285714286f), Climate.Parameter.span(0.224285714286f, 0.795714285714f),
+			Climate.Parameter.span(0.514285714286f, 1.085714285714f), Climate.Parameter.point(0),
+			Climate.Parameter.span(-0.763376262227f, -0.191947690799f), 0);
 
 	public static Biome createBiome() {
 		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(-10066330).waterColor(-10066330).waterFogColor(-16777216)

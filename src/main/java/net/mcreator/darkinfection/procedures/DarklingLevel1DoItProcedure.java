@@ -96,7 +96,7 @@ public class DarklingLevel1DoItProcedure {
 					}
 					MinecraftForge.EVENT_BUS.unregister(this);
 				}
-			}.start(world, 120);
+			}.start(world, 140);
 		}
 	}
 }

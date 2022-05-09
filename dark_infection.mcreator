@@ -917,6 +917,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "vk"
+    },
+    {
+      "name": "D",
+      "type": "tag",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "d"
     }
   ],
   "variable_elements": [],

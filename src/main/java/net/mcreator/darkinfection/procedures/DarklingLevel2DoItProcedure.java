@@ -23,7 +23,7 @@ import javax.annotation.Nullable;
 import java.util.Iterator;
 
 @Mod.EventBusSubscriber
-public class DarklingLevel1DoItProcedure {
+public class DarklingLevel2DoItProcedure {
 	@SubscribeEvent
 	public static void onEntityTick(LivingEvent.LivingUpdateEvent event) {
 		execute(event, event.getEntityLiving().level, event.getEntityLiving());
@@ -48,7 +48,7 @@ public class DarklingLevel1DoItProcedure {
 				}
 				return 0;
 			}
-		}.getScore("infected", entity) == 1) {
+		}.getScore("infected", entity) == 2) {
 			new Object() {
 				private int ticks = 0;
 				private float waitTicks;
@@ -82,10 +82,10 @@ public class DarklingLevel1DoItProcedure {
 							}
 							return 0;
 						}
-					}.getScore("infected", entity) == 1) {
+					}.getScore("infected", entity) == 2) {
 						if (entity instanceof ServerPlayer _player) {
 							Advancement _adv = _player.server.getAdvancements()
-									.getAdvancement(new ResourceLocation("dark_infection:darkling_level_1"));
+									.getAdvancement(new ResourceLocation("dark_infection:darkling_level_2"));
 							AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
 							if (!_ap.isDone()) {
 								Iterator _iterator = _ap.getRemainingCriteria().iterator();
@@ -96,7 +96,7 @@ public class DarklingLevel1DoItProcedure {
 					}
 					MinecraftForge.EVENT_BUS.unregister(this);
 				}
-			}.start(world, 120);
+			}.start(world, 1);
 		}
 	}
 }

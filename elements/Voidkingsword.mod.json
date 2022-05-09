@@ -5,23 +5,25 @@
     "renderType": 1,
     "texture": "vks",
     "customModelName": "vk_sword:default",
-    "name": "Voidkingsword",
-    "specialInfo": [],
+    "name": "Void King's Lance",
+    "specialInfo": [
+      "Feels Powerful... and ready. =)"
+    ],
     "creativeTab": {
       "value": "CUSTOM:Darkinfected"
     },
     "toolType": "Sword",
     "harvestLevel": 1,
     "efficiency": 4.0,
-    "attackSpeed": 1.0,
+    "attackSpeed": 0.6,
     "enchantability": 0,
     "damageVsEntity": 9.0,
-    "usageCount": 100000,
+    "usageCount": 95374,
     "blocksAffected": [],
     "hasGlow": false,
     "repairItems": [
       {
-        "value": "Items.DYE#4"
+        "value": "CUSTOM:BluePole"
       }
     ],
     "immuneToFire": true,

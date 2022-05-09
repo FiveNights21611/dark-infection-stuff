@@ -23,12 +23,15 @@ import net.mcreator.darkinfection.item.QuartzEnrichedNetheriteArmorItem;
 import net.mcreator.darkinfection.item.PureafyingappItem;
 import net.mcreator.darkinfection.item.PoppedOrbOfDarknessItem;
 import net.mcreator.darkinfection.item.ItemorbofdarknessItem;
+import net.mcreator.darkinfection.item.IronRodItem;
+import net.mcreator.darkinfection.item.IronPoleItem;
 import net.mcreator.darkinfection.item.EnhancedDarkStarItem;
 import net.mcreator.darkinfection.item.EmptyvileItem;
 import net.mcreator.darkinfection.item.DarkarmorItem;
 import net.mcreator.darkinfection.item.DarkStarItem;
 import net.mcreator.darkinfection.item.DarkCarrotItem;
 import net.mcreator.darkinfection.item.CurevItem;
+import net.mcreator.darkinfection.item.BluePoleItem;
 import net.mcreator.darkinfection.DarkInfectionMod;
 
 public class DarkInfectionModItems {
@@ -74,6 +77,9 @@ public class DarkInfectionModItems {
 	public static final RegistryObject<Item> DARK_CARROT = REGISTRY.register("dark_carrot", () -> new DarkCarrotItem());
 	public static final RegistryObject<Item> CHISSELDVOIDSTONEBRICKS = block(DarkInfectionModBlocks.CHISSELDVOIDSTONEBRICKS,
 			DarkInfectionModTabs.TAB_DARKINFECTED);
+	public static final RegistryObject<Item> IRON_ROD = REGISTRY.register("iron_rod", () -> new IronRodItem());
+	public static final RegistryObject<Item> IRON_POLE = REGISTRY.register("iron_pole", () -> new IronPoleItem());
+	public static final RegistryObject<Item> BLUE_POLE = REGISTRY.register("blue_pole", () -> new BluePoleItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

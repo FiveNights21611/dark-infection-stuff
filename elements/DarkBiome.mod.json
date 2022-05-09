@@ -9,24 +9,27 @@
     "undergroundBlock": {
       "value": "CUSTOM:Darkdirt"
     },
+    "underwaterBlock": {
+      "value": "CUSTOM:Gravityvoid"
+    },
     "airColor": {
-      "value": -10066330,
+      "value": -13882324,
       "falpha": 0.0
     },
     "grassColor": {
-      "value": -10066330,
+      "value": -11447983,
       "falpha": 0.0
     },
     "foliageColor": {
-      "value": -10066330,
+      "value": -8684677,
       "falpha": 0.0
     },
     "waterColor": {
-      "value": -10066330,
+      "value": -13487566,
       "falpha": 0.0
     },
     "waterFogColor": {
-      "value": -16777216,
+      "value": -16053493,
       "falpha": 0.0
     },
     "ambientSound": {
@@ -47,14 +50,14 @@
       "value": "EXPLOSION_NORMAL"
     },
     "particlesProbability": 0.5,
-    "biomeCategory": "NONE",
+    "biomeCategory": "FOREST",
     "rainingPossibility": 0.0,
     "temperature": 0.2,
     "baseHeight": 0.1,
     "heightVariation": 0.2,
     "spawnBiome": true,
     "spawnBiomeNether": false,
-    "spawnInCaves": false,
+    "spawnInCaves": true,
     "biomeWeight": 1,
     "biomeDictionaryTypes": [],
     "grassPerChunk": 0,

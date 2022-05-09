@@ -72,6 +72,8 @@ public class DarkInfectionModItems {
 	public static final RegistryObject<Item> VOIDKINGSWORD = REGISTRY.register("voidkingsword", () -> new VoidkingswordItem());
 	public static final RegistryObject<Item> VOIDSTONEBRICKS = block(DarkInfectionModBlocks.VOIDSTONEBRICKS, DarkInfectionModTabs.TAB_DARKINFECTED);
 	public static final RegistryObject<Item> DARK_CARROT = REGISTRY.register("dark_carrot", () -> new DarkCarrotItem());
+	public static final RegistryObject<Item> CHISSELDVOIDSTONEBRICKS = block(DarkInfectionModBlocks.CHISSELDVOIDSTONEBRICKS,
+			DarkInfectionModTabs.TAB_DARKINFECTED);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

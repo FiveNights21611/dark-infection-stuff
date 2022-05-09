@@ -16,6 +16,7 @@ import net.mcreator.darkinfection.block.VoidCobbleBlock;
 import net.mcreator.darkinfection.block.InfectedsoilBlock;
 import net.mcreator.darkinfection.block.GravityvoidBlock;
 import net.mcreator.darkinfection.block.DarkdirtBlock;
+import net.mcreator.darkinfection.block.ChisseldvoidstonebricksBlock;
 import net.mcreator.darkinfection.DarkInfectionMod;
 
 public class DarkInfectionModBlocks {
@@ -26,4 +27,6 @@ public class DarkInfectionModBlocks {
 	public static final RegistryObject<Block> VOID_COBBLE = REGISTRY.register("void_cobble", () -> new VoidCobbleBlock());
 	public static final RegistryObject<Block> GRAVITYVOID = REGISTRY.register("gravityvoid", () -> new GravityvoidBlock());
 	public static final RegistryObject<Block> VOIDSTONEBRICKS = REGISTRY.register("voidstonebricks", () -> new VoidstonebricksBlock());
+	public static final RegistryObject<Block> CHISSELDVOIDSTONEBRICKS = REGISTRY.register("chisseldvoidstonebricks",
+			() -> new ChisseldvoidstonebricksBlock());
 }

@@ -15,5 +15,7 @@ public class DarkInfectionModPaintings {
 	@SubscribeEvent
 	public static void registerMotives(RegistryEvent.Register<Motive> event) {
 		event.getRegistry().register(new Motive(48, 32).setRegistryName("rizeofthevoid"));
+		event.getRegistry().register(new Motive(32, 16).setRegistryName("mishonf"));
+		event.getRegistry().register(new Motive(48, 48).setRegistryName("vk"));
 	}
 }

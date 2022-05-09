@@ -893,6 +893,30 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "dark_carrot"
+    },
+    {
+      "name": "Chisseldvoidstonebricks",
+      "type": "block",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chisseldvoidstonebricks"
+    },
+    {
+      "name": "Mishonf",
+      "type": "painting",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mishonf"
+    },
+    {
+      "name": "Vk",
+      "type": "painting",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vk"
     }
   ],
   "variable_elements": [],
@@ -934,6 +958,7 @@
       "advancements.the_absolute_dark.descr": "What devotion is this?",
       "item.dark_infection.enhanced_dark_star": "Enhanced Dark Star",
       "item.dark_infection.voidkingboss_spawn_egg": "Void King Boss Spawn Egg",
+      "block.dark_infection.chisseldvoidstonebricks": "Chisseldvoidstonebricks",
       "item.dark_infection.voidking_helmet": "Voidking Helmet",
       "effect.dark_infection.darkness": "Darkness",
       "item.dark_infection.quartz_enriched_netherite_armor_boots": "Quartz Enriched Netherite Boots",

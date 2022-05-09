@@ -58,7 +58,7 @@
     "spawnBiome": true,
     "spawnBiomeNether": false,
     "spawnInCaves": false,
-    "biomeWeight": 20,
+    "biomeWeight": 50,
     "biomeDictionaryTypes": [
       "FOREST",
       "PLAINS"

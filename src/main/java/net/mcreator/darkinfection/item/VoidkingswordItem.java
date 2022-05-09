@@ -1,7 +1,14 @@
 
 package net.mcreator.darkinfection.item;
 
-import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+
+import net.mcreator.darkinfection.init.DarkInfectionModTabs;
 
 public class VoidkingswordItem extends SwordItem {
 	public VoidkingswordItem() {
@@ -29,11 +36,6 @@ public class VoidkingswordItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(Items.LAPIS_LAZULI));
 			}
-		},
-
-				3, -3f,
-
-				new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED).fireResistant());
+		}, 3, -3f, new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED).fireResistant());
 	}
-
 }

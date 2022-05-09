@@ -834,6 +834,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -1008,8 +1012,8 @@
   "language_map": {
     "en_us": {
       "entity.dark_infection.voidkingboss": "Void King Boss",
-      "item.dark_infection.pureafyingapp": "Purifying Apple",
       "item.dark_infection.darkarmor_boots": "Dark Boots",
+      "item.dark_infection.pureafyingapp": "Purifying Apple",
       "block.dark_infection.voidstone": "VoidStone",
       "item.dark_infection.popped_orb_of_darkness": "Popped Orb Of Darkness",
       "effect.dark_infection.ultimate_darkness": "Ultimate Darkness...",
@@ -1018,8 +1022,8 @@
       "biome.dark_infection.dark_biome": "Dark Biome",
       "block.dark_infection.gravityvoid": "GravityVoid",
       "item.minecraft.lingering_potion.effect.voidcurepotion": "Lingering Potion of Voidcure",
-      "advancements.cover_me_in_quartz.title": "Cover Me In Quartz",
       "advancements.darkling_level_2.descr": "Delve further into the Darkness...",
+      "advancements.cover_me_in_quartz.title": "Cover Me In Quartz",
       "item.minecraft.tipped_arrow.effect.potion_of_ultimate_darkness": "Arrow of Ultimate Darkness",
       "item.dark_infection.itemorbofdarkness": "Orb Of Darkness",
       "advancements.darkling_level_2.title": "Darkling Level 2",

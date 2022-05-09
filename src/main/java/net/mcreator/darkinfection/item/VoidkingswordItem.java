@@ -28,7 +28,7 @@ public class VoidkingswordItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 7f;
+				return 9f;
 			}
 
 			public int getLevel() {

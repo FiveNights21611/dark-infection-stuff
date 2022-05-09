@@ -63,7 +63,7 @@ public class DarkInfectionModBiomes {
 				if (dimensionType == dimensionTypeRegistry.getOrThrow(DimensionType.OVERWORLD_LOCATION)) {
 					ChunkGenerator chunkGenerator = entry.getValue().generator();
 					// Inject biomes to biome source
-					if (chunkGenerator.getBiomeSource() instanceof MultiNoiseBiomeSource noiseSource) {
+					if (chunkGenerator.getBiomeSource()instanceof MultiNoiseBiomeSource noiseSource) {
 						List<Pair<Climate.ParameterPoint, Holder<Biome>>> parameters = new ArrayList<>(noiseSource.parameters.values());
 						parameters.add(new Pair<>(DarkBiomeBiome.PARAMETER_POINT,
 								biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, DARK_BIOME.getId()))));

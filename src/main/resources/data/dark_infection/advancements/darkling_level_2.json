@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "dark_infection:dark_carrot"
+    },
+    "title": {
+      "translate": "advancements.darkling_level_2.title"
+    },
+    "description": {
+      "translate": "advancements.darkling_level_2.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "darkling_level_2": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "dark_infection:darkling_level_1"
+}

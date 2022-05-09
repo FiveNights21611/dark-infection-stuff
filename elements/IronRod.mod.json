@@ -3,10 +3,10 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "pa",
+    "texture": "ironrod",
     "customModelName": "Normal",
-    "name": "Purifying Apple",
-    "rarity": "RARE",
+    "name": "Iron Rod",
+    "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:Darkinfected"
     },
@@ -24,15 +24,17 @@
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "specialInfo": [],
+    "specialInfo": [
+      "Light and sturdy!"
+    ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "hasDispenseBehavior": false,
     "isFood": false,
-    "nutritionalValue": 0,
-    "saturation": 0.30000001192092896,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
     "eatResultItem": {
       "value": ""
     },

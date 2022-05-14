@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "dark_infection:blocks/voidstone_coal_ore",
+    "up": "dark_infection:blocks/voidstone_coal_ore",
+    "north": "dark_infection:blocks/voidstone_coal_ore",
+    "east": "dark_infection:blocks/voidstone_coal_ore",
+    "south": "dark_infection:blocks/voidstone_coal_ore",
+    "west": "dark_infection:blocks/voidstone_coal_ore",
+    "particle": "dark_infection:blocks/voidstone_coal_ore"
+  }
+}

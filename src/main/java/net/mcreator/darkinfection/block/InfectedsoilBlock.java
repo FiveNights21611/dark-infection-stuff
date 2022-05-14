@@ -12,7 +12,9 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.TieredItem;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
@@ -28,7 +30,8 @@ import java.util.Collections;
 
 public class InfectedsoilBlock extends Block {
 	public InfectedsoilBlock() {
-		super(BlockBehaviour.Properties.of(Material.GRASS, MaterialColor.STONE).sound(SoundType.DEEPSLATE).strength(1f, 10f).randomTicks());
+		super(BlockBehaviour.Properties.of(Material.GRASS, MaterialColor.STONE).sound(SoundType.GRAVEL).strength(1f, 10f)
+				.requiresCorrectToolForDrops().randomTicks());
 	}
 
 	@Override
@@ -45,6 +48,13 @@ public class InfectedsoilBlock extends Block {
 	@Override
 	public boolean canSustainPlant(BlockState state, BlockGetter world, BlockPos pos, Direction direction, IPlantable plantable) {
 		return true;
+	}
+
+	@Override
+	public boolean canHarvestBlock(BlockState state, BlockGetter world, BlockPos pos, Player player) {
+		if (player.getInventory().getSelected().getItem()instanceof TieredItem tieredItem)
+			return tieredItem.getTier().getLevel() >= -1;
+		return false;
 	}
 
 	@Override

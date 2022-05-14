@@ -973,6 +973,334 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "blue_pole_recipe"
+    },
+    {
+      "name": "DarkCaves",
+      "type": "biome",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_caves"
+    },
+    {
+      "name": "VoidStoneCoalOre",
+      "type": "block",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_stone_coal_ore"
+    },
+    {
+      "name": "VoidStoneIronOre",
+      "type": "block",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_stone_iron_ore"
+    },
+    {
+      "name": "VoidStoneRedstoneOre",
+      "type": "block",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_stone_redstone_ore"
+    },
+    {
+      "name": "VoidStoneLapisOre",
+      "type": "block",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_stone_lapis_ore"
+    },
+    {
+      "name": "VoidStoneEmeraldOre",
+      "type": "block",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_stone_emerald_ore"
+    },
+    {
+      "name": "VoidStoneDiamondOre",
+      "type": "block",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_stone_diamond_ore"
+    },
+    {
+      "name": "VoidStoneCopperOre",
+      "type": "block",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_stone_copper_ore"
+    },
+    {
+      "name": "VoidStoneGoldOre",
+      "type": "block",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_stone_gold_ore"
+    },
+    {
+      "name": "VoidStoneCoalFortune",
+      "type": "procedure",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_stone_coal_fortune",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VoidStoneIronFortune",
+      "type": "procedure",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_stone_iron_fortune",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VoidStoneEmeraldFortune",
+      "type": "procedure",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_stone_emerald_fortune",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VoidStoneDiamondFortune",
+      "type": "procedure",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_stone_diamond_fortune",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VoidStoneGoldFortune",
+      "type": "procedure",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_stone_gold_fortune",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VoidStoneRedstoneFortune",
+      "type": "procedure",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_stone_redstone_fortune",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VoidStoneLapisFortune",
+      "type": "procedure",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_stone_lapis_fortune",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VoidStoneCopperFortune",
+      "type": "procedure",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_stone_copper_fortune",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -980,8 +1308,9 @@
   "language_map": {
     "en_us": {
       "entity.dark_infection.voidkingboss": "Void King Boss",
-      "item.dark_infection.darkarmor_boots": "Dark Boots",
+      "block.dark_infection.void_stone_diamond_ore": "Void Stone Diamond Ore",
       "item.dark_infection.pureafyingapp": "Purifying Apple",
+      "item.dark_infection.darkarmor_boots": "Dark Boots",
       "block.dark_infection.voidstone": "VoidStone",
       "item.dark_infection.popped_orb_of_darkness": "Popped Orb Of Darkness",
       "effect.dark_infection.ultimate_darkness": "Ultimate Darkness...",
@@ -992,6 +1321,8 @@
       "item.minecraft.lingering_potion.effect.voidcurepotion": "Lingering Potion of Voidcure",
       "advancements.cover_me_in_quartz.title": "Cover Me In Quartz",
       "advancements.darkling_level_2.descr": "Delve further into the Darkness...",
+      "block.dark_infection.void_stone_coal_ore": "Void Stone Coal Ore",
+      "block.dark_infection.void_stone_gold_ore": "Void Stone Gold Ore",
       "item.minecraft.tipped_arrow.effect.potion_of_ultimate_darkness": "Arrow of Ultimate Darkness",
       "item.dark_infection.itemorbofdarkness": "Orb Of Darkness",
       "item.dark_infection.voidking_leggings": "Voidking Leggings",
@@ -999,8 +1330,10 @@
       "item.dark_infection.dark_carrot": "Dark Carrot",
       "item.minecraft.potion.effect.voidcurepotion": "Potion of Voidcure",
       "item.minecraft.lingering_potion.effect.potion_of_ultimate_darkness": "Lingering Potion Of Ultimate Darkness",
+      "biome.dark_infection.dark_caves": "Dark Caves",
       "advancements.darkling_level_1.descr": "Become a Darkling",
       "block.dark_infection.voidstonebricks": "VoidStone Bricks",
+      "block.dark_infection.void_stone_copper_ore": "Void Stone Copper Ore",
       "item.dark_infection.darkarmor_leggings": "Dark Leggings",
       "effect.dark_infection.givevoidcure": "one sec",
       "item.dark_infection.curev": "Cure Vial",
@@ -1009,17 +1342,21 @@
       "block.dark_infection.infectedsoil": "Infected Soil",
       "advancements.cover_me_in_quartz.descr": "Woah! How immune is this...?",
       "advancements.the_absolute_dark.title": "The Absolute Dark...",
+      "block.dark_infection.void_stone_emerald_ore": "Void Stone Emerald Ore",
       "item.minecraft.splash_potion.effect.potion_of_ultimate_darkness": "Splash PotionOf Ultimate Darkness",
+      "block.dark_infection.void_stone_iron_ore": "Void Stone Iron Ore",
       "item.dark_infection.dark_star": "Dark Star",
       "item.minecraft.potion.effect.potion_of_ultimate_darkness": "Potion Of Ultimate Darkness",
       "advancements.the_absolute_dark.descr": "What devotion is this?",
       "item.dark_infection.enhanced_dark_star": "Enhanced Dark Star",
       "item.dark_infection.voidkingboss_spawn_egg": "Void King Boss Spawn Egg",
+      "block.dark_infection.void_stone_lapis_ore": "Void Stone Lapis Ore",
       "block.dark_infection.chisseldvoidstonebricks": "Chiseled VoidStone Bricks",
       "item.dark_infection.voidking_helmet": "Voidking Helmet",
       "effect.dark_infection.darkness": "Darkness",
       "item.dark_infection.quartz_enriched_netherite_armor_boots": "Quartz Enriched Netherite Boots",
       "effect.dark_infection.darkcorupt": "Don\u0027t Die...",
+      "block.dark_infection.void_stone_redstone_ore": "Void Stone Redstone Ore",
       "effect.dark_infection.void_cure": "void cure",
       "item.dark_infection.voidvile": "Void Vial",
       "item.dark_infection.strangev": "Strange Vial",

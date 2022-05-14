@@ -57,9 +57,14 @@
     "heightVariation": 0.2,
     "spawnBiome": true,
     "spawnBiomeNether": false,
-    "spawnInCaves": true,
+    "spawnInCaves": false,
     "biomeWeight": 50,
-    "biomeDictionaryTypes": [],
+    "biomeDictionaryTypes": [
+      "COLD",
+      "OVERWORLD",
+      "VOID",
+      "RARE"
+    ],
     "grassPerChunk": 0,
     "seagrassPerChunk": 0,
     "flowersPerChunk": 0,
@@ -107,8 +112,7 @@
     "spawnRuinedPortal": "NONE",
     "defaultFeatures": [
       "Caves",
-      "Ores",
-      "FrozenTopLayer"
+      "Ores"
     ],
     "spawnEntries": []
   }

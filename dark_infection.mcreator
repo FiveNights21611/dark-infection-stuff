@@ -834,6 +834,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -1342,6 +1346,7 @@
       "block.dark_infection.infectedsoil": "Infected Soil",
       "advancements.cover_me_in_quartz.descr": "Woah! How immune is this...?",
       "advancements.the_absolute_dark.title": "The Absolute Dark...",
+      "item.dark_infection.iron_rod": "Iron Rod",
       "block.dark_infection.void_stone_emerald_ore": "Void Stone Emerald Ore",
       "item.minecraft.splash_potion.effect.potion_of_ultimate_darkness": "Splash PotionOf Ultimate Darkness",
       "block.dark_infection.void_stone_iron_ore": "Void Stone Iron Ore",
@@ -1358,7 +1363,9 @@
       "effect.dark_infection.darkcorupt": "Don\u0027t Die...",
       "block.dark_infection.void_stone_redstone_ore": "Void Stone Redstone Ore",
       "effect.dark_infection.void_cure": "void cure",
+      "item.dark_infection.blue_pole": "Blue Pole",
       "item.dark_infection.voidvile": "Void Vial",
+      "item.dark_infection.iron_pole": "Iron Pole",
       "item.dark_infection.strangev": "Strange Vial",
       "item.dark_infection.quartz_enriched_netherite_armor_helmet": "Quartz Enriched Netherite Helmet",
       "item.dark_infection.quartz_enriched_netherite": "Quartz Enriched Netherite Ingot",
@@ -1379,13 +1386,15 @@
   },
   "workspaceSettings": {
     "modid": "dark_infection",
-    "modName": "dark infection",
-    "version": "1.0.0",
-    "author": "quinn, MCreator",
+    "modName": "Dark Infection",
+    "version": "0.9.4",
+    "description": "Infect Everything!",
+    "author": "quinn, MCreator, FiveNights2161",
     "websiteURL": "https://mcreator.net",
     "license": "Academic Free License v3.0",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
+    "modPicture": "dark_star",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
@@ -1395,5 +1404,5 @@
     "modElementsPackage": "net.mcreator.darkinfection",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202200119518
+  "mcreatorVersion": 202200120510
 }

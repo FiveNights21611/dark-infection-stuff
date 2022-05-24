@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "dark_infection:dark_biome"
+    "dark_infection:dark_biome",
+    "dark_infection:dark_caves"
   ]
 }

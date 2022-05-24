@@ -4,11 +4,15 @@ license="Academic Free License v3.0"
 
 [[mods]]
 modId="dark_infection"
-version="1.0.0"
-displayName="dark infection"
+version="0.9.4"
+displayName="Dark Infection"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
 displayURL="https://mcreator.net"
-authors="quinn, MCreator"
+logoFile="logo.png"
+authors="quinn, MCreator, FiveNights2161"
+description='''
+Infect Everything!
+'''
 
 [[dependencies.dark_infection]]
     modId="minecraft"

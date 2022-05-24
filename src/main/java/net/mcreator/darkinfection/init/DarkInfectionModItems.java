@@ -23,12 +23,15 @@ import net.mcreator.darkinfection.item.QuartzEnrichedNetheriteArmorItem;
 import net.mcreator.darkinfection.item.PureafyingappItem;
 import net.mcreator.darkinfection.item.PoppedOrbOfDarknessItem;
 import net.mcreator.darkinfection.item.ItemorbofdarknessItem;
+import net.mcreator.darkinfection.item.IronRodItem;
+import net.mcreator.darkinfection.item.IronPoleItem;
 import net.mcreator.darkinfection.item.EnhancedDarkStarItem;
 import net.mcreator.darkinfection.item.EmptyvileItem;
 import net.mcreator.darkinfection.item.DarkarmorItem;
 import net.mcreator.darkinfection.item.DarkStarItem;
 import net.mcreator.darkinfection.item.DarkCarrotItem;
 import net.mcreator.darkinfection.item.CurevItem;
+import net.mcreator.darkinfection.item.BluePoleItem;
 import net.mcreator.darkinfection.DarkInfectionMod;
 
 public class DarkInfectionModItems {
@@ -73,6 +76,25 @@ public class DarkInfectionModItems {
 	public static final RegistryObject<Item> VOIDSTONEBRICKS = block(DarkInfectionModBlocks.VOIDSTONEBRICKS, DarkInfectionModTabs.TAB_DARKINFECTED);
 	public static final RegistryObject<Item> DARK_CARROT = REGISTRY.register("dark_carrot", () -> new DarkCarrotItem());
 	public static final RegistryObject<Item> CHISSELDVOIDSTONEBRICKS = block(DarkInfectionModBlocks.CHISSELDVOIDSTONEBRICKS,
+			DarkInfectionModTabs.TAB_DARKINFECTED);
+	public static final RegistryObject<Item> BLUE_POLE = REGISTRY.register("blue_pole", () -> new BluePoleItem());
+	public static final RegistryObject<Item> IRON_ROD = REGISTRY.register("iron_rod", () -> new IronRodItem());
+	public static final RegistryObject<Item> IRON_POLE = REGISTRY.register("iron_pole", () -> new IronPoleItem());
+	public static final RegistryObject<Item> VOID_STONE_COAL_ORE = block(DarkInfectionModBlocks.VOID_STONE_COAL_ORE,
+			DarkInfectionModTabs.TAB_DARKINFECTED);
+	public static final RegistryObject<Item> VOID_STONE_IRON_ORE = block(DarkInfectionModBlocks.VOID_STONE_IRON_ORE,
+			DarkInfectionModTabs.TAB_DARKINFECTED);
+	public static final RegistryObject<Item> VOID_STONE_REDSTONE_ORE = block(DarkInfectionModBlocks.VOID_STONE_REDSTONE_ORE,
+			DarkInfectionModTabs.TAB_DARKINFECTED);
+	public static final RegistryObject<Item> VOID_STONE_LAPIS_ORE = block(DarkInfectionModBlocks.VOID_STONE_LAPIS_ORE,
+			DarkInfectionModTabs.TAB_DARKINFECTED);
+	public static final RegistryObject<Item> VOID_STONE_EMERALD_ORE = block(DarkInfectionModBlocks.VOID_STONE_EMERALD_ORE,
+			DarkInfectionModTabs.TAB_DARKINFECTED);
+	public static final RegistryObject<Item> VOID_STONE_DIAMOND_ORE = block(DarkInfectionModBlocks.VOID_STONE_DIAMOND_ORE,
+			DarkInfectionModTabs.TAB_DARKINFECTED);
+	public static final RegistryObject<Item> VOID_STONE_COPPER_ORE = block(DarkInfectionModBlocks.VOID_STONE_COPPER_ORE,
+			DarkInfectionModTabs.TAB_DARKINFECTED);
+	public static final RegistryObject<Item> VOID_STONE_GOLD_ORE = block(DarkInfectionModBlocks.VOID_STONE_GOLD_ORE,
 			DarkInfectionModTabs.TAB_DARKINFECTED);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {

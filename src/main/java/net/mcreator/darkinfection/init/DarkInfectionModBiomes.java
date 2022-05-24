@@ -29,6 +29,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.core.Registry;
 import net.minecraft.core.Holder;
 
+import net.mcreator.darkinfection.world.biome.DarkCavesBiome;
 import net.mcreator.darkinfection.world.biome.DarkBiomeBiome;
 import net.mcreator.darkinfection.DarkInfectionMod;
 
@@ -42,11 +43,13 @@ import com.mojang.datafixers.util.Pair;
 public class DarkInfectionModBiomes {
 	public static final DeferredRegister<Biome> REGISTRY = DeferredRegister.create(ForgeRegistries.BIOMES, DarkInfectionMod.MODID);
 	public static final RegistryObject<Biome> DARK_BIOME = REGISTRY.register("dark_biome", () -> DarkBiomeBiome.createBiome());
+	public static final RegistryObject<Biome> DARK_CAVES = REGISTRY.register("dark_caves", () -> DarkCavesBiome.createBiome());
 
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
 			DarkBiomeBiome.init();
+			DarkCavesBiome.init();
 		});
 	}
 
@@ -83,7 +86,7 @@ public class DarkInfectionModBiomes {
 									preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, DARK_BIOME.getId()),
 											DarkInfectionModBlocks.INFECTEDSOIL.get().defaultBlockState(),
 											DarkInfectionModBlocks.DARKDIRT.get().defaultBlockState(),
-											DarkInfectionModBlocks.DARKDIRT.get().defaultBlockState()));
+											DarkInfectionModBlocks.GRAVITYVOID.get().defaultBlockState()));
 							NoiseGeneratorSettings moddedNoiseGeneratorSettings = new NoiseGeneratorSettings(noiseGeneratorSettings.noiseSettings(),
 									noiseGeneratorSettings.defaultBlock(), noiseGeneratorSettings.defaultFluid(),
 									noiseGeneratorSettings.noiseRouter(),

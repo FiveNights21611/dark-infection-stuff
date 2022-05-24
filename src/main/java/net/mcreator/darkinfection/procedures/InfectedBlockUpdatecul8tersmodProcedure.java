@@ -12,7 +12,7 @@ public class InfectedBlockUpdatecul8tersmodProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		double i = 0;
 		if (1 == Mth.nextInt(new Random(), 1, 10)) {
-			for (int index0 = 0; index0 < (int) (6); index0++) {
+			for (int index0 = 0; index0 < (int) (8); index0++) {
 				i = i + 1;
 				if ((world.getBlockState(new BlockPos(x, y + 1, z))).getBlock() == DarkInfectionModVariables.infectable_blocks.get((int) i)) {
 					world.setBlock(new BlockPos(x, y + 1, z), DarkInfectionModVariables.infected_blocks.get((int) i).defaultBlockState(), 3);

@@ -912,7 +912,7 @@
       "sortid": 66,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "mishonf"
+      "registry_name": "mission_f"
     },
     {
       "name": "Vk",
@@ -1305,9 +1305,61 @@
           }
         ]
       }
+    },
+    {
+      "name": "InitVars",
+      "type": "procedure",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "init_vars",
+      "metadata": {
+        "dependencies": []
+      }
+    },
+    {
+      "name": "InfectedBlockUpdatecul8tersmod",
+      "type": "procedure",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "infected_block_updatecul_8tersmod",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "infectable_blocks",
+      "type": "arraylist_block",
+      "scope": "global",
+      "value": "new ArrayList\u003cBlock\u003e()"
+    },
+    {
+      "name": "infected_blocks",
+      "type": "arraylist_block",
+      "scope": "global",
+      "value": "new ArrayList\u003cBlock\u003e()"
+    }
+  ],
   "sound_elements": [],
   "language_map": {
     "en_us": {
@@ -1323,10 +1375,10 @@
       "biome.dark_infection.dark_biome": "Dark Biome",
       "block.dark_infection.gravityvoid": "GravityVoid",
       "item.minecraft.lingering_potion.effect.voidcurepotion": "Lingering Potion of Voidcure",
-      "block.dark_infection.void_stone_gold_ore": "Void Stone Gold Ore",
-      "block.dark_infection.void_stone_coal_ore": "Void Stone Coal Ore",
-      "advancements.darkling_level_2.descr": "Delve further into the Darkness...",
       "advancements.cover_me_in_quartz.title": "Cover Me In Quartz",
+      "advancements.darkling_level_2.descr": "Delve further into the Darkness...",
+      "block.dark_infection.void_stone_coal_ore": "Void Stone Coal Ore",
+      "block.dark_infection.void_stone_gold_ore": "Void Stone Gold Ore",
       "item.minecraft.tipped_arrow.effect.potion_of_ultimate_darkness": "Arrow of Ultimate Darkness",
       "item.dark_infection.itemorbofdarkness": "Orb Of Darkness",
       "item.dark_infection.voidking_leggings": "Voidking Leggings",

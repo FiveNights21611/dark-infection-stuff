@@ -9,7 +9,6 @@ import net.minecraft.world.level.levelgen.placement.CountPlacement;
 import net.minecraft.world.level.levelgen.placement.BiomeFilter;
 import net.minecraft.world.level.levelgen.GenerationStep;
 import net.minecraft.world.level.biome.MobSpawnSettings;
-import net.minecraft.world.level.biome.Climate;
 import net.minecraft.world.level.biome.BiomeSpecialEffects;
 import net.minecraft.world.level.biome.BiomeGenerationSettings;
 import net.minecraft.world.level.biome.Biome;
@@ -25,10 +24,6 @@ import net.mcreator.darkinfection.init.DarkInfectionModBiomes;
 import java.util.List;
 
 public class DarkCavesBiome {
-	public static final Climate.ParameterPoint PARAMETER_POINT_UNDERGROUND = new Climate.ParameterPoint(Climate.Parameter.span(-1, 1),
-			Climate.Parameter.span(-1, 1), Climate.Parameter.span(-0.29f, 1.31f), Climate.Parameter.span(0f, 1.6f),
-			Climate.Parameter.span(0.2f, 0.9f), Climate.Parameter.span(-1.264062180048f, 0.335937819952f), 0);
-
 	public static Biome createBiome() {
 		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(-15724528).waterColor(-15329770).waterFogColor(-16185079)
 				.skyColor(-15724528).foliageColorOverride(-15856114).grassColorOverride(-16777216).build();

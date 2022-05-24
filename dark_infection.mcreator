@@ -912,7 +912,7 @@
       "sortid": 66,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "mishonf"
+      "registry_name": "mission_f"
     },
     {
       "name": "Vk",
@@ -1305,9 +1305,61 @@
           }
         ]
       }
+    },
+    {
+      "name": "InitVars",
+      "type": "procedure",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "init_vars",
+      "metadata": {
+        "dependencies": []
+      }
+    },
+    {
+      "name": "InfectedBlockUpdatecul8tersmod",
+      "type": "procedure",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "infected_block_updatecul_8tersmod",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "infectable_blocks",
+      "type": "arraylist_block",
+      "scope": "global",
+      "value": "new ArrayList\u003cBlock\u003e()"
+    },
+    {
+      "name": "infected_blocks",
+      "type": "arraylist_block",
+      "scope": "global",
+      "value": "new ArrayList\u003cBlock\u003e()"
+    }
+  ],
   "sound_elements": [],
   "language_map": {
     "en_us": {

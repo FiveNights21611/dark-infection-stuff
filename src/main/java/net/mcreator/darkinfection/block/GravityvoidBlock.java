@@ -15,7 +15,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.darkinfection.procedures.InfectedsoilUpdateTickProcedure;
+import net.mcreator.darkinfection.procedures.InfectedBlockUpdatecul8tersmodProcedure;
 
 import java.util.Random;
 import java.util.List;
@@ -59,7 +59,7 @@ public class GravityvoidBlock extends FallingBlock {
 		int y = pos.getY();
 		int z = pos.getZ();
 
-		InfectedsoilUpdateTickProcedure.execute(world, x, y, z);
+		InfectedBlockUpdatecul8tersmodProcedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 1);
 	}
 }

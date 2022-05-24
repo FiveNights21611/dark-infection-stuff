@@ -124,7 +124,7 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onTickUpdate": {
-      "name": "InfectedsoilUpdateTick"
+      "name": "InfectedBlockUpdatecul8tersmod"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],

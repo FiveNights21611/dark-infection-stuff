@@ -21,7 +21,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.darkinfection.procedures.InfectedsoilUpdateTickProcedure;
+import net.mcreator.darkinfection.procedures.InfectedBlockUpdatecul8tersmodProcedure;
 import net.mcreator.darkinfection.init.DarkInfectionModBlocks;
 
 import java.util.Random;
@@ -72,6 +72,6 @@ public class InfectedsoilBlock extends Block {
 		int y = pos.getY();
 		int z = pos.getZ();
 
-		InfectedsoilUpdateTickProcedure.execute(world, x, y, z);
+		InfectedBlockUpdatecul8tersmodProcedure.execute(world, x, y, z);
 	}
 }

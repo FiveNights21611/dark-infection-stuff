@@ -36,5 +36,9 @@ public class InitVarsProcedure {
 		DarkInfectionModVariables.infected_blocks.add(DarkInfectionModBlocks.DARKDIRT.get());
 		DarkInfectionModVariables.infectable_blocks.add(Blocks.GRASS_BLOCK);
 		DarkInfectionModVariables.infected_blocks.add(DarkInfectionModBlocks.INFECTEDSOIL.get());
+		DarkInfectionModVariables.infectable_blocks.add(Blocks.COBBLESTONE);
+		DarkInfectionModVariables.infected_blocks.add(DarkInfectionModBlocks.VOID_COBBLE.get());
+		DarkInfectionModVariables.infectable_blocks.add(Blocks.COBBLED_DEEPSLATE);
+		DarkInfectionModVariables.infected_blocks.add(DarkInfectionModBlocks.VOID_COBBLE.get());
 	}
 }

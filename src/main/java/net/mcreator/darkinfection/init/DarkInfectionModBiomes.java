@@ -70,8 +70,6 @@ public class DarkInfectionModBiomes {
 						List<Pair<Climate.ParameterPoint, Holder<Biome>>> parameters = new ArrayList<>(noiseSource.parameters.values());
 						parameters.add(new Pair<>(DarkBiomeBiome.PARAMETER_POINT,
 								biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, DARK_BIOME.getId()))));
-						parameters.add(new Pair<>(DarkCavesBiome.PARAMETER_POINT_UNDERGROUND,
-								biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, DARK_CAVES.getId()))));
 
 						MultiNoiseBiomeSource moddedNoiseSource = new MultiNoiseBiomeSource(new Climate.ParameterList<>(parameters),
 								noiseSource.preset);
@@ -84,11 +82,6 @@ public class DarkInfectionModBiomes {
 						SurfaceRules.RuleSource currentRuleSource = noiseGeneratorSettings.surfaceRule();
 						if (currentRuleSource instanceof SurfaceRules.SequenceRuleSource sequenceRuleSource) {
 							List<SurfaceRules.RuleSource> surfaceRules = new ArrayList<>(sequenceRuleSource.sequence());
-							surfaceRules.add(1,
-									anySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, DARK_CAVES.getId()),
-											DarkInfectionModBlocks.VOIDSTONE.get().defaultBlockState(),
-											DarkInfectionModBlocks.VOIDSTONE.get().defaultBlockState(),
-											DarkInfectionModBlocks.GRAVITYVOID.get().defaultBlockState()));
 							surfaceRules.add(1,
 									preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, DARK_BIOME.getId()),
 											DarkInfectionModBlocks.INFECTEDSOIL.get().defaultBlockState(),
@@ -121,16 +114,6 @@ public class DarkInfectionModBiomes {
 																	SurfaceRules.state(groundBlock)), SurfaceRules.state(underwaterBlock))),
 													SurfaceRules.ifTrue(SurfaceRules.stoneDepthCheck(0, true, 0, CaveSurface.FLOOR),
 															SurfaceRules.state(undergroundBlock)))));
-		}
-
-		private static SurfaceRules.RuleSource anySurfaceRule(ResourceKey<Biome> biomeKey, BlockState groundBlock, BlockState undergroundBlock,
-				BlockState underwaterBlock) {
-			return SurfaceRules.ifTrue(SurfaceRules.isBiome(biomeKey),
-					SurfaceRules.sequence(
-							SurfaceRules.ifTrue(SurfaceRules.stoneDepthCheck(0, false, 0, CaveSurface.FLOOR),
-									SurfaceRules.sequence(SurfaceRules.ifTrue(SurfaceRules.waterBlockCheck(-1, 0), SurfaceRules.state(groundBlock)),
-											SurfaceRules.state(underwaterBlock))),
-							SurfaceRules.ifTrue(SurfaceRules.stoneDepthCheck(0, true, 0, CaveSurface.FLOOR), SurfaceRules.state(undergroundBlock))));
 		}
 	}
 }

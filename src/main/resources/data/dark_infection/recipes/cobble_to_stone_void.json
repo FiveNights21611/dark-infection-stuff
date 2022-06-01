@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "experience": 1,
+  "cookingtime": 20,
+  "ingredient": {
+    "item": "dark_infection:void_cobble"
+  },
+  "result": "dark_infection:voidstone"
+}

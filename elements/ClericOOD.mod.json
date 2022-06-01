@@ -1,0 +1,33 @@
+{
+  "_fv": 28,
+  "_type": "villagertrade",
+  "definition": {
+    "tradeEntries": [
+      {
+        "villagerProfession": {
+          "value": "CLERIC"
+        },
+        "entries": [
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 64,
+            "price2": {
+              "value": "Items.HEART_OF_THE_SEA"
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:Itemorbofdarkness"
+            },
+            "countOffer": 1,
+            "level": 4,
+            "maxTrades": 25,
+            "xp": 20,
+            "priceMultiplier": 0.0
+          }
+        ]
+      }
+    ]
+  }
+}

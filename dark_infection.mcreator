@@ -1355,6 +1355,130 @@
       "metadata": {
         "type": "logic"
       }
+    },
+    {
+      "name": "ClericOOD",
+      "type": "villagertrade",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cleric_ood"
+    },
+    {
+      "name": "TheDarkInfection",
+      "type": "achievement",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_dark_infection"
+    },
+    {
+      "name": "DarklingLevel2",
+      "type": "achievement",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "darkling_level_2"
+    },
+    {
+      "name": "DarklingLevel2DoIt",
+      "type": "procedure",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "darkling_level_2_do_it",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TheDarkArmor",
+      "type": "achievement",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_dark_armor"
+    },
+    {
+      "name": "TheDarkArmorDoIt",
+      "type": "procedure",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_dark_armor_do_it",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CobbleToStoneVoid",
+      "type": "recipe",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cobble_to_stone_void"
+    },
+    {
+      "name": "StoneToChiseled",
+      "type": "recipe",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_to_chiseled"
+    },
+    {
+      "name": "BricksToChiseledCrafting",
+      "type": "recipe",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bricks_to_chiseled_crafting"
+    },
+    {
+      "name": "BricksToChiseledCutting",
+      "type": "recipe",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bricks_to_chiseled_cutting"
+    },
+    {
+      "name": "ChiseledToBricks",
+      "type": "recipe",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chiseled_to_bricks"
+    },
+    {
+      "name": "TheDarkInfectionFunction",
+      "type": "procedure",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_dark_infection_function",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -1387,13 +1511,16 @@
       "block.dark_infection.gravityvoid": "GravityVoid",
       "item.minecraft.lingering_potion.effect.voidcurepotion": "Lingering Potion of Voidcure",
       "advancements.cover_me_in_quartz.title": "Cover Me In Quartz",
-      "advancements.darkling_level_2.descr": "Delve further into the Darkness...",
+      "advancements.darkling_level_2.descr": "Delve Further into the Darkness",
       "block.dark_infection.void_stone_coal_ore": "Void Stone Coal Ore",
       "block.dark_infection.void_stone_gold_ore": "Void Stone Gold Ore",
       "item.minecraft.tipped_arrow.effect.potion_of_ultimate_darkness": "Arrow of Ultimate Darkness",
       "item.dark_infection.itemorbofdarkness": "Orb Of Darkness",
+      "advancements.darkling_level_2.title": "Darkling Level 2",
       "item.dark_infection.voidking_leggings": "Voidking Leggings",
       "itemGroup.tabdarkinfected": "Dark Infection",
+      "advancements.the_dark_armor.title": "Cover Me in Darkness",
+      "advancements.the_dark_armor.descr": "Surround yourself in the void... and it will bless you.",
       "item.dark_infection.dark_carrot": "Dark Carrot",
       "item.minecraft.potion.effect.voidcurepotion": "Potion of Voidcure",
       "item.minecraft.lingering_potion.effect.potion_of_ultimate_darkness": "Lingering Potion Of Ultimate Darkness",
@@ -1401,6 +1528,7 @@
       "advancements.darkling_level_1.descr": "Become a Darkling",
       "block.dark_infection.voidstonebricks": "VoidStone Bricks",
       "block.dark_infection.void_stone_copper_ore": "Void Stone Copper Ore",
+      "advancements.the_dark_infection.title": "The Dark Infection",
       "item.dark_infection.darkarmor_leggings": "Dark Leggings",
       "effect.dark_infection.givevoidcure": "one sec",
       "item.dark_infection.curev": "Cure Vial",
@@ -1420,6 +1548,7 @@
       "item.dark_infection.voidkingboss_spawn_egg": "Void King Boss Spawn Egg",
       "block.dark_infection.void_stone_lapis_ore": "Void Stone Lapis Ore",
       "block.dark_infection.chisseldvoidstonebricks": "Chiseled VoidStone Bricks",
+      "advancements.the_dark_infection.descr": "The darkness within us all grows...",
       "item.dark_infection.voidking_helmet": "Voidking Helmet",
       "gamerule.doInfectionSpread": "doInfectionSpread",
       "effect.dark_infection.darkness": "Darkness",

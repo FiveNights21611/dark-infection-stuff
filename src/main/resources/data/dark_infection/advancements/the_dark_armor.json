@@ -1,13 +1,13 @@
 {
   "display": {
     "icon": {
-      "item": "dark_infection:darkdirt"
+      "item": "dark_infection:darkarmor_chestplate"
     },
     "title": {
-      "translate": "advancements.darkling_level_1.title"
+      "translate": "advancements.the_dark_armor.title"
     },
     "description": {
-      "translate": "advancements.darkling_level_1.descr"
+      "translate": "advancements.the_dark_armor.descr"
     },
     "frame": "challenge",
     "show_toast": true,
@@ -15,9 +15,9 @@
     "hidden": true
   },
   "criteria": {
-    "darkling_level_1": {
+    "the_dark_armor": {
       "trigger": "minecraft:impossible"
     }
   },
-  "parent": "dark_infection:the_dark_infection"
+  "parent": "dark_infection:the_absolute_dark"
 }

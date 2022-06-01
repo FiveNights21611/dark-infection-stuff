@@ -19,7 +19,7 @@ import java.util.List;
 
 public class ItemorbofdarknessItem extends Item {
 	public ItemorbofdarknessItem() {
-		super(new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED).durability(10).fireResistant().rarity(Rarity.UNCOMMON));
+		super(new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED).durability(25).fireResistant().rarity(Rarity.UNCOMMON));
 	}
 
 	@Override

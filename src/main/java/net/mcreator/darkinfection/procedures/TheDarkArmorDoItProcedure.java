@@ -20,7 +20,7 @@ import javax.annotation.Nullable;
 import java.util.Iterator;
 
 @Mod.EventBusSubscriber
-public class CoverMeInQuartzLogicProcedure {
+public class TheDarkArmorDoItProcedure {
 	@SubscribeEvent
 	public static void onEntityTick(LivingEvent.LivingUpdateEvent event) {
 		execute(event, event.getEntityLiving());
@@ -34,20 +34,19 @@ public class CoverMeInQuartzLogicProcedure {
 		if (entity == null)
 			return;
 		if ((entity instanceof Player _playerHasItem
-				? _playerHasItem.getInventory().contains(new ItemStack(DarkInfectionModItems.QUARTZ_ENRICHED_NETHERITE_ARMOR_HELMET.get()))
+				? _playerHasItem.getInventory().contains(new ItemStack(DarkInfectionModItems.DARKARMOR_BOOTS.get()))
 				: false)
 				&& (entity instanceof Player _playerHasItem
-						? _playerHasItem.getInventory()
-								.contains(new ItemStack(DarkInfectionModItems.QUARTZ_ENRICHED_NETHERITE_ARMOR_CHESTPLATE.get()))
+						? _playerHasItem.getInventory().contains(new ItemStack(DarkInfectionModItems.DARKARMOR_LEGGINGS.get()))
 						: false)
 				&& (entity instanceof Player _playerHasItem
-						? _playerHasItem.getInventory().contains(new ItemStack(DarkInfectionModItems.QUARTZ_ENRICHED_NETHERITE_ARMOR_LEGGINGS.get()))
+						? _playerHasItem.getInventory().contains(new ItemStack(DarkInfectionModItems.DARKARMOR_CHESTPLATE.get()))
 						: false)
 				&& (entity instanceof Player _playerHasItem
-						? _playerHasItem.getInventory().contains(new ItemStack(DarkInfectionModItems.QUARTZ_ENRICHED_NETHERITE_ARMOR_BOOTS.get()))
+						? _playerHasItem.getInventory().contains(new ItemStack(DarkInfectionModItems.DARKARMOR_HELMET.get()))
 						: false)) {
 			if (entity instanceof ServerPlayer _player) {
-				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("dark_infection:cover_me_in_quartz"));
+				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("dark_infection:the_dark_armor"));
 				AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
 				if (!_ap.isDone()) {
 					Iterator _iterator = _ap.getRemainingCriteria().iterator();

@@ -1,23 +1,23 @@
 {
   "display": {
+    "background": "dark_infection:textures/darkdirt.png",
     "icon": {
       "item": "dark_infection:darkdirt"
     },
     "title": {
-      "translate": "advancements.darkling_level_1.title"
+      "translate": "advancements.the_dark_infection.title"
     },
     "description": {
-      "translate": "advancements.darkling_level_1.descr"
+      "translate": "advancements.the_dark_infection.descr"
     },
-    "frame": "challenge",
+    "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": true
   },
   "criteria": {
-    "darkling_level_1": {
+    "the_dark_infection": {
       "trigger": "minecraft:impossible"
     }
-  },
-  "parent": "dark_infection:the_dark_infection"
+  }
 }

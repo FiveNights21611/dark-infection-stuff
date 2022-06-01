@@ -76,5 +76,7 @@ public class InitVarsProcedure {
 		DarkInfectionModVariables.infected_blocks.add(DarkInfectionModBlocks.VOID_STONE_GOLD_ORE.get());
 		DarkInfectionModVariables.infectable_blocks.add(Blocks.NETHER_GOLD_ORE);
 		DarkInfectionModVariables.infected_blocks.add(DarkInfectionModBlocks.VOID_STONE_GOLD_ORE.get());
+		DarkInfectionModVariables.infectable_blocks.add(DarkInfectionModBlocks.DARKDIRT.get());
+		DarkInfectionModVariables.infected_blocks.add(DarkInfectionModBlocks.INFECTEDSOIL.get());
 	}
 }

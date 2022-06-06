@@ -46,7 +46,7 @@ import java.util.Random;
 
 public class VoidkingbossEntity extends Monster {
 	private final ServerBossEvent bossInfo = new ServerBossEvent(this.getDisplayName(), ServerBossEvent.BossBarColor.YELLOW,
-			ServerBossEvent.BossBarOverlay.NOTCHED_6);
+			ServerBossEvent.BossBarOverlay.NOTCHED_10);
 
 	public VoidkingbossEntity(PlayMessages.SpawnEntity packet, Level world) {
 		this(DarkInfectionModEntities.VOIDKINGBOSS.get(), world);

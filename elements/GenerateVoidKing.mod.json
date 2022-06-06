@@ -1,0 +1,11 @@
+{
+  "_fv": 28,
+  "_type": "command",
+  "definition": {
+    "commandName": "generatevoidking",
+    "permissionLevel": "4",
+    "onCommandExecuted": {
+      "name": "VoidKingStructure"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "dark_infection:enhanced_dark_star"
+    },
+    "title": {
+      "translate": "advancements.darkling_level_3.title"
+    },
+    "description": {
+      "translate": "advancements.darkling_level_3.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "darkling_level_3": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 20
+  },
+  "parent": "dark_infection:darkling_level_2"
+}

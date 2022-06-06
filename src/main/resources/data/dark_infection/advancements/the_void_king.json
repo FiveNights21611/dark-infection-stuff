@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "dark_infection:voidking_helmet"
+    },
+    "title": {
+      "translate": "advancements.the_void_king.title"
+    },
+    "description": {
+      "translate": "advancements.the_void_king.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "the_void_king": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "dark_infection:the_void_advancement"
+}

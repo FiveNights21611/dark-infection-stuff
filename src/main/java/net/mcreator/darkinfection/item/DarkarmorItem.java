@@ -24,7 +24,7 @@ public abstract class DarkarmorItem extends ArmorItem {
 		super(new ArmorMaterial() {
 			@Override
 			public int getDurabilityForSlot(EquipmentSlot slot) {
-				return new int[]{13, 15, 16, 11}[slot.getIndex()] * 15;
+				return new int[]{13, 15, 16, 11}[slot.getIndex()] * 40;
 			}
 
 			@Override
@@ -54,12 +54,12 @@ public abstract class DarkarmorItem extends ArmorItem {
 
 			@Override
 			public float getToughness() {
-				return 0.5f;
+				return 3f;
 			}
 
 			@Override
 			public float getKnockbackResistance() {
-				return 0.1f;
+				return 0.2f;
 			}
 		}, slot, properties);
 	}

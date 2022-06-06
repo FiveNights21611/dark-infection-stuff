@@ -69,7 +69,7 @@ public class VoidkingBodyTickEventProcedure {
 						_scr.setScore(0);
 					}
 					if (entity instanceof LivingEntity _entity)
-						_entity.hurt(new DamageSource("gone").bypassArmor(), 30);
+						_entity.hurt(new DamageSource("gone").bypassArmor(), 40);
 				}
 			} else {
 				if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY)
@@ -228,14 +228,39 @@ public class VoidkingBodyTickEventProcedure {
 				return 0;
 			}
 		}.getScore("infected", entity) == 3) {
-			if (entity instanceof Player _player) {
-				Scoreboard _sc = _player.getScoreboard();
-				Objective _so = _sc.getObjective("infected");
-				if (_so == null)
-					_so = _sc.addObjective("infected", ObjectiveCriteria.DUMMY, new TextComponent("infected"), ObjectiveCriteria.RenderType.INTEGER);
-				Score _scr = _sc.getOrCreatePlayerScore(_player.getScoreboardName(), _so);
-				_scr.setScore(5);
-			}
+			new Object() {
+				private int ticks = 0;
+				private float waitTicks;
+				private LevelAccessor world;
+
+				public void start(LevelAccessor world, int waitTicks) {
+					this.waitTicks = waitTicks;
+					MinecraftForge.EVENT_BUS.register(this);
+					this.world = world;
+				}
+
+				@SubscribeEvent
+				public void tick(TickEvent.ServerTickEvent event) {
+					if (event.phase == TickEvent.Phase.END) {
+						this.ticks += 1;
+						if (this.ticks >= this.waitTicks)
+							run();
+					}
+				}
+
+				private void run() {
+					if (entity instanceof Player _player) {
+						Scoreboard _sc = _player.getScoreboard();
+						Objective _so = _sc.getObjective("infected");
+						if (_so == null)
+							_so = _sc.addObjective("infected", ObjectiveCriteria.DUMMY, new TextComponent("infected"),
+									ObjectiveCriteria.RenderType.INTEGER);
+						Score _scr = _sc.getOrCreatePlayerScore(_player.getScoreboardName(), _so);
+						_scr.setScore(5);
+					}
+					MinecraftForge.EVENT_BUS.unregister(this);
+				}
+			}.start(world, 160);
 		} else if (new Object() {
 			public int getScore(String score, Entity _ent) {
 				if (_ent instanceof Player _player) {
@@ -249,14 +274,137 @@ public class VoidkingBodyTickEventProcedure {
 				return 0;
 			}
 		}.getScore("infected", entity) == 0) {
-			if (entity instanceof Player _player) {
-				Scoreboard _sc = _player.getScoreboard();
-				Objective _so = _sc.getObjective("infected");
-				if (_so == null)
-					_so = _sc.addObjective("infected", ObjectiveCriteria.DUMMY, new TextComponent("infected"), ObjectiveCriteria.RenderType.INTEGER);
-				Score _scr = _sc.getOrCreatePlayerScore(_player.getScoreboardName(), _so);
-				_scr.setScore(1);
+			new Object() {
+				private int ticks = 0;
+				private float waitTicks;
+				private LevelAccessor world;
+
+				public void start(LevelAccessor world, int waitTicks) {
+					this.waitTicks = waitTicks;
+					MinecraftForge.EVENT_BUS.register(this);
+					this.world = world;
+				}
+
+				@SubscribeEvent
+				public void tick(TickEvent.ServerTickEvent event) {
+					if (event.phase == TickEvent.Phase.END) {
+						this.ticks += 1;
+						if (this.ticks >= this.waitTicks)
+							run();
+					}
+				}
+
+				private void run() {
+					if (entity instanceof Player _player) {
+						Scoreboard _sc = _player.getScoreboard();
+						Objective _so = _sc.getObjective("infected");
+						if (_so == null)
+							_so = _sc.addObjective("infected", ObjectiveCriteria.DUMMY, new TextComponent("infected"),
+									ObjectiveCriteria.RenderType.INTEGER);
+						Score _scr = _sc.getOrCreatePlayerScore(_player.getScoreboardName(), _so);
+						_scr.setScore(1);
+					}
+					if (entity instanceof Player _player && !_player.level.isClientSide())
+						_player.displayClientMessage(new TextComponent("You feel a darkness swelling within you..."), (false));
+					MinecraftForge.EVENT_BUS.unregister(this);
+				}
+			}.start(world, 160);
+		} else if (new Object() {
+			public int getScore(String score, Entity _ent) {
+				if (_ent instanceof Player _player) {
+					Scoreboard _sc = _player.getScoreboard();
+					Objective _so = _sc.getObjective(score);
+					if (_so != null) {
+						Score _scr = _sc.getOrCreatePlayerScore(_player.getScoreboardName(), _so);
+						return _scr.getScore();
+					}
+				}
+				return 0;
 			}
+		}.getScore("infected", entity) == 1) {
+			new Object() {
+				private int ticks = 0;
+				private float waitTicks;
+				private LevelAccessor world;
+
+				public void start(LevelAccessor world, int waitTicks) {
+					this.waitTicks = waitTicks;
+					MinecraftForge.EVENT_BUS.register(this);
+					this.world = world;
+				}
+
+				@SubscribeEvent
+				public void tick(TickEvent.ServerTickEvent event) {
+					if (event.phase == TickEvent.Phase.END) {
+						this.ticks += 1;
+						if (this.ticks >= this.waitTicks)
+							run();
+					}
+				}
+
+				private void run() {
+					if (entity instanceof Player _player) {
+						Scoreboard _sc = _player.getScoreboard();
+						Objective _so = _sc.getObjective("infected");
+						if (_so == null)
+							_so = _sc.addObjective("infected", ObjectiveCriteria.DUMMY, new TextComponent("infected"),
+									ObjectiveCriteria.RenderType.INTEGER);
+						Score _scr = _sc.getOrCreatePlayerScore(_player.getScoreboardName(), _so);
+						_scr.setScore(2);
+					}
+					if (entity instanceof Player _player && !_player.level.isClientSide())
+						_player.displayClientMessage(new TextComponent("The darkness grows, consuming your thoughts..."), (false));
+					MinecraftForge.EVENT_BUS.unregister(this);
+				}
+			}.start(world, 160);
+		} else if (new Object() {
+			public int getScore(String score, Entity _ent) {
+				if (_ent instanceof Player _player) {
+					Scoreboard _sc = _player.getScoreboard();
+					Objective _so = _sc.getObjective(score);
+					if (_so != null) {
+						Score _scr = _sc.getOrCreatePlayerScore(_player.getScoreboardName(), _so);
+						return _scr.getScore();
+					}
+				}
+				return 0;
+			}
+		}.getScore("infected", entity) == 2) {
+			new Object() {
+				private int ticks = 0;
+				private float waitTicks;
+				private LevelAccessor world;
+
+				public void start(LevelAccessor world, int waitTicks) {
+					this.waitTicks = waitTicks;
+					MinecraftForge.EVENT_BUS.register(this);
+					this.world = world;
+				}
+
+				@SubscribeEvent
+				public void tick(TickEvent.ServerTickEvent event) {
+					if (event.phase == TickEvent.Phase.END) {
+						this.ticks += 1;
+						if (this.ticks >= this.waitTicks)
+							run();
+					}
+				}
+
+				private void run() {
+					if (entity instanceof Player _player) {
+						Scoreboard _sc = _player.getScoreboard();
+						Objective _so = _sc.getObjective("infected");
+						if (_so == null)
+							_so = _sc.addObjective("infected", ObjectiveCriteria.DUMMY, new TextComponent("infected"),
+									ObjectiveCriteria.RenderType.INTEGER);
+						Score _scr = _sc.getOrCreatePlayerScore(_player.getScoreboardName(), _so);
+						_scr.setScore(3);
+					}
+					MinecraftForge.EVENT_BUS.unregister(this);
+				}
+			}.start(world, 160);
+			if (entity instanceof Player _player && !_player.level.isClientSide())
+				_player.displayClientMessage(new TextComponent("You cannot stop the darkness..."), (false));
 		}
 	}
 }

@@ -96,6 +96,13 @@ public class DarkInfectionModItems {
 			DarkInfectionModTabs.TAB_DARKINFECTED);
 	public static final RegistryObject<Item> VOID_STONE_GOLD_ORE = block(DarkInfectionModBlocks.VOID_STONE_GOLD_ORE,
 			DarkInfectionModTabs.TAB_DARKINFECTED);
+	public static final RegistryObject<Item> VOID_KING_SPAWNER = block(DarkInfectionModBlocks.VOID_KING_SPAWNER, null);
+	public static final RegistryObject<Item> VOID_STONE_BRICK_STAIRS = block(DarkInfectionModBlocks.VOID_STONE_BRICK_STAIRS,
+			DarkInfectionModTabs.TAB_DARKINFECTED);
+	public static final RegistryObject<Item> VOID_STONE_BRICK_SLABS = block(DarkInfectionModBlocks.VOID_STONE_BRICK_SLABS,
+			DarkInfectionModTabs.TAB_DARKINFECTED);
+	public static final RegistryObject<Item> VOID_STONE_BRICK_WALLS = block(DarkInfectionModBlocks.VOID_STONE_BRICK_WALLS,
+			DarkInfectionModTabs.TAB_DARKINFECTED);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

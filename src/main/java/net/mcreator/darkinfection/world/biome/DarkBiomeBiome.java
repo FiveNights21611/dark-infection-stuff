@@ -22,8 +22,8 @@ public class DarkBiomeBiome {
 			Climate.Parameter.span(-1.191947690799f, 0.236623737773f), 0);
 
 	public static Biome createBiome() {
-		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(-13882324).waterColor(-13487566).waterFogColor(-16053493)
-				.skyColor(-13882324).foliageColorOverride(-8684677).grassColorOverride(-11447983).build();
+		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(-16777216).waterColor(-13487566).waterFogColor(-16053493)
+				.skyColor(-16777216).foliageColorOverride(-8684677).grassColorOverride(-11447983).build();
 		BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder();
 		BiomeDefaultFeatures.addDefaultCarversAndLakes(biomeGenerationSettings);
 		BiomeDefaultFeatures.addDefaultOres(biomeGenerationSettings);

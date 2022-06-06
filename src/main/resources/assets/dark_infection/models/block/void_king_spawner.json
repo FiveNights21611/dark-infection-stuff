@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "dark_infection:blocks/csb",
+    "up": "dark_infection:blocks/csb",
+    "north": "dark_infection:blocks/csb",
+    "east": "dark_infection:blocks/csb",
+    "south": "dark_infection:blocks/csb",
+    "west": "dark_infection:blocks/csb",
+    "particle": "dark_infection:blocks/csb"
+  }
+}

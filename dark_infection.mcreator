@@ -152,22 +152,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       }
@@ -1479,6 +1463,345 @@
           }
         ]
       }
+    },
+    {
+      "name": "DarklingLevel3",
+      "type": "achievement",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "darkling_level_3"
+    },
+    {
+      "name": "DarklingLevel3DoIt",
+      "type": "procedure",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "darkling_level_3_do_it",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TheVoidKing",
+      "type": "achievement",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_void_king"
+    },
+    {
+      "name": "TheVoidKingDoIt",
+      "type": "procedure",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_void_king_do_it",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TheVoid",
+      "type": "dimension",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_void",
+      "metadata": {
+        "ep": false
+      }
+    },
+    {
+      "name": "VoidKingSpawner",
+      "type": "block",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_king_spawner"
+    },
+    {
+      "name": "SummonVoidKing",
+      "type": "procedure",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "summon_void_king",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GoToVoidFunction",
+      "type": "procedure",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "go_to_void_function",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GoToVoid",
+      "type": "command",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "go_to_void"
+    },
+    {
+      "name": "HowToGetToVoidDimension",
+      "type": "procedure",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "how_to_get_to_void_dimension",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VoidStoneBrickStairs",
+      "type": "block",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_stone_brick_stairs"
+    },
+    {
+      "name": "VoidStoneBrickSlabs",
+      "type": "block",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_stone_brick_slabs"
+    },
+    {
+      "name": "VoidStoneBrickWalls",
+      "type": "block",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_stone_brick_walls"
+    },
+    {
+      "name": "VoidBrickStairsRecipeCraft",
+      "type": "recipe",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_brick_stairs_recipe_craft"
+    },
+    {
+      "name": "VoidBrickSlabRecipeCraft",
+      "type": "recipe",
+      "sortid": 120,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_brick_slab_recipe_craft"
+    },
+    {
+      "name": "VoidBrickWallsRecipeCraft",
+      "type": "recipe",
+      "sortid": 121,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_brick_walls_recipe_craft"
+    },
+    {
+      "name": "VoidBrickStairsRecipeCut",
+      "type": "recipe",
+      "sortid": 122,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_brick_stairs_recipe_cut"
+    },
+    {
+      "name": "VoidBrickSlabRecipeCut",
+      "type": "recipe",
+      "sortid": 123,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_brick_slab_recipe_cut"
+    },
+    {
+      "name": "VoidBrickWallRecipeCut",
+      "type": "recipe",
+      "sortid": 124,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_brick_wall_recipe_cut"
+    },
+    {
+      "name": "VoidKingStructure",
+      "type": "procedure",
+      "sortid": 127,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_king_structure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SpawnIntoTheVoid",
+      "type": "procedure",
+      "sortid": 128,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_into_the_void",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TheVoidAdvancement",
+      "type": "achievement",
+      "sortid": 129,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_void_advancement"
+    },
+    {
+      "name": "GenerateVoidKing",
+      "type": "command",
+      "sortid": 130,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "generate_void_king"
+    },
+    {
+      "name": "TheVoidAdvancementDoIt",
+      "type": "procedure",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_void_advancement_do_it",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "IntoTheVoidCommand",
+      "type": "command",
+      "sortid": 132,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "into_the_void_command"
     }
   ],
   "variable_elements": [
@@ -1493,6 +1816,18 @@
       "type": "arraylist_block",
       "scope": "global",
       "value": "new ArrayList\u003cBlock\u003e()"
+    },
+    {
+      "name": "StructureGenerated",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "VoidKingSpawned",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
     }
   ],
   "sound_elements": [],
@@ -1516,15 +1851,19 @@
       "block.dark_infection.void_stone_gold_ore": "Void Stone Gold Ore",
       "item.minecraft.tipped_arrow.effect.potion_of_ultimate_darkness": "Arrow of Ultimate Darkness",
       "item.dark_infection.itemorbofdarkness": "Orb Of Darkness",
+      "item.dark_infection.the_void": "The Void Portal Igniter",
       "advancements.darkling_level_2.title": "Darkling Level 2",
       "item.dark_infection.voidking_leggings": "Voidking Leggings",
       "itemGroup.tabdarkinfected": "Dark Infection",
       "advancements.the_dark_armor.title": "Cover Me in Darkness",
       "advancements.the_dark_armor.descr": "Surround yourself in the void... and it will bless you.",
+      "block.dark_infection.void_stone_brick_walls": "Void Stone Brick Walls",
       "item.dark_infection.dark_carrot": "Dark Carrot",
       "item.minecraft.potion.effect.voidcurepotion": "Potion of Voidcure",
       "item.minecraft.lingering_potion.effect.potion_of_ultimate_darkness": "Lingering Potion Of Ultimate Darkness",
+      "advancements.the_void_king.title": "The Void King",
       "biome.dark_infection.dark_caves": "Dark Caves",
+      "advancements.the_void_advancement.title": "The Void",
       "advancements.darkling_level_1.descr": "Become a Darkling",
       "block.dark_infection.voidstonebricks": "VoidStone Bricks",
       "block.dark_infection.void_stone_copper_ore": "Void Stone Copper Ore",
@@ -1538,8 +1877,10 @@
       "advancements.cover_me_in_quartz.descr": "Woah! How immune is this...?",
       "advancements.the_absolute_dark.title": "The Absolute Dark...",
       "item.dark_infection.iron_rod": "Iron Rod",
+      "block.dark_infection.void_stone_brick_slabs": "Void Stone Brick Slab",
       "block.dark_infection.void_stone_emerald_ore": "Void Stone Emerald Ore",
       "item.minecraft.splash_potion.effect.potion_of_ultimate_darkness": "Splash PotionOf Ultimate Darkness",
+      "block.dark_infection.void_stone_brick_stairs": "Void Stone Brick Stairs",
       "block.dark_infection.void_stone_iron_ore": "Void Stone Iron Ore",
       "item.dark_infection.dark_star": "Dark Star",
       "item.minecraft.potion.effect.potion_of_ultimate_darkness": "Potion Of Ultimate Darkness",
@@ -1547,6 +1888,9 @@
       "item.dark_infection.enhanced_dark_star": "Enhanced Dark Star",
       "item.dark_infection.voidkingboss_spawn_egg": "Void King Boss Spawn Egg",
       "block.dark_infection.void_stone_lapis_ore": "Void Stone Lapis Ore",
+      "advancements.darkling_level_3.title": "Darkling Level 3",
+      "advancements.darkling_level_3.descr": "Envelop yourself in the darkness...",
+      "advancements.the_void_king.descr": "Become the King of the Darkness",
       "block.dark_infection.chisseldvoidstonebricks": "Chiseled VoidStone Bricks",
       "advancements.the_dark_infection.descr": "The darkness within us all grows...",
       "item.dark_infection.voidking_helmet": "Voidking Helmet",
@@ -1558,6 +1902,7 @@
       "effect.dark_infection.void_cure": "void cure",
       "item.dark_infection.blue_pole": "Blue Pole",
       "gamerule.doInfectionSpread.description": "toggles infection spread",
+      "block.dark_infection.void_king_spawner": "Void King Spawner",
       "item.dark_infection.voidvile": "Void Vial",
       "item.dark_infection.iron_pole": "Iron Pole",
       "item.dark_infection.strangev": "Strange Vial",
@@ -1566,6 +1911,7 @@
       "item.dark_infection.darkarmor_chestplate": "Dark Chestplate",
       "advancements.darkling_level_1.title": "Darkling Level 1",
       "item.dark_infection.quartz_enriched_netherite_armor_leggings": "Quartz Enriched Netherite Leggings",
+      "advancements.the_void_advancement.descr": "Enter the Darkness.",
       "item.dark_infection.voidking_chestplate": "Voidking Body",
       "block.dark_infection.void_cobble": "Void Cobble",
       "item.dark_infection.darkarmor_helmet": "Dark Helmet",
@@ -1580,8 +1926,8 @@
   },
   "workspaceSettings": {
     "modid": "dark_infection",
-    "modName": "Dark Infection",
-    "version": "0.9.4",
+    "modName": "The Dark Infection",
+    "version": "0.9.6",
     "description": "Infect Everything!",
     "author": "quinn, MCreator, FiveNights2161",
     "websiteURL": "https://mcreator.net",

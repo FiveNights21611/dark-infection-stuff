@@ -66,7 +66,7 @@ public abstract class DarkarmorItem extends ArmorItem {
 
 	public static class Helmet extends DarkarmorItem {
 		public Helmet() {
-			super(EquipmentSlot.HEAD, new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED));
+			super(EquipmentSlot.HEAD, new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED).fireResistant());
 		}
 
 		@Override
@@ -77,7 +77,7 @@ public abstract class DarkarmorItem extends ArmorItem {
 
 	public static class Chestplate extends DarkarmorItem {
 		public Chestplate() {
-			super(EquipmentSlot.CHEST, new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED));
+			super(EquipmentSlot.CHEST, new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED).fireResistant());
 		}
 
 		@Override
@@ -93,7 +93,7 @@ public abstract class DarkarmorItem extends ArmorItem {
 
 	public static class Leggings extends DarkarmorItem {
 		public Leggings() {
-			super(EquipmentSlot.LEGS, new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED));
+			super(EquipmentSlot.LEGS, new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED).fireResistant());
 		}
 
 		@Override
@@ -104,7 +104,7 @@ public abstract class DarkarmorItem extends ArmorItem {
 
 	public static class Boots extends DarkarmorItem {
 		public Boots() {
-			super(EquipmentSlot.FEET, new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED));
+			super(EquipmentSlot.FEET, new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED).fireResistant());
 		}
 
 		@Override

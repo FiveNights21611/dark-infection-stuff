@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:netherite_scrap"
+    },
+    "1": {
+      "item": "minecraft:diamond"
+    },
+    "2": {
+      "item": "minecraft:netherite_scrap"
+    },
+    "3": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "5": {
+      "item": "dark_infection:itemorbofdarkness"
+    },
+    "7": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "dark_infection:dark_ingot",
+    "count": 1
+  }
+}

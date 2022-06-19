@@ -1802,6 +1802,130 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "into_the_void_command"
+    },
+    {
+      "name": "VoidstoneBrickWallWork",
+      "type": "procedure",
+      "sortid": 133,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "voidstone_brick_wall_work",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DarkIngot",
+      "type": "item",
+      "sortid": 134,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_ingot"
+    },
+    {
+      "name": "DarkIngotRecipe",
+      "type": "recipe",
+      "sortid": 135,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_ingot_recipe"
+    },
+    {
+      "name": "DarkPickaxe",
+      "type": "tool",
+      "sortid": 136,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_pickaxe"
+    },
+    {
+      "name": "DarkAxe",
+      "type": "tool",
+      "sortid": 137,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_axe"
+    },
+    {
+      "name": "DarkSword",
+      "type": "tool",
+      "sortid": 138,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_sword"
+    },
+    {
+      "name": "DarkShovel",
+      "type": "tool",
+      "sortid": 139,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_shovel"
+    },
+    {
+      "name": "DarkHoe",
+      "type": "tool",
+      "sortid": 140,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_hoe"
+    },
+    {
+      "name": "DarkPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 141,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_pickaxe_recipe"
+    },
+    {
+      "name": "DarkAxeRecipe",
+      "type": "recipe",
+      "sortid": 142,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_axe_recipe"
+    },
+    {
+      "name": "DarkSwordRecipe",
+      "type": "recipe",
+      "sortid": 143,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_sword_recipe"
+    },
+    {
+      "name": "DarkShovelRecipe",
+      "type": "recipe",
+      "sortid": 144,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_shovel_recipe"
+    },
+    {
+      "name": "DarkHoeRecipe",
+      "type": "recipe",
+      "sortid": 145,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_hoe_recipe"
     }
   ],
   "variable_elements": [
@@ -1871,10 +1995,12 @@
       "item.dark_infection.darkarmor_leggings": "Dark Leggings",
       "effect.dark_infection.givevoidcure": "one sec",
       "item.dark_infection.curev": "Cure Vial",
+      "item.dark_infection.dark_sword": "Dark Sword",
       "item.dark_infection.voidkingsword": "Voidkingsword",
       "item.minecraft.tipped_arrow.effect.voidcurepotion": "Arrow of Voidcure (dont use its broken)",
       "block.dark_infection.infectedsoil": "Infected Soil",
       "advancements.cover_me_in_quartz.descr": "Woah! How immune is this...?",
+      "item.dark_infection.dark_pickaxe": "Dark Pickaxe",
       "advancements.the_absolute_dark.title": "The Absolute Dark...",
       "item.dark_infection.iron_rod": "Iron Rod",
       "block.dark_infection.void_stone_brick_slabs": "Void Stone Brick Slab",
@@ -1895,6 +2021,7 @@
       "advancements.the_dark_infection.descr": "The darkness within us all grows...",
       "item.dark_infection.voidking_helmet": "Voidking Helmet",
       "gamerule.doInfectionSpread": "doInfectionSpread",
+      "item.dark_infection.dark_hoe": "Dark Hoe",
       "effect.dark_infection.darkness": "Darkness",
       "item.dark_infection.quartz_enriched_netherite_armor_boots": "Quartz Enriched Netherite Boots",
       "effect.dark_infection.darkcorupt": "Don\u0027t Die...",
@@ -1903,8 +2030,10 @@
       "item.dark_infection.blue_pole": "Blue Pole",
       "gamerule.doInfectionSpread.description": "toggles infection spread",
       "block.dark_infection.void_king_spawner": "Void King Spawner",
+      "item.dark_infection.dark_shovel": "Dark Shovel",
       "item.dark_infection.voidvile": "Void Vial",
       "item.dark_infection.iron_pole": "Iron Pole",
+      "item.dark_infection.dark_axe": "Dark Axe",
       "item.dark_infection.strangev": "Strange Vial",
       "item.dark_infection.quartz_enriched_netherite_armor_helmet": "Quartz Enriched Netherite Helmet",
       "item.dark_infection.quartz_enriched_netherite": "Quartz Enriched Netherite Ingot",
@@ -1915,6 +2044,7 @@
       "item.dark_infection.voidking_chestplate": "Voidking Body",
       "block.dark_infection.void_cobble": "Void Cobble",
       "item.dark_infection.darkarmor_helmet": "Dark Helmet",
+      "item.dark_infection.dark_ingot": "Dark Ingot",
       "item.minecraft.splash_potion.effect.voidcurepotion": "Splash Potion of Voidcure (dont use its broken)",
       "item.dark_infection.voidking_boots": "Voidking Boots",
       "item.dark_infection.emptyvile": "Empty Vial"

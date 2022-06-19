@@ -2,42 +2,19 @@
   "_fv": 28,
   "_type": "recipe",
   "definition": {
-    "recipeType": "Crafting",
+    "recipeType": "Smithing",
     "xpReward": 0.0,
     "cookingTime": 200,
     "recipeRetstackSize": 1,
     "group": "",
     "recipeShapeless": false,
-    "recipeSlots": [
-      {
-        "value": "Items.DIAMOND"
-      },
-      {
-        "value": "Items.NETHERITE_LEGGINGS"
-      },
-      {
-        "value": "Items.DIAMOND"
-      },
-      {
-        "value": "Items.DIAMOND"
-      },
-      {
-        "value": "CUSTOM:Itemorbofdarkness"
-      },
-      {
-        "value": "Items.DIAMOND"
-      },
-      {
-        "value": "Items.NETHERITE_SCRAP"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.NETHERITE_SCRAP"
-      }
-    ],
-    "recipeReturnStack": {
+    "smithingInputStack": {
+      "value": "Items.NETHERITE_LEGGINGS"
+    },
+    "smithingInputAdditionStack": {
+      "value": "CUSTOM:DarkIngot"
+    },
+    "smithingReturnStack": {
       "value": "CUSTOM:Darkarmor.legs"
     },
     "name": "darkarmorle",

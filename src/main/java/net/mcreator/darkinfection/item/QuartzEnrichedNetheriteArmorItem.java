@@ -62,7 +62,7 @@ public abstract class QuartzEnrichedNetheriteArmorItem extends ArmorItem {
 
 	public static class Helmet extends QuartzEnrichedNetheriteArmorItem {
 		public Helmet() {
-			super(EquipmentSlot.HEAD, new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED));
+			super(EquipmentSlot.HEAD, new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED).fireResistant());
 		}
 
 		@Override
@@ -73,7 +73,7 @@ public abstract class QuartzEnrichedNetheriteArmorItem extends ArmorItem {
 
 	public static class Chestplate extends QuartzEnrichedNetheriteArmorItem {
 		public Chestplate() {
-			super(EquipmentSlot.CHEST, new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED));
+			super(EquipmentSlot.CHEST, new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED).fireResistant());
 		}
 
 		@Override
@@ -84,7 +84,7 @@ public abstract class QuartzEnrichedNetheriteArmorItem extends ArmorItem {
 
 	public static class Leggings extends QuartzEnrichedNetheriteArmorItem {
 		public Leggings() {
-			super(EquipmentSlot.LEGS, new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED));
+			super(EquipmentSlot.LEGS, new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED).fireResistant());
 		}
 
 		@Override
@@ -95,7 +95,7 @@ public abstract class QuartzEnrichedNetheriteArmorItem extends ArmorItem {
 
 	public static class Boots extends QuartzEnrichedNetheriteArmorItem {
 		public Boots() {
-			super(EquipmentSlot.FEET, new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED));
+			super(EquipmentSlot.FEET, new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED).fireResistant());
 		}
 
 		@Override

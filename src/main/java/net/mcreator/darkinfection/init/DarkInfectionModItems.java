@@ -28,8 +28,14 @@ import net.mcreator.darkinfection.item.IronPoleItem;
 import net.mcreator.darkinfection.item.EnhancedDarkStarItem;
 import net.mcreator.darkinfection.item.EmptyvileItem;
 import net.mcreator.darkinfection.item.DarkarmorItem;
+import net.mcreator.darkinfection.item.DarkSwordItem;
 import net.mcreator.darkinfection.item.DarkStarItem;
+import net.mcreator.darkinfection.item.DarkShovelItem;
+import net.mcreator.darkinfection.item.DarkPickaxeItem;
+import net.mcreator.darkinfection.item.DarkIngotItem;
+import net.mcreator.darkinfection.item.DarkHoeItem;
 import net.mcreator.darkinfection.item.DarkCarrotItem;
+import net.mcreator.darkinfection.item.DarkAxeItem;
 import net.mcreator.darkinfection.item.CurevItem;
 import net.mcreator.darkinfection.item.BluePoleItem;
 import net.mcreator.darkinfection.DarkInfectionMod;
@@ -103,6 +109,12 @@ public class DarkInfectionModItems {
 			DarkInfectionModTabs.TAB_DARKINFECTED);
 	public static final RegistryObject<Item> VOID_STONE_BRICK_WALLS = block(DarkInfectionModBlocks.VOID_STONE_BRICK_WALLS,
 			DarkInfectionModTabs.TAB_DARKINFECTED);
+	public static final RegistryObject<Item> DARK_INGOT = REGISTRY.register("dark_ingot", () -> new DarkIngotItem());
+	public static final RegistryObject<Item> DARK_PICKAXE = REGISTRY.register("dark_pickaxe", () -> new DarkPickaxeItem());
+	public static final RegistryObject<Item> DARK_AXE = REGISTRY.register("dark_axe", () -> new DarkAxeItem());
+	public static final RegistryObject<Item> DARK_SWORD = REGISTRY.register("dark_sword", () -> new DarkSwordItem());
+	public static final RegistryObject<Item> DARK_SHOVEL = REGISTRY.register("dark_shovel", () -> new DarkShovelItem());
+	public static final RegistryObject<Item> DARK_HOE = REGISTRY.register("dark_hoe", () -> new DarkHoeItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

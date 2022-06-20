@@ -2,7 +2,7 @@
   "_fv": 28,
   "_type": "block",
   "definition": {
-    "texture": "voidstone_redstone_ore",
+    "texture": "voidstoneredstoneore",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -77,7 +77,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "STONE"
+      "value": "LANTERN"
     },
     "breakSound": {
       "value": ""
@@ -126,6 +126,12 @@
     },
     "onDestroyedByPlayer": {
       "name": "VoidStoneRedstoneFortune"
+    },
+    "onStartToDestroy": {
+      "name": "DoLightUp"
+    },
+    "onEntityWalksOn": {
+      "name": "DoLightUp"
     },
     "spawnWorldTypes": [
       "Surface"

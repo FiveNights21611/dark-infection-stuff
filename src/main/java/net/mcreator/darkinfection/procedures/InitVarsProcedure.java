@@ -53,7 +53,7 @@ public class InitVarsProcedure {
 		DarkInfectionModVariables.infectable_blocks.add(Blocks.DEEPSLATE_REDSTONE_ORE);
 		DarkInfectionModVariables.infected_blocks.add(DarkInfectionModBlocks.VOID_STONE_REDSTONE_ORE.get());
 		DarkInfectionModVariables.infectable_blocks.add(Blocks.REDSTONE_ORE);
-		DarkInfectionModVariables.infected_blocks.add(DarkInfectionModBlocks.VOID_STONE_REDSTONE_ORE.get());
+		DarkInfectionModVariables.infected_blocks.add(DarkInfectionModBlocks.VOID_STONE_REDSTONE_ORE_LIT.get());
 		DarkInfectionModVariables.infectable_blocks.add(Blocks.LAPIS_ORE);
 		DarkInfectionModVariables.infected_blocks.add(DarkInfectionModBlocks.VOID_STONE_LAPIS_ORE.get());
 		DarkInfectionModVariables.infectable_blocks.add(Blocks.DEEPSLATE_LAPIS_ORE);

@@ -36,6 +36,16 @@ public class DarkCarrotEatProcedure {
 				if (_so == null)
 					_so = _sc.addObjective("infected", ObjectiveCriteria.DUMMY, new TextComponent("infected"), ObjectiveCriteria.RenderType.INTEGER);
 				Score _scr = _sc.getOrCreatePlayerScore(_player.getScoreboardName(), _so);
+				_scr.setScore(0);
+			}
+			if (entity instanceof LivingEntity _entity)
+				_entity.removeAllEffects();
+			if (entity instanceof Player _player) {
+				Scoreboard _sc = _player.getScoreboard();
+				Objective _so = _sc.getObjective("infected");
+				if (_so == null)
+					_so = _sc.addObjective("infected", ObjectiveCriteria.DUMMY, new TextComponent("infected"), ObjectiveCriteria.RenderType.INTEGER);
+				Score _scr = _sc.getOrCreatePlayerScore(_player.getScoreboardName(), _so);
 				_scr.setScore(2);
 			}
 		} else if (new Object() {

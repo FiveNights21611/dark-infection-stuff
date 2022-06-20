@@ -21,7 +21,7 @@ import java.util.Random;
 
 public class VoidStoneEmeraldOreBlock extends Block {
 	public VoidStoneEmeraldOreBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1f, 10f).requiresCorrectToolForDrops().noDrops());
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.LANTERN).strength(1f, 10f).requiresCorrectToolForDrops().noDrops());
 	}
 
 	@Override

@@ -24,7 +24,7 @@ public abstract class DarkarmorItem extends ArmorItem {
 		super(new ArmorMaterial() {
 			@Override
 			public int getDurabilityForSlot(EquipmentSlot slot) {
-				return new int[]{13, 15, 16, 11}[slot.getIndex()] * 40;
+				return new int[]{13, 15, 16, 11}[slot.getIndex()] * 253;
 			}
 
 			@Override
@@ -34,17 +34,17 @@ public abstract class DarkarmorItem extends ArmorItem {
 
 			@Override
 			public int getEnchantmentValue() {
-				return 25;
+				return 40;
 			}
 
 			@Override
 			public SoundEvent getEquipSound() {
-				return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ambient.cave"));
+				return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.armor.equip_netherite"));
 			}
 
 			@Override
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(DarkInfectionModItems.ITEMORBOFDARKNESS.get()));
+				return Ingredient.of(new ItemStack(DarkInfectionModItems.DARK_INGOT.get()));
 			}
 
 			@Override
@@ -71,7 +71,7 @@ public abstract class DarkarmorItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "dark_infection:textures/models/armor/dark__layer_1.png";
+			return "dark_infection:textures/models/armor/dark_armor__layer_1.png";
 		}
 	}
 
@@ -82,7 +82,7 @@ public abstract class DarkarmorItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "dark_infection:textures/models/armor/dark__layer_1.png";
+			return "dark_infection:textures/models/armor/dark_armor__layer_1.png";
 		}
 
 		@Override
@@ -98,7 +98,7 @@ public abstract class DarkarmorItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "dark_infection:textures/models/armor/dark__layer_2.png";
+			return "dark_infection:textures/models/armor/dark_armor__layer_2.png";
 		}
 	}
 
@@ -109,7 +109,7 @@ public abstract class DarkarmorItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "dark_infection:textures/models/armor/dark__layer_1.png";
+			return "dark_infection:textures/models/armor/dark_armor__layer_1.png";
 		}
 	}
 }

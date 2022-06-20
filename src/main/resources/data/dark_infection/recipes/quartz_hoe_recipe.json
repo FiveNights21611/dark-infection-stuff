@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:netherite_hoe"
+  },
+  "addition": {
+    "item": "dark_infection:quartz_enriched_netherite"
+  },
+  "result": {
+    "item": "dark_infection:quartz_hoe"
+  }
+}

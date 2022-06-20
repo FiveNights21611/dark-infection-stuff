@@ -8,7 +8,7 @@
     "name": "Dark Hoe",
     "specialInfo": [],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:Darkinfected"
     },
     "toolType": "Hoe",
     "harvestLevel": 6,

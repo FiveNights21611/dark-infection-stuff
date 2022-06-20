@@ -8,7 +8,7 @@
     "name": "Dark Axe",
     "specialInfo": [],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:Darkinfected"
     },
     "toolType": "Axe",
     "harvestLevel": 6,

@@ -34,12 +34,22 @@ public class UDExpireProcedure {
 				if (_so == null)
 					_so = _sc.addObjective("infected", ObjectiveCriteria.DUMMY, new TextComponent("infected"), ObjectiveCriteria.RenderType.INTEGER);
 				Score _scr = _sc.getOrCreatePlayerScore(_player.getScoreboardName(), _so);
+				_scr.setScore(0);
+			}
+			if (entity instanceof LivingEntity _entity)
+				_entity.removeAllEffects();
+			if (entity instanceof Player _player) {
+				Scoreboard _sc = _player.getScoreboard();
+				Objective _so = _sc.getObjective("infected");
+				if (_so == null)
+					_so = _sc.addObjective("infected", ObjectiveCriteria.DUMMY, new TextComponent("infected"), ObjectiveCriteria.RenderType.INTEGER);
+				Score _scr = _sc.getOrCreatePlayerScore(_player.getScoreboardName(), _so);
 				_scr.setScore(3);
 			}
 			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(MobEffects.DIG_SPEED, 3600, 3, (false), (true)));
+				_entity.addEffect(new MobEffectInstance(MobEffects.DIG_SPEED, 3600, 1, (false), (true)));
 			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 3600, 3, (false), (true)));
+				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 3600, 1, (false), (true)));
 		} else if (new Object() {
 			public int getScore(String score, Entity _ent) {
 				if (_ent instanceof Player _player) {

@@ -8,7 +8,7 @@
     "name": "Dark Shovel",
     "specialInfo": [],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:Darkinfected"
     },
     "toolType": "Spade",
     "harvestLevel": 6,

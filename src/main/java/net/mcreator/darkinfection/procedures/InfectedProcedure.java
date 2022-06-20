@@ -73,9 +73,9 @@ public class InfectedProcedure {
 						_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 60, 0, (false), (false)));
 					if (entity instanceof LivingEntity _entity)
 						_entity.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 60, 0, (false), (false)));
-					if ((entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(MobEffects.HEALTH_BOOST) : false) == false) {
+					if (!(entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(MobEffects.HEALTH_BOOST) : false)) {
 						if (entity instanceof LivingEntity _entity)
-							_entity.addEffect(new MobEffectInstance(MobEffects.HEALTH_BOOST, 100000, 0, (false), (false)));
+							_entity.addEffect(new MobEffectInstance(MobEffects.HEALTH_BOOST, 1000000, 0, (false), (false)));
 					}
 				}
 				if (new Object() {
@@ -95,9 +95,9 @@ public class InfectedProcedure {
 						_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 60, 1, (false), (false)));
 					if (entity instanceof LivingEntity _entity)
 						_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 60, 1, (false), (false)));
-					if ((entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(MobEffects.HEALTH_BOOST) : false) == false) {
+					if (!(entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(MobEffects.HEALTH_BOOST) : false)) {
 						if (entity instanceof LivingEntity _entity)
-							_entity.addEffect(new MobEffectInstance(MobEffects.HEALTH_BOOST, 100000, 1, (false), (false)));
+							_entity.addEffect(new MobEffectInstance(MobEffects.HEALTH_BOOST, 1000000, 1, (false), (false)));
 					}
 				}
 				if (new Object() {
@@ -119,9 +119,9 @@ public class InfectedProcedure {
 						_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 60, 2, (false), (false)));
 					if (entity instanceof LivingEntity _entity)
 						_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 60, 0, (false), (false)));
-					if ((entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(MobEffects.HEALTH_BOOST) : false) == false) {
+					if (!(entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(MobEffects.HEALTH_BOOST) : false)) {
 						if (entity instanceof LivingEntity _entity)
-							_entity.addEffect(new MobEffectInstance(MobEffects.HEALTH_BOOST, 100000, 3, (false), (false)));
+							_entity.addEffect(new MobEffectInstance(MobEffects.HEALTH_BOOST, 1000000, 3, (false), (false)));
 					}
 				}
 				if (new Object() {
@@ -136,15 +136,11 @@ public class InfectedProcedure {
 						}
 						return 0;
 					}
-				}.getScore("infected", entity) == 4) {
+				}.getScore("infected", entity) == 5) {
 					if (entity instanceof LivingEntity _entity)
 						_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 60, 3, (false), (false)));
 					if (entity instanceof LivingEntity _entity)
 						_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 60, 3, (false), (false)));
-					if ((entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(MobEffects.HEALTH_BOOST) : false) == false) {
-						if (entity instanceof LivingEntity _entity)
-							_entity.addEffect(new MobEffectInstance(MobEffects.HEALTH_BOOST, 100000, 5, (false), (false)));
-					}
 					if (entity instanceof LivingEntity _entity)
 						_entity.addEffect(new MobEffectInstance(MobEffects.JUMP, 60, 1, (false), (false)));
 					if (entity instanceof LivingEntity _entity)
@@ -157,6 +153,10 @@ public class InfectedProcedure {
 						_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 60, 1, (false), (false)));
 					if (entity instanceof LivingEntity _entity)
 						_entity.addEffect(new MobEffectInstance(MobEffects.WATER_BREATHING, 60, 1, (false), (false)));
+					if (!(entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(MobEffects.HEALTH_BOOST) : false)) {
+						if (entity instanceof LivingEntity _entity)
+							_entity.addEffect(new MobEffectInstance(MobEffects.HEALTH_BOOST, 1000000, 5, (false), (false)));
+					}
 				}
 				MinecraftForge.EVENT_BUS.unregister(this);
 			}

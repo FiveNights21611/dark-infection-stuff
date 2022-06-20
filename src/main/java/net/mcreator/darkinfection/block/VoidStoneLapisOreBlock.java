@@ -26,7 +26,7 @@ import java.util.Collections;
 
 public class VoidStoneLapisOreBlock extends Block {
 	public VoidStoneLapisOreBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1f, 10f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.LANTERN).strength(1f, 10f).requiresCorrectToolForDrops());
 	}
 
 	@Override

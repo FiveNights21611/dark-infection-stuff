@@ -3,20 +3,20 @@
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
-    "textureHelmet": "dark_aror_head",
+    "textureHelmet": "darkh",
     "enableBody": true,
-    "textureBody": "dark_aror_body",
+    "textureBody": "darkc",
     "enableLeggings": true,
-    "textureLeggings": "dark_aror_leggings",
+    "textureLeggings": "darkl",
     "enableBoots": true,
-    "textureBoots": "dark_aror_boots",
+    "textureBoots": "darkb",
     "onBodyTick": {
       "name": "DarkarmorBodyTickEvent"
     },
     "creativeTab": {
       "value": "CUSTOM:Darkinfected"
     },
-    "armorTextureFile": "dark_",
+    "armorTextureFile": "dark_armor_",
     "helmetName": "Dark Helmet",
     "bodyName": "Dark Chestplate",
     "leggingsName": "Dark Leggings",
@@ -45,20 +45,20 @@
     "bodyImmuneToFire": true,
     "leggingsImmuneToFire": true,
     "bootsImmuneToFire": true,
-    "maxDamage": 40,
+    "maxDamage": 253,
     "damageValueHelmet": 3,
     "damageValueBody": 8,
     "damageValueLeggings": 7,
     "damageValueBoots": 3,
-    "enchantability": 25,
+    "enchantability": 40,
     "toughness": 3.0,
     "knockbackResistance": 0.2,
     "equipSound": {
-      "value": "ambient.cave"
+      "value": "item.armor.equip_netherite"
     },
     "repairItems": [
       {
-        "value": "CUSTOM:Itemorbofdarkness"
+        "value": "CUSTOM:DarkIngot"
       }
     ]
   }

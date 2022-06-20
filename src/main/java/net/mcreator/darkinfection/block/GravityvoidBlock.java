@@ -23,7 +23,7 @@ import java.util.Collections;
 
 public class GravityvoidBlock extends FallingBlock {
 	public GravityvoidBlock() {
-		super(BlockBehaviour.Properties.of(Material.SAND).sound(SoundType.SAND).strength(1f, 10f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of(Material.SAND).sound(SoundType.SOUL_SOIL).strength(1f, 10f).requiresCorrectToolForDrops());
 	}
 
 	@Override

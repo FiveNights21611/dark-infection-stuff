@@ -14,23 +14,24 @@ import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 
 import net.mcreator.darkinfection.init.DarkInfectionModTabs;
+import net.mcreator.darkinfection.init.DarkInfectionModItems;
 
 public abstract class QuartzEnrichedNetheriteArmorItem extends ArmorItem {
 	public QuartzEnrichedNetheriteArmorItem(EquipmentSlot slot, Item.Properties properties) {
 		super(new ArmorMaterial() {
 			@Override
 			public int getDurabilityForSlot(EquipmentSlot slot) {
-				return new int[]{13, 15, 16, 11}[slot.getIndex()] * 37;
+				return new int[]{13, 15, 16, 11}[slot.getIndex()] * 253;
 			}
 
 			@Override
 			public int getDefenseForSlot(EquipmentSlot slot) {
-				return new int[]{4, 7, 9, 4}[slot.getIndex()];
+				return new int[]{3, 7, 8, 3}[slot.getIndex()];
 			}
 
 			@Override
 			public int getEnchantmentValue() {
-				return 30;
+				return 40;
 			}
 
 			@Override
@@ -40,7 +41,7 @@ public abstract class QuartzEnrichedNetheriteArmorItem extends ArmorItem {
 
 			@Override
 			public Ingredient getRepairIngredient() {
-				return Ingredient.EMPTY;
+				return Ingredient.of(new ItemStack(DarkInfectionModItems.QUARTZ_ENRICHED_NETHERITE.get()));
 			}
 
 			@Override
@@ -50,7 +51,7 @@ public abstract class QuartzEnrichedNetheriteArmorItem extends ArmorItem {
 
 			@Override
 			public float getToughness() {
-				return 3.5f;
+				return 3f;
 			}
 
 			@Override

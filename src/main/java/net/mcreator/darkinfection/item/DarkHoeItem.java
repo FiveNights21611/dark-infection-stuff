@@ -6,8 +6,8 @@ import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.HoeItem;
-import net.minecraft.world.item.CreativeModeTab;
 
+import net.mcreator.darkinfection.init.DarkInfectionModTabs;
 import net.mcreator.darkinfection.init.DarkInfectionModItems;
 
 public class DarkHoeItem extends HoeItem {
@@ -36,6 +36,6 @@ public class DarkHoeItem extends HoeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(DarkInfectionModItems.DARK_INGOT.get()));
 			}
-		}, 0, -3.2f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS).fireResistant());
+		}, 0, -3.2f, new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED).fireResistant());
 	}
 }

@@ -5,9 +5,9 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.AxeItem;
 
+import net.mcreator.darkinfection.init.DarkInfectionModTabs;
 import net.mcreator.darkinfection.init.DarkInfectionModItems;
 
 public class DarkAxeItem extends AxeItem {
@@ -36,6 +36,6 @@ public class DarkAxeItem extends AxeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(DarkInfectionModItems.DARK_INGOT.get()));
 			}
-		}, 1, -3f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS).fireResistant());
+		}, 1, -3f, new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED).fireResistant());
 	}
 }

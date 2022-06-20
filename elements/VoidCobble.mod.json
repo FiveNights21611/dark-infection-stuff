@@ -2,12 +2,12 @@
   "_fv": 28,
   "_type": "block",
   "definition": {
-    "texture": "cobble",
-    "textureTop": "cobble",
-    "textureLeft": "cobble",
-    "textureFront": "cobble",
-    "textureRight": "cobble",
-    "textureBack": "cobble",
+    "texture": "voidcobblenew",
+    "textureTop": "voidcobblenew",
+    "textureLeft": "voidcobblenew",
+    "textureFront": "voidcobblenew",
+    "textureRight": "voidcobblenew",
+    "textureBack": "voidcobblenew",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
@@ -77,7 +77,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "STONE"
+      "value": "NETHERRACK"
     },
     "breakSound": {
       "value": ""

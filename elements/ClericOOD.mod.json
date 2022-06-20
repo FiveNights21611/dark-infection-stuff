@@ -25,6 +25,24 @@
             "maxTrades": 25,
             "xp": 20,
             "priceMultiplier": 0.0
+          },
+          {
+            "price1": {
+              "value": "Items.DIAMOND"
+            },
+            "countPrice1": 32,
+            "price2": {
+              "value": "Items.GOLDEN_APPLE#0"
+            },
+            "countPrice2": 4,
+            "offer": {
+              "value": "Items.GOLDEN_APPLE#1"
+            },
+            "countOffer": 1,
+            "level": 5,
+            "maxTrades": 10,
+            "xp": 20,
+            "priceMultiplier": 0.0
           }
         ]
       }

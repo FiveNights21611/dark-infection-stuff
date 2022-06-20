@@ -1,7 +1,7 @@
 {
   "parent": "block/template_wall_post",
   "textures": {
-    "wall": "dark_infection:blocks/void_stone_bricks",
-    "particle": "dark_infection:blocks/void_stone_bricks"
+    "wall": "dark_infection:blocks/voidstonebricks",
+    "particle": "dark_infection:blocks/voidstonebricks"
   }
 }

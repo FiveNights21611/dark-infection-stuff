@@ -3,8 +3,8 @@
   "_type": "gamerule",
   "definition": {
     "type": "Logic",
-    "displayName": "doInfectionSpread",
-    "description": "toggles infection spread",
+    "displayName": "Do Infection Spread",
+    "description": "Toggles Infection Spreading",
     "category": "UPDATES",
     "defaultValueLogic": true,
     "defaultValueNumber": 0

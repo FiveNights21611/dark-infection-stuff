@@ -1,12 +1,12 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "dark_infection:blocks/void_stone_bricks",
-    "up": "dark_infection:blocks/void_stone_bricks",
-    "north": "dark_infection:blocks/void_stone_bricks",
-    "east": "dark_infection:blocks/void_stone_bricks",
-    "south": "dark_infection:blocks/void_stone_bricks",
-    "west": "dark_infection:blocks/void_stone_bricks",
-    "particle": "dark_infection:blocks/void_stone_bricks"
+    "down": "dark_infection:blocks/voidstonebricks",
+    "up": "dark_infection:blocks/voidstonebricks",
+    "north": "dark_infection:blocks/voidstonebricks",
+    "east": "dark_infection:blocks/voidstonebricks",
+    "south": "dark_infection:blocks/voidstonebricks",
+    "west": "dark_infection:blocks/voidstonebricks",
+    "particle": "dark_infection:blocks/voidstonebricks"
   }
 }

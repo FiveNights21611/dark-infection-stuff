@@ -1,12 +1,12 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "dark_infection:blocks/infectedsoiltop",
-    "up": "dark_infection:blocks/infectedsoiltop",
-    "north": "dark_infection:blocks/infectedsoilside",
-    "east": "dark_infection:blocks/infectedsoilside",
-    "south": "dark_infection:blocks/infectedsoilside",
-    "west": "dark_infection:blocks/infectedsoilside",
-    "particle": "dark_infection:blocks/infectedsoiltop"
+    "down": "dark_infection:blocks/darkdirtnew",
+    "up": "dark_infection:blocks/infectedsoiltopnew",
+    "north": "dark_infection:blocks/infectedsoilsidenew",
+    "east": "dark_infection:blocks/infectedsoilsidenew",
+    "south": "dark_infection:blocks/infectedsoilsidenew",
+    "west": "dark_infection:blocks/infectedsoilsidenew",
+    "particle": "dark_infection:blocks/darkdirtnew"
   }
 }

@@ -1,12 +1,12 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "dark_infection:blocks/voidstone_diamond_ore",
-    "up": "dark_infection:blocks/voidstone_diamond_ore",
-    "north": "dark_infection:blocks/voidstone_diamond_ore",
-    "east": "dark_infection:blocks/voidstone_diamond_ore",
-    "south": "dark_infection:blocks/voidstone_diamond_ore",
-    "west": "dark_infection:blocks/voidstone_diamond_ore",
-    "particle": "dark_infection:blocks/voidstone_diamond_ore"
+    "down": "dark_infection:blocks/voidstonediamondore",
+    "up": "dark_infection:blocks/voidstonediamondore",
+    "north": "dark_infection:blocks/voidstonediamondore",
+    "east": "dark_infection:blocks/voidstonediamondore",
+    "south": "dark_infection:blocks/voidstonediamondore",
+    "west": "dark_infection:blocks/voidstonediamondore",
+    "particle": "dark_infection:blocks/voidstonediamondore"
   }
 }

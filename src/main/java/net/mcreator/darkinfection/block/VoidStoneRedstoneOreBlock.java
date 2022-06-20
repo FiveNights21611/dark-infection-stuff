@@ -11,17 +11,19 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.TieredItem;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.darkinfection.procedures.VoidStoneRedstoneFortuneProcedure;
 import net.mcreator.darkinfection.procedures.InfectedBlockUpdatecul8tersmodProcedure;
+import net.mcreator.darkinfection.procedures.DoLightUpProcedure;
 
 import java.util.Random;
 
 public class VoidStoneRedstoneOreBlock extends Block {
 	public VoidStoneRedstoneOreBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1f, 10f).requiresCorrectToolForDrops().noDrops());
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.LANTERN).strength(1f, 10f).requiresCorrectToolForDrops().noDrops());
 	}
 
 	@Override
@@ -58,5 +60,17 @@ public class VoidStoneRedstoneOreBlock extends Block {
 		boolean retval = super.onDestroyedByPlayer(blockstate, world, pos, entity, willHarvest, fluid);
 		VoidStoneRedstoneFortuneProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), entity);
 		return retval;
+	}
+
+	@Override
+	public void attack(BlockState blockstate, Level world, BlockPos pos, Player entity) {
+		super.attack(blockstate, world, pos, entity);
+		DoLightUpProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+	}
+
+	@Override
+	public void stepOn(Level world, BlockPos pos, BlockState blockstate, Entity entity) {
+		super.stepOn(world, pos, blockstate, entity);
+		DoLightUpProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 }

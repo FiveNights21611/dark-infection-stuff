@@ -16,6 +16,7 @@ import net.minecraft.world.level.block.Block;
 
 import net.mcreator.darkinfection.block.VoidstonebricksBlock;
 import net.mcreator.darkinfection.block.VoidstoneBlock;
+import net.mcreator.darkinfection.block.VoidStoneRedstoneOreLitBlock;
 import net.mcreator.darkinfection.block.VoidStoneRedstoneOreBlock;
 import net.mcreator.darkinfection.block.VoidStoneLapisOreBlock;
 import net.mcreator.darkinfection.block.VoidStoneIronOreBlock;
@@ -63,6 +64,8 @@ public class DarkInfectionModBlocks {
 			() -> new VoidStoneBrickSlabsBlock());
 	public static final RegistryObject<Block> VOID_STONE_BRICK_WALLS = REGISTRY.register("void_stone_brick_walls",
 			() -> new VoidStoneBrickWallsBlock());
+	public static final RegistryObject<Block> VOID_STONE_REDSTONE_ORE_LIT = REGISTRY.register("void_stone_redstone_ore_lit",
+			() -> new VoidStoneRedstoneOreLitBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

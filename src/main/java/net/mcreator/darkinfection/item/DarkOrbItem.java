@@ -1,6 +1,9 @@
 
 package net.mcreator.darkinfection.item;
 
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
+
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.item.TooltipFlag;
@@ -45,6 +48,12 @@ public class DarkOrbItem extends Item {
 	@Override
 	public int getUseDuration(ItemStack itemstack) {
 		return 72000;
+	}
+
+	@Override
+	@OnlyIn(Dist.CLIENT)
+	public boolean isFoil(ItemStack itemstack) {
+		return true;
 	}
 
 	@Override

@@ -21,7 +21,7 @@
     "actionSound": {
       "value": "entity.lightning.thunder"
     },
-    "hasGlow": false,
+    "hasGlow": true,
     "animation": "spear",
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,

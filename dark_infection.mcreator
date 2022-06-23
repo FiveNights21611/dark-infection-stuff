@@ -2402,6 +2402,46 @@
           }
         ]
       }
+    },
+    {
+      "name": "SilverTimer",
+      "type": "procedure",
+      "sortid": 187,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "silver_timer",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Silveryeetbind",
+      "type": "keybind",
+      "sortid": 186,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "silveryeetbind"
+    },
+    {
+      "name": "Silveryeet",
+      "type": "procedure",
+      "sortid": 185,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "silveryeet",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -2434,6 +2474,12 @@
       "type": "logic",
       "scope": "world",
       "value": "false"
+    },
+    {
+      "name": "Silver_Timer",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
     }
   ],
   "sound_elements": [],
@@ -2466,7 +2512,6 @@
       "block.dark_infection.void_stone_emerald_ore": "Void Stone Emerald Ore",
       "item.minecraft.splash_potion.effect.potion_of_ultimate_darkness": "Splash Potion Of Ultimate Darkness",
       "block.dark_infection.void_stone_brick_stairs": "Void Stone Brick Stairs",
-      "death.attack.gone": "%1$s broke free of the Void King\u0027s control thanks to %2$s",
       "item.minecraft.potion.effect.potion_of_ultimate_darkness": "Potion Of Ultimate Darkness",
       "advancements.the_absolute_dark.descr": "What devotion is this?",
       "item.dark_infection.enhanced_dark_star": "Enhanced Dark Star",

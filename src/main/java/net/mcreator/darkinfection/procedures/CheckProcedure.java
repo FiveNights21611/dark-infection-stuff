@@ -17,6 +17,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.network.chat.TextComponent;
 import net.minecraft.core.BlockPos;
@@ -123,6 +124,8 @@ public class CheckProcedure {
 								Score _scr = _sc.getOrCreatePlayerScore(_player.getScoreboardName(), _so);
 								_scr.setScore(0);
 							}
+							if (entity instanceof LivingEntity _entity)
+								_entity.removeEffect(MobEffects.HEALTH_BOOST);
 							MinecraftForge.EVENT_BUS.unregister(this);
 						}
 					}.start(world, 20);

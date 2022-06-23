@@ -42,7 +42,7 @@ public class HowToGetToVoidDimensionProcedure {
 			LevelAccessor _worldorig = world;
 			world = _origLevel.getServer().getLevel(Level.END);
 			if (world != null) {
-				if (y <= -64 && new Object() {
+				if (y <= -50 && new Object() {
 					public int getScore(String score, Entity _ent) {
 						if (_ent instanceof Player _player) {
 							Scoreboard _sc = _player.getScoreboard();

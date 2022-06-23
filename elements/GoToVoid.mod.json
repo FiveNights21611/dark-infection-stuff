@@ -5,7 +5,7 @@
     "commandName": "govoid",
     "permissionLevel": "4",
     "onCommandExecuted": {
-      "name": "GoToVoidFunction"
+      "name": "SpawnIntoTheVoid"
     }
   }
 }

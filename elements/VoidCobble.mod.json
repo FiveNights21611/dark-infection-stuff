@@ -43,7 +43,7 @@
     },
     "destroyTool": "pickaxe",
     "customDrop": {
-      "value": "Blocks.GRAVEL"
+      "value": "CUSTOM:Gravityvoid"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,

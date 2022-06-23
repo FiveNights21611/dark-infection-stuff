@@ -16,7 +16,7 @@ import java.util.Collections;
 
 public class ChisseldvoidstonebricksBlock extends Block {
 	public ChisseldvoidstonebricksBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GRAVEL).strength(1f, 10f));
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.NETHER_BRICKS).strength(1f, 10f));
 	}
 
 	@Override

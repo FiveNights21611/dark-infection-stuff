@@ -19,7 +19,7 @@ import java.util.Collections;
 
 public class VoidStoneBrickSlabsBlock extends SlabBlock {
 	public VoidStoneBrickSlabsBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1f, 10f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.NETHER_BRICKS).strength(1f, 10f).requiresCorrectToolForDrops());
 	}
 
 	@Override

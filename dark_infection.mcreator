@@ -2154,6 +2154,78 @@
           }
         ]
       }
+    },
+    {
+      "name": "FlightBoatGod",
+      "type": "keybind",
+      "sortid": 163,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flight_boat_god"
+    },
+    {
+      "name": "BoatGodFly",
+      "type": "procedure",
+      "sortid": 164,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boat_god_fly",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BoatGodFallDamage",
+      "type": "procedure",
+      "sortid": 165,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boat_god_fall_damage",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BoatGodBoatSummoning",
+      "type": "procedure",
+      "sortid": 166,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boat_god_boat_summoning",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SummonBoatsBoatGod",
+      "type": "keybind",
+      "sortid": 167,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "summon_boats_boat_god"
     }
   ],
   "variable_elements": [
@@ -2180,6 +2252,12 @@
       "type": "logic",
       "scope": "world",
       "value": "false"
+    },
+    {
+      "name": "BoatGodFlyON",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
     }
   ],
   "sound_elements": [],
@@ -2202,6 +2280,7 @@
       "block.dark_infection.void_stone_copper_ore": "Void Stone Copper Ore",
       "advancements.the_dark_infection.title": "The Dark Infection",
       "item.dark_infection.darkarmor_leggings": "Dark Leggings",
+      "key.dark_infection.summon_boats_boat_god": "Summon Boats (BoatGod Only)",
       "item.dark_infection.curev": "Cure Vial",
       "item.dark_infection.dark_sword": "Dark Sword",
       "item.dark_infection.dark_pickaxe": "Dark Pickaxe",
@@ -2254,6 +2333,7 @@
       "advancements.the_dark_armor.descr": "Surround yourself in the void... and it will bless you.",
       "block.dark_infection.void_stone_brick_walls": "Void Stone Brick Walls",
       "item.minecraft.lingering_potion.effect.potion_of_ultimate_darkness": "Lingering Potion Of Ultimate Darkness",
+      "key.dark_infection.flight_boat_god": "Flight (BoatGod Only)",
       "biome.dark_infection.dark_caves": "Dark Caves",
       "advancements.the_void_advancement.title": "The Void",
       "advancements.darkling_level_1.descr": "Become a Darkling",

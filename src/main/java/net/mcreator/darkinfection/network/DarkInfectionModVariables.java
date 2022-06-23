@@ -65,6 +65,7 @@ public class DarkInfectionModVariables {
 		public static final String DATA_NAME = "dark_infection_worldvars";
 		public boolean StructureGenerated = false;
 		public boolean VoidKingSpawned = false;
+		public boolean BoatGodFlyON = false;
 
 		public static WorldVariables load(CompoundTag tag) {
 			WorldVariables data = new WorldVariables();
@@ -75,12 +76,14 @@ public class DarkInfectionModVariables {
 		public void read(CompoundTag nbt) {
 			StructureGenerated = nbt.getBoolean("StructureGenerated");
 			VoidKingSpawned = nbt.getBoolean("VoidKingSpawned");
+			BoatGodFlyON = nbt.getBoolean("BoatGodFlyON");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
 			nbt.putBoolean("StructureGenerated", StructureGenerated);
 			nbt.putBoolean("VoidKingSpawned", VoidKingSpawned);
+			nbt.putBoolean("BoatGodFlyON", BoatGodFlyON);
 			return nbt;
 		}
 

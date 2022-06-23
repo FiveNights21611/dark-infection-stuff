@@ -39,8 +39,8 @@ public class VoidStoneBrickWallsBlock extends WallBlock
 
 			EntityBlock {
 	public VoidStoneBrickWallsBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1f, 10f).requiresCorrectToolForDrops().noOcclusion()
-				.isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.NETHER_BRICKS).strength(1f, 10f).requiresCorrectToolForDrops()
+				.noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override

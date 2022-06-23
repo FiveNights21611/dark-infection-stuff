@@ -19,7 +19,7 @@ import java.util.Collections;
 
 public class VoidStoneBrickStairsBlock extends StairBlock {
 	public VoidStoneBrickStairsBlock() {
-		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1.05f, 10f)
+		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.NETHER_BRICKS).strength(1.05f, 10f)
 				.requiresCorrectToolForDrops().dynamicShape());
 	}
 

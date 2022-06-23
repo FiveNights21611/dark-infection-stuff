@@ -58,7 +58,7 @@
     "spawnBiome": false,
     "spawnBiomeNether": false,
     "spawnInCaves": true,
-    "biomeWeight": 5,
+    "biomeWeight": 4,
     "biomeDictionaryTypes": [
       "OVERWORLD",
       "VOID",

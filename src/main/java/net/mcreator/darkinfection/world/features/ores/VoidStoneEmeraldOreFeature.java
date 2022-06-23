@@ -43,7 +43,7 @@ public class VoidStoneEmeraldOreFeature extends OreFeature {
 	public static Feature<?> feature() {
 		FEATURE = new VoidStoneEmeraldOreFeature();
 		CONFIGURED_FEATURE = FeatureUtils.register("dark_infection:void_stone_emerald_ore", FEATURE, new OreConfiguration(
-				VoidStoneEmeraldOreFeatureRuleTest.INSTANCE, DarkInfectionModBlocks.VOID_STONE_EMERALD_ORE.get().defaultBlockState(), 16));
+				VoidStoneEmeraldOreFeatureRuleTest.INSTANCE, DarkInfectionModBlocks.VOID_STONE_EMERALD_ORE.get().defaultBlockState(), 5));
 		PLACED_FEATURE = PlacementUtils.register("dark_infection:void_stone_emerald_ore", CONFIGURED_FEATURE,
 				List.of(CountPlacement.of(10), InSquarePlacement.spread(),
 						HeightRangePlacement.triangle(VerticalAnchor.absolute(-26), VerticalAnchor.absolute(64)), BiomeFilter.biome()));

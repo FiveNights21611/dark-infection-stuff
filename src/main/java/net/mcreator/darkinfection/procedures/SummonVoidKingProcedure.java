@@ -58,7 +58,7 @@ public class SummonVoidKingProcedure {
 						}
 						if (world instanceof ServerLevel _level) {
 							Entity entityToSpawn = new VoidkingbossEntity(DarkInfectionModEntities.VOIDKINGBOSS.get(), _level);
-							entityToSpawn.moveTo(x, (y + 1), z, world.getRandom().nextFloat() * 360F, 0);
+							entityToSpawn.moveTo(x, (y + 2), z, world.getRandom().nextFloat() * 360F, 0);
 							if (entityToSpawn instanceof Mob _mobToSpawn)
 								_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()),
 										MobSpawnType.MOB_SUMMONED, null, null);

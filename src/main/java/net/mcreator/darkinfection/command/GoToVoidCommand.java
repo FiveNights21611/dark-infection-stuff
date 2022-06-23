@@ -13,7 +13,7 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.commands.Commands;
 import net.minecraft.commands.CommandSourceStack;
 
-import net.mcreator.darkinfection.procedures.GoToVoidFunctionProcedure;
+import net.mcreator.darkinfection.procedures.SpawnIntoTheVoidProcedure;
 
 import java.util.HashMap;
 import java.util.Arrays;
@@ -47,7 +47,7 @@ public class GoToVoidCommand {
 			index[0]++;
 		});
 
-		GoToVoidFunctionProcedure.execute(world, x, y, z, entity);
+		SpawnIntoTheVoidProcedure.execute(world, entity);
 		return 0;
 	}
 }

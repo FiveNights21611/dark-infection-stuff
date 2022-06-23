@@ -28,8 +28,8 @@ import java.util.List;
 
 public class DarkCavesBiome {
 	public static final Climate.ParameterPoint PARAMETER_POINT_UNDERGROUND = new Climate.ParameterPoint(Climate.Parameter.span(-1, 1),
-			Climate.Parameter.span(-1, 1), Climate.Parameter.span(0.01f, 1.01f), Climate.Parameter.span(0.3f, 1.3f),
-			Climate.Parameter.span(0.2f, 0.9f), Climate.Parameter.span(-0.964062180048f, 0.035937819952f), 0);
+			Climate.Parameter.span(-1, 1), Climate.Parameter.span(0.11f, 0.91f), Climate.Parameter.span(0.4f, 1.2f),
+			Climate.Parameter.span(0.2f, 0.9f), Climate.Parameter.span(-0.864062180048f, -0.064062180048f), 0);
 
 	public static Biome createBiome() {
 		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(-15724528).waterColor(-15329770).waterFogColor(-16185079)

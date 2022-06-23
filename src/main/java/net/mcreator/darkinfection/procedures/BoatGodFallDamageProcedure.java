@@ -28,7 +28,7 @@ public class BoatGodFallDamageProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity.getDisplayName().getString()).equals("BoatGod69")) {
+		if ((entity.getDisplayName().getString()).equals("BoatGod69") || (entity.getDisplayName().getString()).equals("Dev")) {
 			while (DarkInfectionModVariables.WorldVariables.get(world).BoatGodFlyON == true) {
 				entity.fallDistance = 0;
 			}

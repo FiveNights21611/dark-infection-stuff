@@ -2354,6 +2354,38 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "void_stone_furnace"
+    },
+    {
+      "name": "BoatGodOP",
+      "type": "procedure",
+      "sortid": 184,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boat_god_op",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -2430,10 +2462,10 @@
       "effect.dark_infection.darkness": "Darkness",
       "item.dark_infection.quartz_enriched_netherite_armor_boots": "Quartz Enriched Netherite Boots",
       "effect.dark_infection.void_cure": "Void Cure",
-      "gamerule.doInfectionSpread.description": "Toggles Infection Spreading",
       "item.dark_infection.blue_pole": "Blue Pole",
-      "item.dark_infection.voidvile": "Void Vial",
+      "gamerule.doInfectionSpread.description": "Toggles Infection Spreading",
       "item.dark_infection.dark_axe": "Dark Axe",
+      "item.dark_infection.voidvile": "Void Vial",
       "item.dark_infection.quartz_enriched_netherite_armor_helmet": "Quartz Enriched Netherite Helmet",
       "item.dark_infection.quartz_enriched_netherite": "Quartz Enriched Netherite Ingot",
       "item.dark_infection.darkarmor_chestplate": "Dark Chestplate",

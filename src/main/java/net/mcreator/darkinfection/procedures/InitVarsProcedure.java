@@ -78,5 +78,23 @@ public class InitVarsProcedure {
 		DarkInfectionModVariables.infected_blocks.add(DarkInfectionModBlocks.VOID_STONE_GOLD_ORE.get());
 		DarkInfectionModVariables.infectable_blocks.add(DarkInfectionModBlocks.DARKDIRT.get());
 		DarkInfectionModVariables.infected_blocks.add(DarkInfectionModBlocks.INFECTEDSOIL.get());
+		DarkInfectionModVariables.infectable_blocks.add(Blocks.STONE_BRICK_STAIRS);
+		DarkInfectionModVariables.infected_blocks.add(DarkInfectionModBlocks.VOID_STONE_BRICK_STAIRS.get());
+		DarkInfectionModVariables.infectable_blocks.add(Blocks.DEEPSLATE_BRICK_STAIRS);
+		DarkInfectionModVariables.infected_blocks.add(DarkInfectionModBlocks.VOID_STONE_BRICK_STAIRS.get());
+		DarkInfectionModVariables.infectable_blocks.add(Blocks.POLISHED_BLACKSTONE_BRICK_STAIRS);
+		DarkInfectionModVariables.infected_blocks.add(DarkInfectionModBlocks.VOID_STONE_BRICK_STAIRS.get());
+		DarkInfectionModVariables.infectable_blocks.add(Blocks.STONE_BRICK_SLAB);
+		DarkInfectionModVariables.infected_blocks.add(DarkInfectionModBlocks.VOID_STONE_BRICK_SLABS.get());
+		DarkInfectionModVariables.infectable_blocks.add(Blocks.DEEPSLATE_BRICK_SLAB);
+		DarkInfectionModVariables.infected_blocks.add(DarkInfectionModBlocks.VOID_STONE_BRICK_SLABS.get());
+		DarkInfectionModVariables.infectable_blocks.add(Blocks.POLISHED_BLACKSTONE_BRICK_SLAB);
+		DarkInfectionModVariables.infected_blocks.add(DarkInfectionModBlocks.VOID_STONE_BRICK_SLABS.get());
+		DarkInfectionModVariables.infectable_blocks.add(Blocks.POLISHED_BLACKSTONE_BRICK_WALL);
+		DarkInfectionModVariables.infected_blocks.add(DarkInfectionModBlocks.VOID_STONE_BRICK_WALLS.get());
+		DarkInfectionModVariables.infectable_blocks.add(Blocks.DEEPSLATE_BRICK_WALL);
+		DarkInfectionModVariables.infected_blocks.add(DarkInfectionModBlocks.VOID_STONE_BRICK_WALLS.get());
+		DarkInfectionModVariables.infectable_blocks.add(Blocks.STONE_BRICK_WALL);
+		DarkInfectionModVariables.infected_blocks.add(DarkInfectionModBlocks.VOID_STONE_BRICK_WALLS.get());
 	}
 }

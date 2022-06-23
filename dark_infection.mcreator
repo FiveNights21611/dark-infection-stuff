@@ -2226,6 +2226,118 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "summon_boats_boat_god"
+    },
+    {
+      "name": "VoidCobblePickaxe",
+      "type": "recipe",
+      "sortid": 168,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_cobble_pickaxe"
+    },
+    {
+      "name": "VoidStonePickaxe",
+      "type": "recipe",
+      "sortid": 169,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_stone_pickaxe"
+    },
+    {
+      "name": "VoidCobbleSword",
+      "type": "recipe",
+      "sortid": 170,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_cobble_sword"
+    },
+    {
+      "name": "VoidStoneSword",
+      "type": "recipe",
+      "sortid": 171,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_stone_sword"
+    },
+    {
+      "name": "VoidCobbleAxe",
+      "type": "recipe",
+      "sortid": 172,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_cobble_axe"
+    },
+    {
+      "name": "VoidCobbleAxeRight",
+      "type": "recipe",
+      "sortid": 173,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_cobble_axe_right"
+    },
+    {
+      "name": "VoidStoneAxeLeft",
+      "type": "recipe",
+      "sortid": 174,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_stone_axe_left"
+    },
+    {
+      "name": "VoidStoneAxeRight",
+      "type": "recipe",
+      "sortid": 175,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_stone_axe_right"
+    },
+    {
+      "name": "VoidCobbleHoeLeft",
+      "type": "recipe",
+      "sortid": 176,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_cobble_hoe_left"
+    },
+    {
+      "name": "VoidCobbleHoeRight",
+      "type": "recipe",
+      "sortid": 177,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_cobble_hoe_right"
+    },
+    {
+      "name": "VoidStoneHoeLeft",
+      "type": "recipe",
+      "sortid": 178,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_stone_hoe_left"
+    },
+    {
+      "name": "VoidStoneHoeRight",
+      "type": "recipe",
+      "sortid": 179,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_stone_hoe_right"
+    },
+    {
+      "name": "VoidCobbleShovel",
+      "type": "recipe",
+      "sortid": 180,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_cobble_shovel"
+    },
+    {
+      "name": "VoidStoneShovel",
+      "type": "recipe",
+      "sortid": 181,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_stone_shovel"
     }
   ],
   "variable_elements": [
@@ -2301,10 +2413,10 @@
       "effect.dark_infection.darkness": "Darkness",
       "item.dark_infection.quartz_enriched_netherite_armor_boots": "Quartz Enriched Netherite Boots",
       "effect.dark_infection.void_cure": "void cure",
-      "gamerule.doInfectionSpread.description": "Toggles Infection Spreading",
       "item.dark_infection.blue_pole": "Blue Pole",
-      "item.dark_infection.voidvile": "Void Vial",
+      "gamerule.doInfectionSpread.description": "Toggles Infection Spreading",
       "item.dark_infection.dark_axe": "Dark Axe",
+      "item.dark_infection.voidvile": "Void Vial",
       "item.dark_infection.quartz_enriched_netherite_armor_helmet": "Quartz Enriched Netherite Helmet",
       "item.dark_infection.quartz_enriched_netherite": "Quartz Enriched Netherite Ingot",
       "item.dark_infection.darkarmor_chestplate": "Dark Chestplate",

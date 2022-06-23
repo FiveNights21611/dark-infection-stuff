@@ -16,6 +16,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffectInstance;
 
 import net.mcreator.darkinfection.init.DarkInfectionModMobEffects;
+import net.mcreator.darkinfection.init.DarkInfectionModItems;
 
 import javax.annotation.Nullable;
 
@@ -63,7 +64,147 @@ public class InfectpProcedure {
 					}
 				}.getScore("infected", entity) == 0) {
 			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(DarkInfectionModMobEffects.DARKCORUPT.get(), 1200, 1, (false), (false)));
+				_entity.addEffect(new MobEffectInstance(DarkInfectionModMobEffects.DARKCORUPT.get(), 1200, 0, (false), (false)));
+		} else if (new Object() {
+			public int getScore(String score, Entity _ent) {
+				if (_ent instanceof Player _player) {
+					Scoreboard _sc = _player.getScoreboard();
+					Objective _so = _sc.getObjective(score);
+					if (_so != null) {
+						Score _scr = _sc.getOrCreatePlayerScore(_player.getScoreboardName(), _so);
+						return _scr.getScore();
+					}
+				}
+				return 0;
+			}
+		}.getScore("infected", sourceentity) > 0 && (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
+				.getItem() == DarkInfectionModItems.DARK_SWORD.get() && new Object() {
+					public int getScore(String score, Entity _ent) {
+						if (_ent instanceof Player _player) {
+							Scoreboard _sc = _player.getScoreboard();
+							Objective _so = _sc.getObjective(score);
+							if (_so != null) {
+								Score _scr = _sc.getOrCreatePlayerScore(_player.getScoreboardName(), _so);
+								return _scr.getScore();
+							}
+						}
+						return 0;
+					}
+				}.getScore("infected", entity) == 0) {
+			if (entity instanceof LivingEntity _entity)
+				_entity.addEffect(new MobEffectInstance(DarkInfectionModMobEffects.DARKCORUPT.get(), 1200, 0, (false), (false)));
+		} else if (new Object() {
+			public int getScore(String score, Entity _ent) {
+				if (_ent instanceof Player _player) {
+					Scoreboard _sc = _player.getScoreboard();
+					Objective _so = _sc.getObjective(score);
+					if (_so != null) {
+						Score _scr = _sc.getOrCreatePlayerScore(_player.getScoreboardName(), _so);
+						return _scr.getScore();
+					}
+				}
+				return 0;
+			}
+		}.getScore("infected", sourceentity) > 0 && (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
+				.getItem() == DarkInfectionModItems.DARK_AXE.get() && new Object() {
+					public int getScore(String score, Entity _ent) {
+						if (_ent instanceof Player _player) {
+							Scoreboard _sc = _player.getScoreboard();
+							Objective _so = _sc.getObjective(score);
+							if (_so != null) {
+								Score _scr = _sc.getOrCreatePlayerScore(_player.getScoreboardName(), _so);
+								return _scr.getScore();
+							}
+						}
+						return 0;
+					}
+				}.getScore("infected", entity) == 0) {
+			if (entity instanceof LivingEntity _entity)
+				_entity.addEffect(new MobEffectInstance(DarkInfectionModMobEffects.DARKCORUPT.get(), 1200, 0, (false), (false)));
+		} else if (new Object() {
+			public int getScore(String score, Entity _ent) {
+				if (_ent instanceof Player _player) {
+					Scoreboard _sc = _player.getScoreboard();
+					Objective _so = _sc.getObjective(score);
+					if (_so != null) {
+						Score _scr = _sc.getOrCreatePlayerScore(_player.getScoreboardName(), _so);
+						return _scr.getScore();
+					}
+				}
+				return 0;
+			}
+		}.getScore("infected", sourceentity) > 0 && (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
+				.getItem() == DarkInfectionModItems.DARK_PICKAXE.get() && new Object() {
+					public int getScore(String score, Entity _ent) {
+						if (_ent instanceof Player _player) {
+							Scoreboard _sc = _player.getScoreboard();
+							Objective _so = _sc.getObjective(score);
+							if (_so != null) {
+								Score _scr = _sc.getOrCreatePlayerScore(_player.getScoreboardName(), _so);
+								return _scr.getScore();
+							}
+						}
+						return 0;
+					}
+				}.getScore("infected", entity) == 0) {
+			if (entity instanceof LivingEntity _entity)
+				_entity.addEffect(new MobEffectInstance(DarkInfectionModMobEffects.DARKCORUPT.get(), 1200, 0, (false), (false)));
+		} else if (new Object() {
+			public int getScore(String score, Entity _ent) {
+				if (_ent instanceof Player _player) {
+					Scoreboard _sc = _player.getScoreboard();
+					Objective _so = _sc.getObjective(score);
+					if (_so != null) {
+						Score _scr = _sc.getOrCreatePlayerScore(_player.getScoreboardName(), _so);
+						return _scr.getScore();
+					}
+				}
+				return 0;
+			}
+		}.getScore("infected", sourceentity) > 0 && (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
+				.getItem() == DarkInfectionModItems.DARK_SHOVEL.get() && new Object() {
+					public int getScore(String score, Entity _ent) {
+						if (_ent instanceof Player _player) {
+							Scoreboard _sc = _player.getScoreboard();
+							Objective _so = _sc.getObjective(score);
+							if (_so != null) {
+								Score _scr = _sc.getOrCreatePlayerScore(_player.getScoreboardName(), _so);
+								return _scr.getScore();
+							}
+						}
+						return 0;
+					}
+				}.getScore("infected", entity) == 0) {
+			if (entity instanceof LivingEntity _entity)
+				_entity.addEffect(new MobEffectInstance(DarkInfectionModMobEffects.DARKCORUPT.get(), 1200, 0, (false), (false)));
+		} else if (new Object() {
+			public int getScore(String score, Entity _ent) {
+				if (_ent instanceof Player _player) {
+					Scoreboard _sc = _player.getScoreboard();
+					Objective _so = _sc.getObjective(score);
+					if (_so != null) {
+						Score _scr = _sc.getOrCreatePlayerScore(_player.getScoreboardName(), _so);
+						return _scr.getScore();
+					}
+				}
+				return 0;
+			}
+		}.getScore("infected", sourceentity) > 0 && (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
+				.getItem() == DarkInfectionModItems.DARK_HOE.get() && new Object() {
+					public int getScore(String score, Entity _ent) {
+						if (_ent instanceof Player _player) {
+							Scoreboard _sc = _player.getScoreboard();
+							Objective _so = _sc.getObjective(score);
+							if (_so != null) {
+								Score _scr = _sc.getOrCreatePlayerScore(_player.getScoreboardName(), _so);
+								return _scr.getScore();
+							}
+						}
+						return 0;
+					}
+				}.getScore("infected", entity) == 0) {
+			if (entity instanceof LivingEntity _entity)
+				_entity.addEffect(new MobEffectInstance(DarkInfectionModMobEffects.DARKCORUPT.get(), 1200, 0, (false), (false)));
 		}
 	}
 }

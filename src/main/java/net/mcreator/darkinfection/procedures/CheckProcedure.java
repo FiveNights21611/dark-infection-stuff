@@ -76,7 +76,7 @@ public class CheckProcedure {
 							}
 						}.getScore("infected", entity) == 0) {
 					if (entity instanceof LivingEntity _entity)
-						_entity.addEffect(new MobEffectInstance(DarkInfectionModMobEffects.DARKNESS.get(), 3600, 1, (false), (true)));
+						_entity.addEffect(new MobEffectInstance(DarkInfectionModMobEffects.DARKNESS.get(), 3600, 0, (false), (true)));
 				} else if ((world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == DarkInfectionModVariables.infectable_blocks.get((int) i)
 						&& (entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(DarkInfectionModMobEffects.DARKNESS.get()) : false) == true
 						&& new Object() {

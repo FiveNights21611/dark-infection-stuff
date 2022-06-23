@@ -2370,6 +2370,46 @@
           }
         ]
       }
+    },
+    {
+      "name": "Silveryeet",
+      "type": "procedure",
+      "sortid": 185,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "silveryeet",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Silveryeetbind",
+      "type": "keybind",
+      "sortid": 186,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "silveryeetbind"
+    },
+    {
+      "name": "SilverTimer",
+      "type": "procedure",
+      "sortid": 187,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "silver_timer",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -2402,6 +2442,12 @@
       "type": "logic",
       "scope": "world",
       "value": "false"
+    },
+    {
+      "name": "Silver_Timer",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
     }
   ],
   "sound_elements": [],
@@ -2445,10 +2491,10 @@
       "effect.dark_infection.darkness": "Darkness",
       "item.dark_infection.quartz_enriched_netherite_armor_boots": "Quartz Enriched Netherite Boots",
       "effect.dark_infection.void_cure": "void cure",
-      "item.dark_infection.blue_pole": "Blue Pole",
       "gamerule.doInfectionSpread.description": "Toggles Infection Spreading",
-      "item.dark_infection.dark_axe": "Dark Axe",
+      "item.dark_infection.blue_pole": "Blue Pole",
       "item.dark_infection.voidvile": "Void Vial",
+      "item.dark_infection.dark_axe": "Dark Axe",
       "item.dark_infection.quartz_enriched_netherite_armor_helmet": "Quartz Enriched Netherite Helmet",
       "item.dark_infection.quartz_enriched_netherite": "Quartz Enriched Netherite Ingot",
       "item.dark_infection.darkarmor_chestplate": "Dark Chestplate",
@@ -2460,6 +2506,7 @@
       "item.dark_infection.emptyvile": "Empty Vial",
       "entity.dark_infection.voidkingboss": "Void King Boss",
       "block.dark_infection.void_stone_diamond_ore": "Void Stone Diamond Ore",
+      "key.dark_infection.silveryeetbind": "Silveryeetbind",
       "item.dark_infection.pureafyingapp": "Purifying Apple",
       "item.dark_infection.darkarmor_boots": "Dark Boots",
       "block.dark_infection.voidstone": "VoidStone",

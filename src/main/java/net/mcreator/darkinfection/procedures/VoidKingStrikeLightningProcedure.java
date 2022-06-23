@@ -33,11 +33,13 @@ public class VoidKingStrikeLightningProcedure {
 		if (sourceentity == null)
 			return;
 		if ((sourceentity.getDisplayName().getString()).equals("Void King")) {
-			if (world instanceof ServerLevel _level) {
-				LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
-				entityToSpawn.moveTo(Vec3.atBottomCenterOf(new BlockPos(x, y, z)));
-				entityToSpawn.setVisualOnly(false);
-				_level.addFreshEntity(entityToSpawn);
+			if (Math.random() <= 0.6) {
+				if (world instanceof ServerLevel _level) {
+					LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
+					entityToSpawn.moveTo(Vec3.atBottomCenterOf(new BlockPos(x, y, z)));
+					entityToSpawn.setVisualOnly(false);
+					_level.addFreshEntity(entityToSpawn);
+				}
 			}
 		}
 	}

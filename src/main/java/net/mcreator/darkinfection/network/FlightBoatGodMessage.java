@@ -50,7 +50,7 @@ public class FlightBoatGodMessage {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(entity.blockPosition()))
 			return;
-		if (type == 0) {
+		if (type == 1) {
 
 			BoatGodFlyProcedure.execute(world, entity);
 		}

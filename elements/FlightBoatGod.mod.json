@@ -5,7 +5,7 @@
     "triggerKey": "K",
     "keyBindingName": "Flight (BoatGod Only)",
     "keyBindingCategoryKey": "movement",
-    "onKeyPressed": {
+    "onKeyReleased": {
       "name": "BoatGodFly"
     }
   }

@@ -2372,12 +2372,12 @@
       }
     },
     {
-      "name": "Silveryeet",
+      "name": "SilverTimer",
       "type": "procedure",
-      "sortid": 185,
+      "sortid": 187,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "silveryeet",
+      "registry_name": "silver_timer",
       "metadata": {
         "dependencies": [
           {
@@ -2396,17 +2396,49 @@
       "registry_name": "silveryeetbind"
     },
     {
-      "name": "SilverTimer",
+      "name": "Silveryeet",
       "type": "procedure",
-      "sortid": 187,
+      "sortid": 185,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "silver_timer",
+      "registry_name": "silveryeet",
       "metadata": {
         "dependencies": [
           {
             "name": "entity",
             "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BoatGodOP",
+      "type": "procedure",
+      "sortid": 184,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boat_god_op",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }

@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "dark_infection:voidstone"
+    },
+    "1": {
+      "item": "dark_infection:voidstone"
+    },
+    "2": {
+      "item": "dark_infection:voidstone"
+    },
+    "3": {
+      "item": "dark_infection:voidstone"
+    },
+    "5": {
+      "item": "dark_infection:voidstone"
+    },
+    "6": {
+      "item": "dark_infection:voidstone"
+    },
+    "7": {
+      "item": "dark_infection:voidstone"
+    },
+    "8": {
+      "item": "dark_infection:voidstone"
+    }
+  },
+  "result": {
+    "item": "minecraft:furnace",
+    "count": 1
+  }
+}

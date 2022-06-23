@@ -2338,6 +2338,22 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "void_stone_shovel"
+    },
+    {
+      "name": "VoidCobbleFurnace",
+      "type": "recipe",
+      "sortid": 182,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_cobble_furnace"
+    },
+    {
+      "name": "VoidStoneFurnace",
+      "type": "recipe",
+      "sortid": 183,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_stone_furnace"
     }
   ],
   "variable_elements": [
@@ -2413,10 +2429,10 @@
       "effect.dark_infection.darkness": "Darkness",
       "item.dark_infection.quartz_enriched_netherite_armor_boots": "Quartz Enriched Netherite Boots",
       "effect.dark_infection.void_cure": "void cure",
-      "item.dark_infection.blue_pole": "Blue Pole",
       "gamerule.doInfectionSpread.description": "Toggles Infection Spreading",
-      "item.dark_infection.dark_axe": "Dark Axe",
+      "item.dark_infection.blue_pole": "Blue Pole",
       "item.dark_infection.voidvile": "Void Vial",
+      "item.dark_infection.dark_axe": "Dark Axe",
       "item.dark_infection.quartz_enriched_netherite_armor_helmet": "Quartz Enriched Netherite Helmet",
       "item.dark_infection.quartz_enriched_netherite": "Quartz Enriched Netherite Ingot",
       "item.dark_infection.darkarmor_chestplate": "Dark Chestplate",

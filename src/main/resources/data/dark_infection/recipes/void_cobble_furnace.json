@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "dark_infection:void_cobble"
+    },
+    "1": {
+      "item": "dark_infection:void_cobble"
+    },
+    "2": {
+      "item": "dark_infection:void_cobble"
+    },
+    "3": {
+      "item": "dark_infection:void_cobble"
+    },
+    "5": {
+      "item": "dark_infection:void_cobble"
+    },
+    "6": {
+      "item": "dark_infection:void_cobble"
+    },
+    "7": {
+      "item": "dark_infection:void_cobble"
+    },
+    "8": {
+      "item": "dark_infection:void_cobble"
+    }
+  },
+  "result": {
+    "item": "minecraft:furnace",
+    "count": 1
+  }
+}

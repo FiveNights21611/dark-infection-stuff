@@ -16,7 +16,7 @@ import java.util.List;
 
 public class StrangevItem extends Item {
 	public StrangevItem() {
-		super(new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED).stacksTo(64).rarity(Rarity.EPIC));
+		super(new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED).stacksTo(64).fireResistant().rarity(Rarity.EPIC));
 	}
 
 	@Override

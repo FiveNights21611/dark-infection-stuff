@@ -1,12 +1,12 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "dark_infection:blocks/ad",
-    "up": "dark_infection:blocks/ad",
-    "north": "dark_infection:blocks/ad",
-    "east": "dark_infection:blocks/ad",
-    "south": "dark_infection:blocks/ad",
-    "west": "dark_infection:blocks/ad",
-    "particle": "dark_infection:blocks/ad"
+    "down": "dark_infection:blocks/gravityvoidnew",
+    "up": "dark_infection:blocks/gravityvoidnew",
+    "north": "dark_infection:blocks/gravityvoidnew",
+    "east": "dark_infection:blocks/gravityvoidnew",
+    "south": "dark_infection:blocks/gravityvoidnew",
+    "west": "dark_infection:blocks/gravityvoidnew",
+    "particle": "dark_infection:blocks/gravityvoidnew"
   }
 }

@@ -45,9 +45,9 @@
       "value": ""
     },
     "moodSoundDelay": 6000,
-    "spawnParticles": false,
+    "spawnParticles": true,
     "particleToSpawn": {
-      "value": "EXPLOSION_NORMAL"
+      "value": "WHITE_ASH"
     },
     "particlesProbability": 0.5,
     "biomeCategory": "UNDERGROUND",
@@ -58,7 +58,7 @@
     "spawnBiome": false,
     "spawnBiomeNether": false,
     "spawnInCaves": true,
-    "biomeWeight": 8,
+    "biomeWeight": 4,
     "biomeDictionaryTypes": [
       "OVERWORLD",
       "VOID",

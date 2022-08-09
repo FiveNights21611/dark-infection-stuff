@@ -1,0 +1,31 @@
+{
+  "_fv": 28,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "qenshovel",
+    "customModelName": "Normal",
+    "name": "Q.E.N. Shovel",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Darkinfected"
+    },
+    "toolType": "Spade",
+    "harvestLevel": 6,
+    "efficiency": 15.0,
+    "attackSpeed": 0.8,
+    "enchantability": 40,
+    "damageVsEntity": 6.0,
+    "usageCount": 4062,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:QuartzEnrichedNetherite"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

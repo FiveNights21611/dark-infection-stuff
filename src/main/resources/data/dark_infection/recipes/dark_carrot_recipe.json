@@ -4,7 +4,7 @@
     "item": "minecraft:golden_carrot"
   },
   "addition": {
-    "item": "dark_infection:itemorbofdarkness"
+    "item": "dark_infection:dark_ingot"
   },
   "result": {
     "item": "dark_infection:dark_carrot"

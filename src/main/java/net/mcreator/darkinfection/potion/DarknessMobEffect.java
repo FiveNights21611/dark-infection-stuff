@@ -21,7 +21,7 @@ public class DarknessMobEffect extends MobEffect {
 	@Override
 	public void removeAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
 		super.removeAttributeModifiers(entity, attributeMap, amplifier);
-		DarknessEffectExpiresProcedure.execute(entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
+		DarknessEffectExpiresProcedure.execute(entity);
 	}
 
 	@Override

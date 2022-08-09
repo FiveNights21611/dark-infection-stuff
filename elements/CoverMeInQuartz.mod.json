@@ -18,7 +18,7 @@
     "rewardXP": 120,
     "achievementType": "challenge",
     "parent": {
-      "value": "nether/netherite_armor"
+      "value": "CUSTOM:TheDarkInfection"
     },
     "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"32\" y=\"113\"><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
   }

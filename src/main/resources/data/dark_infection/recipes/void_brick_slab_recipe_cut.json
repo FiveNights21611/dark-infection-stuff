@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "dark_infection:voidstonebricks"
+  },
+  "result": "dark_infection:deleted_mod_element"
+}

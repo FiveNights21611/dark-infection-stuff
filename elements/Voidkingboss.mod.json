@@ -25,7 +25,7 @@
     },
     "isBoss": true,
     "bossBarColor": "YELLOW",
-    "bossBarType": "NOTCHED_6",
+    "bossBarType": "NOTCHED_20",
     "equipmentMainHand": {
       "value": "CUSTOM:Voidkingsword"
     },
@@ -48,11 +48,11 @@
     "mobCreatureType": "UNDEAD",
     "attackStrength": 7,
     "attackKnockback": 0.0,
-    "knockbackResistance": 0.0,
+    "knockbackResistance": 0.5,
     "movementSpeed": 0.7000000000000001,
     "armorBaseValue": 4.0,
     "trackingRange": 100,
-    "health": 50,
+    "health": 150,
     "xpAmount": 10000,
     "waterMob": false,
     "flyingMob": true,
@@ -77,48 +77,55 @@
     "immuneToWither": true,
     "immuneToDragonBreath": true,
     "mobDrop": {
-      "value": "CUSTOM:Itemorbofdarkness"
+      "value": "CUSTOM:Strangev"
     },
     "livingSound": {
       "value": "ambient.cave"
     },
     "hurtSound": {
-      "value": "entity.lightning.thunder"
-    },
-    "deathSound": {
-      "value": "block.anvil.destroy"
-    },
-    "stepSound": {
       "value": "entity.lightning.impact"
     },
-    "spawnParticles": false,
+    "deathSound": {
+      "value": "item.trident.hit_ground"
+    },
+    "stepSound": {
+      "value": "entity.lightning.thunder"
+    },
+    "spawnParticles": true,
     "particleToSpawn": {
       "value": "END_ROD"
     },
     "particleSpawningShape": "Spread",
-    "particleSpawningRadious": 1.300000001490116,
-    "particleAmount": 8,
+    "particleSpawningRadious": 0.8,
+    "particleAmount": 4,
     "onStruckByLightning": {
       "name": "VoidkingbossItIsStruckByLightning"
     },
+    "onMobTickUpdate": {
+      "name": "VoidKingLevitate"
+    },
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"fly\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"watch_closest_entity\"><field name=\"radius\">50</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">TRUE</field><field name=\"nearby\">TRUE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">null,null</field><next><block type=\"attack_fly\"><field name=\"radius\">50</field><field name=\"speed\">0.15</field><field name=\"condition\">null,null</field><next><block type=\"attack_on_collide\"><field name=\"speed\">0.15</field><field name=\"longmemory\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"fly\"><field name=\"speed\">0.5</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"leap_at_target\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
     "breedable": false,
     "tameable": false,
     "breedTriggerItems": [],
-    "ranged": false,
+    "ranged": true,
     "rangedAttackItem": {
-      "value": ""
+      "value": "Items.TRIDENT"
     },
-    "rangedItemType": "Default item",
+    "rangedItemType": "DarkOrb",
     "spawnThisMob": false,
     "doesDespawnWhenIdle": false,
-    "spawningProbability": 20,
+    "spawningProbability": 1,
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 1,
     "maxNumberOfMobsPerGroup": 1,
-    "restrictionBiomes": [],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:DarkBiome"
+      }
+    ],
     "spawnInDungeons": false
   }
 }

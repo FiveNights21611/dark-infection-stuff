@@ -13,11 +13,13 @@ import net.minecraft.world.level.biome.Climate;
 import net.minecraft.world.level.biome.BiomeSpecialEffects;
 import net.minecraft.world.level.biome.BiomeGenerationSettings;
 import net.minecraft.world.level.biome.Biome;
+import net.minecraft.world.level.biome.AmbientParticleSettings;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.data.worldgen.features.VegetationFeatures;
 import net.minecraft.data.worldgen.BiomeDefaultFeatures;
 import net.minecraft.data.BuiltinRegistries;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.Registry;
 
 import net.mcreator.darkinfection.init.DarkInfectionModBiomes;
@@ -26,12 +28,13 @@ import java.util.List;
 
 public class DarkCavesBiome {
 	public static final Climate.ParameterPoint PARAMETER_POINT_UNDERGROUND = new Climate.ParameterPoint(Climate.Parameter.span(-1, 1),
-			Climate.Parameter.span(-1, 1), Climate.Parameter.span(-0.29f, 1.31f), Climate.Parameter.span(0f, 1.6f),
-			Climate.Parameter.span(0.2f, 0.9f), Climate.Parameter.span(-1.264062180048f, 0.335937819952f), 0);
+			Climate.Parameter.span(-1, 1), Climate.Parameter.span(0.11f, 0.91f), Climate.Parameter.span(0.4f, 1.2f),
+			Climate.Parameter.span(0.2f, 0.9f), Climate.Parameter.span(-0.864062180048f, -0.064062180048f), 0);
 
 	public static Biome createBiome() {
 		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(-15724528).waterColor(-15329770).waterFogColor(-16185079)
-				.skyColor(-15724528).foliageColorOverride(-15856114).grassColorOverride(-16777216).build();
+				.skyColor(-15724528).foliageColorOverride(-15856114).grassColorOverride(-16777216)
+				.ambientParticle(new AmbientParticleSettings(ParticleTypes.WHITE_ASH, 0.005f)).build();
 		BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder();
 		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,
 				PlacementUtils.register("dark_infection:flower_dark_caves", VegetationFeatures.FLOWER_DEFAULT, List.of(CountPlacement.of(4),

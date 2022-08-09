@@ -3,6 +3,7 @@
   "values": [
     "dark_infection:voidstone",
     "dark_infection:void_cobble",
+    "dark_infection:voidstonebricks",
     "dark_infection:void_stone_coal_ore",
     "dark_infection:void_stone_iron_ore",
     "dark_infection:void_stone_redstone_ore",
@@ -10,6 +11,9 @@
     "dark_infection:void_stone_emerald_ore",
     "dark_infection:void_stone_diamond_ore",
     "dark_infection:void_stone_copper_ore",
-    "dark_infection:void_stone_gold_ore"
+    "dark_infection:void_stone_gold_ore",
+    "dark_infection:void_stone_brick_stairs",
+    "dark_infection:void_stone_brick_slabs",
+    "dark_infection:void_stone_brick_walls"
   ]
 }

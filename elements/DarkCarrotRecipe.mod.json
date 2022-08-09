@@ -12,7 +12,7 @@
       "value": "Items.GOLDEN_CARROT"
     },
     "smithingInputAdditionStack": {
-      "value": "CUSTOM:Itemorbofdarkness"
+      "value": "CUSTOM:DarkIngot"
     },
     "smithingReturnStack": {
       "value": "CUSTOM:DarkCarrot"

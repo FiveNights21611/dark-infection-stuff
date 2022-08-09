@@ -24,7 +24,7 @@ public abstract class DarkarmorItem extends ArmorItem {
 		super(new ArmorMaterial() {
 			@Override
 			public int getDurabilityForSlot(EquipmentSlot slot) {
-				return new int[]{13, 15, 16, 11}[slot.getIndex()] * 15;
+				return new int[]{13, 15, 16, 11}[slot.getIndex()] * 253;
 			}
 
 			@Override
@@ -34,17 +34,17 @@ public abstract class DarkarmorItem extends ArmorItem {
 
 			@Override
 			public int getEnchantmentValue() {
-				return 25;
+				return 40;
 			}
 
 			@Override
 			public SoundEvent getEquipSound() {
-				return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ambient.cave"));
+				return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.armor.equip_netherite"));
 			}
 
 			@Override
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(DarkInfectionModItems.ITEMORBOFDARKNESS.get()));
+				return Ingredient.of(new ItemStack(DarkInfectionModItems.DARK_INGOT.get()));
 			}
 
 			@Override
@@ -54,35 +54,35 @@ public abstract class DarkarmorItem extends ArmorItem {
 
 			@Override
 			public float getToughness() {
-				return 0.5f;
+				return 3f;
 			}
 
 			@Override
 			public float getKnockbackResistance() {
-				return 0.1f;
+				return 0.2f;
 			}
 		}, slot, properties);
 	}
 
 	public static class Helmet extends DarkarmorItem {
 		public Helmet() {
-			super(EquipmentSlot.HEAD, new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED));
+			super(EquipmentSlot.HEAD, new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED).fireResistant());
 		}
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "dark_infection:textures/models/armor/dark__layer_1.png";
+			return "dark_infection:textures/models/armor/dark_armor__layer_1.png";
 		}
 	}
 
 	public static class Chestplate extends DarkarmorItem {
 		public Chestplate() {
-			super(EquipmentSlot.CHEST, new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED));
+			super(EquipmentSlot.CHEST, new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED).fireResistant());
 		}
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "dark_infection:textures/models/armor/dark__layer_1.png";
+			return "dark_infection:textures/models/armor/dark_armor__layer_1.png";
 		}
 
 		@Override
@@ -93,23 +93,23 @@ public abstract class DarkarmorItem extends ArmorItem {
 
 	public static class Leggings extends DarkarmorItem {
 		public Leggings() {
-			super(EquipmentSlot.LEGS, new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED));
+			super(EquipmentSlot.LEGS, new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED).fireResistant());
 		}
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "dark_infection:textures/models/armor/dark__layer_2.png";
+			return "dark_infection:textures/models/armor/dark_armor__layer_2.png";
 		}
 	}
 
 	public static class Boots extends DarkarmorItem {
 		public Boots() {
-			super(EquipmentSlot.FEET, new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED));
+			super(EquipmentSlot.FEET, new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED).fireResistant());
 		}
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "dark_infection:textures/models/armor/dark__layer_1.png";
+			return "dark_infection:textures/models/armor/dark_armor__layer_1.png";
 		}
 	}
 }

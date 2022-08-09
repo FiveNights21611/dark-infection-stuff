@@ -1,12 +1,12 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "dark_infection:blocks/voidstone_redstone_ore",
-    "up": "dark_infection:blocks/voidstone_redstone_ore",
-    "north": "dark_infection:blocks/voidstone_redstone_ore",
-    "east": "dark_infection:blocks/voidstone_redstone_ore",
-    "south": "dark_infection:blocks/voidstone_redstone_ore",
-    "west": "dark_infection:blocks/voidstone_redstone_ore",
-    "particle": "dark_infection:blocks/voidstone_redstone_ore"
+    "down": "dark_infection:blocks/voidstoneredstoneore",
+    "up": "dark_infection:blocks/voidstoneredstoneore",
+    "north": "dark_infection:blocks/voidstoneredstoneore",
+    "east": "dark_infection:blocks/voidstoneredstoneore",
+    "south": "dark_infection:blocks/voidstoneredstoneore",
+    "west": "dark_infection:blocks/voidstoneredstoneore",
+    "particle": "dark_infection:blocks/voidstoneredstoneore"
   }
 }

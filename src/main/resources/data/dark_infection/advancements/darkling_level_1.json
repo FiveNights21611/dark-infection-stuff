@@ -19,5 +19,5 @@
       "trigger": "minecraft:impossible"
     }
   },
-  "parent": "minecraft:nether/summon_wither"
+  "parent": "dark_infection:the_dark_infection"
 }

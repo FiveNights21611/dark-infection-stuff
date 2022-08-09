@@ -6,7 +6,6 @@ import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.TieredItem;
@@ -16,6 +15,7 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.darkinfection.procedures.InfectedBlockUpdatecul8tersmodProcedure;
+import net.mcreator.darkinfection.init.DarkInfectionModBlocks;
 
 import java.util.Random;
 import java.util.List;
@@ -23,7 +23,7 @@ import java.util.Collections;
 
 public class VoidCobbleBlock extends Block {
 	public VoidCobbleBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1f, 10f).requiresCorrectToolForDrops().randomTicks());
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.NETHERRACK).strength(1f, 10f).requiresCorrectToolForDrops().randomTicks());
 	}
 
 	@Override
@@ -43,7 +43,7 @@ public class VoidCobbleBlock extends Block {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(Blocks.GRAVEL));
+		return Collections.singletonList(new ItemStack(DarkInfectionModBlocks.GRAVITYVOID.get()));
 	}
 
 	@Override

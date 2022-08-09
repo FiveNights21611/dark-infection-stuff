@@ -17,6 +17,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.darkinfection.entity.VoidkingbossEntity;
+import net.mcreator.darkinfection.entity.DarkOrbEntity;
 import net.mcreator.darkinfection.DarkInfectionMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -25,6 +26,9 @@ public class DarkInfectionModEntities {
 	public static final RegistryObject<EntityType<VoidkingbossEntity>> VOIDKINGBOSS = register("voidkingboss",
 			EntityType.Builder.<VoidkingbossEntity>of(VoidkingbossEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(100).setUpdateInterval(3).setCustomClientFactory(VoidkingbossEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<DarkOrbEntity>> DARK_ORB = register("projectile_dark_orb",
+			EntityType.Builder.<DarkOrbEntity>of(DarkOrbEntity::new, MobCategory.MISC).setCustomClientFactory(DarkOrbEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));

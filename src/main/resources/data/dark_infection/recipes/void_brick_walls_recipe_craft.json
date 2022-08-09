@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "dark_infection:voidstonebricks"
+    },
+    "1": {
+      "item": "dark_infection:voidstonebricks"
+    },
+    "2": {
+      "item": "dark_infection:voidstonebricks"
+    },
+    "3": {
+      "item": "dark_infection:voidstonebricks"
+    },
+    "4": {
+      "item": "dark_infection:voidstonebricks"
+    },
+    "5": {
+      "item": "dark_infection:voidstonebricks"
+    }
+  },
+  "result": {
+    "item": "dark_infection:void_stone_brick_walls",
+    "count": 6
+  }
+}

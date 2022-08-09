@@ -32,5 +32,5 @@
       }
     }
   },
-  "parent": "minecraft:nether/use_lodestone"
+  "parent": "dark_infection:darkling_level_1"
 }

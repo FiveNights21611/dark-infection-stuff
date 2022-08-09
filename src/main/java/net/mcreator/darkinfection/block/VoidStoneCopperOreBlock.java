@@ -7,6 +7,7 @@ import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
@@ -25,7 +26,7 @@ import java.util.Collections;
 
 public class VoidStoneCopperOreBlock extends Block {
 	public VoidStoneCopperOreBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1f, 10f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.LANTERN).strength(1f, 10f).requiresCorrectToolForDrops());
 	}
 
 	@Override
@@ -45,7 +46,7 @@ public class VoidStoneCopperOreBlock extends Block {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(this, 1));
+		return Collections.singletonList(new ItemStack(Blocks.AIR));
 	}
 
 	@Override

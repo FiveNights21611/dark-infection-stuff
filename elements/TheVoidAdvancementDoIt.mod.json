@@ -1,0 +1,7 @@
+{
+  "_fv": 28,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"event_trigger\" deletable=\"false\" x=\"209\" y=\"106\"><field name=\"trigger\">player_ticks</field><next><block type=\"controls_if\"><value name=\"IF0\"><block type=\"compare_dimensionids\"><value name=\"a\"><block type=\"entity_dimension_id\"><value name=\"entity\"><block type=\"entity_from_deps\"></block></value></block></value><value name=\"b\"><block type=\"get_dimensionid\"><field name=\"dimension\">CUSTOM:TheVoid</field></block></value></block></value><statement name=\"DO0\"><block type=\"entity_add_achievement\"><field name=\"achievement\">CUSTOM:TheVoidAdvancement</field><value name=\"entity\"><block type=\"entity_from_deps\"></block></value><next><block type=\"world_switch_world\"><field name=\"dimension\">CUSTOM:TheVoid</field><statement name=\"worldstatements\"><block type=\"execute_command\"><value name=\"command\"><block type=\"text\"><field name=\"TEXT\">generatevoidking</field></block></value><value name=\"x\"><block type=\"coord_x\"></block></value><value name=\"y\"><block type=\"coord_y\"></block></value><value name=\"z\"><block type=\"coord_z\"></block></value></block></statement></block></next></block></statement></block></next></block></xml>"
+  }
+}

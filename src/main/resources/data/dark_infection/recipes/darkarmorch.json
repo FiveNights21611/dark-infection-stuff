@@ -1,38 +1,12 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "0 2",
-    "345",
-    "678"
-  ],
-  "key": {
-    "0": {
-      "item": "minecraft:netherite_scrap"
-    },
-    "2": {
-      "item": "minecraft:netherite_scrap"
-    },
-    "3": {
-      "item": "minecraft:diamond"
-    },
-    "4": {
-      "item": "minecraft:netherite_chestplate"
-    },
-    "5": {
-      "item": "minecraft:diamond"
-    },
-    "6": {
-      "item": "minecraft:diamond"
-    },
-    "7": {
-      "item": "dark_infection:itemorbofdarkness"
-    },
-    "8": {
-      "item": "minecraft:diamond"
-    }
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:netherite_chestplate"
+  },
+  "addition": {
+    "item": "dark_infection:dark_ingot"
   },
   "result": {
-    "item": "dark_infection:darkarmor_chestplate",
-    "count": 1
+    "item": "dark_infection:darkarmor_chestplate"
   }
 }

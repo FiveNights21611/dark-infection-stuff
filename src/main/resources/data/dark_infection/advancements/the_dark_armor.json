@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "dark_infection:darkarmor_chestplate"
+    },
+    "title": {
+      "translate": "advancements.the_dark_armor.title"
+    },
+    "description": {
+      "translate": "advancements.the_dark_armor.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "the_dark_armor": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "dark_infection:the_absolute_dark"
+}

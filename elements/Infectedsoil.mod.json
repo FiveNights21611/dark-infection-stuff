@@ -2,12 +2,12 @@
   "_fv": 28,
   "_type": "block",
   "definition": {
-    "texture": "infectedsoiltop",
-    "textureTop": "infectedsoiltop",
-    "textureLeft": "infectedsoilside",
-    "textureFront": "infectedsoilside",
-    "textureRight": "infectedsoilside",
-    "textureBack": "infectedsoilside",
+    "texture": "darkdirtnew",
+    "textureTop": "infectedsoiltopnew",
+    "textureLeft": "infectedsoilsidenew",
+    "textureFront": "infectedsoilsidenew",
+    "textureRight": "infectedsoilsidenew",
+    "textureBack": "infectedsoilsidenew",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
@@ -33,9 +33,7 @@
       }
     ],
     "name": "Infected Soil",
-    "specialInfo": [
-      "a part of the dark infection it will spread forever if left unchecked"
-    ],
+    "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
     "hasGravity": false,
@@ -79,7 +77,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "GROUND"
+      "value": "NYLIUM"
     },
     "breakSound": {
       "value": ""

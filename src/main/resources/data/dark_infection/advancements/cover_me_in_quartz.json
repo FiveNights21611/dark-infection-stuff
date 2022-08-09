@@ -22,5 +22,5 @@
   "rewards": {
     "experience": 120
   },
-  "parent": "minecraft:nether/netherite_armor"
+  "parent": "dark_infection:the_dark_infection"
 }

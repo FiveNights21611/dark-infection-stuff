@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "dark_infection:voidvile"
+    },
+    "title": {
+      "translate": "advancements.the_void_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.the_void_advancement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "the_void_advancement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "dark_infection:darkling_level_1"
+}

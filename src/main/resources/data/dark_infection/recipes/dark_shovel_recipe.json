@@ -1,12 +1,23 @@
 {
-  "type": "minecraft:smithing",
-  "base": {
-    "item": "minecraft:netherite_shovel"
-  },
-  "addition": {
-    "item": "dark_infection:dark_ingot"
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "dark_infection:dark_d"
+    },
+    "1": {
+      "item": "minecraft:stick"
+    },
+    "2": {
+      "item": "minecraft:stick"
+    }
   },
   "result": {
-    "item": "dark_infection:dark_shovel"
+    "item": "dark_infection:dark_shovel",
+    "count": 1
   }
 }

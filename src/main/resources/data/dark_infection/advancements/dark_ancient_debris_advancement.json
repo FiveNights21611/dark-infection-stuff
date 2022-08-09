@@ -1,0 +1,44 @@
+{
+  "display": {
+    "icon": {
+      "item": "dark_infection:dark_ancient_debris"
+    },
+    "title": {
+      "translate": "advancements.dark_ancient_debris_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.dark_ancient_debris_advancement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "dark_ancient_debris_advancement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dark_infection:dark_ancient_debris"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "dark_infection:dad",
+      "dark_infection:dadb",
+      "dark_infection:dark_ingot_recipe"
+    ]
+  },
+  "parent": "dark_infection:darkling_level_1"
+}

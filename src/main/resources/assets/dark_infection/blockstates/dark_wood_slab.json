@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "dark_infection:block/dark_wood_slab"
+    },
+    "type=top": {
+      "model": "dark_infection:block/dark_wood_slab_top"
+    },
+    "type=double": {
+      "model": "dark_infection:block/dark_wood_slab_full"
+    }
+  }
+}

@@ -5,13 +5,13 @@
     "achievementName": "The Dark Infection",
     "achievementDescription": "The darkness within us all grows...",
     "achievementIcon": {
-      "value": "CUSTOM:Darkdirt"
+      "value": "CUSTOM:DarkStar"
     },
-    "background": "darkdirt.png",
+    "background": "darkstone.png",
     "disableDisplay": false,
-    "showPopup": true,
+    "showPopup": false,
     "announceToChat": true,
-    "hideIfNotCompleted": true,
+    "hideIfNotCompleted": false,
     "rewardLoot": [],
     "rewardRecipes": [],
     "rewardFunction": "No function",

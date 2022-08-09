@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "dark_infection:dark_d"
+    },
+    "2": {
+      "item": "dark_infection:dark_d"
+    },
+    "3": {
+      "item": "dark_infection:dark_d"
+    },
+    "4": {
+      "item": "dark_infection:dark_d"
+    },
+    "5": {
+      "item": "dark_infection:dark_d"
+    },
+    "6": {
+      "item": "dark_infection:dark_d"
+    },
+    "7": {
+      "item": "dark_infection:dark_d"
+    },
+    "8": {
+      "item": "dark_infection:dark_d"
+    }
+  },
+  "result": {
+    "item": "dark_infection:dark_diamond_chestplate",
+    "count": 1
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "display": {
+    "icon": {
+      "item": "dark_infection:quartz_enriched_ancient_debris"
+    },
+    "title": {
+      "translate": "advancements.qead_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.qead_advancement.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "qead_advancement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dark_infection:quartz_enriched_ancient_debris"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "dark_infection:quartz_enriched_netherite_recipe",
+      "dark_infection:qead",
+      "dark_infection:qeadb"
+    ]
+  },
+  "parent": "dark_infection:the_absolute_dark"
+}

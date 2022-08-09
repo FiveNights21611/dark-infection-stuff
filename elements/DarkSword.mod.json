@@ -3,28 +3,28 @@
   "_type": "tool",
   "definition": {
     "renderType": 0,
-    "texture": "darksword",
+    "texture": "dark_sword",
     "customModelName": "Normal",
     "name": "Dark Sword",
     "specialInfo": [],
     "creativeTab": {
-      "value": "CUSTOM:Darkinfected"
+      "value": "COMBAT"
     },
     "toolType": "Sword",
     "harvestLevel": 6,
-    "efficiency": 15.0,
-    "attackSpeed": 1.6,
-    "enchantability": 40,
-    "damageVsEntity": 11.0,
-    "usageCount": 4062,
+    "efficiency": 12.0,
+    "attackSpeed": 1.0,
+    "enchantability": 42,
+    "damageVsEntity": 6.0,
+    "usageCount": 1164,
     "blocksAffected": [],
     "hasGlow": false,
     "repairItems": [
       {
-        "value": "CUSTOM:DarkIngot"
+        "value": "CUSTOM:DarkD"
       }
     ],
-    "immuneToFire": true,
+    "immuneToFire": false,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false
   }

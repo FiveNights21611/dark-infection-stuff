@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "experience": 20,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "dark_infection:quartz_enriched_ancient_debris"
+  },
+  "result": "dark_infection:qen_scrap"
+}

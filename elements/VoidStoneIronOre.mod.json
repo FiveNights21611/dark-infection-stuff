@@ -128,7 +128,8 @@
       "name": "VoidStoneIronFortune"
     },
     "spawnWorldTypes": [
-      "Surface"
+      "Surface",
+      "CUSTOM:TheVoid"
     ],
     "restrictionBiomes": [
       {

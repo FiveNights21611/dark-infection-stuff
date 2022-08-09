@@ -25,6 +25,7 @@ import net.mcreator.darkinfection.item.QuartzHoeItem;
 import net.mcreator.darkinfection.item.QuartzEnrichedNetheriteItem;
 import net.mcreator.darkinfection.item.QuartzEnrichedNetheriteArmorItem;
 import net.mcreator.darkinfection.item.QuartzAxeItem;
+import net.mcreator.darkinfection.item.QENScrapItem;
 import net.mcreator.darkinfection.item.PureafyingappItem;
 import net.mcreator.darkinfection.item.PoppedOrbOfDarknessItem;
 import net.mcreator.darkinfection.item.ItemorbofdarknessItem;
@@ -38,8 +39,16 @@ import net.mcreator.darkinfection.item.DarkStarItem;
 import net.mcreator.darkinfection.item.DarkShovelItem;
 import net.mcreator.darkinfection.item.DarkPickaxeItem;
 import net.mcreator.darkinfection.item.DarkOrbItem;
+import net.mcreator.darkinfection.item.DarkNetheriteScrapItem;
 import net.mcreator.darkinfection.item.DarkIngotItem;
 import net.mcreator.darkinfection.item.DarkHoeItem;
+import net.mcreator.darkinfection.item.DarkDiamondSwordItem;
+import net.mcreator.darkinfection.item.DarkDiamondShovelItem;
+import net.mcreator.darkinfection.item.DarkDiamondPickaxeItem;
+import net.mcreator.darkinfection.item.DarkDiamondItem;
+import net.mcreator.darkinfection.item.DarkDiamondHoeItem;
+import net.mcreator.darkinfection.item.DarkDiamondAxeItem;
+import net.mcreator.darkinfection.item.DarkDItem;
 import net.mcreator.darkinfection.item.DarkCarrotItem;
 import net.mcreator.darkinfection.item.DarkAxeItem;
 import net.mcreator.darkinfection.item.CurevItem;
@@ -116,11 +125,6 @@ public class DarkInfectionModItems {
 	public static final RegistryObject<Item> VOID_STONE_BRICK_WALLS = block(DarkInfectionModBlocks.VOID_STONE_BRICK_WALLS,
 			DarkInfectionModTabs.TAB_DARKINFECTED);
 	public static final RegistryObject<Item> DARK_INGOT = REGISTRY.register("dark_ingot", () -> new DarkIngotItem());
-	public static final RegistryObject<Item> DARK_PICKAXE = REGISTRY.register("dark_pickaxe", () -> new DarkPickaxeItem());
-	public static final RegistryObject<Item> DARK_AXE = REGISTRY.register("dark_axe", () -> new DarkAxeItem());
-	public static final RegistryObject<Item> DARK_SWORD = REGISTRY.register("dark_sword", () -> new DarkSwordItem());
-	public static final RegistryObject<Item> DARK_SHOVEL = REGISTRY.register("dark_shovel", () -> new DarkShovelItem());
-	public static final RegistryObject<Item> DARK_HOE = REGISTRY.register("dark_hoe", () -> new DarkHoeItem());
 	public static final RegistryObject<Item> VOID_STONE_REDSTONE_ORE_LIT = block(DarkInfectionModBlocks.VOID_STONE_REDSTONE_ORE_LIT,
 			DarkInfectionModTabs.TAB_DARKINFECTED);
 	public static final RegistryObject<Item> QUARTZ_PICKAXE = REGISTRY.register("quartz_pickaxe", () -> new QuartzPickaxeItem());
@@ -129,6 +133,39 @@ public class DarkInfectionModItems {
 	public static final RegistryObject<Item> QUARTZ_SHOVEL = REGISTRY.register("quartz_shovel", () -> new QuartzShovelItem());
 	public static final RegistryObject<Item> QUARTZ_HOE = REGISTRY.register("quartz_hoe", () -> new QuartzHoeItem());
 	public static final RegistryObject<Item> DARK_ORB = REGISTRY.register("dark_orb", () -> new DarkOrbItem());
+	public static final RegistryObject<Item> DARK_DIAMOND_HELMET = REGISTRY.register("dark_diamond_helmet", () -> new DarkDiamondItem.Helmet());
+	public static final RegistryObject<Item> DARK_DIAMOND_CHESTPLATE = REGISTRY.register("dark_diamond_chestplate",
+			() -> new DarkDiamondItem.Chestplate());
+	public static final RegistryObject<Item> DARK_DIAMOND_LEGGINGS = REGISTRY.register("dark_diamond_leggings", () -> new DarkDiamondItem.Leggings());
+	public static final RegistryObject<Item> DARK_DIAMOND_BOOTS = REGISTRY.register("dark_diamond_boots", () -> new DarkDiamondItem.Boots());
+	public static final RegistryObject<Item> DARK_D = REGISTRY.register("dark_d", () -> new DarkDItem());
+	public static final RegistryObject<Item> DARK_PICKAXE = REGISTRY.register("dark_pickaxe", () -> new DarkPickaxeItem());
+	public static final RegistryObject<Item> DARK_AXE = REGISTRY.register("dark_axe", () -> new DarkAxeItem());
+	public static final RegistryObject<Item> DARK_SWORD = REGISTRY.register("dark_sword", () -> new DarkSwordItem());
+	public static final RegistryObject<Item> DARK_SHOVEL = REGISTRY.register("dark_shovel", () -> new DarkShovelItem());
+	public static final RegistryObject<Item> DARK_HOE = REGISTRY.register("dark_hoe", () -> new DarkHoeItem());
+	public static final RegistryObject<Item> DARK_DIAMOND_SWORD = REGISTRY.register("dark_diamond_sword", () -> new DarkDiamondSwordItem());
+	public static final RegistryObject<Item> DARK_DIAMOND_AXE = REGISTRY.register("dark_diamond_axe", () -> new DarkDiamondAxeItem());
+	public static final RegistryObject<Item> DARK_DIAMOND_HOE = REGISTRY.register("dark_diamond_hoe", () -> new DarkDiamondHoeItem());
+	public static final RegistryObject<Item> DARK_DIAMOND_PICKAXE = REGISTRY.register("dark_diamond_pickaxe", () -> new DarkDiamondPickaxeItem());
+	public static final RegistryObject<Item> DARK_DIAMOND_SHOVEL = REGISTRY.register("dark_diamond_shovel", () -> new DarkDiamondShovelItem());
+	public static final RegistryObject<Item> DARK_NETHERITE_SCRAP = REGISTRY.register("dark_netherite_scrap", () -> new DarkNetheriteScrapItem());
+	public static final RegistryObject<Item> QEN_SCRAP = REGISTRY.register("qen_scrap", () -> new QENScrapItem());
+	public static final RegistryObject<Item> DARK_ANCIENT_DEBRIS = block(DarkInfectionModBlocks.DARK_ANCIENT_DEBRIS,
+			DarkInfectionModTabs.TAB_DARKINFECTED);
+	public static final RegistryObject<Item> QUARTZ_ENRICHED_ANCIENT_DEBRIS = block(DarkInfectionModBlocks.QUARTZ_ENRICHED_ANCIENT_DEBRIS,
+			DarkInfectionModTabs.TAB_DARKINFECTED);
+	public static final RegistryObject<Item> DARK_WOOD_WOOD = block(DarkInfectionModBlocks.DARK_WOOD_WOOD, DarkInfectionModTabs.TAB_DARKINFECTED);
+	public static final RegistryObject<Item> DARK_WOOD_LOG = block(DarkInfectionModBlocks.DARK_WOOD_LOG, DarkInfectionModTabs.TAB_DARKINFECTED);
+	public static final RegistryObject<Item> DARK_WOOD_PLANKS = block(DarkInfectionModBlocks.DARK_WOOD_PLANKS, DarkInfectionModTabs.TAB_DARKINFECTED);
+	public static final RegistryObject<Item> DARK_WOOD_LEAVES = block(DarkInfectionModBlocks.DARK_WOOD_LEAVES, CreativeModeTab.TAB_DECORATIONS);
+	public static final RegistryObject<Item> DARK_WOOD_STAIRS = block(DarkInfectionModBlocks.DARK_WOOD_STAIRS, DarkInfectionModTabs.TAB_DARKINFECTED);
+	public static final RegistryObject<Item> DARK_WOOD_SLAB = block(DarkInfectionModBlocks.DARK_WOOD_SLAB, DarkInfectionModTabs.TAB_DARKINFECTED);
+	public static final RegistryObject<Item> DARK_WOOD_FENCE = block(DarkInfectionModBlocks.DARK_WOOD_FENCE, CreativeModeTab.TAB_DECORATIONS);
+	public static final RegistryObject<Item> DARK_WOOD_FENCE_GATE = block(DarkInfectionModBlocks.DARK_WOOD_FENCE_GATE, CreativeModeTab.TAB_REDSTONE);
+	public static final RegistryObject<Item> DARK_WOOD_PRESSURE_PLATE = block(DarkInfectionModBlocks.DARK_WOOD_PRESSURE_PLATE,
+			CreativeModeTab.TAB_REDSTONE);
+	public static final RegistryObject<Item> DARK_WOOD_BUTTON = block(DarkInfectionModBlocks.DARK_WOOD_BUTTON, DarkInfectionModTabs.TAB_DARKINFECTED);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

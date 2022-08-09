@@ -6,23 +6,23 @@ import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.CreativeModeTab;
 
-import net.mcreator.darkinfection.init.DarkInfectionModTabs;
 import net.mcreator.darkinfection.init.DarkInfectionModItems;
 
 public class DarkSwordItem extends SwordItem {
 	public DarkSwordItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 4062;
+				return 1164;
 			}
 
 			public float getSpeed() {
-				return 15f;
+				return 12f;
 			}
 
 			public float getAttackDamageBonus() {
-				return 9f;
+				return 4f;
 			}
 
 			public int getLevel() {
@@ -30,12 +30,12 @@ public class DarkSwordItem extends SwordItem {
 			}
 
 			public int getEnchantmentValue() {
-				return 40;
+				return 42;
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(DarkInfectionModItems.DARK_INGOT.get()));
+				return Ingredient.of(new ItemStack(DarkInfectionModItems.DARK_D.get()));
 			}
-		}, 3, -2.4f, new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED).fireResistant());
+		}, 3, -3f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
 	}
 }

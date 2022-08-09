@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "dark_infection:dark_d"
+    },
+    "1": {
+      "item": "dark_infection:dark_d"
+    },
+    "2": {
+      "item": "dark_infection:dark_d"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "7": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "dark_infection:dark_diamond_pickaxe",
+    "count": 1
+  }
+}

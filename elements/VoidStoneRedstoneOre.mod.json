@@ -134,7 +134,8 @@
       "name": "DoLightUp"
     },
     "spawnWorldTypes": [
-      "Surface"
+      "Surface",
+      "CUSTOM:TheVoid"
     ],
     "restrictionBiomes": [
       {

@@ -9,7 +9,7 @@
     "group": "",
     "recipeShapeless": false,
     "smithingInputStack": {
-      "value": "Items.NETHERITE_HELMET"
+      "value": "CUSTOM:DarkDiamond.helmet"
     },
     "smithingInputAdditionStack": {
       "value": "CUSTOM:DarkIngot"

@@ -1850,7 +1850,7 @@
     {
       "name": "DarkPickaxe",
       "type": "tool",
-      "sortid": 136,
+      "sortid": 196,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dark_pickaxe"
@@ -1858,7 +1858,7 @@
     {
       "name": "DarkAxe",
       "type": "tool",
-      "sortid": 137,
+      "sortid": 197,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dark_axe"
@@ -1866,7 +1866,7 @@
     {
       "name": "DarkSword",
       "type": "tool",
-      "sortid": 138,
+      "sortid": 198,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dark_sword"
@@ -1874,7 +1874,7 @@
     {
       "name": "DarkShovel",
       "type": "tool",
-      "sortid": 139,
+      "sortid": 199,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dark_shovel"
@@ -1882,7 +1882,7 @@
     {
       "name": "DarkHoe",
       "type": "tool",
-      "sortid": 140,
+      "sortid": 200,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dark_hoe"
@@ -1890,7 +1890,7 @@
     {
       "name": "DarkPickaxeRecipe",
       "type": "recipe",
-      "sortid": 141,
+      "sortid": 201,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dark_pickaxe_recipe"
@@ -1898,7 +1898,7 @@
     {
       "name": "DarkAxeRecipe",
       "type": "recipe",
-      "sortid": 142,
+      "sortid": 202,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dark_axe_recipe"
@@ -1906,7 +1906,7 @@
     {
       "name": "DarkSwordRecipe",
       "type": "recipe",
-      "sortid": 143,
+      "sortid": 203,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dark_sword_recipe"
@@ -1914,7 +1914,7 @@
     {
       "name": "DarkShovelRecipe",
       "type": "recipe",
-      "sortid": 144,
+      "sortid": 204,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dark_shovel_recipe"
@@ -1922,7 +1922,7 @@
     {
       "name": "DarkHoeRecipe",
       "type": "recipe",
-      "sortid": 145,
+      "sortid": 205,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dark_hoe_recipe"
@@ -2156,78 +2156,6 @@
       }
     },
     {
-      "name": "FlightBoatGod",
-      "type": "keybind",
-      "sortid": 163,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "flight_boat_god"
-    },
-    {
-      "name": "BoatGodFly",
-      "type": "procedure",
-      "sortid": 164,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "boat_god_fly",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "BoatGodFallDamage",
-      "type": "procedure",
-      "sortid": 165,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "boat_god_fall_damage",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "BoatGodBoatSummoning",
-      "type": "procedure",
-      "sortid": 166,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "boat_god_boat_summoning",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
-      "name": "SummonBoatsBoatGod",
-      "type": "keybind",
-      "sortid": 167,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "summon_boats_boat_god"
-    },
-    {
       "name": "VoidCobblePickaxe",
       "type": "recipe",
       "sortid": 168,
@@ -2356,92 +2284,410 @@
       "registry_name": "void_stone_furnace"
     },
     {
-      "name": "BoatGodOP",
-      "type": "procedure",
+      "name": "DarkDiamond",
+      "type": "armor",
       "sortid": 184,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "boat_god_op",
+      "registry_name": "dark_diamond",
       "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
       }
     },
     {
-      "name": "SilverSpawn",
-      "type": "procedure",
-      "sortid": 184,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "silver_spawn",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
-      "name": "SilverTimer",
-      "type": "procedure",
-      "sortid": 187,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "silver_timer",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Silveryeetbind",
-      "type": "keybind",
-      "sortid": 186,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "silveryeetbind"
-    },
-    {
-      "name": "Silveryeet",
-      "type": "procedure",
+      "name": "DarkD",
+      "type": "item",
       "sortid": 185,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "silveryeet",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
+      "registry_name": "dark_d"
+    },
+    {
+      "name": "DarkDiamondSword",
+      "type": "tool",
+      "sortid": 206,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_diamond_sword"
+    },
+    {
+      "name": "DarkDiamondAxe",
+      "type": "tool",
+      "sortid": 207,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_diamond_axe"
+    },
+    {
+      "name": "DarkDiamondHoe",
+      "type": "tool",
+      "sortid": 208,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_diamond_hoe"
+    },
+    {
+      "name": "DarkDiamondPickaxe",
+      "type": "tool",
+      "sortid": 209,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_diamond_pickaxe"
+    },
+    {
+      "name": "DarkDiamondShovel",
+      "type": "tool",
+      "sortid": 210,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_diamond_shovel"
+    },
+    {
+      "name": "DDS",
+      "type": "recipe",
+      "sortid": 211,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dds"
+    },
+    {
+      "name": "DDSH",
+      "type": "recipe",
+      "sortid": 212,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ddsh"
+    },
+    {
+      "name": "DDA",
+      "type": "recipe",
+      "sortid": 213,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dda"
+    },
+    {
+      "name": "DDAR",
+      "type": "recipe",
+      "sortid": 214,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ddar"
+    },
+    {
+      "name": "DDP",
+      "type": "recipe",
+      "sortid": 215,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ddp"
+    },
+    {
+      "name": "DDHL",
+      "type": "recipe",
+      "sortid": 216,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ddhl"
+    },
+    {
+      "name": "DDHR",
+      "type": "recipe",
+      "sortid": 217,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ddhr"
+    },
+    {
+      "name": "DDH",
+      "type": "recipe",
+      "sortid": 218,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ddh"
+    },
+    {
+      "name": "DDC",
+      "type": "recipe",
+      "sortid": 219,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ddc"
+    },
+    {
+      "name": "DDL",
+      "type": "recipe",
+      "sortid": 220,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ddl"
+    },
+    {
+      "name": "DDB",
+      "type": "recipe",
+      "sortid": 221,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ddb"
+    },
+    {
+      "name": "DD",
+      "type": "recipe",
+      "sortid": 222,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dd"
+    },
+    {
+      "name": "DarkNetheriteScrap",
+      "type": "item",
+      "sortid": 223,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_netherite_scrap"
+    },
+    {
+      "name": "QENScrap",
+      "type": "item",
+      "sortid": 224,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qen_scrap"
+    },
+    {
+      "name": "DarkAncientDebris",
+      "type": "block",
+      "sortid": 225,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_ancient_debris"
+    },
+    {
+      "name": "QuartzEnrichedAncientDebris",
+      "type": "block",
+      "sortid": 226,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quartz_enriched_ancient_debris"
+    },
+    {
+      "name": "DAD",
+      "type": "recipe",
+      "sortid": 227,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dad"
+    },
+    {
+      "name": "DADB",
+      "type": "recipe",
+      "sortid": 228,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dadb"
+    },
+    {
+      "name": "QEAD",
+      "type": "recipe",
+      "sortid": 229,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qead"
+    },
+    {
+      "name": "QEADB",
+      "type": "recipe",
+      "sortid": 230,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qeadb"
+    },
+    {
+      "name": "DarkAncientDebrisAdvancement",
+      "type": "achievement",
+      "sortid": 231,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_ancient_debris_advancement"
+    },
+    {
+      "name": "QEADAdvancement",
+      "type": "achievement",
+      "sortid": 232,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qead_advancement"
+    },
+    {
+      "name": "EnhancedDarkStarAdvancement",
+      "type": "achievement",
+      "sortid": 233,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enhanced_dark_star_advancement"
+    },
+    {
+      "name": "DarkWoodWood",
+      "type": "block",
+      "sortid": 234,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_wood_wood"
+    },
+    {
+      "name": "DarkWoodLog",
+      "type": "block",
+      "sortid": 235,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_wood_log"
+    },
+    {
+      "name": "DarkWoodPlanks",
+      "type": "block",
+      "sortid": 236,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_wood_planks"
+    },
+    {
+      "name": "DarkWoodLeaves",
+      "type": "block",
+      "sortid": 237,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_wood_leaves"
+    },
+    {
+      "name": "DarkWoodStairs",
+      "type": "block",
+      "sortid": 238,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_wood_stairs"
+    },
+    {
+      "name": "DarkWoodSlab",
+      "type": "block",
+      "sortid": 239,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_wood_slab"
+    },
+    {
+      "name": "DarkWoodFence",
+      "type": "block",
+      "sortid": 240,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_wood_fence"
+    },
+    {
+      "name": "DarkWoodFenceGate",
+      "type": "block",
+      "sortid": 241,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_wood_fence_gate"
+    },
+    {
+      "name": "DarkWoodPressurePlate",
+      "type": "block",
+      "sortid": 242,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_wood_pressure_plate"
+    },
+    {
+      "name": "DarkWoodButton",
+      "type": "block",
+      "sortid": 243,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_wood_button"
+    },
+    {
+      "name": "DarkWoodItemsTag",
+      "type": "tag",
+      "sortid": 244,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_wood_items_tag"
+    },
+    {
+      "name": "DarkWoodWoodRecipe",
+      "type": "recipe",
+      "sortid": 245,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_wood_wood_recipe"
+    },
+    {
+      "name": "DarkWoodPlanksRecipe",
+      "type": "recipe",
+      "sortid": 246,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_wood_planks_recipe"
+    },
+    {
+      "name": "DarkWoodStairsRecipe",
+      "type": "recipe",
+      "sortid": 247,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_wood_stairs_recipe"
+    },
+    {
+      "name": "DarkWoodSlabRecipe",
+      "type": "recipe",
+      "sortid": 248,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_wood_slab_recipe"
+    },
+    {
+      "name": "DarkWoodFenceRecipe",
+      "type": "recipe",
+      "sortid": 249,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_wood_fence_recipe"
+    },
+    {
+      "name": "DarkWoodFenceGateRecipe",
+      "type": "recipe",
+      "sortid": 250,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_wood_fence_gate_recipe"
+    },
+    {
+      "name": "DarkWoodPressurePlateRecipe",
+      "type": "recipe",
+      "sortid": 251,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_wood_pressure_plate_recipe"
+    },
+    {
+      "name": "DarkWoodButtonRecipe",
+      "type": "recipe",
+      "sortid": 252,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_wood_button_recipe"
+    },
+    {
+      "name": "DarkWoodStickRecipe",
+      "type": "recipe",
+      "sortid": 253,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_wood_stick_recipe"
     }
   ],
   "variable_elements": [
@@ -2486,6 +2732,8 @@
   "language_map": {
     "en_us": {
       "effect.dark_infection.ultimate_darkness": "Ultimate Darkness...",
+      "item.dark_infection.dark_netherite_scrap": "Dark Netherite Scrap",
+      "block.dark_infection.dark_wood_stairs": "DarkWood Stairs",
       "item.dark_infection.quartz_enriched_netherite_armor_chestplate": "Quartz Enriched Netherite Chestplate",
       "block.dark_infection.darkdirt": "DarkDirt",
       "block.dark_infection.gravityvoid": "GravityVoid",
@@ -2498,31 +2746,41 @@
       "advancements.the_dark_armor.title": "Cover Me in Darkness",
       "item.dark_infection.dark_carrot": "Dark Carrot",
       "item.minecraft.potion.effect.voidcurepotion": "Potion of VoidCure",
+      "item.dark_infection.dark_diamond_shovel": "Dark Diamond Shovel",
       "advancements.the_void_king.title": "The Void King",
+      "block.dark_infection.dark_wood_leaves": "DarkWood Leaves",
+      "block.dark_infection.dark_ancient_debris": "Dark Ancient Debris",
       "block.dark_infection.void_stone_copper_ore": "Void Stone Copper Ore",
       "advancements.the_dark_infection.title": "The Dark Infection",
+      "item.dark_infection.dark_diamond_pickaxe": "Dark Diamond Pickaxe",
       "item.dark_infection.darkarmor_leggings": "Dark Leggings",
-      "key.dark_infection.summon_boats_boat_god": "Summon Boats (BoatGod Only)",
       "item.dark_infection.curev": "Cure Vial",
+      "block.dark_infection.dark_wood_slab": "DarkWood Slab",
       "item.dark_infection.dark_sword": "Dark Sword",
       "item.dark_infection.dark_pickaxe": "Dark Pickaxe",
       "advancements.the_absolute_dark.title": "The Absolute Dark...",
       "item.dark_infection.iron_rod": "Iron Rod",
       "block.dark_infection.void_stone_brick_slabs": "Void Stone Brick Slab",
       "block.dark_infection.void_stone_emerald_ore": "Void Stone Emerald Ore",
+      "item.dark_infection.dark_d": "Dark Diamond",
+      "advancements.qead_advancement.descr": "Find the uninfectable...",
       "item.minecraft.splash_potion.effect.potion_of_ultimate_darkness": "Splash Potion Of Ultimate Darkness",
       "block.dark_infection.void_stone_brick_stairs": "Void Stone Brick Stairs",
+      "block.dark_infection.dark_wood_wood": "DarkWood Wood",
       "item.minecraft.potion.effect.potion_of_ultimate_darkness": "Potion Of Ultimate Darkness",
       "advancements.the_absolute_dark.descr": "What devotion is this?",
       "item.dark_infection.enhanced_dark_star": "Enhanced Dark Star",
       "block.dark_infection.void_stone_lapis_ore": "Void Stone Lapis Ore",
+      "block.dark_infection.dark_wood_log": "DarkWood Log",
       "advancements.darkling_level_3.descr": "Envelop yourself in the darkness...",
+      "advancements.dark_ancient_debris_advancement.descr": "Obtain a Dark Ancient Debris",
       "item.dark_infection.voidking_helmet": "Void King Helmet",
       "gamerule.doInfectionSpread": "Do Infection Spread",
       "item.dark_infection.dark_hoe": "Dark Hoe",
       "effect.dark_infection.darkness": "Darkness",
       "item.dark_infection.quartz_enriched_netherite_armor_boots": "Quartz Enriched Netherite Boots",
       "effect.dark_infection.void_cure": "Void Cure",
+      "item.dark_infection.dark_diamond_helmet": "Dark Diamond Helmet",
       "item.dark_infection.blue_pole": "Blue Pole",
       "gamerule.doInfectionSpread.description": "Toggles Infection Spreading",
       "item.dark_infection.dark_axe": "Dark Axe",
@@ -2531,13 +2789,17 @@
       "item.dark_infection.quartz_enriched_netherite": "Quartz Enriched Netherite Ingot",
       "item.dark_infection.darkarmor_chestplate": "Dark Chestplate",
       "advancements.darkling_level_1.title": "Darkling Level 1",
+      "block.dark_infection.dark_wood_pressure_plate": "DarkWood Pressure Plate",
       "advancements.the_void_advancement.descr": "Enter the Darkness.",
       "item.dark_infection.dark_ingot": "Dark Ingot",
       "item.minecraft.splash_potion.effect.voidcurepotion": "Splash Potion of Voidcure (dont use its broken)",
+      "block.dark_infection.quartz_enriched_ancient_debris": "Quartz Enriched Ancient Debris",
       "item.dark_infection.voidking_boots": "Void King Boots",
       "item.dark_infection.emptyvile": "Empty Vial",
       "entity.dark_infection.voidkingboss": "Void King Boss",
+      "item.dark_infection.dark_diamond_sword": "Dark Diamond Sword",
       "block.dark_infection.void_stone_diamond_ore": "Void Stone Diamond Ore",
+      "advancements.qead_advancement.title": "Down in the Quartz-Riddled Depths",
       "item.dark_infection.pureafyingapp": "Purifying Apple",
       "item.dark_infection.darkarmor_boots": "Dark Boots",
       "block.dark_infection.voidstone": "VoidStone",
@@ -2548,14 +2810,17 @@
       "block.dark_infection.void_stone_gold_ore": "Void Stone Gold Ore",
       "item.minecraft.tipped_arrow.effect.potion_of_ultimate_darkness": "Arrow of Ultimate Darkness",
       "block.dark_infection.void_stone_redstone_ore_lit": "Void Stone Redstone Ore Lit",
+      "item.dark_infection.dark_diamond_axe": "Dark Diamond Axe",
       "item.dark_infection.itemorbofdarkness": "Orb Of Darkness",
       "advancements.darkling_level_2.title": "Darkling Level 2",
       "item.dark_infection.voidking_leggings": "Void King Leggings",
       "itemGroup.tabdarkinfected": "Dark Infection",
+      "item.dark_infection.qen_scrap": "Quart Enriched Netherite Scrap",
       "advancements.the_dark_armor.descr": "Surround yourself in the void... and it will bless you.",
       "block.dark_infection.void_stone_brick_walls": "Void Stone Brick Walls",
+      "block.dark_infection.dark_wood_planks": "DarkWood Planks",
       "item.minecraft.lingering_potion.effect.potion_of_ultimate_darkness": "Lingering Potion Of Ultimate Darkness",
-      "key.dark_infection.flight_boat_god": "Flight (BoatGod Only)",
+      "advancements.dark_ancient_debris_advancement.title": "Down in the Darkened Depths",
       "biome.dark_infection.dark_caves": "Dark Caves",
       "advancements.the_void_advancement.title": "The Void",
       "advancements.darkling_level_1.descr": "Become a Darkling",
@@ -2570,18 +2835,27 @@
       "item.dark_infection.quartz_hoe": "Q.E.N. Hoe",
       "item.dark_infection.dark_star": "Dark Star",
       "item.dark_infection.voidkingboss_spawn_egg": "Void King Boss Spawn Egg",
+      "item.dark_infection.dark_diamond_chestplate": "Dark Diamond Body",
       "advancements.darkling_level_3.title": "Darkling Level 3",
+      "item.dark_infection.dark_diamond_leggings": "Dark Diamond Leggings",
       "advancements.the_void_king.descr": "Become the King of the Darkness",
       "block.dark_infection.chisseldvoidstonebricks": "Chiseled VoidStone Bricks",
       "advancements.the_dark_infection.descr": "The darkness within us all grows...",
+      "block.dark_infection.dark_wood_button": "DarkWood Button",
+      "advancements.enhanced_dark_star_advancement.title": "Ultimate Devotion",
+      "item.dark_infection.dark_diamond_hoe": "Dark Diamond Hoe",
       "effect.dark_infection.darkcorupt": "Don\u0027t Die...",
       "block.dark_infection.void_stone_redstone_ore": "Void Stone Redstone Ore",
+      "advancements.enhanced_dark_star_advancement.descr": "You have delved into the darkness headfirst...",
+      "block.dark_infection.dark_wood_fence": "DarkWood Fence",
+      "block.dark_infection.dark_wood_fence_gate": "DarkWood Fence Gate",
       "block.dark_infection.void_king_spawner": "Void King Spawner",
       "item.dark_infection.dark_shovel": "Dark Shovel",
       "item.dark_infection.iron_pole": "Iron Pole",
       "item.dark_infection.strangev": "Strange Vial",
       "item.dark_infection.quartz_shovel": "Q.E.N. Shovel",
       "item.dark_infection.quartz_enriched_netherite_armor_leggings": "Quartz Enriched Netherite Leggings",
+      "item.dark_infection.dark_diamond_boots": "Dark Diamond Boots",
       "item.dark_infection.voidking_chestplate": "Void King Chestplate",
       "item.dark_infection.darkarmor_helmet": "Dark Helmet",
       "block.dark_infection.void_cobble": "Void Cobble"
@@ -2594,7 +2868,7 @@
   "workspaceSettings": {
     "modid": "dark_infection",
     "modName": "The Dark Infection",
-    "version": "1.0.0",
+    "version": "1.1.2",
     "description": "Infect Everything!",
     "author": "quinn, MCreator, FiveNights2161",
     "websiteURL": "https://mcreator.net",

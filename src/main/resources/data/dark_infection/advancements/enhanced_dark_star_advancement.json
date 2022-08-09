@@ -1,0 +1,42 @@
+{
+  "display": {
+    "icon": {
+      "item": "dark_infection:enhanced_dark_star"
+    },
+    "title": {
+      "translate": "advancements.enhanced_dark_star_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.enhanced_dark_star_advancement.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "enhanced_dark_star_advancement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dark_infection:enhanced_dark_star"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "dark_infection:ud_recipe"
+    ]
+  },
+  "parent": "dark_infection:the_absolute_dark"
+}

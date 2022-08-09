@@ -30,9 +30,21 @@ import net.mcreator.darkinfection.block.VoidStoneBrickStairsBlock;
 import net.mcreator.darkinfection.block.VoidStoneBrickSlabsBlock;
 import net.mcreator.darkinfection.block.VoidKingSpawnerBlock;
 import net.mcreator.darkinfection.block.VoidCobbleBlock;
+import net.mcreator.darkinfection.block.QuartzEnrichedAncientDebrisBlock;
 import net.mcreator.darkinfection.block.InfectedsoilBlock;
 import net.mcreator.darkinfection.block.GravityvoidBlock;
 import net.mcreator.darkinfection.block.DarkdirtBlock;
+import net.mcreator.darkinfection.block.DarkWoodWoodBlock;
+import net.mcreator.darkinfection.block.DarkWoodStairsBlock;
+import net.mcreator.darkinfection.block.DarkWoodSlabBlock;
+import net.mcreator.darkinfection.block.DarkWoodPressurePlateBlock;
+import net.mcreator.darkinfection.block.DarkWoodPlanksBlock;
+import net.mcreator.darkinfection.block.DarkWoodLogBlock;
+import net.mcreator.darkinfection.block.DarkWoodLeavesBlock;
+import net.mcreator.darkinfection.block.DarkWoodFenceGateBlock;
+import net.mcreator.darkinfection.block.DarkWoodFenceBlock;
+import net.mcreator.darkinfection.block.DarkWoodButtonBlock;
+import net.mcreator.darkinfection.block.DarkAncientDebrisBlock;
 import net.mcreator.darkinfection.block.ChisseldvoidstonebricksBlock;
 import net.mcreator.darkinfection.DarkInfectionMod;
 
@@ -66,6 +78,20 @@ public class DarkInfectionModBlocks {
 			() -> new VoidStoneBrickWallsBlock());
 	public static final RegistryObject<Block> VOID_STONE_REDSTONE_ORE_LIT = REGISTRY.register("void_stone_redstone_ore_lit",
 			() -> new VoidStoneRedstoneOreLitBlock());
+	public static final RegistryObject<Block> DARK_ANCIENT_DEBRIS = REGISTRY.register("dark_ancient_debris", () -> new DarkAncientDebrisBlock());
+	public static final RegistryObject<Block> QUARTZ_ENRICHED_ANCIENT_DEBRIS = REGISTRY.register("quartz_enriched_ancient_debris",
+			() -> new QuartzEnrichedAncientDebrisBlock());
+	public static final RegistryObject<Block> DARK_WOOD_WOOD = REGISTRY.register("dark_wood_wood", () -> new DarkWoodWoodBlock());
+	public static final RegistryObject<Block> DARK_WOOD_LOG = REGISTRY.register("dark_wood_log", () -> new DarkWoodLogBlock());
+	public static final RegistryObject<Block> DARK_WOOD_PLANKS = REGISTRY.register("dark_wood_planks", () -> new DarkWoodPlanksBlock());
+	public static final RegistryObject<Block> DARK_WOOD_LEAVES = REGISTRY.register("dark_wood_leaves", () -> new DarkWoodLeavesBlock());
+	public static final RegistryObject<Block> DARK_WOOD_STAIRS = REGISTRY.register("dark_wood_stairs", () -> new DarkWoodStairsBlock());
+	public static final RegistryObject<Block> DARK_WOOD_SLAB = REGISTRY.register("dark_wood_slab", () -> new DarkWoodSlabBlock());
+	public static final RegistryObject<Block> DARK_WOOD_FENCE = REGISTRY.register("dark_wood_fence", () -> new DarkWoodFenceBlock());
+	public static final RegistryObject<Block> DARK_WOOD_FENCE_GATE = REGISTRY.register("dark_wood_fence_gate", () -> new DarkWoodFenceGateBlock());
+	public static final RegistryObject<Block> DARK_WOOD_PRESSURE_PLATE = REGISTRY.register("dark_wood_pressure_plate",
+			() -> new DarkWoodPressurePlateBlock());
+	public static final RegistryObject<Block> DARK_WOOD_BUTTON = REGISTRY.register("dark_wood_button", () -> new DarkWoodButtonBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

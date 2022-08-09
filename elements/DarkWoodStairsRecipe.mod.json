@@ -1,0 +1,46 @@
+{
+  "_fv": 28,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 4,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:DarkWoodPlanks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:DarkWoodPlanks"
+      },
+      {
+        "value": "CUSTOM:DarkWoodPlanks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:DarkWoodPlanks"
+      },
+      {
+        "value": "CUSTOM:DarkWoodPlanks"
+      },
+      {
+        "value": "CUSTOM:DarkWoodPlanks"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:DarkWoodStairs"
+    },
+    "name": "dark_wood_stairs_recipe",
+    "namespace": "mod"
+  }
+}

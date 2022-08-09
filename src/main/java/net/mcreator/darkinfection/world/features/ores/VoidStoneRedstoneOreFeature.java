@@ -55,7 +55,8 @@ public class VoidStoneRedstoneOreFeature extends OreFeature {
 	}
 
 	public static final Set<ResourceLocation> GENERATE_BIOMES = Set.of(new ResourceLocation("dark_infection:dark_biome"));
-	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(Level.OVERWORLD);
+	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(Level.OVERWORLD,
+			ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("dark_infection:the_void")));
 
 	public VoidStoneRedstoneOreFeature() {
 		super(OreConfiguration.CODEC);

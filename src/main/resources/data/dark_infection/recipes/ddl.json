@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "dark_infection:dark_d"
+    },
+    "1": {
+      "item": "dark_infection:dark_d"
+    },
+    "2": {
+      "item": "dark_infection:dark_d"
+    },
+    "3": {
+      "item": "dark_infection:dark_d"
+    },
+    "5": {
+      "item": "dark_infection:dark_d"
+    },
+    "6": {
+      "item": "dark_infection:dark_d"
+    },
+    "8": {
+      "item": "dark_infection:dark_d"
+    }
+  },
+  "result": {
+    "item": "dark_infection:dark_diamond_leggings",
+    "count": 1
+  }
+}

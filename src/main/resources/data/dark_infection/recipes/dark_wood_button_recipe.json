@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "dark_infection:dark_wood_planks"
+    }
+  ],
+  "result": {
+    "item": "dark_infection:dark_wood_button",
+    "count": 1
+  }
+}

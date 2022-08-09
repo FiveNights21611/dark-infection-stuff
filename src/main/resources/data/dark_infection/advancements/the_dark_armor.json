@@ -19,5 +19,5 @@
       "trigger": "minecraft:impossible"
     }
   },
-  "parent": "dark_infection:the_absolute_dark"
+  "parent": "dark_infection:dark_ancient_debris_advancement"
 }

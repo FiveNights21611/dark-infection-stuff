@@ -7,31 +7,31 @@
     "cookingTime": 200,
     "recipeRetstackSize": 1,
     "group": "",
-    "recipeShapeless": false,
+    "recipeShapeless": true,
     "recipeSlots": [
       {
-        "value": "Items.NETHERITE_INGOT"
+        "value": "CUSTOM:QENScrap"
       },
       {
-        "value": "Items.QUARTZ"
+        "value": "CUSTOM:QENScrap"
       },
       {
-        "value": "Items.QUARTZ"
+        "value": "CUSTOM:QENScrap"
       },
       {
-        "value": "Items.QUARTZ"
+        "value": "CUSTOM:QENScrap"
       },
       {
-        "value": "Items.QUARTZ"
+        "value": "Items.DIAMOND"
       },
       {
-        "value": ""
+        "value": "Items.DIAMOND"
       },
       {
-        "value": ""
+        "value": "Items.DIAMOND"
       },
       {
-        "value": ""
+        "value": "Items.DIAMOND"
       },
       {
         "value": ""

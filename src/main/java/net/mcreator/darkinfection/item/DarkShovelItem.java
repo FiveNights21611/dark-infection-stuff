@@ -6,19 +6,19 @@ import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.ShovelItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.CreativeModeTab;
 
-import net.mcreator.darkinfection.init.DarkInfectionModTabs;
 import net.mcreator.darkinfection.init.DarkInfectionModItems;
 
 public class DarkShovelItem extends ShovelItem {
 	public DarkShovelItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 4062;
+				return 1164;
 			}
 
 			public float getSpeed() {
-				return 15f;
+				return 12f;
 			}
 
 			public float getAttackDamageBonus() {
@@ -30,12 +30,12 @@ public class DarkShovelItem extends ShovelItem {
 			}
 
 			public int getEnchantmentValue() {
-				return 40;
+				return 42;
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(DarkInfectionModItems.DARK_INGOT.get()));
+				return Ingredient.of(new ItemStack(DarkInfectionModItems.DARK_D.get()));
 			}
-		}, 1, -3.2f, new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED).fireResistant());
+		}, 1, -3f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS));
 	}
 }

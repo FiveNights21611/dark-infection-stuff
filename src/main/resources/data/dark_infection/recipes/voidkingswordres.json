@@ -7,7 +7,7 @@
   ],
   "key": {
     "2": {
-      "item": "minecraft:iron_nugget"
+      "item": "dark_infection:dark_ingot"
     },
     "3": {
       "item": "dark_infection:curev"
@@ -16,7 +16,7 @@
       "item": "dark_infection:blue_pole"
     },
     "6": {
-      "item": "minecraft:iron_nugget"
+      "item": "dark_infection:dark_ingot"
     },
     "7": {
       "item": "dark_infection:voidvile"

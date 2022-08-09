@@ -56,7 +56,8 @@ public class VoidStoneLapisOreFeature extends OreFeature {
 
 	public static final Set<ResourceLocation> GENERATE_BIOMES = Set.of(new ResourceLocation("dark_infection:dark_caves"),
 			new ResourceLocation("dark_infection:dark_biome"));
-	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(Level.OVERWORLD);
+	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(Level.OVERWORLD,
+			ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("dark_infection:the_void")));
 
 	public VoidStoneLapisOreFeature() {
 		super(OreConfiguration.CODEC);

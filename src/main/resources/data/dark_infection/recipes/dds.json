@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "dark_infection:dark_d"
+    },
+    "1": {
+      "item": "dark_infection:dark_d"
+    },
+    "2": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "dark_infection:dark_diamond_sword",
+    "count": 1
+  }
+}

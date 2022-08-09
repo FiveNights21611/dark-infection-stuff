@@ -128,7 +128,8 @@
       "name": "VoidStoneGoldFortune"
     },
     "spawnWorldTypes": [
-      "Surface"
+      "Surface",
+      "CUSTOM:TheVoid"
     ],
     "restrictionBiomes": [
       {

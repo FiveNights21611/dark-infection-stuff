@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smithing",
   "base": {
-    "item": "minecraft:netherite_helmet"
+    "item": "dark_infection:dark_diamond_helmet"
   },
   "addition": {
     "item": "dark_infection:dark_ingot"

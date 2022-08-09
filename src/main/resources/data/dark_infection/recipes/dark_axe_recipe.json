@@ -1,12 +1,29 @@
 {
-  "type": "minecraft:smithing",
-  "base": {
-    "item": "minecraft:netherite_axe"
-  },
-  "addition": {
-    "item": "dark_infection:dark_ingot"
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23",
+    " 5"
+  ],
+  "key": {
+    "0": {
+      "item": "dark_infection:dark_d"
+    },
+    "1": {
+      "item": "dark_infection:dark_d"
+    },
+    "2": {
+      "item": "dark_infection:dark_d"
+    },
+    "3": {
+      "item": "minecraft:stick"
+    },
+    "5": {
+      "item": "minecraft:stick"
+    }
   },
   "result": {
-    "item": "dark_infection:dark_axe"
+    "item": "dark_infection:dark_axe",
+    "count": 1
   }
 }

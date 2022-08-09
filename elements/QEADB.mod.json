@@ -1,0 +1,20 @@
+{
+  "_fv": 28,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Blasting",
+    "xpReward": 20.0,
+    "cookingTime": 100,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "blastingInputStack": {
+      "value": "CUSTOM:QuartzEnrichedAncientDebris"
+    },
+    "blastingReturnStack": {
+      "value": "CUSTOM:QENScrap"
+    },
+    "name": "qeadb",
+    "namespace": "mod"
+  }
+}

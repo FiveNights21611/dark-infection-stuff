@@ -9,7 +9,7 @@
     "group": "qena",
     "recipeShapeless": false,
     "smithingInputStack": {
-      "value": "Items.NETHERITE_HELMET"
+      "value": "Items.DIAMOND_HELMET"
     },
     "smithingInputAdditionStack": {
       "value": "CUSTOM:QuartzEnrichedNetherite"

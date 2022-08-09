@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smithing",
   "base": {
-    "item": "minecraft:netherite_leggings"
+    "item": "dark_infection:dark_diamond_leggings"
   },
   "addition": {
     "item": "dark_infection:dark_ingot"

@@ -7,31 +7,31 @@
     "cookingTime": 200,
     "recipeRetstackSize": 1,
     "group": "",
-    "recipeShapeless": false,
+    "recipeShapeless": true,
     "recipeSlots": [
       {
-        "value": "Items.NETHERITE_SCRAP"
+        "value": "CUSTOM:DarkNetheriteScrap"
       },
       {
-        "value": "Items.DIAMOND"
+        "value": "CUSTOM:DarkNetheriteScrap"
       },
       {
-        "value": "Items.NETHERITE_SCRAP"
+        "value": "CUSTOM:DarkNetheriteScrap"
       },
       {
-        "value": "Items.NETHERITE_INGOT"
+        "value": "CUSTOM:DarkNetheriteScrap"
       },
       {
-        "value": ""
+        "value": "CUSTOM:DarkD"
       },
       {
-        "value": "CUSTOM:Itemorbofdarkness"
+        "value": "CUSTOM:DarkD"
       },
       {
-        "value": ""
+        "value": "CUSTOM:DarkD"
       },
       {
-        "value": "Items.DIAMOND"
+        "value": "CUSTOM:DarkD"
       },
       {
         "value": ""

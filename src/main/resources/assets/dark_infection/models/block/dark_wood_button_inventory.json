@@ -1,0 +1,6 @@
+{
+  "parent": "block/button_inventory",
+  "textures": {
+    "texture": "dark_infection:blocks/darkwood_planks"
+  }
+}

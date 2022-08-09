@@ -1,26 +1,31 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "012",
-    "34 "
-  ],
-  "key": {
-    "0": {
-      "item": "minecraft:netherite_ingot"
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "dark_infection:qen_scrap"
     },
-    "1": {
-      "item": "minecraft:quartz"
+    {
+      "item": "dark_infection:qen_scrap"
     },
-    "2": {
-      "item": "minecraft:quartz"
+    {
+      "item": "dark_infection:qen_scrap"
     },
-    "3": {
-      "item": "minecraft:quartz"
+    {
+      "item": "dark_infection:qen_scrap"
     },
-    "4": {
-      "item": "minecraft:quartz"
+    {
+      "item": "minecraft:diamond"
+    },
+    {
+      "item": "minecraft:diamond"
+    },
+    {
+      "item": "minecraft:diamond"
+    },
+    {
+      "item": "minecraft:diamond"
     }
-  },
+  ],
   "result": {
     "item": "dark_infection:quartz_enriched_netherite",
     "count": 1

@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "dark_infection:items/darkaxe"
+    "layer0": "dark_infection:items/dark_axe"
   }
 }

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "dark_infection:blocks/qead_top",
+    "up": "dark_infection:blocks/qead_top",
+    "north": "dark_infection:blocks/qead_side",
+    "east": "dark_infection:blocks/qead_side",
+    "south": "dark_infection:blocks/qead_side",
+    "west": "dark_infection:blocks/qead_side",
+    "particle": "dark_infection:blocks/qead_top"
+  }
+}

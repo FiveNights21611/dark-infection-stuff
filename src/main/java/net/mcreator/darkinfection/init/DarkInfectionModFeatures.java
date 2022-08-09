@@ -25,6 +25,7 @@ import net.mcreator.darkinfection.world.features.ores.VoidStoneEmeraldOreFeature
 import net.mcreator.darkinfection.world.features.ores.VoidStoneDiamondOreFeature;
 import net.mcreator.darkinfection.world.features.ores.VoidStoneCopperOreFeature;
 import net.mcreator.darkinfection.world.features.ores.VoidStoneCoalOreFeature;
+import net.mcreator.darkinfection.world.features.ores.QuartzEnrichedAncientDebrisFeature;
 import net.mcreator.darkinfection.world.features.VoidtempleFeature;
 import net.mcreator.darkinfection.DarkInfectionMod;
 
@@ -63,6 +64,9 @@ public class DarkInfectionModFeatures {
 	public static final RegistryObject<Feature<?>> VOID_STONE_GOLD_ORE = register("void_stone_gold_ore", VoidStoneGoldOreFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, VoidStoneGoldOreFeature.GENERATE_BIOMES,
 					VoidStoneGoldOreFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> QUARTZ_ENRICHED_ANCIENT_DEBRIS = register("quartz_enriched_ancient_debris",
+			QuartzEnrichedAncientDebrisFeature::feature, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES,
+					QuartzEnrichedAncientDebrisFeature.GENERATE_BIOMES, QuartzEnrichedAncientDebrisFeature::placedFeature));
 
 	private static RegistryObject<Feature<?>> register(String registryname, Supplier<Feature<?>> feature, FeatureRegistration featureRegistration) {
 		FEATURE_REGISTRATIONS.add(featureRegistration);

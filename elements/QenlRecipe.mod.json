@@ -9,7 +9,7 @@
     "group": "qena",
     "recipeShapeless": false,
     "smithingInputStack": {
-      "value": "Items.NETHERITE_LEGGINGS"
+      "value": "Items.DIAMOND_LEGGINGS"
     },
     "smithingInputAdditionStack": {
       "value": "CUSTOM:QuartzEnrichedNetherite"

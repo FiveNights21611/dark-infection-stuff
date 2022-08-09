@@ -128,7 +128,8 @@
       "name": "VoidStoneEmeraldFortune"
     },
     "spawnWorldTypes": [
-      "Surface"
+      "Surface",
+      "CUSTOM:TheVoid"
     ],
     "restrictionBiomes": [
       {

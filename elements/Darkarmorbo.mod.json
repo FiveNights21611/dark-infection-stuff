@@ -9,7 +9,7 @@
     "group": "",
     "recipeShapeless": false,
     "smithingInputStack": {
-      "value": "Items.NETHERITE_BOOTS"
+      "value": "CUSTOM:DarkDiamond.boots"
     },
     "smithingInputAdditionStack": {
       "value": "CUSTOM:DarkIngot"

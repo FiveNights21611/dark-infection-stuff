@@ -2,19 +2,42 @@
   "_fv": 28,
   "_type": "recipe",
   "definition": {
-    "recipeType": "Smithing",
+    "recipeType": "Crafting",
     "xpReward": 0.0,
     "cookingTime": 200,
     "recipeRetstackSize": 1,
     "group": "",
     "recipeShapeless": false,
-    "smithingInputStack": {
-      "value": "Items.NETHERITE_PICKAXE"
-    },
-    "smithingInputAdditionStack": {
-      "value": "CUSTOM:DarkIngot"
-    },
-    "smithingReturnStack": {
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:DarkD"
+      },
+      {
+        "value": "CUSTOM:DarkD"
+      },
+      {
+        "value": "CUSTOM:DarkD"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.STICK"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.STICK"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
       "value": "CUSTOM:DarkPickaxe"
     },
     "name": "dark_pickaxe_recipe",

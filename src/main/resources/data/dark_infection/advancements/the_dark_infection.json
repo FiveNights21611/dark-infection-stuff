@@ -1,8 +1,8 @@
 {
   "display": {
-    "background": "dark_infection:textures/darkdirt.png",
+    "background": "dark_infection:textures/darkstone.png",
     "icon": {
-      "item": "dark_infection:darkdirt"
+      "item": "dark_infection:dark_star"
     },
     "title": {
       "translate": "advancements.the_dark_infection.title"
@@ -11,9 +11,9 @@
       "translate": "advancements.the_dark_infection.descr"
     },
     "frame": "task",
-    "show_toast": true,
+    "show_toast": false,
     "announce_to_chat": true,
-    "hidden": true
+    "hidden": false
   },
   "criteria": {
     "the_dark_infection": {

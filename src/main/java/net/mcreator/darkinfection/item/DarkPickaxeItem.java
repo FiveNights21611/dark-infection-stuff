@@ -1,7 +1,14 @@
 
 package net.mcreator.darkinfection.item;
 
-import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.PickaxeItem;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+
+import net.mcreator.darkinfection.init.DarkInfectionModTabs;
+import net.mcreator.darkinfection.init.DarkInfectionModItems;
 
 public class DarkPickaxeItem extends PickaxeItem {
 	public DarkPickaxeItem() {
@@ -29,11 +36,6 @@ public class DarkPickaxeItem extends PickaxeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(DarkInfectionModItems.DARK_INGOT.get()));
 			}
-		},
-
-				1, -3f,
-
-				new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED).fireResistant());
+		}, 1, -3f, new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED).fireResistant());
 	}
-
 }

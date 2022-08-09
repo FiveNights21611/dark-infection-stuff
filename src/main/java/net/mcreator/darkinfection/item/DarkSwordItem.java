@@ -1,7 +1,14 @@
 
 package net.mcreator.darkinfection.item;
 
-import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+
+import net.mcreator.darkinfection.init.DarkInfectionModTabs;
+import net.mcreator.darkinfection.init.DarkInfectionModItems;
 
 public class DarkSwordItem extends SwordItem {
 	public DarkSwordItem() {
@@ -29,11 +36,6 @@ public class DarkSwordItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(DarkInfectionModItems.DARK_INGOT.get()));
 			}
-		},
-
-				3, -2.4f,
-
-				new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED).fireResistant());
+		}, 3, -2.4f, new Item.Properties().tab(DarkInfectionModTabs.TAB_DARKINFECTED).fireResistant());
 	}
-
 }

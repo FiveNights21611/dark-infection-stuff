@@ -1,11 +1,29 @@
 
 package net.mcreator.darkinfection.item;
 
-import net.minecraft.world.entity.ai.attributes.Attribute;
-import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
+
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.UseAnim;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.entity.projectile.AbstractArrow;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
+
+import net.mcreator.darkinfection.entity.DarkOrbEntity;
+
+import java.util.List;
 
 public class DarkOrbItem extends Item {
-
 	public DarkOrbItem() {
 		super(new Item.Properties().tab(null).durability(100));
 	}
@@ -45,15 +63,10 @@ public class DarkOrbItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (true) {
-
 				DarkOrbEntity entityarrow = DarkOrbEntity.shoot(world, entity, world.getRandom(), 3f, 7, 0);
-
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
-
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
-
 			}
 		}
 	}
-
 }

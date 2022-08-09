@@ -1408,7 +1408,7 @@
       "name": "DarkIngot",
       "type": "item",
       "sortid": 134,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "dark_ingot"
     },
@@ -1432,7 +1432,7 @@
       "name": "DarklingLevel3DoIt",
       "type": "procedure",
       "sortid": 109,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "darkling_level_3_do_it",
       "metadata": {
@@ -1447,14 +1447,6 @@
           }
         ]
       }
-    },
-    {
-      "name": "Silveryeetbind",
-      "type": "keybind",
-      "sortid": 186,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "silveryeetbind"
     },
     {
       "name": "TheDarkInfection",
@@ -1484,7 +1476,7 @@
       "name": "QuartzPickaxe",
       "type": "tool",
       "sortid": 149,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "quartz_pickaxe"
     },
@@ -1568,7 +1560,7 @@
       "name": "VoidStoneBrickWalls",
       "type": "block",
       "sortid": 118,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "void_stone_brick_walls"
     },
@@ -1596,7 +1588,7 @@
       "name": "HowToGetToVoidDimension",
       "type": "procedure",
       "sortid": 115,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "how_to_get_to_void_dimension",
       "metadata": {
@@ -1652,7 +1644,7 @@
       "name": "QuartzAxe",
       "type": "tool",
       "sortid": 150,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "quartz_axe"
     },
@@ -1663,22 +1655,6 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "void_brick_stairs_recipe_craft"
-    },
-    {
-      "name": "BoatGodBoatSummoning",
-      "type": "procedure",
-      "sortid": 166,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "boat_god_boat_summoning",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
     },
     {
       "name": "VoidStoneFurnace",
@@ -1695,14 +1671,6 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "void_cobble_furnace"
-    },
-    {
-      "name": "FlightBoatGod",
-      "type": "keybind",
-      "sortid": 163,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "flight_boat_god"
     },
     {
       "name": "LightsOff",
@@ -1809,14 +1777,6 @@
       "registry_name": "dark_pickaxe"
     },
     {
-      "name": "SummonBoatsBoatGod",
-      "type": "keybind",
-      "sortid": 167,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "summon_boats_boat_god"
-    },
-    {
       "name": "VoidstoneBrickWallWork",
       "type": "procedure",
       "sortid": 133,
@@ -1848,7 +1808,7 @@
       "name": "DarkAxe",
       "type": "tool",
       "sortid": 137,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "dark_axe"
     },
@@ -1888,26 +1848,10 @@
       "registry_name": "void_brick_walls_recipe_craft"
     },
     {
-      "name": "Silveryeet",
-      "type": "procedure",
-      "sortid": 185,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "silveryeet",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
       "name": "GoToVoidFunction",
       "type": "procedure",
       "sortid": 114,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "go_to_void_function",
       "metadata": {
@@ -1958,38 +1902,6 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "dark_orb"
-    },
-    {
-      "name": "BoatGodOP",
-      "type": "procedure",
-      "sortid": 184,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "boat_god_op",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
     },
     {
       "name": "QuartzShovelRecipe",
@@ -2055,7 +1967,7 @@
       "name": "GenerateVoidKing",
       "type": "command",
       "sortid": 130,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "generate_void_king"
     },
@@ -2099,7 +2011,7 @@
       "name": "DarkShovel",
       "type": "tool",
       "sortid": 139,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "dark_shovel"
     },
@@ -2174,26 +2086,6 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "void_stone_sword"
-    },
-    {
-      "name": "BoatGodFly",
-      "type": "procedure",
-      "sortid": 164,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "boat_god_fly",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
     },
     {
       "name": "DarkIngotRecipe",
@@ -2279,7 +2171,7 @@
       "name": "BoatGodFallDamage",
       "type": "procedure",
       "sortid": 165,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "boat_god_fall_damage",
       "metadata": {
@@ -2509,6 +2401,7 @@
       "item.dark_infection.popped_orb_of_darkness": "Popped Orb Of Darkness",
       "effect.dark_infection.ultimate_darkness": "Ultimate Darkness...",
       "item.dark_infection.quartz_enriched_netherite_armor_chestplate": "Quartz Enriched Netherite Chestplate",
+      "item.dark_infection.quartz_sword": "Q.E.N. Sword",
       "block.dark_infection.darkdirt": "DarkDirt",
       "biome.dark_infection.dark_biome": "Dark Biome",
       "block.dark_infection.gravityvoid": "GravityVoid",
@@ -2518,6 +2411,7 @@
       "block.dark_infection.void_stone_coal_ore": "Void Stone Coal Ore",
       "block.dark_infection.void_stone_gold_ore": "Void Stone Gold Ore",
       "item.minecraft.tipped_arrow.effect.potion_of_ultimate_darkness": "Arrow of Ultimate Darkness",
+      "block.dark_infection.void_stone_redstone_ore_lit": "Void Stone Redstone Ore Lit",
       "item.dark_infection.itemorbofdarkness": "Orb Of Darkness",
       "item.dark_infection.voidking_leggings": "Voidking Leggings",
       "itemGroup.tabdarkinfected": "Dark Infection",
@@ -2531,15 +2425,21 @@
       "item.dark_infection.darkarmor_leggings": "Dark Leggings",
       "effect.dark_infection.givevoidcure": "one sec",
       "item.dark_infection.curev": "Cure Vial",
+      "item.dark_infection.dark_sword": "Dark Sword",
       "item.dark_infection.voidkingsword": "Voidkingsword",
       "item.minecraft.tipped_arrow.effect.voidcurepotion": "Arrow of Voidcure (dont use its broken)",
       "block.dark_infection.infectedsoil": "Infected Soil",
       "advancements.cover_me_in_quartz.descr": "Woah! How immune is this...?",
+      "item.dark_infection.dark_pickaxe": "Dark Pickaxe",
+      "item.dark_infection.dark_orb": "Dark Orb",
       "advancements.the_absolute_dark.title": "The Absolute Dark...",
       "item.dark_infection.iron_rod": "Iron Rod",
+      "block.dark_infection.void_stone_brick_slabs": "Void Stone Brick Slab",
       "block.dark_infection.void_stone_emerald_ore": "Void Stone Emerald Ore",
       "item.minecraft.splash_potion.effect.potion_of_ultimate_darkness": "Splash PotionOf Ultimate Darkness",
+      "block.dark_infection.void_stone_brick_stairs": "Void Stone Brick Stairs",
       "block.dark_infection.void_stone_iron_ore": "Void Stone Iron Ore",
+      "item.dark_infection.quartz_hoe": "Q.E.N. Hoe",
       "item.minecraft.potion.effect.potion_of_ultimate_darkness": "Potion Of Ultimate Darkness",
       "item.dark_infection.dark_star": "Dark Star",
       "advancements.the_absolute_dark.descr": "What devotion is this?",
@@ -2549,6 +2449,7 @@
       "block.dark_infection.chisseldvoidstonebricks": "Chiseled VoidStone Bricks",
       "item.dark_infection.voidking_helmet": "Voidking Helmet",
       "gamerule.doInfectionSpread": "doInfectionSpread",
+      "item.dark_infection.dark_hoe": "Dark Hoe",
       "effect.dark_infection.darkness": "Darkness",
       "item.dark_infection.quartz_enriched_netherite_armor_boots": "Quartz Enriched Netherite Boots",
       "effect.dark_infection.darkcorupt": "Don\u0027t Die...",
@@ -2556,6 +2457,7 @@
       "effect.dark_infection.void_cure": "void cure",
       "gamerule.doInfectionSpread.description": "toggles infection spread",
       "item.dark_infection.blue_pole": "Blue Pole",
+      "block.dark_infection.void_king_spawner": "Void King Spawner",
       "item.dark_infection.voidvile": "Void Vial",
       "item.dark_infection.iron_pole": "Iron Pole",
       "item.dark_infection.strangev": "Strange Vial",
@@ -2563,6 +2465,7 @@
       "item.dark_infection.quartz_enriched_netherite": "Quartz Enriched Netherite Ingot",
       "item.dark_infection.darkarmor_chestplate": "Dark Chestplate",
       "advancements.darkling_level_1.title": "Darkling Level 1",
+      "item.dark_infection.quartz_shovel": "Q.E.N. Shovel",
       "item.dark_infection.quartz_enriched_netherite_armor_leggings": "Quartz Enriched Netherite Leggings",
       "item.dark_infection.voidking_chestplate": "Voidking Body",
       "item.dark_infection.darkarmor_helmet": "Dark Helmet",

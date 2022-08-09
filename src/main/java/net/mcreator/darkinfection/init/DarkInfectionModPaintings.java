@@ -17,5 +17,6 @@ public class DarkInfectionModPaintings {
 		event.getRegistry().register(new Motive(48, 32).setRegistryName("rizeofthevoid"));
 		event.getRegistry().register(new Motive(32, 16).setRegistryName("mission_f"));
 		event.getRegistry().register(new Motive(48, 48).setRegistryName("vk"));
+		event.getRegistry().register(new Motive(64, 48).setRegistryName("battletothedeth"));
 	}
 }
